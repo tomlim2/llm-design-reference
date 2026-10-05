@@ -1,0 +1,5 @@
+.DS_Store
+output/design-styles/
+output/*preview*.png
+output/*preview*.jpg
+output/poster-additions.zip

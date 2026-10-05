@@ -1,0 +1,213 @@
+{
+  "generationMode": "built-in image_gen",
+  "format": "portrait poster",
+  "sourceImages": [
+    "/Users/yslim/Downloads/IMG_4946.PNG",
+    "/Users/yslim/Downloads/IMG_4947.PNG"
+  ],
+  "notes": [
+    "Both screenshots list the same 20 styles; spelling and ordering variations have been normalized.",
+    "Surreal design / Surreal art are one style; Bohemain is normalized to Bohemian.",
+    "Near-duplicate families are consolidated for this collection rather than asserted to be exact historical synonyms."
+  ],
+  "skipped": [
+    {
+      "requested": "Clay style",
+      "existing": "Clay Render",
+      "reason": "same clay material treatment"
+    },
+    {
+      "requested": "Glass morphism",
+      "existing": "Frosted Glass",
+      "reason": "overlapping translucent/frosted glass treatment"
+    },
+    {
+      "requested": "Y2K / Y2k Design",
+      "existing": "2000 Web",
+      "reason": "overlapping early-2000s digital aesthetic in this collection"
+    },
+    {
+      "requested": "Collage art",
+      "existing": "Collage (motion)",
+      "reason": "collage example already present in the motion collection"
+    }
+  ],
+  "styles": [
+    {
+      "number": 21,
+      "slug": "21-minimalism",
+      "title": "MINIMALISM",
+      "ko": "미니멀리즘",
+      "description": "절제된 요소, 넓은 여백, 명확한 위계",
+      "file": "21-minimalism.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one standalone graphic design poster for a visual style reference collection.\nPrimary request: Demonstrate the named style through typography, composition, color and image-making. Match the high craft of an independent design exhibition poster, with distinctive art direction.\nFormat: portrait 2:3, approximately 1024x1536, full bleed artwork edge-to-edge, straight-on, exactly one finished poster. Actual graphic artwork, not a photograph of a framed print or a wall mockup.\nTypography: the specified style title must be correctly spelled and integrated into the art. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. No long paragraphs. Show strong hierarchy at thumbnail size.\nConstraints: no website, app, dashboard, menus, device frames, contact sheet, external brand, watermark, screenshot UI, or social-media overlay. The user screenshots only supply a list of style names; create original artwork.\n\nStyle title (verbatim): \"MINIMALISM\"\nFooter text (verbatim): \"21 / VISUAL DESIGN\"\nArt direction: A radically restrained graphic composition on immaculate warm ivory. One fine black vertical line, one small vermilion square, a quiet charcoal circular arc cropped at the edge. Vast untouched negative space. Precise modern sans-serif title, modest scale and delicate spacing. Pure flat printed geometry, clean edges, uncoated paper. Absence and proportion are the main event. No weathered brushwork, no 3D.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 22,
+      "slug": "22-maximalism",
+      "title": "MAXIMALISM",
+      "ko": "맥시멀리즘",
+      "description": "풍부한 색과 패턴, 대담한 중첩",
+      "file": "22-maximalism.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one standalone graphic design poster for a visual style reference collection.\nPrimary request: Demonstrate the named style through typography, composition, color and image-making. Match the high craft of an independent design exhibition poster, with distinctive art direction.\nFormat: portrait 2:3, approximately 1024x1536, full bleed artwork edge-to-edge, straight-on, exactly one finished poster. Actual graphic artwork, not a photograph of a framed print or a wall mockup.\nTypography: the specified style title must be correctly spelled and integrated into the art. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. No long paragraphs. Show strong hierarchy at thumbnail size.\nConstraints: no website, app, dashboard, menus, device frames, contact sheet, external brand, watermark, screenshot UI, or social-media overlay. The user screenshots only supply a list of style names; create original artwork.\n\nStyle title (verbatim): \"MAXIMALISM\"\nFooter text (verbatim): \"22 / VISUAL DESIGN\"\nArt direction: A gloriously abundant but art-directed poster: dense electric pink, emerald, cobalt and tangerine forms; checkerboards, botanical engravings, striped ribbons, scalloped borders and extravagant typographic scales interlocking in a rhythmic composition. Central large expressive title in cream with sharply drawn ornate shadow. Many layers, no empty zones, intentional visual hierarchy; richly printed mixed textures, avoid random clutter.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 23,
+      "slug": "23-futuristic",
+      "title": "FUTURISTIC",
+      "ko": "퓨처리스틱",
+      "description": "정밀한 구조와 빛으로 표현한 미래 감각",
+      "file": "23-futuristic.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one standalone graphic design poster for a visual style reference collection.\nPrimary request: Demonstrate the named style through typography, composition, color and image-making. Match the high craft of an independent design exhibition poster, with distinctive art direction.\nFormat: portrait 2:3, approximately 1024x1536, full bleed artwork edge-to-edge, straight-on, exactly one finished poster. Actual graphic artwork, not a photograph of a framed print or a wall mockup.\nTypography: the specified style title must be correctly spelled and integrated into the art. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. No long paragraphs. Show strong hierarchy at thumbnail size.\nConstraints: no website, app, dashboard, menus, device frames, contact sheet, external brand, watermark, screenshot UI, or social-media overlay. The user screenshots only supply a list of style names; create original artwork.\n\nStyle title (verbatim): \"FUTURISTIC\"\nFooter text (verbatim): \"23 / VISUAL DESIGN\"\nArt direction: A sleek speculative-future graphic poster dominated by a sculptural white orbital structure suspended in a deep ultramarine space with a single sharp electric cyan luminous trajectory. Hyper-precise smooth aerodynamic materials, controlled studio lighting and long architectural shadows, tiny orange registration marks. Narrow extended futuristic lettering flows cleanly through the composition. Sophisticated white/cobalt technology optimism. No UI, dashboards or city skyline.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 24,
+      "slug": "24-vector-art",
+      "title": "VECTOR ART",
+      "ko": "벡터 아트",
+      "description": "선명한 윤곽과 평면 색으로 구성한 일러스트",
+      "file": "24-vector-art.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one standalone graphic design poster for a visual style reference collection.\nPrimary request: Demonstrate the named style through typography, composition, color and image-making. Match the high craft of an independent design exhibition poster, with distinctive art direction.\nFormat: portrait 2:3, approximately 1024x1536, full bleed artwork edge-to-edge, straight-on, exactly one finished poster. Actual graphic artwork, not a photograph of a framed print or a wall mockup.\nTypography: the specified style title must be correctly spelled and integrated into the art. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. No long paragraphs. Show strong hierarchy at thumbnail size.\nConstraints: no website, app, dashboard, menus, device frames, contact sheet, external brand, watermark, screenshot UI, or social-media overlay. The user screenshots only supply a list of style names; create original artwork.\n\nStyle title (verbatim): \"VECTOR ART\"\nFooter text (verbatim): \"24 / VISUAL DESIGN\"\nArt direction: A highly accomplished flat vector-style illustration of a bold tropical bird weaving through oversized sculptural leaves, with a small radiant sun. Teal, tomato red, butter yellow and deep navy limited inks. Geometric simplified organic silhouettes, crisp Bezier-like curves, clever shared edges and negative space, subtle graphic rhythm, entirely flat colors with NO gradients, no photographic shading, no 3D. Large clean cut-form title integrated with leaves.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 25,
+      "slug": "25-retro",
+      "title": "RETRO",
+      "ko": "레트로",
+      "description": "복고풍 곡선과 바랜 인쇄 색감",
+      "file": "25-retro.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one standalone graphic design poster for a visual style reference collection.\nPrimary request: Demonstrate the named style through typography, composition, color and image-making. Match the high craft of an independent design exhibition poster, with distinctive art direction.\nFormat: portrait 2:3, approximately 1024x1536, full bleed artwork edge-to-edge, straight-on, exactly one finished poster. Actual graphic artwork, not a photograph of a framed print or a wall mockup.\nTypography: the specified style title must be correctly spelled and integrated into the art. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. No long paragraphs. Show strong hierarchy at thumbnail size.\nConstraints: no website, app, dashboard, menus, device frames, contact sheet, external brand, watermark, screenshot UI, or social-media overlay. The user screenshots only supply a list of style names; create original artwork.\n\nStyle title (verbatim): \"RETRO\"\nFooter text (verbatim): \"25 / VISUAL DESIGN\"\nArt direction: A warm 1970s-inspired graphic poster built from flowing rainbow ribbon bands, an oversized round setting sun, simplified landscape and a playful heavy rounded serif title. Burnt orange, mustard, faded turquoise and chocolate-brown inks on cream stock. Slight screenprint misregistration and authentic fine paper grain, soft sun-faded color, strong period proportions. Pure original print illustration with no borrowed logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 26,
+      "slug": "26-cyberpunk",
+      "title": "CYBERPUNK",
+      "ko": "사이버펑크",
+      "description": "도시의 어둠과 네온, 전자적 노이즈",
+      "file": "26-cyberpunk.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one standalone graphic design poster for a visual style reference collection.\nPrimary request: Demonstrate the named style through typography, composition, color and image-making. Match the high craft of an independent design exhibition poster, with distinctive art direction.\nFormat: portrait 2:3, approximately 1024x1536, full bleed artwork edge-to-edge, straight-on, exactly one finished poster. Actual graphic artwork, not a photograph of a framed print or a wall mockup.\nTypography: the specified style title must be correctly spelled and integrated into the art. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. No long paragraphs. Show strong hierarchy at thumbnail size.\nConstraints: no website, app, dashboard, menus, device frames, contact sheet, external brand, watermark, screenshot UI, or social-media overlay. The user screenshots only supply a list of style names; create original artwork.\n\nStyle title (verbatim): \"CYBERPUNK\"\nFooter text (verbatim): \"26 / VISUAL DESIGN\"\nArt direction: A nocturnal high-tech urban dystopian poster. Steep vertical perspective down a rain-soaked futuristic alley, a lone anonymous helmeted pedestrian in silhouette, dense cables, neon magenta and acid cyan reflections against almost black architecture. Red electrical signals, controlled digital scan-line and glitch texture, compressed bold fragmented title still perfectly readable. Gritty cinematic graphic art with oppressive density and dramatic light. No real signs, brands, or copied movie characters.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 27,
+      "slug": "27-pop-art",
+      "title": "POP ART",
+      "ko": "팝 아트",
+      "description": "망점과 강한 원색, 만화적인 확대",
+      "file": "27-pop-art.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one standalone graphic design poster for a visual style reference collection.\nPrimary request: Demonstrate the named style through typography, composition, color and image-making. Match the high craft of an independent design exhibition poster, with distinctive art direction.\nFormat: portrait 2:3, approximately 1024x1536, full bleed artwork edge-to-edge, straight-on, exactly one finished poster. Actual graphic artwork, not a photograph of a framed print or a wall mockup.\nTypography: the specified style title must be correctly spelled and integrated into the art. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. No long paragraphs. Show strong hierarchy at thumbnail size.\nConstraints: no website, app, dashboard, menus, device frames, contact sheet, external brand, watermark, screenshot UI, or social-media overlay. The user screenshots only supply a list of style names; create original artwork.\n\nStyle title (verbatim): \"POP ART\"\nFooter text (verbatim): \"27 / VISUAL DESIGN\"\nArt direction: An exuberant original screenprinted pop-art poster: an enormous illustrated wide-open eye framed by a graphic lightning bolt and swirling thick black contours, emphatic red, canary yellow and cyan sections, bold visible Ben-Day halftone dots. A very large playful outlined title with a punchy offset color shadow, striking cropping and dynamic diagonal energy. Crisp comic printing, commercial everyday-image aesthetic. No famous character, celebrity or borrowed artwork.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 28,
+      "slug": "28-pixel-art",
+      "title": "PIXEL ART",
+      "ko": "픽셀 아트",
+      "description": "격자 위에 쌓은 작은 색면과 게임 감성",
+      "file": "28-pixel-art.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one standalone graphic design poster for a visual style reference collection.\nPrimary request: Demonstrate the named style through typography, composition, color and image-making. Match the high craft of an independent design exhibition poster, with distinctive art direction.\nFormat: portrait 2:3, approximately 1024x1536, full bleed artwork edge-to-edge, straight-on, exactly one finished poster. Actual graphic artwork, not a photograph of a framed print or a wall mockup.\nTypography: the specified style title must be correctly spelled and integrated into the art. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. No long paragraphs. Show strong hierarchy at thumbnail size.\nConstraints: no website, app, dashboard, menus, device frames, contact sheet, external brand, watermark, screenshot UI, or social-media overlay. The user screenshots only supply a list of style names; create original artwork.\n\nStyle title (verbatim): \"PIXEL ART\"\nFooter text (verbatim): \"28 / VISUAL DESIGN\"\nArt direction: Meticulously hand-designed pixel-art poster of an isometric little night garden atop a floating square island, blocky glowing flowers, tiny stepped waterfall and crescent moon. Indigo, lavender, mint and amber limited 16-color palette. Pixel-grid construction consistent throughout, hard square pixels at visible scale, stepped diagonal edges, deliberate ordered dithering, a large beautiful pixel-font title. No smooth gradients, no vector contours, no antialiasing, no existing game characters.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 29,
+      "slug": "29-editorial",
+      "title": "EDITORIAL",
+      "ko": "에디토리얼",
+      "description": "사진과 타이포그래피의 섬세한 편집",
+      "file": "29-editorial.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one standalone graphic design poster for a visual style reference collection.\nPrimary request: Demonstrate the named style through typography, composition, color and image-making. Match the high craft of an independent design exhibition poster, with distinctive art direction.\nFormat: portrait 2:3, approximately 1024x1536, full bleed artwork edge-to-edge, straight-on, exactly one finished poster. Actual graphic artwork, not a photograph of a framed print or a wall mockup.\nTypography: the specified style title must be correctly spelled and integrated into the art. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. No long paragraphs. Show strong hierarchy at thumbnail size.\nConstraints: no website, app, dashboard, menus, device frames, contact sheet, external brand, watermark, screenshot UI, or social-media overlay. The user screenshots only supply a list of style names; create original artwork.\n\nStyle title (verbatim): \"EDITORIAL\"\nFooter text (verbatim): \"29 / VISUAL DESIGN\"\nArt direction: An elegant contemporary independent-culture editorial poster. One dramatic black-and-white still-life photograph of a folded sculptural paper sheet in hard side light, asymmetrically cropped. Large refined high-contrast black serif title, generous white margins, small restrained sans serif study footer and very thin baseline rules. A single vermilion horizontal typography accent. Immaculate magazine-like hierarchy and tension between photo and whitespace. No invented magazine brand, no long filler copy.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 30,
+      "slug": "30-swiss-design",
+      "title": "SWISS DESIGN",
+      "ko": "스위스 디자인",
+      "description": "정렬 체계와 산세리프, 기하학적 리듬",
+      "file": "30-swiss-design.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one standalone graphic design poster for a visual style reference collection.\nPrimary request: Demonstrate the named style through typography, composition, color and image-making. Match the high craft of an independent design exhibition poster, with distinctive art direction.\nFormat: portrait 2:3, approximately 1024x1536, full bleed artwork edge-to-edge, straight-on, exactly one finished poster. Actual graphic artwork, not a photograph of a framed print or a wall mockup.\nTypography: the specified style title must be correctly spelled and integrated into the art. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. No long paragraphs. Show strong hierarchy at thumbnail size.\nConstraints: no website, app, dashboard, menus, device frames, contact sheet, external brand, watermark, screenshot UI, or social-media overlay. The user screenshots only supply a list of style names; create original artwork.\n\nStyle title (verbatim): \"SWISS DESIGN\"\nFooter text (verbatim): \"30 / VISUAL DESIGN\"\nArt direction: An exemplary International Typographic Style print poster. Mathematical asymmetric grid, huge left-aligned black neo-grotesk title broken over two lines, a tilted vermilion rectangle cutting through three overlapping cobalt circles, cream paper ground. Sharply rational proportions and disciplined negative space, flush left typography, strong horizontal baseline relationships. Entirely flat spot color. Typographic clarity and optical rhythm, no ornament and no dimensional shading.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 31,
+      "slug": "31-bohemian",
+      "title": "BOHEMIAN",
+      "ko": "보헤미안",
+      "description": "자연에서 온 문양과 자유로운 장식",
+      "file": "31-bohemian.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one standalone graphic design poster for a visual style reference collection.\nPrimary request: Demonstrate the named style through typography, composition, color and image-making. Match the high craft of an independent design exhibition poster, with distinctive art direction.\nFormat: portrait 2:3, approximately 1024x1536, full bleed artwork edge-to-edge, straight-on, exactly one finished poster. Actual graphic artwork, not a photograph of a framed print or a wall mockup.\nTypography: the specified style title must be correctly spelled and integrated into the art. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. No long paragraphs. Show strong hierarchy at thumbnail size.\nConstraints: no website, app, dashboard, menus, device frames, contact sheet, external brand, watermark, screenshot UI, or social-media overlay. The user screenshots only supply a list of style names; create original artwork.\n\nStyle title (verbatim): \"BOHEMIAN\"\nFooter text (verbatim): \"31 / VISUAL DESIGN\"\nArt direction: An original bohemian botanical graphic poster in terracotta, ochre, dusty sage and parchment. A graceful stylized hand holding wildflowers and a crescent sun motif, hand-block-printed vines and organic border patterns, fluid charming serif lettering interwoven with stems. Natural irregular ink coverage, subtle woven-paper texture, free-spirited earthy warmth and asymmetric balance. Sophisticated handmade print illustration. No religious or sacred symbols, no stereotyped costumes.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 32,
+      "slug": "32-victorian-style",
+      "title": "VICTORIAN STYLE",
+      "ko": "빅토리안 스타일",
+      "description": "정교한 장식 테두리와 고전 활자",
+      "file": "32-victorian-style.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one standalone graphic design poster for a visual style reference collection.\nPrimary request: Demonstrate the named style through typography, composition, color and image-making. Match the high craft of an independent design exhibition poster, with distinctive art direction.\nFormat: portrait 2:3, approximately 1024x1536, full bleed artwork edge-to-edge, straight-on, exactly one finished poster. Actual graphic artwork, not a photograph of a framed print or a wall mockup.\nTypography: the specified style title must be correctly spelled and integrated into the art. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. No long paragraphs. Show strong hierarchy at thumbnail size.\nConstraints: no website, app, dashboard, menus, device frames, contact sheet, external brand, watermark, screenshot UI, or social-media overlay. The user screenshots only supply a list of style names; create original artwork.\n\nStyle title (verbatim): \"VICTORIAN STYLE\"\nFooter text (verbatim): \"32 / VISUAL DESIGN\"\nArt direction: A luxurious late-19th-century Victorian typographic broadside with elaborate symmetrical engraved scrollwork, acanthus filigree, tiny botanical vignettes, ornamental flourishes and decorative borders. Deep bottle-green background, antique gold and aged ivory inks, fine engraved linework and subtle letterpress impression. Large decorative slab-serif and Tuscan letterforms spelling the two-line title, highly legible central typographic hierarchy. Densely ornamental and finely balanced. No existing product brand, no wine label imitation.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 33,
+      "slug": "33-graffiti",
+      "title": "GRAFFITI",
+      "ko": "그래피티",
+      "description": "분사한 색과 거친 획, 거리의 에너지",
+      "file": "33-graffiti.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one standalone graphic design poster for a visual style reference collection.\nPrimary request: Demonstrate the named style through typography, composition, color and image-making. Match the high craft of an independent design exhibition poster, with distinctive art direction.\nFormat: portrait 2:3, approximately 1024x1536, full bleed artwork edge-to-edge, straight-on, exactly one finished poster. Actual graphic artwork, not a photograph of a framed print or a wall mockup.\nTypography: the specified style title must be correctly spelled and integrated into the art. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. No long paragraphs. Show strong hierarchy at thumbnail size.\nConstraints: no website, app, dashboard, menus, device frames, contact sheet, external brand, watermark, screenshot UI, or social-media overlay. The user screenshots only supply a list of style names; create original artwork.\n\nStyle title (verbatim): \"GRAFFITI\"\nFooter text (verbatim): \"33 / VISUAL DESIGN\"\nArt direction: An energetic original graffiti art poster with a huge expressive wildstyle-inspired but readable title in layered mint, tangerine and hot pink spray paint. Dynamic interlocking broad letter strokes, dramatic black outlines, overspray halos, ink drips and marker scrawls on a worn light gray paper/concrete texture. A few bold abstract arrows extend from letters, fine aerosol speckles, raw street-art energy and excellent color balance. Only the specified title and footer text; no copied artist tags or logos.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 34,
+      "slug": "34-aurora",
+      "title": "AURORA",
+      "ko": "오로라",
+      "description": "빛의 그라데이션과 부드러운 색의 흐름",
+      "file": "34-aurora.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one standalone graphic design poster for a visual style reference collection.\nPrimary request: Demonstrate the named style through typography, composition, color and image-making. Match the high craft of an independent design exhibition poster, with distinctive art direction.\nFormat: portrait 2:3, approximately 1024x1536, full bleed artwork edge-to-edge, straight-on, exactly one finished poster. Actual graphic artwork, not a photograph of a framed print or a wall mockup.\nTypography: the specified style title must be correctly spelled and integrated into the art. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. No long paragraphs. Show strong hierarchy at thumbnail size.\nConstraints: no website, app, dashboard, menus, device frames, contact sheet, external brand, watermark, screenshot UI, or social-media overlay. The user screenshots only supply a list of style names; create original artwork.\n\nStyle title (verbatim): \"AURORA\"\nFooter text (verbatim): \"34 / VISUAL DESIGN\"\nArt direction: An atmospheric abstract light-field poster, vast silky aurora curtains flowing in arcs from deep midnight blue through electric teal and soft lavender to a luminous pale peach core. Volumetric haze, subtle fine grain, long fluid vertical gradients with a tranquil sense of immense scale. Refined light-weight widely tracked sans-serif title. Mostly dark lower space grounds the glowing ethereal upper composition. Graphic abstraction, no literal stars, no landscape, no glass UI, no chrome.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 35,
+      "slug": "35-handwritten",
+      "title": "HANDWRITTEN",
+      "ko": "핸드라이팅",
+      "description": "손글씨의 흔적과 자유로운 배치",
+      "file": "35-handwritten.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one standalone graphic design poster for a visual style reference collection.\nPrimary request: Demonstrate the named style through typography, composition, color and image-making. Match the high craft of an independent design exhibition poster, with distinctive art direction.\nFormat: portrait 2:3, approximately 1024x1536, full bleed artwork edge-to-edge, straight-on, exactly one finished poster. Actual graphic artwork, not a photograph of a framed print or a wall mockup.\nTypography: the specified style title must be correctly spelled and integrated into the art. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. No long paragraphs. Show strong hierarchy at thumbnail size.\nConstraints: no website, app, dashboard, menus, device frames, contact sheet, external brand, watermark, screenshot UI, or social-media overlay. The user screenshots only supply a list of style names; create original artwork.\n\nStyle title (verbatim): \"HANDWRITTEN\"\nFooter text (verbatim): \"35 / VISUAL DESIGN\"\nArt direction: An art-directed hand-lettered poster on warm cream sketchbook paper. Large expressive ink-brush title with natural pressure variation and energetic imperfect baseline, meticulously legible. Black ink with vermilion pencil underlines and a few loose cobalt crayon loops, margin marks and small simple drawn flowers. Tangible pen pressure, dry-brush ends and handwritten individuality; balance between broad title strokes and airy intimate handwritten marks. No additional prose or random illegible words.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 36,
+      "slug": "36-surreal-art",
+      "title": "SURREAL ART",
+      "ko": "초현실 아트",
+      "description": "불가능한 장면과 낯선 사물의 조합",
+      "file": "36-surreal-art.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one standalone graphic design poster for a visual style reference collection.\nPrimary request: Demonstrate the named style through typography, composition, color and image-making. Match the high craft of an independent design exhibition poster, with distinctive art direction.\nFormat: portrait 2:3, approximately 1024x1536, full bleed artwork edge-to-edge, straight-on, exactly one finished poster. Actual graphic artwork, not a photograph of a framed print or a wall mockup.\nTypography: the specified style title must be correctly spelled and integrated into the art. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. No long paragraphs. Show strong hierarchy at thumbnail size.\nConstraints: no website, app, dashboard, menus, device frames, contact sheet, external brand, watermark, screenshot UI, or social-media overlay. The user screenshots only supply a list of style names; create original artwork.\n\nStyle title (verbatim): \"SURREAL ART\"\nFooter text (verbatim): \"36 / VISUAL DESIGN\"\nArt direction: A poetic original surrealist art poster: a freestanding cream stone doorway in a tranquil pale peach desert opens onto an immense blue ocean, and a single oversized pear hovers silently above it, casting an impossible elongated shadow. Small clouds appear beneath the horizon. Meticulous painterly yet realistic surfaces, quiet dreamlike logic, dramatic scale relationships. Understated elegant serif title integrated into the spacious composition. No copied artist composition, no melting clocks, no magazine cover imitation.",
+      "width": 1024,
+      "height": 1536
+    }
+  ]
+}
