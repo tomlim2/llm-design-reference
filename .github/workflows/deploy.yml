@@ -38,7 +38,7 @@ jobs:
           git archive HEAD \
             index.html gallery.js \
             output/poster-styles output/motion-styles \
-            output/poster-styles.zip output/motion-styles.zip \
+            output/motion-styles.zip \
             | tar -x -C _site
           touch _site/.nojekyll
 

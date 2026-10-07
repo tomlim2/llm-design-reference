@@ -318,5 +318,95 @@
     "status": "complete",
     "width": 1024,
     "height": 1536
+  },
+  {
+    "number": 37,
+    "slug": "37-cybercore",
+    "title": "CYBERCORE",
+    "file": "37-cybercore.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-d733ec0a-1c51-4bb0-a95d-e26f97d36df4.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 38,
+    "slug": "38-acid-brutalism",
+    "title": "ACID BRUTALISM",
+    "file": "38-acid-brutalism.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-5b392381-98cd-47bd-b902-e51c29637cef.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 39,
+    "slug": "39-digital-fantasy",
+    "title": "DIGITAL FANTASY",
+    "file": "39-digital-fantasy.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-425878a5-a8ad-4e8b-a370-28abca8a1e3c.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 40,
+    "slug": "40-exaggerated-type",
+    "title": "EXAGGERATED TYPE",
+    "file": "40-exaggerated-type.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-07a03ec6-05c9-444f-a6de-43da5c0b32c6.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 41,
+    "slug": "41-illustrated-bento",
+    "title": "ILLUSTRATED BENTO",
+    "file": "41-illustrated-bento.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-2dd93240-e390-4161-a3f9-513968b75fd4.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 42,
+    "slug": "42-low-poly",
+    "title": "LOW-POLY",
+    "file": "42-low-poly.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-f27dfd43-8ca8-47a2-a2b1-1437f6d6e448.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 43,
+    "slug": "43-playful-pop",
+    "title": "PLAYFUL POP",
+    "file": "43-playful-pop.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ba5f294a-70d6-4eee-b8ea-55a9e2b49f87.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 44,
+    "slug": "44-risograph",
+    "title": "RISOGRAPH",
+    "file": "44-risograph.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-c9ba6bc0-36a8-40f6-8038-cf0aec385f2d.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 45,
+    "slug": "45-tactile-craft",
+    "title": "TACTILE CRAFT",
+    "file": "45-tactile-craft.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-c5440ccc-f8b4-431a-913e-78a3330eec8a.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
   }
 ]

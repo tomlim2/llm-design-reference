@@ -4,7 +4,7 @@
   // Numbers follow the order in which studies were added to each collection.
   const newestFirst = items => [...items].sort((a, b) => b.number - a.number);
   const collections = {
-    posters: { items:newestFirst(data.posters), root:'output/poster-styles/', zip:'output/poster-styles.zip', label:'포스터 디자인', downloadLabel:`포스터 ${data.posters.length}장 다운로드` },
+    posters: { items:newestFirst(data.posters), root:'output/poster-styles/', label:'포스터 디자인' },
     motion: { items:newestFirst(data.motion), root:'output/motion-styles/', zip:'output/motion-styles.zip', label:'모션 디자인', downloadLabel:`모션 ${data.motion.length}장 다운로드` }
   };
   const dialog = document.getElementById('poster-dialog');
@@ -31,8 +31,14 @@
       tab.tabIndex = selected ? 0 : -1;
       document.getElementById(tab.getAttribute('aria-controls')).hidden = !selected;
     });
-    document.getElementById('archive-download').href = collection().zip;
-    document.getElementById('archive-label').textContent = collection().downloadLabel;
+    const archive = document.getElementById('archive-download');
+    archive.hidden = !collection().zip;
+    if (collection().zip) {
+      archive.href = collection().zip;
+      document.getElementById('archive-label').textContent = collection().downloadLabel;
+    } else {
+      archive.removeAttribute('href');
+    }
     document.getElementById('prompts-download').href = collection().root + 'prompts.json';
     document.getElementById('collection-announcement').textContent = collection().label + ', ' + collection().items.length + '개 레퍼런스';
     if (updateHash) {
@@ -63,9 +69,14 @@
     document.getElementById('image-size').textContent = study.width + ' × ' + study.height;
     document.getElementById('image-format').textContent = isMotion ? 'STILL STYLEFRAME' : '2:3 PORTRAIT';
     const download = document.getElementById('download-image');
-    download.href = path;
-    download.download = study.file;
-    document.getElementById('download-label').textContent = isMotion ? '스타일 프레임 PNG 저장' : '포스터 PNG 저장';
+    download.hidden = !isMotion;
+    if (isMotion) {
+      download.href = path;
+      download.download = study.file;
+    } else {
+      download.removeAttribute('href');
+      download.removeAttribute('download');
+    }
     document.getElementById('prompt-text').textContent = study.prompt;
     promptDetails.open = false;
     copyButton.textContent = '프롬프트 복사';

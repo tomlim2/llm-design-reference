@@ -372,6 +372,105 @@
       "prompt": "Use case: stylized-concept\nAsset type: one standalone graphic design poster for a visual style reference collection.\nPrimary request: Demonstrate the named style through typography, composition, color and image-making. Match the high craft of an independent design exhibition poster, with distinctive art direction.\nFormat: portrait 2:3, approximately 1024x1536, full bleed artwork edge-to-edge, straight-on, exactly one finished poster. Actual graphic artwork, not a photograph of a framed print or a wall mockup.\nTypography: the specified style title must be correctly spelled and integrated into the art. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. No long paragraphs. Show strong hierarchy at thumbnail size.\nConstraints: no website, app, dashboard, menus, device frames, contact sheet, external brand, watermark, screenshot UI, or social-media overlay. The user screenshots only supply a list of style names; create original artwork.\n\nStyle title (verbatim): \"SURREAL ART\"\nFooter text (verbatim): \"36 / VISUAL DESIGN\"\nArt direction: A poetic original surrealist art poster: a freestanding cream stone doorway in a tranquil pale peach desert opens onto an immense blue ocean, and a single oversized pear hovers silently above it, casting an impossible elongated shadow. Small clouds appear beneath the horizon. Meticulous painterly yet realistic surfaces, quiet dreamlike logic, dramatic scale relationships. Understated elegant serif title integrated into the spacious composition. No copied artist composition, no melting clocks, no magazine cover imitation.",
       "width": 1024,
       "height": 1536
+    },
+    {
+      "number": 37,
+      "slug": "37-cybercore",
+      "title": "CYBERCORE",
+      "ko": "사이버코어",
+      "description": "크롬 질감과 와이어프레임, Y2K 디지털 그래픽",
+      "file": "37-cybercore.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original visual-design reference poster for a gallery.\nPrimary request: Demonstrate the named graphic design style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies a list of style names only. Do not reproduce its person, background artwork, social-media interface, watermark, handles or branding.\nTypography: Spell the exact style title correctly, integrate it into the composition, and include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size; no long paragraphs.\n\nStyle title (verbatim): \"CYBERCORE\"\nFooter text (verbatim): \"37 / VISUAL DESIGN\"\nArt direction: A distinctive Y2K cybercore graphic poster, with a sculptural polished-chrome four-point star and thin technical wireframe orbital forms against deep electric cobalt. Compressed metallic techno typography, tiny schematic crosshairs and measured grid fragments. Precise silver reflections and digitally distressed edges. Sharp experimental graphic design, not a neon city or science-fiction movie scene.\nConstraints: original artwork; no website, app screen, contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 38,
+      "slug": "38-acid-brutalism",
+      "title": "ACID BRUTALISM",
+      "ko": "애시드 브루탈리즘",
+      "description": "형광색과 거친 대비, 비틀린 대형 타이포그래피",
+      "file": "38-acid-brutalism.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original visual-design reference poster for a gallery.\nPrimary request: Demonstrate the named graphic design style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies a list of style names only. Do not reproduce its person, background artwork, social-media interface, watermark, handles or branding.\nTypography: Spell the exact style title correctly, integrate it into the composition, and include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size; no long paragraphs.\n\nStyle title (verbatim): \"ACID BRUTALISM\"\nFooter text (verbatim): \"38 / VISUAL DESIGN\"\nArt direction: An acid brutalist print poster with confrontational oversized black condensed typography on acid-yellow paper. Extreme size hierarchy, squeezed and warped letterforms, jagged photocopy textures, and one distorted black-and-white circular graphic. Raw deliberate asymmetry, tiny electric-violet accent, uncompromising margins, experimental yet readable. No architecture or website.\nConstraints: original artwork; no website, app screen, contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 39,
+      "slug": "39-digital-fantasy",
+      "title": "DIGITAL FANTASY",
+      "ko": "디지털 판타지",
+      "description": "발광하는 가상 공간과 비현실적인 3D 풍경",
+      "file": "39-digital-fantasy.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original visual-design reference poster for a gallery.\nPrimary request: Demonstrate the named graphic design style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies a list of style names only. Do not reproduce its person, background artwork, social-media interface, watermark, handles or branding.\nTypography: Spell the exact style title correctly, integrate it into the composition, and include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size; no long paragraphs.\n\nStyle title (verbatim): \"DIGITAL FANTASY\"\nFooter text (verbatim): \"39 / VISUAL DESIGN\"\nArt direction: A beautiful digital-fantasy poster: translucent lavender crystal arches suspend above a luminous pale-peach reflective lake, an iridescent ribbon winds through the impossible architecture, and small distant floating stone islands fade into pearlescent mist. Dreamlike high-end CGI, exquisite polished surfaces and soft luminous depth. Restrained elegant title in ample quiet sky. No game HUD or existing fantasy characters.\nConstraints: original artwork; no website, app screen, contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 40,
+      "slug": "40-exaggerated-type",
+      "title": "EXAGGERATED TYPE",
+      "ko": "과장된 타이포그래피",
+      "description": "글자의 크기와 비례를 극단적으로 확대한 구성",
+      "file": "40-exaggerated-type.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original visual-design reference poster for a gallery.\nPrimary request: Demonstrate the named graphic design style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies a list of style names only. Do not reproduce its person, background artwork, social-media interface, watermark, handles or branding.\nTypography: Spell the exact style title correctly, integrate it into the composition, and include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size; no long paragraphs.\n\nStyle title (verbatim): \"EXAGGERATED TYPE\"\nFooter text (verbatim): \"40 / VISUAL DESIGN\"\nArt direction: An exceptional typography-only design poster on warm ivory. Cobalt-blue letterforms are dramatically widened, stretched, compressed and cropped, creating monumental rhythmic blocks. The two-line exact title fills nearly the entire composition with wildly exaggerated yet legible proportions; tiny black index provides scale contrast. Flat ink, purposeful negative space, masterful alignment. Letters themselves are the artwork. No extra slogan, clay letters, or illustration.\nConstraints: original artwork; no website, app screen, contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 41,
+      "slug": "41-illustrated-bento",
+      "title": "ILLUSTRATED BENTO",
+      "ko": "일러스트 벤토",
+      "description": "칸마다 작은 이야기를 담은 모듈형 일러스트",
+      "file": "41-illustrated-bento.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original visual-design reference poster for a gallery.\nPrimary request: Demonstrate the named graphic design style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies a list of style names only. Do not reproduce its person, background artwork, social-media interface, watermark, handles or branding.\nTypography: Spell the exact style title correctly, integrate it into the composition, and include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size; no long paragraphs.\n\nStyle title (verbatim): \"ILLUSTRATED BENTO\"\nFooter text (verbatim): \"41 / VISUAL DESIGN\"\nArt direction: An illustrated-bento editorial poster with six differently sized rounded rectangular compartments arranged as one elegant modular grid. Each compartment contains an original simple warm hand-drawn vignette: leafy plant, ceramic cup, small orange fruit still life, open book, abstract sun, and a patterned flower. Ink outlines, muted forest green, tomato red, cream and ochre; delightful varied scales, tactile paper grain. Integrate the exact title in the top compartment. Graphic artwork, not an app dashboard; no UI controls or mockup.\nConstraints: original artwork; no website, app screen, contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 42,
+      "slug": "42-low-poly",
+      "title": "LOW-POLY",
+      "ko": "로우 폴리",
+      "description": "낮은 폴리곤의 면과 각으로 만든 입체 풍경",
+      "file": "42-low-poly.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original visual-design reference poster for a gallery.\nPrimary request: Demonstrate the named graphic design style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies a list of style names only. Do not reproduce its person, background artwork, social-media interface, watermark, handles or branding.\nTypography: Spell the exact style title correctly, integrate it into the composition, and include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size; no long paragraphs.\n\nStyle title (verbatim): \"LOW-POLY\"\nFooter text (verbatim): \"42 / VISUAL DESIGN\"\nArt direction: A low-poly graphic poster with a sculptural faceted kingfisher perched above a geometric river, angular polygonal rocks, and sparse crystalline trees. Every surface visibly consists of crisp broad triangular planar facets with no smoothing. Jewel teal, burnt orange, pale warm sky, clean directional shadows, beautifully composed vertical landscape. Exact title in simple geometric typography, balanced with generous sky. Sophisticated geometric 3D illustration, not pixel art.\nConstraints: original artwork; no website, app screen, contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 43,
+      "slug": "43-playful-pop",
+      "title": "PLAYFUL POP",
+      "ko": "플레이풀 팝",
+      "description": "경쾌한 색과 둥근 도형, 장난스러운 리듬",
+      "file": "43-playful-pop.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original visual-design reference poster for a gallery.\nPrimary request: Demonstrate the named graphic design style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies a list of style names only. Do not reproduce its person, background artwork, social-media interface, watermark, handles or branding.\nTypography: Spell the exact style title correctly, integrate it into the composition, and include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size; no long paragraphs.\n\nStyle title (verbatim): \"PLAYFUL POP\"\nFooter text (verbatim): \"43 / VISUAL DESIGN\"\nArt direction: An original contemporary playful-pop graphic poster. Joyful oversized rounded letterforms interact with a few bold abstract flowers, wavy stripes, bouncing circles and a chunky checker fragment in saturated tangerine, cobalt, butter yellow and bubblegum pink. Strong intentional composition, flat confident shapes, surprising scale, playful rhythm, crisp edges with subtle print texture. Exact title is central and very readable. No comic panels, Ben-Day dots, cartoon characters, or extra slogans.\nConstraints: original artwork; no website, app screen, contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 44,
+      "slug": "44-risograph",
+      "title": "RISOGRAPH",
+      "ko": "리소그래프",
+      "description": "별색 잉크의 겹침과 어긋남, 거친 인쇄 질감",
+      "file": "44-risograph.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original visual-design reference poster for a gallery.\nPrimary request: Demonstrate the named graphic design style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies a list of style names only. Do not reproduce its person, background artwork, social-media interface, watermark, handles or branding.\nTypography: Spell the exact style title correctly, integrate it into the composition, and include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size; no long paragraphs.\n\nStyle title (verbatim): \"RISOGRAPH\"\nFooter text (verbatim): \"44 / VISUAL DESIGN\"\nArt direction: A convincing two-spot-color risograph print poster on warm uncoated ivory paper. Coral-red and teal-blue inks depict a large abstract botanical arrangement in a striped vase, with overprint creating a third dark hue. Visible stochastic ink grain, small natural registration offsets, uneven ink density and generous margins. Elegant simple title integrated above the print, small index below. Strict two ink colors plus paper; tactile scanned ink appearance, not glossy digital gradients or a photographed framed print.\nConstraints: original artwork; no website, app screen, contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 45,
+      "slug": "45-tactile-craft",
+      "title": "TACTILE CRAFT",
+      "ko": "촉각적 크래프트",
+      "description": "종이와 천, 실의 물성을 살린 수공예 콜라주",
+      "file": "45-tactile-craft.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original visual-design reference poster for a gallery.\nPrimary request: Demonstrate the named graphic design style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies a list of style names only. Do not reproduce its person, background artwork, social-media interface, watermark, handles or branding.\nTypography: Spell the exact style title correctly, integrate it into the composition, and include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size; no long paragraphs.\n\nStyle title (verbatim): \"TACTILE CRAFT\"\nFooter text (verbatim): \"45 / VISUAL DESIGN\"\nArt direction: A sophisticated tactile-craft poster assembled from torn cotton paper, cut felt, linen scraps and visible hand stitching. An abstract flower-and-vase composition uses layered ochre, cream, muted coral and indigo pieces with dimensional paper edges, fuzzy fibers, uneven scissor contours and fine cast shadows. The exact title is carefully formed from cut paper letters integrated into the handmade composition. Front-on full-bleed finished artwork, no hands, desk, frame or photographed room. A coherent crafted collage, not knitted 3D typography.\nConstraints: original artwork; no website, app screen, contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
     }
   ],
   "additions": [
@@ -407,6 +506,26 @@
           "requested": "Collage art",
           "existing": "Collage (motion)",
           "reason": "collage example already present in the motion collection"
+        }
+      ]
+    },
+    {
+      "generationMode": "built-in image_gen",
+      "format": "portrait poster",
+      "sourceImages": [
+        "IMG_4961.PNG"
+      ],
+      "addedOn": "2026-10-08",
+      "notes": [
+        "Original interpretations of the style names in the supplied screenshot.",
+        "Cybercore and Playful Pop are kept distinct from the existing Cyberpunk and Pop Art examples."
+      ],
+      "skipped": [
+        {
+          "requested": "Kawaii",
+          "existing": "Kawaii",
+          "number": 20,
+          "reason": "Already present in the poster collection."
         }
       ]
     }
