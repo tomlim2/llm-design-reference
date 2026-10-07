@@ -1,4 +1,5 @@
 .DS_Store
+_site/
 output/design-styles/
 output/*preview*.png
 output/*preview*.jpg

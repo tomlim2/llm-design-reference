@@ -1,0 +1,55 @@
+name: Deploy GitHub Pages
+run-name: Deploy ${{ github.ref_name }}
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.event.deleted == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out release tag
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+
+      - name: Check JavaScript syntax
+        run: node --check gallery.js
+
+      - name: Prepare static site
+        run: |
+          mkdir -p _site
+          git archive HEAD \
+            index.html gallery.js \
+            output/poster-styles output/motion-styles \
+            output/poster-styles.zip output/motion-styles.zip \
+            | tar -x -C _site
+          touch _site/.nojekyll
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
