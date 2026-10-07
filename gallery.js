@@ -1,9 +1,11 @@
 (() => {
   'use strict';
   const data = JSON.parse(document.getElementById('poster-data').textContent);
+  // Numbers follow the order in which studies were added to each collection.
+  const newestFirst = items => [...items].sort((a, b) => b.number - a.number);
   const collections = {
-    posters: { items:data.posters, root:'output/poster-styles/', zip:'output/poster-styles.zip', label:'포스터 디자인', downloadLabel:`포스터 ${data.posters.length}장 다운로드` },
-    motion: { items:data.motion, root:'output/motion-styles/', zip:'output/motion-styles.zip', label:'모션 디자인', downloadLabel:`모션 ${data.motion.length}장 다운로드` }
+    posters: { items:newestFirst(data.posters), root:'output/poster-styles/', zip:'output/poster-styles.zip', label:'포스터 디자인', downloadLabel:`포스터 ${data.posters.length}장 다운로드` },
+    motion: { items:newestFirst(data.motion), root:'output/motion-styles/', zip:'output/motion-styles.zip', label:'모션 디자인', downloadLabel:`모션 ${data.motion.length}장 다운로드` }
   };
   const dialog = document.getElementById('poster-dialog');
   const image = document.getElementById('detail-image');
@@ -53,7 +55,7 @@
     document.getElementById('korean-name').textContent = study.ko;
     document.getElementById('detail-description').textContent = study.description + '.';
     document.getElementById('study-kind').textContent = isMotion ? 'MOTION STUDY · STILL FRAME' : 'VISUAL STUDY';
-    document.getElementById('viewer-counter').textContent = (isMotion ? 'M' : '') + String(study.number).padStart(2, '0') + ' / ' + items.length;
+    document.getElementById('viewer-counter').textContent = String(current + 1).padStart(2, '0') + ' / ' + items.length;
     document.getElementById('motion-notes').hidden = !isMotion;
     document.getElementById('motion-direction').textContent = study.motion || '';
     document.getElementById('motion-rhythm').textContent = study.rhythm || '';
@@ -69,7 +71,7 @@
     copyButton.textContent = '프롬프트 복사';
     previous.disabled = current === 0;
     next.disabled = current === items.length - 1;
-    announcement.textContent = study.number + '번째 레퍼런스, ' + study.ko;
+    announcement.textContent = (current + 1) + '번째 레퍼런스, ' + study.ko;
     dialog.querySelector('.detail').scrollTop = 0;
     dialog.querySelector('.viewer').scrollTop = 0;
   }
@@ -94,7 +96,8 @@
       const key = button.dataset.collection || 'posters';
       if (key !== activeCollection) setCollection(key);
       trigger = button;
-      selectPoster(Number(button.dataset.poster));
+      const study = data[key][Number(button.dataset.poster)];
+      selectPoster(collection().items.indexOf(study));
       dialog.showModal();
       document.body.classList.add('modal-open');
       dialog.querySelector('.viewer').scrollTop = 0;
