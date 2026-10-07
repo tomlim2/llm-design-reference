@@ -1,0 +1,220 @@
+{
+  "generationMode": "built-in image_gen",
+  "format": "portrait poster",
+  "sourceImages": [
+    "IMG_4955.PNG"
+  ],
+  "addedOn": "2026-10-08",
+  "notes": [
+    "Original interpretations of the style names in the supplied screenshot.",
+    "Paper Cutout and Brutalism have distinct examples from the existing Cloud Cut and Acid Brutalism."
+  ],
+  "skipped": [
+    {
+      "requested": "Liquid chrome",
+      "existing": "Liquid Chrome",
+      "number": 10,
+      "reason": "Already present in the poster collection."
+    }
+  ],
+  "styles": [
+    {
+      "number": 46,
+      "slug": "46-skeuomorphism",
+      "title": "SKEUOMORPHISM",
+      "ko": "스큐어모피즘",
+      "description": "실제 사물의 재질과 구조를 닮은 디지털 표현",
+      "file": "46-skeuomorphism.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"SKEUOMORPHISM\"\nFooter text (verbatim): \"46 / VISUAL DESIGN\"\nArt direction: A crafted skeuomorphic graphic poster presenting an imaginary analog instrument panel as design art: warm walnut, brushed aluminum, one large calibrated rotary dial, embossed leather accents and physically convincing beveled letterforms. Tactile depth, polished reflections and careful contact shadows make digital graphics feel like real manufactured objects. The exact title is engraved into the upper metal plate, legible and prominent. Not a phone screen, software dashboard or a product advertisement.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 47,
+      "slug": "47-neumorphism",
+      "title": "NEUMORPHISM",
+      "ko": "뉴모피즘",
+      "description": "부드러운 양각과 음각, 은은한 그림자의 입체감",
+      "file": "47-neumorphism.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"NEUMORPHISM\"\nFooter text (verbatim): \"47 / VISUAL DESIGN\"\nArt direction: A restrained neumorphic poster on a continuous pale cool-gray surface. Three large abstract rounded shapes and a circular dial appear softly extruded or pressed into the same material, using paired soft white highlights and delicate blue-gray shadows. Tonal sculptural relief with almost no color contrast, one tiny muted mint accent. Exact title in clean dark-gray sans-serif above the relief, elegant empty space. Poster artwork, not a full app interface; no screen frames.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 48,
+      "slug": "48-art-nouveau",
+      "title": "ART NOUVEAU",
+      "ko": "아르누보",
+      "description": "유려한 곡선과 식물 문양, 장식적인 타이포그래피",
+      "file": "48-art-nouveau.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"ART NOUVEAU\"\nFooter text (verbatim): \"48 / VISUAL DESIGN\"\nArt direction: An original Art Nouveau lithographic poster featuring a graceful stylized iris plant, sinuous whiplash curves, elegant asymmetrical stems, and an integrated ornamental border. Restrained sage, cream, ochre and dusky plum. Flat decorative color, beautiful flowing line work, organic lettering that clearly spells the exact title. A fresh botanical composition; no imitation of an existing famous poster, no copied portrait.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 49,
+      "slug": "49-de-stijl",
+      "title": "DE STIJL",
+      "ko": "데 스틸",
+      "description": "직교하는 선과 원색, 균형 잡힌 기하학적 질서",
+      "file": "49-de-stijl.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"DE STIJL\"\nFooter text (verbatim): \"49 / VISUAL DESIGN\"\nArt direction: An original De Stijl-inspired graphic poster: a disciplined asymmetric arrangement of thick black orthogonal lines and rectangular planes in red, blue, yellow and warm white. Strong unequal proportions, carefully balanced negative space, no diagonals or decorative curves. Integrate exact title in small but clear rigorous black sans-serif as part of the grid. A new composition, not a reproduction of an existing painting.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 50,
+      "slug": "50-memphis",
+      "title": "MEMPHIS",
+      "ko": "멤피스",
+      "description": "선명한 색과 장난스러운 기하학, 반복되는 패턴",
+      "file": "50-memphis.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"MEMPHIS\"\nFooter text (verbatim): \"50 / VISUAL DESIGN\"\nArt direction: A vivid Memphis graphic design poster with bold terrazzo speckles, striped semicircles, zigzag lines and deliberately awkward geometric blocks. Pastel pink, cobalt, turquoise, yellow and black, flat printed shapes with confident asymmetry and contrasting patterns. Exact title in chunky playful geometric typography, highly legible. Energetic 1980s design language, one coherent poster rather than a pattern swatch sheet.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 51,
+      "slug": "51-psychedelic",
+      "title": "PSYCHEDELIC",
+      "ko": "사이키델릭",
+      "description": "물결치는 글자와 반복 무늬, 강렬한 색의 진동",
+      "file": "51-psychedelic.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"PSYCHEDELIC\"\nFooter text (verbatim): \"51 / VISUAL DESIGN\"\nArt direction: A sophisticated psychedelic graphic poster, with hand-drawn wavy lettering intertwined with flowing concentric forms and organic paisley-like contours. Saturated magenta, tangerine, violet and acid green produce vibrating color relationships. The exact title bends and swells but remains readable; a central abstract eye-like oval anchors the swirling composition. Rich flat screenprinted color and precise intricate rhythm, no drug imagery, no copied concert poster.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 52,
+      "slug": "52-vaporwave",
+      "title": "VAPORWAVE",
+      "ko": "베이퍼웨이브",
+      "description": "네온 그라데이션과 고전 조각, 초기 디지털 향수",
+      "file": "52-vaporwave.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"VAPORWAVE\"\nFooter text (verbatim): \"52 / VISUAL DESIGN\"\nArt direction: An original vaporwave poster: a luminous pink setting sun, a checkerboard plane fading toward a turquoise horizon, a white classical plaster bust in side profile and a single reflective chrome sphere. Soft VHS-like haze, lilac and hot-pink gradients, deliberate retro-computer surrealism. Exact title in spacious italic futuristic lettering above the scene. No Japanese filler text, no interface or copied album cover.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 53,
+      "slug": "53-steampunk",
+      "title": "STEAMPUNK",
+      "ko": "스팀펑크",
+      "description": "황동과 기어, 증기 시대 기계장치의 상상력",
+      "file": "53-steampunk.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"STEAMPUNK\"\nFooter text (verbatim): \"53 / VISUAL DESIGN\"\nArt direction: An original steampunk art poster with an intricate brass mechanical hummingbird built from fine gears, copper tubing, small pressure gauges and articulated metal feathers, centered over dark warm parchment. Elegant Victorian engineering ornament and precise engraved line details, warm amber highlights, oxidized brass and deep brown shadows. Exact title in dimensional engraved serif lettering, clear hierarchy. No film characters, weapons or external brand.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 54,
+      "slug": "54-grunge",
+      "title": "GRUNGE",
+      "ko": "그런지",
+      "description": "찢긴 종이와 마모된 인쇄, 거칠게 겹친 질감",
+      "file": "54-grunge.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"GRUNGE\"\nFooter text (verbatim): \"54 / VISUAL DESIGN\"\nArt direction: A raw grunge typographic poster using torn paper layers, scratched black ink, faded photocopy textures and battered off-white stock, with one restrained dark-red block. The exact title is set in massive distressed condensed lettering across an intentionally rough yet balanced composition. Visible tape residue and misregistered collage fragments, energetic music-zine feeling. No extra readable slogan, no band logo or copied artwork.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 55,
+      "slug": "55-paper-cutout",
+      "title": "PAPER CUTOUT",
+      "ko": "페이퍼 컷아웃",
+      "description": "오려낸 종이의 층과 그림자로 만든 깊이",
+      "file": "55-paper-cutout.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"PAPER CUTOUT\"\nFooter text (verbatim): \"55 / VISUAL DESIGN\"\nArt direction: A beautifully crafted paper-cutout poster depicting an abstract terraced landscape with a rising sun, curved hills, a small river and layered botanical silhouettes. Distinct stacked colored-paper sheets with crisp cut edges and delicate real cast shadows. Warm terracotta, cream, muted teal and ochre, harmonious sculptural depth and editorial restraint. Exact title cut from paper in the upper area. Full-bleed front-on art, no scissors, hands, room or picture frame.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 56,
+      "slug": "56-glitch",
+      "title": "GLITCH",
+      "ko": "글리치",
+      "description": "픽셀 어긋남과 RGB 분리, 디지털 신호의 흔적",
+      "file": "56-glitch.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"GLITCH\"\nFooter text (verbatim): \"56 / VISUAL DESIGN\"\nArt direction: A sharp experimental glitch poster on near-black: the exact word GLITCH appears large in white geometric type, fractured through a controlled band of displaced pixel blocks, RGB channel splitting, scanline fragments and digital compression artifacts. Cyan, red and violet disturbances create purposeful rhythm and clear negative space. Title still readable despite disruption. A minimal designed signal-corruption composition, not a broken app screenshot.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 57,
+      "slug": "57-anti-design",
+      "title": "ANTI-DESIGN",
+      "ko": "안티 디자인",
+      "description": "정렬과 비례를 의도적으로 깨뜨리는 실험적 구성",
+      "file": "57-anti-design.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"ANTI-DESIGN\"\nFooter text (verbatim): \"57 / VISUAL DESIGN\"\nArt direction: An original anti-design editorial poster with intentionally clashing typographic scales, irregular alignment, visible raw cut-and-paste edges, overlapping blocks and unexpected whitespace. Black and white with one loud orange patch, one low-resolution abstract geometric image and one small deliberately off-center outline. The exact title is split across a surprising but readable composition. Conscious rule-breaking with artistic control, no template polish, no web UI or extra slogans.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 58,
+      "slug": "58-3d-inflated",
+      "title": "3D INFLATED",
+      "ko": "3D 인플레이티드",
+      "description": "공기를 채운 듯 부푼 형태와 팽팽한 표면",
+      "file": "58-3d-inflated.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"3D INFLATED\"\nFooter text (verbatim): \"58 / VISUAL DESIGN\"\nArt direction: A premium 3D inflated-typography poster with the exact title made from oversized smooth air-filled vinyl letters. Rounded puffed volume, gently visible seams, slight surface tension, luminous apricot and coral against a muted pale-blue backdrop. Letters lean and press into one another with convincing soft physical contact and clean studio shadows. Beautiful balanced poster composition, no latex party scene, no photographed room or frame.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 59,
+      "slug": "59-isometric",
+      "title": "ISOMETRIC",
+      "ko": "아이소메트릭",
+      "description": "평행한 축과 일정한 각도로 표현한 입체 공간",
+      "file": "59-isometric.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"ISOMETRIC\"\nFooter text (verbatim): \"59 / VISUAL DESIGN\"\nArt direction: A refined isometric illustration poster of a compact imaginary neighborhood: three small geometric buildings, a stairway, a courtyard tree, rooftop garden and a curved pedestrian path. Strict consistent parallel isometric axes with no perspective vanishing points. Clean solid volumes, terracotta, sage, cream and ink-blue palette, restrained long shadows, generous pale background. Exact title in crisp geometric lettering. Not an app dashboard, not faceted low-poly art or a game screenshot.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 60,
+      "slug": "60-ukiyo-e",
+      "title": "UKIYO-E",
+      "ko": "우키요에",
+      "description": "목판화의 선과 평면 색으로 담아낸 풍경",
+      "file": "60-ukiyo-e.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"UKIYO-E\"\nFooter text (verbatim): \"60 / VISUAL DESIGN\"\nArt direction: An original ukiyo-e-inspired Japanese woodblock landscape poster: a quiet riverside bridge framed by a wind-swept pine, distant low mountains and small rain-streaked rooftops beneath a muted dawn sky. Expressive dark contour lines, flat layered indigo, dusty red, pale ochre and cream, subtle woodgrain and paper fibers. Asymmetrical composition with carefully shaped negative space. Exact Latin title UKIYO-E integrated in a simple restrained cartouche. No fake Japanese characters; no copied famous wave, mountain print or known artist composition.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 61,
+      "slug": "61-brutalism",
+      "title": "BRUTALISM",
+      "ko": "브루탈리즘",
+      "description": "거친 구조와 강한 타이포그래피, 직접적인 시각 표현",
+      "file": "61-brutalism.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"BRUTALISM\"\nFooter text (verbatim): \"61 / VISUAL DESIGN\"\nArt direction: A stark brutalist graphic poster with a close, strongly cropped monochrome photograph-like concrete monolith, coarse raw surface and hard architectural shadows. Massive unadorned black sans-serif title against off-white negative space, rigid block structure, bare utilitarian rules and uncompromising alignment. Black, gray and paper white only. Deliberately direct and structural, distinct from colorful acid graphics. No website layout or copied architecture photograph.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 62,
+      "slug": "62-bauhaus",
+      "title": "BAUHAUS",
+      "ko": "바우하우스",
+      "description": "기본 도형과 원색, 기능적인 조형의 조합",
+      "file": "62-bauhaus.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"BAUHAUS\"\nFooter text (verbatim): \"62 / VISUAL DESIGN\"\nArt direction: An original Bauhaus graphic poster composed of a large circle, narrow bars, a precise triangle and a carefully balanced diagonal axis. Warm ivory stock with red, yellow, cobalt and black, flat geometric print, functional typographic hierarchy and dynamic modernist balance. Exact title in distinctive simple geometric lettering integrated with the shapes. New arrangement, not a reproduction of an existing school poster or famous painting.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 63,
+      "slug": "63-mid-century-modern",
+      "title": "MID-CENTURY MODERN",
+      "ko": "미드센추리 모던",
+      "description": "유기적인 도형과 절제된 색, 낙관적인 모더니즘",
+      "file": "63-mid-century-modern.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"MID-CENTURY MODERN\"\nFooter text (verbatim): \"63 / VISUAL DESIGN\"\nArt direction: An original mid-century modern graphic poster with an abstract sculptural lounge-chair silhouette, an organic leaf form, a thin atomic starburst and offset geometric color planes. Muted mustard, olive, warm orange, cream and charcoal; elegant 1950s-style editorial abstraction, fine lines, printed paper grain and airy asymmetry. Exact title in refined spacious sans-serif lettering. A finished graphic poster, not an interior photograph, furniture ad, framed wall mockup or copied period design.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
+      "width": 1024,
+      "height": 1536
+    }
+  ]
+}
