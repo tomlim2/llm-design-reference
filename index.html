@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="AI로 생성한 45가지 포스터 스타일과 5가지 모션 디자인 스타일 프레임. 이미지, 연출 방향, 생성 프롬프트를 함께 탐색하세요.">
-  <title>Visual studies — poster &amp; motion</title>
+  <title>디자인 스타일 컬렉션 — 포스터와 모션</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23c8442d'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='40' fill='%23f6f3ed'%3E50%3C/text%3E%3C/svg%3E">
   <style>
     :root { color-scheme: light; --paper:#f5f3ee; --ink:#292824; --muted:#747069; --line:#d9d5cd; --accent:#b93e29; }
@@ -29,8 +29,8 @@
     .archive-link:hover { color:var(--accent); }
     .intro { padding:46px 0 38px; display:flex; align-items:flex-end; justify-content:space-between; gap:36px; }
     .eyebrow { margin:0 0 14px; color:var(--accent); text-transform:uppercase; }
-    h1 { margin:0; font-family:Georgia,"Times New Roman",serif; font-size:clamp(54px,6.2vw,94px); font-weight:400; letter-spacing:-.065em; line-height:.98; }
-    h1 em { font-weight:400; }
+    h1 { margin:0; font-family:inherit; font-size:clamp(44px,5.4vw,82px); font-weight:600; letter-spacing:-.055em; line-height:1.16; }
+    h1 .title-part { display:inline-block; white-space:nowrap; }
     h1 sup { display:inline-block; vertical-align:top; margin:10px 0 0 14px; font:400 13px/1.2 "SFMono-Regular",Consolas,monospace; letter-spacing:0; color:var(--accent); }
     .intro-copy { margin:0 0 4px; max-width:310px; color:#68645e; font-size:14px; line-height:1.9; word-break:keep-all; }
     .collection-line { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:19px 0; border-top:1px solid var(--line); color:var(--muted); }
@@ -106,7 +106,7 @@
     @media(max-width:1100px) { .shell { padding:0 32px; } .gallery { grid-template-columns:repeat(3,minmax(0,1fr)); gap:36px 22px; } .intro-copy { max-width:260px; font-size:13px; } .viewer { grid-template-columns:minmax(0,1fr) 300px; } .detail { padding:20px 22px; } }
     @media(max-width:760px) {
       .shell { padding:0 22px; } .topbar { min-height:72px; } .topnote { display:none; }
-      .intro { padding:34px 0 28px; display:block; } h1 { font-size:64px; } h1 sup { margin-left:10px; }
+      .intro { padding:34px 0 28px; display:block; } h1 { font-size:52px; } h1 sup { margin-left:10px; }
       .intro-copy { margin:20px 0 0; max-width:100%; font-size:13px; } .intro-copy br { display:none; }
       .gallery { grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:18px; row-gap:30px; padding-bottom:48px; }
       .caption { gap:8px; margin-top:12px; } .caption h2 { font-size:12px; } .study-description { margin-left:23px; font-size:11px; }
@@ -120,7 +120,7 @@
     }
     @media(max-width:460px) {
       .shell { padding:0 20px; } .wordmark { font-size:12px; gap:10px; } .archive-link { font-size:11px; gap:10px; }
-      .gallery { grid-template-columns:1fr; row-gap:32px; } h1 { font-size:56px; } .collection-line .instruction { font-size:10px; }
+      .gallery { grid-template-columns:1fr; row-gap:32px; } h1 { font-size:44px; } .collection-line .instruction { font-size:10px; }
       .caption h2 { font-size:15px; } .study-description { font-size:12px; margin-left:25px; } .caption { gap:10px; }
       .footer { flex-direction:column; gap:16px; } .footer a { min-height:30px; }
     }
@@ -140,13 +140,13 @@
 <body>
   <div class="shell">
     <header class="topbar">
-      <a class="wordmark" href="#top" aria-label="Visual archive 처음으로"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>VISUAL ARCHIVE</a>
+      <a class="wordmark" href="#top" aria-label="디자인 스타일 컬렉션 처음으로"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>디자인 스타일 컬렉션</a>
       <span class="topnote mono">GRAPHIC &amp; MOTION DESIGN</span>
       <a class="archive-link" id="archive-download" href="output/motion-styles.zip" download hidden><span id="archive-label">모션 5장 다운로드</span> <span aria-hidden="true">↗</span></a>
     </header>
     <main id="top">
       <section class="intro" aria-labelledby="page-title">
-        <div><p class="eyebrow mono">The visual collection</p><h1 id="page-title">Visual <em>studies.</em><sup>(50)</sup></h1></div>
+        <div><p class="eyebrow mono">Design Style Collection</p><h1 id="page-title"><span class="title-part">디자인 스타일</span> <span class="title-part">컬렉션<sup>(50)</sup></span></h1></div>
         <p class="intro-copy"><span class="ai-disclosure">AI 생성 이미지 컬렉션</span><br>포스터 45종, 모션 디자인 5종.<br> 모든 이미지는 AI로 생성한 디자인 스타일 예시입니다.</p>
       </section>
       <div class="collection-tabs" role="tablist" aria-label="디자인 컬렉션">
