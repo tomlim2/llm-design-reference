@@ -27,6 +27,8 @@
     .topnote { margin-left:auto; color:var(--muted); }
     .archive-link { display:flex; align-items:center; gap:18px; min-height:44px; font-size:12px; }
     .archive-link:hover { color:var(--accent); }
+    .animation-link { color:var(--ink); }
+    .animation-link::before { content:""; width:8px; height:8px; border-radius:50%; background:var(--accent); box-shadow:0 0 0 3px #b93e2922; }
     .intro { padding:46px 0 38px; display:flex; align-items:flex-end; justify-content:space-between; gap:36px; }
     .eyebrow { margin:0 0 14px; color:var(--accent); text-transform:uppercase; }
     h1 { margin:0; font-family:inherit; font-size:clamp(44px,5.4vw,82px); font-weight:600; letter-spacing:-.055em; line-height:1.16; }
@@ -142,6 +144,7 @@
     <header class="topbar">
       <a class="wordmark" href="#top" aria-label="디자인 스타일 컬렉션 처음으로"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>디자인 스타일 컬렉션</a>
       <span class="topnote mono">GRAPHIC &amp; MOTION DESIGN</span>
+      <a class="archive-link animation-link" href="animation.html">3D 애니메이션 20 <span aria-hidden="true">↗</span></a>
       <a class="archive-link" id="archive-download" href="output/motion-styles.zip" download hidden><span id="archive-label">모션 5장 다운로드</span> <span aria-hidden="true">↗</span></a>
     </header>
     <main id="top">
