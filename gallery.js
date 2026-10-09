@@ -57,17 +57,17 @@
     image.alt = study.ko + (isMotion ? ' 스타일 프레임: ' : ' 포스터: ') + study.description;
     image.width = study.width;
     image.height = study.height;
-    document.getElementById('detail-title').textContent = study.title;
-    document.getElementById('korean-name').textContent = study.ko;
+    document.getElementById('detail-title').textContent = study.ko;
+    document.getElementById('english-name').textContent = study.title;
     document.getElementById('detail-description').textContent = study.description + '.';
-    document.getElementById('study-kind').textContent = isMotion ? 'MOTION STUDY · STILL FRAME' : 'VISUAL STUDY';
+    document.getElementById('study-kind').textContent = isMotion ? '모션 디자인 · 정지 프레임' : '포스터 디자인';
     document.getElementById('viewer-counter').textContent = String(current + 1).padStart(2, '0') + ' / ' + items.length;
     document.getElementById('motion-notes').hidden = !isMotion;
     document.getElementById('motion-direction').textContent = study.motion || '';
     document.getElementById('motion-rhythm').textContent = study.rhythm || '';
     document.getElementById('motion-usage').textContent = study.usage || '';
     document.getElementById('image-size').textContent = study.width + ' × ' + study.height;
-    document.getElementById('image-format').textContent = isMotion ? 'STILL STYLEFRAME' : '2:3 PORTRAIT';
+    document.getElementById('image-format').textContent = isMotion ? '정지 스타일 프레임' : '2:3 세로형';
     const download = document.getElementById('download-image');
     download.hidden = !isMotion;
     if (isMotion) {
