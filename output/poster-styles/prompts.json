@@ -669,6 +669,193 @@
       "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for the Design Style Collection gallery.\nPrimary request: Demonstrate the named visual style as one beautifully art-directed finished poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full bleed, straight-on, no surrounding frame. One image only.\nReference role: The user's screenshot supplies style names only. Do not reproduce the social-media interface, pictured interior, watermark, account names or branding.\nTypography: Spell the exact style title correctly and integrate it into the composition. Include only a small tasteful footer with the specified number and 'VISUAL DESIGN'. Strong hierarchy at thumbnail size, no extra slogans or long paragraphs.\n\nStyle title (verbatim): \"MID-CENTURY MODERN\"\nFooter text (verbatim): \"63 / VISUAL DESIGN\"\nArt direction: An original mid-century modern graphic poster with an abstract sculptural lounge-chair silhouette, an organic leaf form, a thin atomic starburst and offset geometric color planes. Muted mustard, olive, warm orange, cream and charcoal; elegant 1950s-style editorial abstraction, fine lines, printed paper grain and airy asymmetry. Exact title in refined spacious sans-serif lettering. A finished graphic poster, not an interior photograph, furniture ad, framed wall mockup or copied period design.\nConstraints: original artwork; no contact sheet, external brand, device mockup or stock watermark.",
       "width": 1024,
       "height": 1536
+    },
+    {
+      "number": 64,
+      "slug": "64-heat-map",
+      "title": "HEAT MAP",
+      "ko": "히트 맵",
+      "description": "온도처럼 번지는 색으로 강조한 형태와 밀도",
+      "file": "64-heat-map.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Design Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the supplied social-media screenshots provide style names only. Invent original art; do not reproduce the person, social interface, sample artworks, handles or branding.\nTypography: integrate the exact style title clearly into the composition and include the specified small footer only. Strong art direction and readable hierarchy at thumbnail size. No extra slogans, paragraphs, watermark, device frame or photographed poster mockup.\n\nStyle title (verbatim): \"HEAT MAP\"\nFooter text (verbatim): \"64 / VISUAL DESIGN\"\nArt direction: A bold thermal-imaging graphic of a single sculptural hand reaching diagonally across a deep cobalt field. Smooth false-color bands move through cyan, green, yellow, orange to hot magenta at the fingertips. Soft infrared grain, spatial negative space, precise compact monospaced title in white. Clearly an artistic thermal visualization, not a scientific measurement or medical scan.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 65,
+      "slug": "65-biomorphism",
+      "title": "BIOMORPHISM",
+      "ko": "바이오모피즘",
+      "description": "생명체를 닮은 곡선과 유기적인 추상 형태",
+      "file": "65-biomorphism.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Design Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the supplied social-media screenshots provide style names only. Invent original art; do not reproduce the person, social interface, sample artworks, handles or branding.\nTypography: integrate the exact style title clearly into the composition and include the specified small footer only. Strong art direction and readable hierarchy at thumbnail size. No extra slogans, paragraphs, watermark, device frame or photographed poster mockup.\n\nStyle title (verbatim): \"BIOMORPHISM\"\nFooter text (verbatim): \"65 / VISUAL DESIGN\"\nArt direction: An organic abstract composition of interlocking matte sculptural forms reminiscent of seeds, shells, cells and river stones. Warm ivory ground, terracotta, olive and charcoal shapes, softly imperfect contours, subtle tactile paper grain, generous asymmetrical negative space. Flowing shapes rather than electric circuitry or glowing organisms; understated elegant title.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 66,
+      "slug": "66-3d-surrealism",
+      "title": "3D SURREALISM",
+      "ko": "3D 초현실주의",
+      "description": "불가능한 공간과 사물을 정교한 3D로 구성",
+      "file": "66-3d-surrealism.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Design Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the supplied social-media screenshots provide style names only. Invent original art; do not reproduce the person, social interface, sample artworks, handles or branding.\nTypography: integrate the exact style title clearly into the composition and include the specified small footer only. Strong art direction and readable hierarchy at thumbnail size. No extra slogans, paragraphs, watermark, device frame or photographed poster mockup.\n\nStyle title (verbatim): \"3D SURREALISM\"\nFooter text (verbatim): \"66 / VISUAL DESIGN\"\nArt direction: A pristine surreal CGI scene: a smooth coral staircase curls through a floating hollow stone ring above a shallow reflective blue pool, with a single huge pearlescent sphere balanced impossibly at the edge. Precise ray-traced shadows, powder-blue sky, polished surfaces, controlled coral and cream palette. Sculptural impossible scale and architecture. Large refined black sans-serif title integrated in the open sky.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 67,
+      "slug": "67-frutiger-aero",
+      "title": "FRUTIGER AERO",
+      "ko": "프루티거 에어로",
+      "description": "유리 같은 광택과 맑은 하늘, 자연을 섞은 디지털 낙관",
+      "file": "67-frutiger-aero.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Design Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the supplied social-media screenshots provide style names only. Invent original art; do not reproduce the person, social interface, sample artworks, handles or branding.\nTypography: integrate the exact style title clearly into the composition and include the specified small footer only. Strong art direction and readable hierarchy at thumbnail size. No extra slogans, paragraphs, watermark, device frame or photographed poster mockup.\n\nStyle title (verbatim): \"FRUTIGER AERO\"\nFooter text (verbatim): \"67 / VISUAL DESIGN\"\nArt direction: An original optimistic early-2000s eco-digital composition: a glossy transparent blue orb enclosing a green leaf and a tiny clean futuristic city, crystal water ripples, radiant blue sky, soft white clouds and a sunlit grassy arc. Highly polished glass reflections and aqueous highlights, fresh cyan and lime palette. Clean spacious white sans-serif title, no operating-system logos, no actual interface or recognizable brand.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 68,
+      "slug": "68-halftone",
+      "title": "HALFTONE",
+      "ko": "하프톤",
+      "description": "점의 크기와 간격으로 표현한 명암과 인쇄 질감",
+      "file": "68-halftone.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Design Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the supplied social-media screenshots provide style names only. Invent original art; do not reproduce the person, social interface, sample artworks, handles or branding.\nTypography: integrate the exact style title clearly into the composition and include the specified small footer only. Strong art direction and readable hierarchy at thumbnail size. No extra slogans, paragraphs, watermark, device frame or photographed poster mockup.\n\nStyle title (verbatim): \"HALFTONE\"\nFooter text (verbatim): \"68 / VISUAL DESIGN\"\nArt direction: An extremely striking black and cream macro halftone illustration of a curving sculptural flower and its shadow, constructed entirely from clearly visible circular ink dots of varying size on paper. One large fluorescent-orange disc behind the flower. Confident asymmetrical magazine-poster composition, coarse dots beautifully controlled. Exact title in solid bold condensed black type. No comic speech bubbles; focus on dot-screen image-making.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 69,
+      "slug": "69-hyper-bloom",
+      "title": "HYPER BLOOM",
+      "ko": "하이퍼 블룸",
+      "description": "거대한 꽃과 부드러운 빛 번짐이 만드는 몽환적인 풍경",
+      "file": "69-hyper-bloom.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Design Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the supplied social-media screenshots provide style names only. Invent original art; do not reproduce the person, social interface, sample artworks, handles or branding.\nTypography: integrate the exact style title clearly into the composition and include the specified small footer only. Strong art direction and readable hierarchy at thumbnail size. No extra slogans, paragraphs, watermark, device frame or photographed poster mockup.\n\nStyle title (verbatim): \"HYPER BLOOM\"\nFooter text (verbatim): \"69 / VISUAL DESIGN\"\nArt direction: A single monumental otherworldly iris flower treated like a cinematic landscape. Iridescent peach and lilac petals sweep across the composition, a small crisp luminous center and progressive soft-focus edges dissolve into pale-blue and rose haze. Extreme macro scale, romantic atmospheric depth, subtle photographic grain, radiant color without busy decoration. Refined dark-plum typography readable in the quiet upper area.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 70,
+      "slug": "70-ascii-art",
+      "title": "ASCII ART",
+      "ko": "아스키 아트",
+      "description": "문자와 기호의 밀도로 이미지를 만드는 표현",
+      "file": "70-ascii-art.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Design Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the supplied social-media screenshots provide style names only. Invent original art; do not reproduce the person, social interface, sample artworks, handles or branding.\nTypography: integrate the exact style title clearly into the composition and include the specified small footer only. Strong art direction and readable hierarchy at thumbnail size. No extra slogans, paragraphs, watermark, device frame or photographed poster mockup.\n\nStyle title (verbatim): \"ASCII ART\"\nFooter text (verbatim): \"70 / VISUAL DESIGN\"\nArt direction: An original high-contrast typographic poster on near-black: an intricate large butterfly silhouette formed entirely from small repeated fixed-width ASCII characters such as @ # + : . / and parentheses. Precise aligned character grid, glowing pale mint glyphs, enough empty black space to make the wings recognizable. Exact title in large crisp monospaced type, and small footer. The character construction must remain legible; no ordinary smooth illustration hidden under text.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 71,
+      "slug": "71-neo-swiss",
+      "title": "NEO SWISS",
+      "ko": "네오 스위스",
+      "description": "정교한 그리드에 과감한 크기와 색을 더한 타이포그래피",
+      "file": "71-neo-swiss.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Design Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the supplied social-media screenshots provide style names only. Invent original art; do not reproduce the person, social interface, sample artworks, handles or branding.\nTypography: integrate the exact style title clearly into the composition and include the specified small footer only. Strong art direction and readable hierarchy at thumbnail size. No extra slogans, paragraphs, watermark, device frame or photographed poster mockup.\n\nStyle title (verbatim): \"NEO SWISS\"\nFooter text (verbatim): \"71 / VISUAL DESIGN\"\nArt direction: Contemporary Swiss-inspired editorial poster with a visible fine modular grid, huge cropped black grotesk title split into two rows, a tall black-and-white cutout of a modern stairwell, and one electric-lime rectangle intersecting the grid. Warm white ground, rigorously aligned small geometric marks, deliberate asymmetry and screen-era scale shifts. Strong ordered composition distinct from a classic red geometric Swiss poster; no invented paragraphs.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 72,
+      "slug": "72-micro-industrial",
+      "title": "MICRO INDUSTRIAL",
+      "ko": "마이크로 인더스트리얼",
+      "description": "작은 기술 표식과 정밀한 선, 산업적인 정보 구성",
+      "file": "72-micro-industrial.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Design Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the supplied social-media screenshots provide style names only. Invent original art; do not reproduce the person, social interface, sample artworks, handles or branding.\nTypography: integrate the exact style title clearly into the composition and include the specified small footer only. Strong art direction and readable hierarchy at thumbnail size. No extra slogans, paragraphs, watermark, device frame or photographed poster mockup.\n\nStyle title (verbatim): \"MICRO INDUSTRIAL\"\nFooter text (verbatim): \"72 / VISUAL DESIGN\"\nArt direction: A precision industrial graphic poster built around a close-up sculptural brushed-aluminum mechanical component with a circular bore, floating on pale silver-gray. Very fine black dimension lines, tiny tick marks, registration crosses, one narrow safety-orange strip, and restrained technical grid fragments create meticulous visual detail. Main exact title clearly readable in compact monospaced lettering. All micro details are abstract marks or simple numbers; no long fake technical labels.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 73,
+      "slug": "73-acid-wave",
+      "title": "ACID WAVE",
+      "ko": "애시드 웨이브",
+      "description": "형광색과 휘어진 패턴, 왜곡된 글자의 강한 리듬",
+      "file": "73-acid-wave.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Design Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the supplied social-media screenshots provide style names only. Invent original art; do not reproduce the person, social interface, sample artworks, handles or branding.\nTypography: integrate the exact style title clearly into the composition and include the specified small footer only. Strong art direction and readable hierarchy at thumbnail size. No extra slogans, paragraphs, watermark, device frame or photographed poster mockup.\n\nStyle title (verbatim): \"ACID WAVE\"\nFooter text (verbatim): \"73 / VISUAL DESIGN\"\nArt direction: An intense acid-wave graphic: twisting liquid zebra stripes and a warped checkerboard curl around a central optical vortex. Acid yellow, saturated violet, hot pink and deep black; warped yet readable exact title following a wavy baseline. Grainy printed texture with sharp edges, rhythmic repeating patterns, expressive rave-poster energy. No 3D chrome objects, no extra slogans.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 74,
+      "slug": "74-retro-futurism",
+      "title": "RETRO FUTURISM",
+      "ko": "레트로 퓨처리즘",
+      "description": "과거가 상상한 미래의 곡선과 우주 시대 이미지",
+      "file": "74-retro-futurism.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Design Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the supplied social-media screenshots provide style names only. Invent original art; do not reproduce the person, social interface, sample artworks, handles or branding.\nTypography: integrate the exact style title clearly into the composition and include the specified small footer only. Strong art direction and readable hierarchy at thumbnail size. No extra slogans, paragraphs, watermark, device frame or photographed poster mockup.\n\nStyle title (verbatim): \"RETRO FUTURISM\"\nFooter text (verbatim): \"74 / VISUAL DESIGN\"\nArt direction: An original mid-century space-age travel-poster illustration of a streamlined ivory monorail passing a domed lunar botanical station under an enormous ringed planet. Muted teal, vermilion, cream and midnight navy, airbrushed shadows, printed grain, optimistic streamlined architecture and broad sweeping curves. Exact title in elegant geometric lettering. No real space-agency or transit branding and no copied historical poster.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 75,
+      "slug": "75-pop-illustration",
+      "title": "POP ILLUSTRATION",
+      "ko": "팝 일러스트레이션",
+      "description": "선명한 색과 단순한 윤곽으로 만든 경쾌한 일러스트",
+      "file": "75-pop-illustration.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Design Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the supplied social-media screenshots provide style names only. Invent original art; do not reproduce the person, social interface, sample artworks, handles or branding.\nTypography: integrate the exact style title clearly into the composition and include the specified small footer only. Strong art direction and readable hierarchy at thumbnail size. No extra slogans, paragraphs, watermark, device frame or photographed poster mockup.\n\nStyle title (verbatim): \"POP ILLUSTRATION\"\nFooter text (verbatim): \"75 / VISUAL DESIGN\"\nArt direction: A lively contemporary flat illustration poster showing a stylized orange cat leaping between oversized blue flowers and coral fruit. Thick clean deep-navy outlines, confident simplified shapes, irregular but balanced composition, vivid lemon yellow background and tiny playful spark accents. Exact title in friendly bold hand-shaped letters. A polished graphic illustration, no photographic halftone or magazine collage.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 76,
+      "slug": "76-computer-vision",
+      "title": "COMPUTER VISION",
+      "ko": "컴퓨터 비전",
+      "description": "인식 상자와 윤곽선, 좌표로 재해석한 이미지",
+      "file": "76-computer-vision.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Design Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the supplied social-media screenshots provide style names only. Invent original art; do not reproduce the person, social interface, sample artworks, handles or branding.\nTypography: integrate the exact style title clearly into the composition and include the specified small footer only. Strong art direction and readable hierarchy at thumbnail size. No extra slogans, paragraphs, watermark, device frame or photographed poster mockup.\n\nStyle title (verbatim): \"COMPUTER VISION\"\nFooter text (verbatim): \"76 / VISUAL DESIGN\"\nArt direction: An original visual-design poster of a single orange bicycle in a clean sunlit plaza, treated with a restrained machine-vision overlay: thin lime bounding rectangles precisely around the two wheels and frame, sparse white feature-point connections and a subtle segmentation contour. Crisp editorial photograph aesthetics and charcoal margins, clean monospaced exact title. No faces or people, no surveillance claim, no long labels or fabricated statistics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 77,
+      "slug": "77-dreamscape",
+      "title": "DREAMSCAPE",
+      "ko": "드림스케이프",
+      "description": "안개와 부드러운 색, 비현실적인 공간이 만드는 꿈의 장면",
+      "file": "77-dreamscape.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Design Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the supplied social-media screenshots provide style names only. Invent original art; do not reproduce the person, social interface, sample artworks, handles or branding.\nTypography: integrate the exact style title clearly into the composition and include the specified small footer only. Strong art direction and readable hierarchy at thumbnail size. No extra slogans, paragraphs, watermark, device frame or photographed poster mockup.\n\nStyle title (verbatim): \"DREAMSCAPE\"\nFooter text (verbatim): \"77 / VISUAL DESIGN\"\nArt direction: A hushed poetic dream landscape with a pale archway standing on an immense misty lavender sea, a delicate stair vanishing into pink clouds and a tiny distant moon reflected in still water. Atmospheric photographic soft focus, pearl, lilac and pale butter colors, expansive quiet negative space, delicate refined serif exact title. Gentle ethereal dream logic rather than glossy hard-surface CGI or luminous cyber fantasy.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 78,
+      "slug": "78-future-medieval",
+      "title": "FUTURE MEDIEVAL",
+      "ko": "퓨처 미디벌",
+      "description": "고딕 문자와 중세 문양을 디지털 질감으로 재구성",
+      "file": "78-future-medieval.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Design Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the supplied social-media screenshots provide style names only. Invent original art; do not reproduce the person, social interface, sample artworks, handles or branding.\nTypography: integrate the exact style title clearly into the composition and include the specified small footer only. Strong art direction and readable hierarchy at thumbnail size. No extra slogans, paragraphs, watermark, device frame or photographed poster mockup.\n\nStyle title (verbatim): \"FUTURE MEDIEVAL\"\nFooter text (verbatim): \"78 / VISUAL DESIGN\"\nArt direction: An original contemporary graphic poster combining an engraved silver heraldic flower, Gothic pointed arches, fine manuscript-inspired vine ornament and a small chrome orb with digitally distorted horizontal scan fragments. Aged ivory paper, black ink and one acid-green accent. Exact title in dramatic but clearly readable custom blackletter. Historical ornament remixed through clean digital asymmetry; no real coat of arms, no religious symbol, no copied manuscript.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 79,
+      "slug": "79-trinket-design",
+      "title": "TRINKET DESIGN",
+      "ko": "트링킷 디자인",
+      "description": "작은 장식물과 스티커를 모아 만든 개인적인 콜라주",
+      "file": "79-trinket-design.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Design Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the supplied social-media screenshots provide style names only. Invent original art; do not reproduce the person, social interface, sample artworks, handles or branding.\nTypography: integrate the exact style title clearly into the composition and include the specified small footer only. Strong art direction and readable hierarchy at thumbnail size. No extra slogans, paragraphs, watermark, device frame or photographed poster mockup.\n\nStyle title (verbatim): \"TRINKET DESIGN\"\nFooter text (verbatim): \"79 / VISUAL DESIGN\"\nArt direction: An art-directed collection of small keepsake objects scattered rhythmically across a pale butter paper ground: a tiny enamel blue star, translucent cherry charm, ceramic shell, silver key, hand-drawn flower sticker, satin ribbon and faceted pink bead. Every object has a distinct believable tactile material and a soft cast shadow. Exact title formed from eclectic carefully composed individual letter charms, readable at thumbnail size. A personal playful assemblage, no real brands or social-media UI.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 80,
+      "slug": "80-vector-surrealism",
+      "title": "VECTOR SURREALISM",
+      "ko": "벡터 초현실주의",
+      "description": "평면적인 색과 명료한 선으로 그린 불가능한 장면",
+      "file": "80-vector-surrealism.png",
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Design Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the supplied social-media screenshots provide style names only. Invent original art; do not reproduce the person, social interface, sample artworks, handles or branding.\nTypography: integrate the exact style title clearly into the composition and include the specified small footer only. Strong art direction and readable hierarchy at thumbnail size. No extra slogans, paragraphs, watermark, device frame or photographed poster mockup.\n\nStyle title (verbatim): \"VECTOR SURREALISM\"\nFooter text (verbatim): \"80 / VISUAL DESIGN\"\nArt direction: An original impossible flat-vector landscape: a giant pear acts as a house with a tiny staircase entering its side, a blue river folds vertically into a door, and a red sun casts a geometric checkerboard shadow. Crisp cutout-like vector silhouettes, limited emerald, cobalt, coral and warm cream colors, no gradients, no photographic or 3D texture. Precise playful spatial paradoxes and clean bold exact title integrated in an open cream band.",
+      "width": 1024,
+      "height": 1536
     }
   ],
   "additions": [
@@ -744,6 +931,49 @@
           "existing": "Liquid Chrome",
           "number": 10,
           "reason": "Already present in the poster collection."
+        }
+      ]
+    },
+    {
+      "generationMode": "built-in image_gen",
+      "sourceImages": [
+        "IMG_4966.PNG"
+      ],
+      "addedOn": "2026-10-09",
+      "notes": [
+        "Original visual interpretations of the style names supplied in IMG_4966.PNG, not copies of the screenshot.",
+        "Existing visual families are reused to avoid duplicate entries; related treatments are not asserted to be exact historical synonyms.",
+        "Biomorphism, 3D Surrealism, Neo Swiss and Vector Surrealism have distinct visual examples from related existing styles."
+      ],
+      "format": "portrait poster",
+      "references": [
+        {
+          "title": "Future medieval design",
+          "url": "https://www.kittl.com/blogs/future-medieval-design-stl/"
+        },
+        {
+          "title": "Hyper-Bloom design examples",
+          "url": "https://www.linkedin.com/posts/99designs_graphicdesigntrends-designtrends-99designed-activity-7432193870072938496-e2eK"
+        }
+      ],
+      "skipped": [
+        {
+          "requested": "Vaporwave",
+          "existing": "VAPORWAVE",
+          "collection": "posters",
+          "number": 52
+        },
+        {
+          "requested": "Maximalism",
+          "existing": "MAXIMALISM",
+          "collection": "posters",
+          "number": 22
+        },
+        {
+          "requested": "Y2K",
+          "existing": "2000 WEB",
+          "collection": "posters",
+          "number": 15
         }
       ]
     }

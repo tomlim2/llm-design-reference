@@ -588,5 +588,175 @@
     "status": "complete",
     "width": 1024,
     "height": 1536
+  },
+  {
+    "number": 64,
+    "slug": "64-heat-map",
+    "title": "HEAT MAP",
+    "file": "64-heat-map.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-a5d29feb-0087-41c1-b100-4f2e40586476.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 65,
+    "slug": "65-biomorphism",
+    "title": "BIOMORPHISM",
+    "file": "65-biomorphism.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-f0574487-06ce-4753-b07f-fc329cde68a8.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 66,
+    "slug": "66-3d-surrealism",
+    "title": "3D SURREALISM",
+    "file": "66-3d-surrealism.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-8c3d18f4-383e-47af-b0c5-b41667ea94fb.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 67,
+    "slug": "67-frutiger-aero",
+    "title": "FRUTIGER AERO",
+    "file": "67-frutiger-aero.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-92fa76ca-74b1-449e-b155-2a0773c5013b.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 68,
+    "slug": "68-halftone",
+    "title": "HALFTONE",
+    "file": "68-halftone.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-be78786a-77c5-42bd-9114-ee5be54205bb.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 69,
+    "slug": "69-hyper-bloom",
+    "title": "HYPER BLOOM",
+    "file": "69-hyper-bloom.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-d2794266-3f43-4998-a06c-aae5b7d54959.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 70,
+    "slug": "70-ascii-art",
+    "title": "ASCII ART",
+    "file": "70-ascii-art.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-34e64492-519c-4a51-a5f4-c0e658ebf8f1.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 71,
+    "slug": "71-neo-swiss",
+    "title": "NEO SWISS",
+    "file": "71-neo-swiss.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-64004b7f-e7e0-4a28-a465-98e65f8ea75f.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 72,
+    "slug": "72-micro-industrial",
+    "title": "MICRO INDUSTRIAL",
+    "file": "72-micro-industrial.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-6c32b876-d9c0-44bc-9b45-f9253a72331b.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 73,
+    "slug": "73-acid-wave",
+    "title": "ACID WAVE",
+    "file": "73-acid-wave.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-6986e700-1fc8-46c7-9797-236e3996f4d0.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 74,
+    "slug": "74-retro-futurism",
+    "title": "RETRO FUTURISM",
+    "file": "74-retro-futurism.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-e2cf492e-e652-4284-bded-baca0e75fe65.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 75,
+    "slug": "75-pop-illustration",
+    "title": "POP ILLUSTRATION",
+    "file": "75-pop-illustration.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-8db01d14-e0fd-4dbe-a08d-69676f9033a3.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 76,
+    "slug": "76-computer-vision",
+    "title": "COMPUTER VISION",
+    "file": "76-computer-vision.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ab0a9816-7395-4290-ba7b-0cecdb59091f.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 77,
+    "slug": "77-dreamscape",
+    "title": "DREAMSCAPE",
+    "file": "77-dreamscape.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-53522deb-5a83-4a73-8575-dfd52e60b7fd.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 78,
+    "slug": "78-future-medieval",
+    "title": "FUTURE MEDIEVAL",
+    "file": "78-future-medieval.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-c5215e99-583c-44d6-8880-cfdb9d69adc7.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 79,
+    "slug": "79-trinket-design",
+    "title": "TRINKET DESIGN",
+    "file": "79-trinket-design.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-4d414bb1-f9a4-4a51-8761-9036c3289c48.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "number": 80,
+    "slug": "80-vector-surrealism",
+    "title": "VECTOR SURREALISM",
+    "file": "80-vector-surrealism.png",
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-203c9c66-25ac-42db-bb38-c69816459b85.png",
+    "status": "complete",
+    "width": 1024,
+    "height": 1536
   }
 ]
