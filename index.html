@@ -45,9 +45,9 @@
     .open-hint { position:absolute; right:12px; bottom:12px; display:flex; align-items:center; gap:18px; padding:11px 13px; background:var(--paper); box-shadow:0 2px 12px #00000012; font-size:11px; opacity:0; transform:translateY(5px); transition:opacity .2s,transform .2s; }
     .poster-trigger:hover .open-hint,.poster-trigger:focus-visible .open-hint { opacity:1; transform:translateY(0); }
     .poster-trigger:hover img { filter:brightness(.97); }
-    .caption { display:flex; align-items:baseline; gap:12px; margin-top:16px; }
-    .number { color:var(--accent); font-size:10px; flex:none; }
-    .caption h2 { margin:0; font-size:14px; font-weight:550; letter-spacing:-.01em; line-height:1.5; word-break:keep-all; overflow-wrap:anywhere; }
+    .caption { --caption-font-size:14px; display:flex; align-items:flex-start; gap:12px; margin-top:16px; }
+    .number { color:var(--accent); font-size:10px; line-height:calc(var(--caption-font-size) * 1.5); flex:none; }
+    .caption h2 { margin:0; font-size:var(--caption-font-size); font-weight:550; letter-spacing:-.01em; line-height:1.5; word-break:keep-all; overflow-wrap:anywhere; }
     .study-description { margin:6px 0 0 27px; font-size:12px; line-height:1.65; color:var(--muted); word-break:keep-all; }
     .footer { display:flex; align-items:flex-start; justify-content:space-between; gap:28px; padding:26px 0 34px; border-top:1px solid var(--line); }
     .footer p { margin:0; color:var(--muted); font-size:11px; line-height:1.8; }
@@ -109,7 +109,7 @@
       .intro { padding:34px 0 28px; display:block; } h1 { font-size:52px; } h1 sup { margin-left:10px; }
       .intro-copy { margin:20px 0 0; max-width:100%; font-size:13px; } .intro-copy br { display:none; }
       .gallery { grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:18px; row-gap:30px; padding-bottom:48px; }
-      .caption { gap:8px; margin-top:12px; } .caption h2 { font-size:12px; } .study-description { margin-left:23px; font-size:11px; }
+      .caption { --caption-font-size:12px; gap:8px; margin-top:12px; } .study-description { margin-left:23px; font-size:11px; }
       dialog { width:calc(100vw - 24px); height:calc(100dvh - 24px); }
       .viewer { display:flex; flex-direction:column; overflow:auto; overscroll-behavior:contain; }
       .artwork-stage { flex:none; height:63dvh; min-height:300px; padding:24px; }
@@ -121,14 +121,14 @@
     @media(max-width:460px) {
       .shell { padding:0 20px; } .wordmark { font-size:12px; gap:10px; } .archive-link { font-size:11px; gap:10px; }
       .gallery { grid-template-columns:1fr; row-gap:32px; } h1 { font-size:44px; } .collection-line .instruction { font-size:10px; }
-      .caption h2 { font-size:15px; } .study-description { font-size:12px; margin-left:25px; } .caption { gap:10px; }
+      .caption { --caption-font-size:15px; } .study-description { font-size:12px; margin-left:25px; } .caption { gap:10px; }
       .footer { flex-direction:column; gap:16px; } .footer a { min-height:30px; }
     }
     @media(max-width:760px) {
       .gallery.motion-gallery { grid-template-columns:1fr; gap:30px; }
       .collection-line { flex-wrap:wrap; gap:8px 16px; }
       .collection-line .instruction { word-break:keep-all; line-height:1.6; }
-      .motion-gallery .caption h2 { font-size:15px; }
+      .motion-gallery .caption { --caption-font-size:15px; }
       .motion-gallery .study-description { font-size:12px; margin-left:33px; }
       .motion-view .artwork-stage { height:38dvh; min-height:210px; padding:18px; }
       .motion-notes p { font-size:13px; }
