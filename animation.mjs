@@ -28,7 +28,7 @@ const cards = data.map((style, index) => {
   const button = article.querySelector('button');
   button.setAttribute('aria-label', style.ko + ' 애니메이션 크게 보기');
   article.querySelector('.number').textContent = pad(style.number);
-  article.querySelector('h2').textContent = style.title;
+  article.querySelector('h2').textContent = style.ko;
   article.querySelector('.study-description').textContent = style.description;
   gallery.appendChild(article);
   const canvas = article.querySelector('canvas');
@@ -54,8 +54,8 @@ let trigger = null;
 function showStyle(index) {
   current = Math.max(0, Math.min(data.length - 1, index));
   const style = data[current];
-  $('detail-title').textContent = style.title;
-  $('korean-name').textContent = style.ko;
+  $('detail-title').textContent = style.ko;
+  $('english-name').textContent = style.title;
   $('detail-description').textContent = style.description + '.';
   $('viewer-counter').textContent = pad(current + 1) + ' / ' + data.length;
   $('technique').replaceChildren(...style.technique.map(name => { const li = document.createElement('li'); li.textContent = name; return li; }));

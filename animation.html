@@ -79,7 +79,7 @@
     .close { border:0; margin-right:-10px; font-size:28px; }
     .detail .eyebrow { margin-bottom:12px; font-size:10px; }
     .detail h2 { margin:0; font-family:Georgia,"Times New Roman",serif; font-weight:400; font-size:40px; letter-spacing:-.045em; line-height:1.1; overflow-wrap:anywhere; }
-    .korean-name { color:var(--muted); font-size:12px; margin:12px 0 24px; }
+    .english-name { color:var(--muted); font-size:12px; margin:12px 0 24px; }
     .detail-description { font-size:15px; line-height:1.9; margin:0 0 20px; word-break:keep-all; }
     .technique { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 22px; padding:0; list-style:none; }
     .technique li { padding:6px 9px; border:1px solid var(--line); color:var(--muted); font-size:10px; letter-spacing:.03em; }
@@ -111,7 +111,7 @@
       .artwork-stage { flex:none; height:56dvh; min-height:280px; }
       .detail { flex:none; overflow:visible; padding:24px; }
       .viewer-top { margin-bottom:20px; } .close { position:absolute; top:8px; right:10px; background:var(--paper); margin:0; box-shadow:0 2px 10px #00000012; z-index:1; }
-      .detail h2 { font-size:36px; } .korean-name { margin-bottom:18px; } .detail-description { margin-bottom:18px; }
+      .detail h2 { font-size:36px; } .english-name { margin-bottom:18px; } .detail-description { margin-bottom:18px; }
       .navigation { padding-top:0; } .navigation span { font-size:11px; } .open-hint { display:none; }
     }
     @media(max-width:460px) {
@@ -127,21 +127,21 @@
   <div class="shell">
     <header class="topbar">
       <a class="wordmark" href="index.html" aria-label="디자인 스타일 컬렉션으로 돌아가기"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>디자인 스타일 컬렉션</a>
-      <span class="topnote mono">3D ANIMATION · LIVE RENDER</span>
+      <span class="topnote mono">3D 애니메이션 · 실시간 렌더링</span>
       <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="true" hidden><i aria-hidden="true"></i><span id="motion-toggle-label">모션 일시정지</span></button>
     </header>
     <main id="top">
       <section class="intro" aria-labelledby="page-title">
-        <div><p class="eyebrow mono">Design Style Collection</p><h1 id="page-title"><span class="title-part">3D 애니메이션</span> <span class="title-part">스타일<sup>(20)</sup></span></h1></div>
+        <div><p class="eyebrow mono">디자인 스타일 컬렉션</p><h1 id="page-title"><span class="title-part">3D 애니메이션</span> <span class="title-part">스타일<sup>(20)</sup></span></h1></div>
         <p class="intro-copy"><span class="ai-disclosure">실시간 WebGL 렌더링</span><br>이미지가 아니라 브라우저에서 직접 움직이는 20가지 스타일.<br> 카드를 열면 크게 보고 Claude에게 줄 프롬프트를 복사할 수 있습니다.</p>
       </section>
-      <div class="collection-line"><span class="mono"><strong>INDEX</strong> &nbsp; 01—20</span><span class="instruction" id="instruction">카드 위에서 커서를 움직이면 시점이 따라오고, 클릭하면 크게 봅니다</span></div>
+      <div class="collection-line"><span class="mono"><strong>목록</strong> &nbsp; 01—20</span><span class="instruction" id="instruction">카드 위에서 커서를 움직이면 시점이 따라오고, 클릭하면 크게 봅니다</span></div>
       <p class="notice" id="notice" hidden></p>
       <section class="gallery" id="animation-gallery" aria-label="20가지 3D 애니메이션 스타일"></section>
       <noscript><p>실시간 3D 렌더링과 프롬프트 보기에는 JavaScript가 필요합니다.</p></noscript>
     </main>
     <footer class="footer">
-      <p><strong>20 animation styles. Rendered live in your browser.</strong><br>Three.js r160 · WebGL 2 · 모든 장면은 코드로 생성한 디자인 스타일 스터디입니다 · 2026</p>
+      <p><strong>3D 애니메이션 스타일 20종</strong><br>모든 장면은 Three.js 코드로 만든 실시간 디자인 스터디입니다 · 2026</p>
       <a id="prompts-download" href="#" download="animation-styles-prompts.json">컬렉션 생성 프롬프트 <span aria-hidden="true">↗</span></a>
       <a href="#top">위로 돌아가기 <span aria-hidden="true">↑</span></a>
     </footer>
@@ -153,12 +153,12 @@
       </div>
       <section class="detail">
         <div class="viewer-top"><span class="viewer-counter mono" id="viewer-counter"></span><button class="icon-button close" id="close-dialog" aria-label="크게 보기 닫기" autofocus>×</button></div>
-        <p class="eyebrow mono" id="study-kind">3D ANIMATION · LIVE RENDER</p>
+        <p class="eyebrow mono" id="study-kind">3D 애니메이션 · 실시간 렌더링</p>
         <h2 id="detail-title"></h2>
-        <p class="korean-name" id="korean-name"></p>
+        <p class="english-name" id="english-name" lang="en"></p>
         <p class="detail-description" id="detail-description"></p>
         <ul class="technique" id="technique" aria-label="사용한 기법"></ul>
-        <div class="file-spec mono"><span class="ai-disclosure">REALTIME</span><span>THREE.JS r160</span><span>WEBGL 2</span><span id="render-size">—</span></div>
+        <div class="file-spec mono"><span class="ai-disclosure">실시간 렌더링</span><span>THREE.JS r160</span><span>WEBGL 2</span><span id="render-size">—</span></div>
         <details id="prompt-details"><summary>Claude에게 줄 프롬프트</summary><pre class="prompt" id="prompt-text"></pre><button class="copy-button" id="copy-prompt">프롬프트 복사</button></details>
         <div class="navigation"><span class="mono">← → 이동 · ESC 닫기</span><div class="nav-buttons"><button id="prev-style" class="icon-button" aria-label="이전 스타일">←</button><button id="next-style" class="icon-button" aria-label="다음 스타일">→</button></div></div>
         <span id="viewer-announcement" class="sr-only" aria-live="polite"></span>
