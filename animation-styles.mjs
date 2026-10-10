@@ -14,6 +14,7 @@ import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { LineSegments2 } from 'three/addons/lines/LineSegments2.js';
 import { LineSegmentsGeometry } from 'three/addons/lines/LineSegmentsGeometry.js';
 import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
+import { mergeVertices } from 'three/addons/utils/BufferGeometryUtils.js';
 
 const STYLES = [];
 export function createStyles() { return STYLES; }
@@ -90,8 +91,16 @@ function postProcess(renderer, scene, camera, target, quad) {
 }
 
 // Inverted-hull outline: the mesh drawn again, back faces only, pushed out along the normals.
+// The hull gets its own geometry with vertices merged and normals averaged, so it stays
+// watertight on extruded shapes whose per-face normals would otherwise tear it open at hard edges.
 function addOutline(mesh, width, color = '#141414') {
-  const hull = new THREE.Mesh(mesh.geometry, new THREE.ShaderMaterial({
+  const source = mesh.geometry.clone();
+  source.deleteAttribute('normal');
+  source.deleteAttribute('uv');
+  const hullGeometry = mergeVertices(source, 1e-4);
+  hullGeometry.computeVertexNormals();
+  source.dispose();
+  const hull = new THREE.Mesh(hullGeometry, new THREE.ShaderMaterial({
     side: THREE.BackSide,
     uniforms: { uWidth: { value: width }, uColor: { value: new THREE.Color(color) } },
     vertexShader: 'uniform float uWidth;\nvoid main() { gl_Position = projectionMatrix * modelViewMatrix * vec4(position + normal * uWidth, 1.0); }',
