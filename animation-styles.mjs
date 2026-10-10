@@ -102,6 +102,20 @@ function addOutline(mesh, width, color = '#141414') {
 }
 
 const circleSprite = () => canvasTexture(64, 64, (g, w, h) => { g.fillStyle = '#fff'; g.beginPath(); g.arc(w / 2, h / 2, w / 2 - 1, 0, TAU); g.fill(); });
+// Points along a rounded rectangle outline, counter-clockwise from the bottom edge.
+function roundedRectPoints(w, h, r, steps = 160) {
+  return Array.from({ length: steps }, (_, i) => {
+    const u = i / steps * 4, side = Math.floor(u), straightW = w - 2 * r, straightH = h - 2 * r;
+    let f = u - side;
+    if (f < 0.75) {
+      const k = f / 0.75;
+      return [[-w / 2 + r + k * straightW, -h / 2, 0], [w / 2, -h / 2 + r + k * straightH, 0], [w / 2 - r - k * straightW, h / 2, 0], [-w / 2, h / 2 - r - k * straightH, 0]][side];
+    }
+    f = (f - 0.75) / 0.25;
+    const arc = (cx, cy, a0) => [cx + Math.cos(a0 + f * Math.PI / 2) * r, cy + Math.sin(a0 + f * Math.PI / 2) * r, 0];
+    return [arc(w / 2 - r, -h / 2 + r, -Math.PI / 2), arc(w / 2 - r, h / 2 - r, 0), arc(-w / 2 + r, h / 2 - r, Math.PI / 2), arc(-w / 2 + r, -h / 2 + r, Math.PI)][side];
+  });
+}
 
 // Shared across studies: one PMREM room environment per renderer, one typeface download.
 const environments = new WeakMap();
@@ -158,7 +172,7 @@ STYLES.push({
         uniform float uTime, uPixel;
         varying vec3 vColor; varying float vFade;
         void main() {
-          float cycle = uTime / 6.5 + aSeed * 0.22;
+          float cycle = uTime / 4.8 + aSeed * 0.22;
           float stage = mod(floor(cycle), 3.0);
           float f = smoothstep(0.58, 1.0, fract(cycle));
           f = f * f * (3.0 - 2.0 * f);
@@ -170,12 +184,12 @@ STYLES.push({
           float c = cos(spin), s = sin(spin);
           p.xz = mat2(c, -s, s, c) * p.xz;
           vec4 mv = modelViewMatrix * vec4(p, 1.0);
-          gl_PointSize = (1.3 + aSeed * 2.3) * uPixel * (9.0 / -mv.z);
+          gl_PointSize = (1.5 + aSeed * 2.6) * uPixel * (9.0 / -mv.z);
           gl_Position = projectionMatrix * mv;
           float h = length(p.xz) / 3.0;
           vColor = mix(vec3(0.18, 0.72, 1.0), vec3(1.0, 0.28, 0.66), smoothstep(0.15, 0.85, h + aSeed * 0.12));
           vColor = mix(vColor, vec3(1.0, 0.86, 0.45), smoothstep(0.78, 1.05, h) * 0.85);
-          vFade = 0.72 + 0.28 * sin(uTime * 2.2 + aSeed * 31.0);
+          vFade = (0.72 + 0.28 * sin(uTime * 2.2 + aSeed * 31.0)) * (0.55 + 0.45 * smoothstep(-11.0, -4.5, mv.z));
         }`,
       fragmentShader: `
         varying vec3 vColor; varying float vFade;
@@ -255,13 +269,14 @@ STYLES.push({
           vec3 n = normalAt(p);
           vec3 r = reflect(rd, n);
           float fresnel = pow(1.0 - max(dot(n, -rd), 0.0), 5.0);
-          vec3 metal = studio(r) * mix(vec3(0.82, 0.83, 0.86), vec3(1.0), fresnel);
+          vec3 tint = 0.5 + 0.5 * cos(6.2832 * (fresnel * 1.6 + n.y * 0.25 + vec3(0.0, 0.33, 0.67)));
+          vec3 metal = studio(r) * mix(vec3(0.82, 0.83, 0.86), vec3(1.0), fresnel) * mix(vec3(1.0), tint, 0.22);
           metal += pow(max(dot(r, normalize(vec3(0.55, 0.8, 0.5))), 0.0), 70.0) * 0.9;
           float ao = clamp(map(p + n * 0.4) / 0.4, 0.0, 1.0);
           col = metal * (0.62 + 0.38 * ao);
         }
         gl_FragColor = vec4(col, 1.0);
-      }`, { uAspect: { value: 1 }, uSteps: { value: quality === 'full' ? 84 : 56 }, uBalls: { value: balls } });
+      }`, { uAspect: { value: 1 }, uSteps: { value: quality === 'full' ? 84 : 64 }, uBalls: { value: balls } });
     const held = new THREE.Vector3();
     return {
       scene: quad.scene, camera: quad.camera,
@@ -314,26 +329,43 @@ STYLES.push({
       for (let i = 0; i < 2600; i++) { const v = Math.round(rng() * 255); g.fillStyle = `rgba(${v},${v},${v},0.35)`; g.fillRect(rng() * w, rng() * h, 2, 2); }
     }, { data: true });
     const face = canvasTexture(512, 768, (g, w, h) => {
-      g.fillStyle = '#e9ecf2'; g.fillRect(0, 0, w, h);
-      g.strokeStyle = '#2a2d3a'; g.lineWidth = 6; g.strokeRect(26, 26, w - 52, h - 52);
+      g.fillStyle = '#2b2d3c'; g.fillRect(0, 0, w, h);
+      g.strokeStyle = '#d7dbe8'; g.lineWidth = 6; g.strokeRect(26, 26, w - 52, h - 52);
       g.lineWidth = 3; g.beginPath(); g.arc(w / 2, h / 2 - 40, 150, 0, TAU); g.stroke();
       g.beginPath(); g.moveTo(w / 2, h / 2 - 190); g.lineTo(w / 2 + 150, h / 2 - 40); g.lineTo(w / 2, h / 2 + 110); g.lineTo(w / 2 - 150, h / 2 - 40); g.closePath(); g.stroke();
-      g.fillStyle = '#2a2d3a'; g.beginPath(); g.arc(w / 2, h / 2 - 40, 34, 0, TAU); g.fill();
+      g.fillStyle = '#d7dbe8'; g.beginPath(); g.arc(w / 2, h / 2 - 40, 34, 0, TAU); g.fill();
       g.font = '700 30px "Helvetica Neue",Arial,sans-serif'; g.textAlign = 'center'; g.fillText('HOLOGRAPHIC', w / 2, h - 96);
       g.font = '400 20px "SFMono-Regular",Menlo,monospace'; g.fillText('DESIGN STYLE  Nº 03', w / 2, h - 62);
     });
     const material = new THREE.MeshPhysicalMaterial({
-      map: face, color: 0xffffff, metalness: 0.4, roughness: 0.16, clearcoat: 1, clearcoatRoughness: 0.08, envMapIntensity: 1.25,
-      iridescence: 1, iridescenceIOR: 1.32, iridescenceThicknessRange: [110, 640], iridescenceThicknessMap: thickness
+      map: face, color: 0xffffff, metalness: 0.85, roughness: 0.12, clearcoat: 1, clearcoatRoughness: 0.08, envMapIntensity: 1.6,
+      iridescence: 1, iridescenceIOR: 1.3, iridescenceThicknessRange: [100, 800], iridescenceThicknessMap: thickness
     });
     const card = new THREE.Mesh(new RoundedBoxGeometry(3.2, 4.6, 0.09, 4, 0.16), material);
     scene.add(card);
+    const sheen = new THREE.Mesh(new THREE.PlaneGeometry(3.0, 4.4), new THREE.ShaderMaterial({
+      transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+      uniforms: { uTime: { value: 0 } },
+      vertexShader: 'varying vec2 vUv; varying vec3 vView; varying vec3 vNormal;\nvoid main() { vUv = uv; vec4 mv = modelViewMatrix * vec4(position, 1.0); vView = -mv.xyz; vNormal = normalize(normalMatrix * normal); gl_Position = projectionMatrix * mv; }',
+      fragmentShader: `
+        uniform float uTime; varying vec2 vUv; varying vec3 vView; varying vec3 vNormal;
+        void main() {
+          float facing = clamp(dot(normalize(vNormal), normalize(vView)), 0.0, 1.0);
+          float hue = facing * 2.4 + (vUv.x - vUv.y) * 1.4 + uTime * 0.07;
+          vec3 rainbow = 0.5 + 0.5 * cos(6.2832 * (hue + vec3(0.0, 0.33, 0.67)));
+          float bands = 0.65 + 0.35 * sin((vUv.x + vUv.y) * 38.0 + facing * 14.0);
+          float strength = (0.16 + 0.34 * pow(1.0 - facing, 1.4)) * bands;
+          gl_FragColor = vec4(rainbow * strength, 1.0);
+        }`
+    }));
+    sheen.position.z = 0.056; card.add(sheen);
     const key = new THREE.DirectionalLight(0xffffff, 1.6); key.position.set(4, 5, 6); scene.add(key);
+    const sweep = new THREE.PointLight(0xffffff, 70, 0, 2); scene.add(sweep);
     const sparkCount = quality === 'full' ? 140 : 70, rng = mulberry32(7);
     const sparkPositions = new Float32Array(sparkCount * 3);
     for (let i = 0; i < sparkCount; i++) sparkPositions.set([(rng() - 0.5) * 9, (rng() - 0.5) * 7, (rng() - 0.5) * 4 - 0.5], i * 3);
     const sparks = new THREE.Points(new THREE.BufferGeometry().setAttribute('position', new THREE.BufferAttribute(sparkPositions, 3)),
-      new THREE.PointsMaterial({ map: circleSprite(), color: 0xffffff, size: 0.07, transparent: true, opacity: 0.8, depthWrite: false, blending: THREE.AdditiveBlending }));
+      new THREE.PointsMaterial({ map: circleSprite(), color: 0xffffff, size: 0.11, transparent: true, opacity: 0.8, depthWrite: false, blending: THREE.AdditiveBlending }));
     scene.add(sparks);
     return {
       scene, camera, toneMapping: THREE.ACESFilmicToneMapping, exposure: 1.1,
@@ -342,8 +374,10 @@ STYLES.push({
         card.rotation.x = Math.sin(t * 0.36) * 0.28 - pointer.y * 0.4;
         card.rotation.z = Math.sin(t * 0.27) * 0.07;
         card.position.y = Math.sin(t * 0.8) * 0.12;
-        sparks.rotation.y = t * 0.05;
+        sheen.material.uniforms.uTime.value = t;
+        sparks.rotation.y = t * 0.05; sparks.rotation.x = Math.sin(t * 0.2) * 0.2;
         sparks.material.opacity = 0.5 + 0.4 * Math.sin(t * 3);
+        sweep.position.set(Math.cos(t * 0.9) * 4.5, Math.sin(t * 0.7) * 3, 3.5);
       }
     };
   }
@@ -359,9 +393,9 @@ STYLES.push({
       roughness: 0.92, metalness: 0,
       map: canvasTexture(1024, 640, (g, w, h) => {
         const rng = mulberry32(5);
-        g.fillStyle = '#17141a'; g.fillRect(0, 0, w, h);
+        g.fillStyle = '#1c181f'; g.fillRect(0, 0, w, h);
         for (let row = 0; row < 20; row++) for (let col = -1; col < 10; col++) {
-          const x = col * 110 + (row % 2) * 55, y = row * 32, v = 26 + Math.floor(rng() * 14);
+          const x = col * 110 + (row % 2) * 55, y = row * 32, v = 46 + Math.floor(rng() * 20);
           g.fillStyle = `rgb(${v + 6},${v},${v + 2})`; g.fillRect(x + 3, y + 3, 104, 26);
         }
       }, { repeat: true })
@@ -372,17 +406,17 @@ STYLES.push({
     const board = new THREE.Mesh(new THREE.BoxGeometry(9.6, 6.4, 0.25), new THREE.MeshStandardMaterial({ color: 0x0c0b10, roughness: 0.6 }));
     board.position.z = -0.3;
     scene.add(board);
-    scene.add(new THREE.AmbientLight(0xffffff, 0.08));
+    scene.add(new THREE.AmbientLight(0xffffff, 0.16));
     const tubes = [];
     const neon = (points, hex, { closed = false, radius = 0.075 } = {}) => {
       const curve = new THREE.CatmullRomCurve3(points.map(p => new THREE.Vector3(...p)), closed, 'catmullrom', 0.2);
       const color = new THREE.Color(hex);
       const mesh = new THREE.Mesh(new THREE.TubeGeometry(curve, closed ? 160 : 90, radius, 10, closed), new THREE.MeshBasicMaterial({ color: color.clone().multiplyScalar(1.5), toneMapped: false }));
-      const light = new THREE.PointLight(color, 32, 0, 2);
+      const light = new THREE.PointLight(color, 48, 0, 2);
       const center = new THREE.Box3().setFromObject(mesh).getCenter(new THREE.Vector3());
       light.position.copy(center).setZ(1.2);
       scene.add(mesh, light);
-      const tube = { mesh, light, color, level: 1, baseIntensity: 32 };
+      const tube = { mesh, light, color, level: 1, baseIntensity: 48 };
       tubes.push(tube);
       return tube;
     };
@@ -464,6 +498,11 @@ STYLES.push({
     ring.add(new THREE.Mesh(ringGeometry, paperFill()), new THREE.LineSegments(new THREE.EdgesGeometry(ringGeometry, 20), new THREE.LineBasicMaterial({ color: INK, transparent: true, opacity: 0.75 })));
     ring.children[1].renderOrder = 1;
     hero.add(ring);
+    const satelliteGeometry = new THREE.OctahedronGeometry(0.42, 0);
+    const satellite = new THREE.Group();
+    satellite.add(new THREE.Mesh(satelliteGeometry, paperFill()), new THREE.LineSegments(new THREE.EdgesGeometry(satelliteGeometry), new THREE.LineBasicMaterial({ color: ACCENT })));
+    satellite.children[1].renderOrder = 2;
+    ring.add(satellite);
     const positions = terrainGeometry.attributes.position;
     return {
       scene, camera,
@@ -477,6 +516,7 @@ STYLES.push({
         hero.position.y = 0.9 + Math.sin(t * 0.9) * 0.2;
         fill.rotation.set(t * 0.22, t * 0.37, 0); lines.rotation.copy(fill.rotation); dots.rotation.copy(fill.rotation);
         ring.rotation.set(Math.PI / 2 + Math.sin(t * 0.4) * 0.5, t * 0.3, 0);
+        satellite.position.set(Math.cos(t * 1.1) * 2.4, Math.sin(t * 1.1) * 2.4, 0); satellite.rotation.set(t, t * 0.7, 0);
         const yaw = pointer.x * 0.35, pitch = 0.26 - pointer.y * 0.15;
         camera.position.set(Math.sin(yaw) * 9.8, 2.4 + Math.sin(pitch) * 3, Math.cos(yaw) * 9.8);
         camera.lookAt(0, 0.3, 0);
@@ -528,16 +568,20 @@ STYLES.push({
     [[-0.95, 1.55, 1.4, 0.34], [-0.55, 0.85, 2.2, 0.2], [-0.4, 0.4, 2.5, 0.2], [-0.75, -0.05, 1.8, 0.2]].forEach(([x, y, w, h]) => { const bar = chrome(w, h, z, 0xffffff, 0.8); bar.position.x = x; bar.position.y = y; card.add(bar); });
     const button = chrome(1.5, 0.5, z, 0xff5f6d, 0.95); button.position.set(-0.9, -1.2, z); card.add(button);
     const avatar = new THREE.Mesh(new THREE.CircleGeometry(0.38, 32), new THREE.MeshBasicMaterial({ color: 0x4facfe, transparent: true, opacity: 0.95 })); avatar.position.set(1.2, 1.55, z); card.add(avatar);
+    const edgeLine = (w, h, r, z) => new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(roundedRectPoints(w, h, r, 96).map(p => new THREE.Vector3(p[0], p[1], z))), new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.5 }));
+    card.add(edgeLine(3.8, 4.8, 0.34, 0.135));
     card.position.set(-1.2, 0, 1);
     const chip = new THREE.Group();
     chip.add(new THREE.Mesh(new RoundedBoxGeometry(2.7, 1.5, 0.22, 4, 0.3), glass));
     const dot = chrome(0.26, 0.26, 0.14, 0xffffff, 0.9); dot.position.set(-0.95, 0.35, 0.14); chip.add(dot);
     const line = chrome(1.3, 0.16, 0.14, 0xffffff, 0.8); line.position.set(0.05, 0.35, 0.14); chip.add(line);
     const line2 = chrome(1.9, 0.16, 0.14, 0xffffff, 0.6); line2.position.set(0.0, -0.25, 0.14); chip.add(line2);
+    chip.add(edgeLine(2.7, 1.5, 0.3, 0.115));
     chip.position.set(2.4, -1.4, 1.6);
     scene.add(card, chip);
     return {
       scene, camera, toneMapping: THREE.ACESFilmicToneMapping, exposure: 1.05,
+      resize(w, h) { setAspect(camera, w, h); camera.position.z = Math.max(11.5, 4.2 / (Math.tan(camera.fov * Math.PI / 360) * camera.aspect)); },
       update(t) {
         backdrop.material.uniforms.uTime.value = t;
         orbs.forEach((orb, i) => orb.position.set(Math.cos(t * 0.33 + i * 1.3) * 3.6, Math.sin(t * 0.47 + i * 2.1) * 2.2, -1.8 + Math.sin(t * 0.4 + i) * 1.4));
@@ -602,12 +646,13 @@ STYLES.push({
       scene, camera,
       resize(w, h) { aspect = w / h; setAspect(camera, w, h); fit(); },
       update(t) {
-        const local = t % PERIOD;
+        const local = t % PERIOD, accent = Math.floor(t / PERIOD) % Math.max(1, glyphs.length);
         glyphs.forEach((m, i) => {
+          if (!m.material.map) m.material.color.set(i === accent ? ACCENT : INK);
           const p = clamp((local - i * STAGGER) / FLIP, 0, 1);
           const e = easeInOutCubic(p);
           m.rotation.x = e * TAU;
-          m.position.y = Math.sin(p * Math.PI) * 0.7;
+          m.position.y = Math.sin(p * Math.PI) * 0.7 + Math.sin(t * 2.2 + i * 0.6) * 0.12;
           m.position.z = Math.sin(p * Math.PI) * 0.6;
           const squeeze = 1 + 0.1 * Math.sin(p * Math.PI);
           m.scale.set(squeeze, 1 / squeeze, 1);
@@ -647,7 +692,7 @@ STYLES.push({
     block(7.6, 0.5, 7.6, '#f7f1e4', 0, -0.25, 0);
     const N = 7, half = (N - 1) / 2, rng = mulberry32(21);
     const palette = ['#f6c1a3', '#f28c6b', '#ffd98a', '#a8d8d0', '#b8c7f2', '#f5a3b9', '#cfe6a8'];
-    const buildings = [];
+    const buildings = [], trees = [];
     for (let r = 0; r < N; r++) for (let c = 0; c < N; c++) {
       const x = c - half, z = r - half;
       if (r === 3 || c === 3) {
@@ -658,7 +703,7 @@ STYLES.push({
       }
       if (r < 2 && c < 2) {
         block(1, 0.04, 1, '#bfe0a3', x, 0.02, z);
-        if (rng() > 0.25) { const tree = new THREE.Group(); block(0.1, 0.3, 0.1, '#8a6a4a', 0, 0.15, 0, tree); block(0.42, 0.55, 0.42, '#6cbf7a', 0, 0.55, 0, tree); block(0.26, 0.4, 0.26, '#5aa968', 0, 1.0, 0, tree); tree.position.set(x + (rng() - 0.5) * 0.4, 0.04, z + (rng() - 0.5) * 0.4); city.add(tree); }
+        if (rng() > 0.25) { const tree = new THREE.Group(); block(0.1, 0.3, 0.1, '#8a6a4a', 0, 0.15, 0, tree); block(0.42, 0.55, 0.42, '#6cbf7a', 0, 0.55, 0, tree); block(0.26, 0.4, 0.26, '#5aa968', 0, 1.0, 0, tree); tree.position.set(x + (rng() - 0.5) * 0.4, 0.04, z + (rng() - 0.5) * 0.4); city.add(tree); trees.push(tree); }
         continue;
       }
       const height = 0.7 + Math.pow(rng(), 1.4) * 2.8, color = palette[Math.floor(rng() * palette.length)];
@@ -692,7 +737,8 @@ STYLES.push({
           if (vertical) car.position.set(lane, 0.03, along * dir); else car.position.set(along * dir, 0.03, lane);
           car.rotation.y = vertical ? (dir > 0 ? -Math.PI / 2 : Math.PI / 2) : (dir > 0 ? Math.PI : 0);
         });
-        city.rotation.y = pointer.x * 0.22;
+        trees.forEach((tree, i) => { tree.rotation.z = Math.sin(t * 1.6 + i * 1.3) * 0.05; tree.rotation.x = Math.cos(t * 1.1 + i) * 0.04; });
+        city.rotation.y = t * 0.06 + pointer.x * 0.22;
         city.position.y = pointer.y * 0.3;
       }
     };
@@ -726,8 +772,10 @@ STYLES.push({
     const character = new THREE.Group();
     const body = shaded(new THREE.Mesh(new THREE.SphereGeometry(1, 48, 32), clay('#ff9d9d'))); body.scale.set(1, 0.94, 1);
     character.add(body);
+    const eyes = [];
     [-0.33, 0.33].forEach(x => {
-      const eye = new THREE.Mesh(new THREE.SphereGeometry(0.11, 24, 16), clay('#3b2b2b')); eye.position.set(x, 0.26, 0.86); character.add(eye);
+      const eye = new THREE.Mesh(new THREE.SphereGeometry(0.11, 24, 16), clay('#3b2b2b')); eye.position.set(x, 0.26, 0.86); character.add(eye); eyes.push(eye);
+      const foot = shaded(new THREE.Mesh(new THREE.SphereGeometry(0.26, 24, 16), clay('#e9868d'))); foot.position.set(x * 1.3, -0.86, 0.2); foot.scale.set(1, 0.6, 1.2); character.add(foot);
       const blush = new THREE.Mesh(new THREE.SphereGeometry(0.17, 24, 16), clay('#f26b7c')); blush.position.set(x * 1.75, -0.05, 0.74); blush.scale.set(1, 0.65, 0.35); character.add(blush);
     });
     const mouth = new THREE.Mesh(new THREE.TorusGeometry(0.17, 0.04, 10, 20, Math.PI), clay('#3b2b2b'));
@@ -744,12 +792,15 @@ STYLES.push({
     const jitter = (frame, salt) => { const v = Math.sin(frame * 12.9898 + salt * 78.233) * 43758.5453; return (v - Math.floor(v) - 0.5) * 0.02; };
     return {
       scene, camera,
+      resize(w, h) { setAspect(camera, w, h); camera.position.z = Math.max(11.5, 4.1 / (Math.tan(camera.fov * Math.PI / 360) * camera.aspect)); },
       update(t) {
         const q = stepped(t), frame = Math.round(q * 12);
         const hop = (q % 1.3) / 1.3, air = Math.sin(hop * Math.PI);
         const squash = hop < 0.12 || hop > 0.88 ? 0.82 : 1 + air * 0.12;
         character.position.set(jitter(frame, 1), 1 + air * 1.5 - (1 - squash) * 0.9, jitter(frame, 2));
         character.scale.set(1 / Math.sqrt(squash), squash, 1 / Math.sqrt(squash));
+        const blink = (q % 3.25) < 0.17 ? 0.12 : 1;
+        eyes.forEach(eye => eye.scale.set(1, blink, 1));
         character.rotation.y = Math.sin(q * 1.1) * 0.45 + pointer.x * 0.4;
         character.rotation.z = Math.sin(q * 2.4) * 0.08;
         donut.rotation.set(Math.PI / 2 + Math.sin(q * 1.5) * 0.4, 0, q * 1.2 + jitter(frame, 3) * 5);
@@ -795,6 +846,7 @@ STYLES.push({
         float glyph = texture2D(uAtlas, vec2((index + f.x) / uLevels, f.y)).r;
         vec3 ink = mix(vec3(0.1, 0.55, 0.25), vec3(0.6, 1.0, 0.65), lum);
         vec3 col = mix(vec3(0.01, 0.025, 0.015), ink, glyph) * (0.55 + 0.7 * lum);
+        col += vec3(0.05, 0.13, 0.07) * (1.0 - smoothstep(0.05, 0.1, length(f - 0.5))) * step(index, 0.5);
         gl_FragColor = vec4(col, 1.0);
       }`, { uScene: { value: target.texture }, uAtlas: { value: atlas }, uGrid: { value: grid }, uLevels: { value: ramp.length } });
     const instance = {
@@ -845,6 +897,8 @@ STYLES.push({
         float seg = v * 4.0; int i0 = int(floor(seg)); float k = smoothstep(0.0, 1.0, fract(seg));
         vec3 col = mix(stops[i0], stops[min(i0 + 1, 4)], k);
         col = mix(col, stops[1], smoothstep(0.25, 0.6, q.y) * 0.35);
+        vec2 dir = vec2(cos(uTime * 0.11), sin(uTime * 0.11));
+        col += 0.07 * smoothstep(0.45, 0.0, abs(dot(p, dir) - 0.2 * sin(uTime * 0.23) + 0.15 * f));
         float grain = fract(sin(dot(vUv * vec2(1920.0, 1080.0) + uTime, vec2(12.9898, 78.233))) * 43758.5453);
         col += (grain - 0.5) * 0.035;
         gl_FragColor = vec4(col, 1.0);
@@ -920,6 +974,7 @@ STYLES.push({
     const CYCLE = 2.6;
     return {
       scene, camera,
+      resize(w, h) { setAspect(camera, w, h); camera.position.z = Math.max(9, 4.4 / (Math.tan(camera.fov * Math.PI / 360) * camera.aspect)); },
       update(t) {
         backdrop.material.uniforms.uTime.value = t;
         objects.forEach(({ mesh, x, y }, i) => {
@@ -931,12 +986,14 @@ STYLES.push({
         });
         const k = Math.floor(t / CYCLE) % words.length, local = (t % CYCLE) / CYCLE;
         burst.material.map = burstTextures[k];
+        const anchor = objects[k % objects.length].mesh, offset = [[1.2, 1.5], [0.0, 2.1], [-1.2, 1.5]][k % objects.length];
+        burst.position.set(anchor.position.x + offset[0], anchor.position.y + offset[1], 1.5);
         let s = 0;
         if (local < 0.18) s = easeOutBack(local / 0.18);
         else if (local < 0.78) s = 1 + 0.04 * Math.sin(t * 14);
         else if (local < 0.86) s = 1 - (local - 0.78) / 0.08;
         burst.scale.setScalar(Math.max(0.0001, s) * 3.4);
-        burst.material.rotation = Math.sin(t * 6) * 0.08;
+        burst.material.rotation = Math.sin(t * 6) * 0.08 + (k % 2 ? 0.14 : -0.1);
       }
     };
   }
@@ -964,8 +1021,16 @@ STYLES.push({
     });
     const board = new THREE.Group();
     scene.add(board);
-    const frame = new THREE.Mesh(new RoundedBoxGeometry(COLS * CW + 0.7, ROWS * CH + 0.7, 0.5, 2, 0.1), new THREE.MeshStandardMaterial({ color: 0x2a2825, roughness: 0.5, metalness: 0.6 }));
-    frame.position.z = -0.3; board.add(frame);
+    const frame = new THREE.Mesh(new RoundedBoxGeometry(COLS * CW + 0.7, ROWS * CH + 1.5, 0.5, 2, 0.1), new THREE.MeshStandardMaterial({ color: 0x2a2825, roughness: 0.5, metalness: 0.6 }));
+    frame.position.set(0, 0.4, -0.3); board.add(frame);
+    const header = new THREE.Mesh(new THREE.PlaneGeometry(COLS * CW, 0.5), new THREE.MeshStandardMaterial({
+      map: canvasTexture(2048, 94, (g, w, h) => {
+        g.fillStyle = '#1b1917'; g.fillRect(0, 0, w, h);
+        g.fillStyle = '#d9b245'; g.font = '700 54px "Helvetica Neue",Arial,sans-serif'; g.textBaseline = 'middle'; g.fillText('DEPARTURES', 40, h / 2 + 2);
+        g.fillStyle = '#9a948a'; g.font = '500 40px "SFMono-Regular",Menlo,monospace'; g.textAlign = 'right'; g.fillText('DESIGN STYLE COLLECTION  ·  13 / 20', w - 40, h / 2 + 2);
+      }), roughness: 0.7
+    }));
+    header.position.set(0, (ROWS * CH) / 2 + 0.42, 0.01); board.add(header);
     const face = new THREE.MeshStandardMaterial({ map: atlas, roughness: 0.55, metalness: 0.05 });
     const halfGeometry = () => new THREE.PlaneGeometry(CW - 0.08, HH - 0.015);
     const setUV = (geometry, glyph, top, back) => {
@@ -986,7 +1051,7 @@ STYLES.push({
       top.position.y = HH / 2; bottom.position.y = -HH / 2; pivot.position.z = 0.012;
       front.position.y = HH / 2; back.position.set(0, HH / 2, -0.004); back.rotation.y = Math.PI;
       pivot.add(front, back); cell.add(top, bottom, pivot);
-      const state = { glyph: 0, next: 0, target: 0, progress: -1, delay: 0, col: c, row: r, top, bottom, front, back, pivot };
+      const state = { glyph: 0, next: 0, target: 0, progress: -1, delay: 0, bump: 0, col: c, row: r, group: cell, top, bottom, front, back, pivot };
       state.rest = () => { setUV(top.geometry, state.glyph, true); setUV(bottom.geometry, state.glyph, false); setUV(front.geometry, state.glyph, true); pivot.rotation.x = 0; };
       state.rest();
       cells.push(state);
@@ -999,7 +1064,8 @@ STYLES.push({
       resize(w, h) {
         setAspect(camera, w, h);
         const half = Math.tan(camera.fov * Math.PI / 360);
-        camera.position.z = Math.max((ROWS * CH + 1.6) / 2 / half, (COLS * CW + 1.6) / 2 / (half * camera.aspect));
+        camera.position.z = Math.max((ROWS * CH + 2.6) / 2 / half, (COLS * CW + 1.6) / 2 / (half * camera.aspect));
+        camera.position.y = 0.4; camera.lookAt(0, 0.4, 0);
       },
       update(t, dt) {
         if (t >= nextChange) {
@@ -1022,8 +1088,9 @@ STYLES.push({
           }
           cell.progress += dt / 0.1;
           cell.pivot.rotation.x = smooth(Math.min(cell.progress, 1)) * Math.PI;
-          if (cell.progress >= 1) { cell.glyph = cell.next; cell.progress = -1; cell.rest(); }
+          if (cell.progress >= 1) { cell.glyph = cell.next; cell.progress = -1; cell.bump = 1; cell.rest(); }
         });
+        cells.forEach(cell => { if (cell.bump > 0.001) { cell.group.rotation.x = -cell.bump * 0.07; cell.bump *= 0.7; } else cell.group.rotation.x = 0; });
         board.rotation.y += (pointer.x * 0.28 - board.rotation.y) * 0.1;
         board.rotation.x += (-pointer.y * 0.18 - board.rotation.x) * 0.1;
       }
@@ -1102,6 +1169,7 @@ STYLES.push({
         float inBand = smoothstep(0.1, 0.0, abs(uv.y - band));
         float jitter = hash(vec2(floor(uTime * 24.0), floor(uv.y * 40.0))) - 0.5;
         uv.x += inBand * (0.025 * sin(uv.y * 140.0 + uTime * 40.0) + 0.02 * jitter) + 0.0012 * sin(uv.y * 4.0 + uTime * 1.5) + 0.0006 * jitter;
+        uv.y += 0.012 * sin(uTime * 41.0) * step(0.93, hash(vec2(floor(uTime * 2.5), 2.0)));
         vec3 luma = yiq(texture2D(uScene, uv).rgb);
         vec3 chroma = vec3(0.0);
         for (int i = -3; i <= 3; i++) chroma += yiq(texture2D(uScene, uv + vec2(float(i) * 1.6 / uRes.x, 0.0)).rgb);
@@ -1112,6 +1180,9 @@ STYLES.push({
         col += (hash(uv * uRes + uTime) - 0.5) * 0.08 + inBand * 0.25 * hash(vec2(uv.y * 80.0, uTime * 7.0));
         float tear = smoothstep(0.04, 0.0, vUv.y) * step(0.5, hash(vec2(floor(vUv.y * 200.0), floor(uTime * 30.0))));
         col = mix(col, vec3(0.75), tear * 0.6);
+        float row = floor(vUv.y * uRes.y * 0.5), frameId = floor(uTime * 12.0);
+        float streak = step(0.985, hash(vec2(row, frameId))) * step(0.6, hash(vec2(frameId, 9.0))) * step(vUv.x, hash(vec2(row, 3.0))) * step(hash(vec2(row, 5.0)) * 0.5, vUv.x);
+        col = mix(col, vec3(0.92), streak * 0.8);
         col *= 1.0 - 0.4 * pow(length(vUv - 0.5) * 1.2, 2.5);
         gl_FragColor = vec4(col, 1.0);
         #include <colorspace_fragment>
@@ -1161,7 +1232,7 @@ STYLES.push({
           float shadow = smoothstep(0.75, 0.05, light);
           float mid = smoothstep(1.0, 0.25, light) * 0.85;
           float black = dots(gl_FragCoord.xy, 0.785, shadow);
-          float red = dots(gl_FragCoord.xy, 0.262, mid);
+          float red = dots(gl_FragCoord.xy + vec2(0.3, -0.22) * uCell, 0.262, mid);
           vec3 col = mix(uPaper, uAccent, red);
           col = mix(col, uInk, black);
           gl_FragColor = vec4(col, 1.0);
@@ -1187,10 +1258,11 @@ STYLES.push({
     const sphere = new THREE.Mesh(new THREE.SphereGeometry(1.45, 64, 48), halftone());
     const torus = new THREE.Mesh(new THREE.TorusGeometry(1.1, 0.46, 48, 96), halftone());
     const cone = new THREE.Mesh(new THREE.ConeGeometry(1.0, 2.0, 64), halftone());
-    scene.add(sphere, torus, cone);
+    [sphere, torus, cone].forEach(mesh => addOutline(mesh, 0.028, '#1c1b19'));
     const group = new THREE.Group(); group.add(sphere, torus, cone); scene.add(group);
     return {
       scene, camera,
+      resize(w, h) { setAspect(camera, w, h); camera.position.z = Math.max(9, 4.4 / (Math.tan(camera.fov * Math.PI / 360) * camera.aspect)); },
       update(t) {
         disc.material.uniforms.uTime.value = t;
         sphere.position.set(Math.cos(t * 0.45) * 2.6, Math.sin(t * 0.7) * 0.7, Math.sin(t * 0.45) * 0.8);
@@ -1228,12 +1300,13 @@ STYLES.push({
     const post = solid(new THREE.BoxGeometry(0.12, 3.2, 0.12), '#141414', -3.6, 1.6, -1.6);
     const ring = solid(new THREE.TorusGeometry(0.9, 0.06, 12, 64), '#141414', 3.2, 0.9, -2.2);
     const disc = solid(new THREE.CircleGeometry(1.6, 64), '#1f4aa8', -3.2, 0.01, -1.0); disc.rotation.x = -Math.PI / 2; disc.castShadow = false;
+    const stripe = solid(new THREE.BoxGeometry(16, 0.02, 0.5), '#f2b705', 0, 0.011, -3.4); stripe.castShadow = false;
     const PERIOD = 8, ACT = 0.5;
     // Progress of the move scheduled on `beat` within the current 8-beat cycle: 0 before, eased 0..1 during, 1 after.
     const move = (t, beat) => ({ count: Math.floor(t / PERIOD), p: easeInOutCubic(clamp(((t % PERIOD) - beat) / ACT, 0, 1)) });
     return {
       scene, camera,
-      resize: (w, h) => fitOrthographic(camera, 8.2, w, h),
+      resize: (w, h) => fitOrthographic(camera, Math.max(7.4, 9.4 / (w / h)), w, h),
       update(t) {
         const turnA = move(t, 0), turnB = move(t, 4);
         cube.rotation.y = (turnA.count + turnB.count + turnA.p + turnB.p) * Math.PI / 2;
@@ -1260,7 +1333,8 @@ STYLES.push({
 STYLES.push({
   slug: 'pixel-art',
   build({ renderer, pointer, width, height }) {
-    const sub = makeScene('#7fc8ff');
+    const sub = new THREE.Scene();
+    sub.background = canvasTexture(8, 256, (g, w, h) => { const grad = g.createLinearGradient(0, 0, 0, h); grad.addColorStop(0, '#3f8fe8'); grad.addColorStop(0.6, '#7fc8ff'); grad.addColorStop(1, '#d8f0ff'); g.fillStyle = grad; g.fillRect(0, 0, w, h); });
     const camera = orthographic([10, 8.5, 10]);
     sub.add(new THREE.HemisphereLight(0xffffff, 0x9bbbd0, 1.1));
     const sun = new THREE.DirectionalLight(0xffffff, 1.9);
@@ -1268,7 +1342,7 @@ STYLES.push({
     Object.assign(sun.shadow.camera, { left: -9, right: 9, top: 9, bottom: -9, near: 1, far: 40 });
     sun.shadow.bias = -0.001;
     sub.add(sun);
-    const palette = ['#7fc8ff', '#5fbf4a', '#4aa23a', '#8a5a3c', '#6d4530', '#8c8c99', '#3a8cff', '#5a3a22', '#2f9a3a', '#45b84e', '#f2e3c6', '#d9422f', '#ffffff', '#ff6fa3', '#ffd24a', '#1b1b2a'];
+    const palette = ['#7fc8ff', '#5fbf4a', '#4aa23a', '#8a5a3c', '#6d4530', '#8c8c99', '#3a8cff', '#5a3a22', '#2f9a3a', '#45b84e', '#f2e3c6', '#d9422f', '#ffffff', '#ff6fa3', '#ffd24a', '#1b1b2a', '#3f8fe8', '#d8f0ff'];
     const C = { sky: 0, grass: 1, grassDark: 2, dirt: 3, dirtDark: 4, stone: 5, water: 6, trunk: 7, leaf: 8, leafLight: 9, wall: 10, roof: 11, cloud: 12, flower: 13, flower2: 14, door: 15 };
     const voxels = [];
     const add = (x, y, z, color, tag = '') => voxels.push({ x, y, z, color, tag });
@@ -1292,18 +1366,19 @@ STYLES.push({
     for (let x = 1; x <= 3; x++) for (let z = 0; z <= 2; z++) add(x, 6, z, C.roof);
     add(2, 7, 1, C.roof);
     const cloudVoxels = [[0, 0, 0], [1, 0, 0], [2, 0, 0], [3, 0, 0], [1, 1, 0], [2, 1, 0], [1, 0, 1], [2, 0, 1], [0, 0, 1]];
-    cloudVoxels.forEach(([x, y, z]) => add(x, 11 + y, z - 5, C.cloud, 'cloud'));
+    cloudVoxels.forEach(([x, y, z]) => add(x, 8 + y, z - 4, C.cloud, 'cloud'));
+    [[0, 0], [1, 0], [-1, 0], [0, 1], [0, -1], [1, 1], [-1, -1], [1, -1], [-1, 1], [2, 0], [-2, 0], [0, 2], [0, -2]].forEach(([x, y]) => add(-6 + x, 7.5 + y, 1, C.flower2, 'sun'));
     const island = new THREE.Group(); sub.add(island);
     const mesh = new THREE.InstancedMesh(new THREE.BoxGeometry(1, 1, 1), new THREE.MeshStandardMaterial({ roughness: 1 }), voxels.length);
     mesh.castShadow = mesh.receiveShadow = true;
     island.add(mesh);
     const colors = palette.map(c => new THREE.Color(c));
-    const matrix = new THREE.Matrix4(), quaternion = new THREE.Quaternion(), position = new THREE.Vector3(), scale = new THREE.Vector3(1, 1, 1);
+    const matrix = new THREE.Matrix4(), quaternion = new THREE.Quaternion(), position = new THREE.Vector3(), scale = new THREE.Vector3(1, 1, 1), UP = new THREE.Vector3(0, 1, 0);
     voxels.forEach((v, i) => mesh.setColorAt(i, colors[v.color]));
     mesh.instanceColor.needsUpdate = true;
     const target = makeTarget(256, 144, true);
     const quad = fullscreenQuad(`
-      uniform sampler2D uScene; uniform vec2 uRes; uniform vec3 uPalette[16];
+      uniform sampler2D uScene; uniform vec2 uRes; uniform vec3 uPalette[18];
       varying vec2 vUv;
       float bayer(vec2 p) {
         int i = int(mod(p.x, 4.0)) + int(mod(p.y, 4.0)) * 4;
@@ -1313,7 +1388,7 @@ STYLES.push({
       void main() {
         vec3 c = texture2D(uScene, vUv).rgb + bayer(floor(vUv * uRes)) * 0.09;
         float best = 1e9; vec3 pick = c;
-        for (int i = 0; i < 16; i++) { float d = distance(c, uPalette[i]); if (d < best) { best = d; pick = uPalette[i]; } }
+        for (int i = 0; i < 18; i++) { float d = distance(c, uPalette[i]); if (d < best) { best = d; pick = uPalette[i]; } }
         gl_FragColor = vec4(pick, 1.0);
         #include <colorspace_fragment>
       }`, { uScene: { value: target.texture }, uRes: { value: new THREE.Vector2(256, 144) }, uPalette: { value: colors } });
@@ -1326,7 +1401,7 @@ STYLES.push({
         const cloudX = ((t * 0.9) % 22) - 11, step = Math.floor(t * 6);
         voxels.forEach((v, i) => {
           let y = v.y, sy = 1;
-          if (v.tag === 'cloud') { position.set(v.x + cloudX, y, v.z); }
+          if (v.tag === 'cloud' || v.tag === 'sun') { position.set(v.tag === 'cloud' ? v.x + cloudX : v.x, y - island.position.y, v.z).applyAxisAngle(UP, -island.rotation.y); }
           else {
             if (v.tag === 'water') sy = ((step + v.x * 2 + v.z) % 4) === 0 ? 0.8 : 1;
             if (v.tag === 'flower') y += ((step + v.x + v.z * 3) % 6) === 0 ? 0.25 : 0;
@@ -1419,7 +1494,14 @@ STYLES.push({
         }
       };
     };
-    const height = dimension(3.0, 2.6);
+    const callouts = [['BASE PLATE', 2.1], ['BEARING', 1.5], ['GEAR', 1.7], ['SHAFT', 0.36], ['CAP', 0.95]].map(([name, radius]) => {
+      const geometry = new THREE.BufferGeometry().setAttribute('position', new THREE.BufferAttribute(new Float32Array(6), 3));
+      const leader = new THREE.Line(geometry, line('#8fd3ff', 0.85)); scene.add(leader);
+      const tag = label(name); tag.scale.set(1.5, 0.375, 1); scene.add(tag);
+      return { leader, tag, radius };
+    });
+    const viewDirection = new THREE.Vector3(), viewRight = new THREE.Vector3(), anchor = new THREE.Vector3(), tip = new THREE.Vector3(), UP = new THREE.Vector3(0, 1, 0);
+    const height = dimension(-2.7, 2.6);
     const width = label('4.20'); width.scale.set(1.1, 0.275, 1); width.position.set(0, -0.05, 2.9); scene.add(width);
     const widthLine = new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-2.1, 0, 2.6), new THREE.Vector3(2.1, 0, 2.6), new THREE.Vector3(-2.1, 0, 2.2), new THREE.Vector3(-2.1, 0, 2.8), new THREE.Vector3(2.1, 0, 2.2), new THREE.Vector3(2.1, 0, 2.8)]), line('#8fd3ff', 0.9));
     scene.add(widthLine);
@@ -1439,7 +1521,7 @@ STYLES.push({
       resize(w, h) {
         setAspect(camera, w, h);
         const dist = 6, half = Math.tan(camera.fov * Math.PI / 360) * dist;
-        titleBlock.position.set(half * camera.aspect - 0.87, -half + 0.35, -dist);
+        titleBlock.position.set(-half * camera.aspect + 0.87, -half + 0.35, -dist);
       },
       update(t) {
         const local = t % CYCLE;
@@ -1451,6 +1533,15 @@ STYLES.push({
         });
         gearGroup.rotation.y = t * 0.5; shaft.rotation.y = t * 0.5; cap.rotation.y = t * 0.5;
         height.set(0, cap.position.y + 0.18);
+        camera.getWorldDirection(viewDirection); viewRight.crossVectors(viewDirection, UP).normalize();
+        callouts.forEach((callout, i) => {
+          const part = parts[i];
+          anchor.copy(part.position).addScaledVector(viewRight, callout.radius);
+          tip.copy(part.position).addScaledVector(viewRight, 1.9); tip.y += 0.35;
+          const positions = callout.leader.geometry.attributes.position;
+          positions.set([anchor.x, anchor.y, anchor.z, tip.x, tip.y, tip.z]); positions.needsUpdate = true;
+          callout.tag.position.copy(tip).addScaledVector(viewRight, 0.8);
+        });
         axis.material.opacity = 0.5 + 0.3 * Math.sin(t * 2);
         const yaw = 0.66 + Math.sin(t * 0.15) * 0.3 + pointer.x * 0.5, pitch = 0.5 - pointer.y * 0.25;
         camera.position.set(Math.sin(yaw) * Math.cos(pitch) * 15, Math.sin(pitch) * 15 + 1.5, Math.cos(yaw) * Math.cos(pitch) * 15);
@@ -1497,6 +1588,13 @@ STYLES.push({
     const chevronGeometry = new THREE.ExtrudeGeometry(chevronShape, { depth: 0.2, bevelEnabled: false });
     const chevrons = [];
     [-4.4, 4.4].forEach(x => { for (let i = 0; i < 4; i++) { const c = new THREE.Mesh(chevronGeometry, i % 2 ? goldMatte : gold); c.position.set(x, -1.2 + i * 1.0, -0.5); scene.add(c); chevrons.push({ mesh: c, base: c.position.y, phase: i * 0.6 + (x > 0 ? 0.3 : 0) }); } });
+    const fans = [-5.4, 5.4].map(x => {
+      const fan = new THREE.Group();
+      for (let i = 0; i < 7; i++) { const blade = new THREE.Mesh(new THREE.BoxGeometry(0.09, 2.1, 0.06), gold); blade.position.y = 1.05; const pivot = new THREE.Group(); pivot.add(blade); pivot.rotation.z = Math.sign(x) * (i / 6) * Math.PI / 2; fan.add(pivot); }
+      fan.add(new THREE.Mesh(new THREE.CylinderGeometry(0.3, 0.3, 0.1, 24), gold).rotateX(Math.PI / 2));
+      fan.position.set(x, -1.4, 0.6); scene.add(fan); return fan;
+    });
+    const groundLine = new THREE.Mesh(new THREE.BoxGeometry(17, 0.05, 0.05), gold); groundLine.position.set(0, -1.57, 1.3); scene.add(groundLine);
     const columns = [-6.3, 6.3].map(x => { const column = new THREE.Mesh(new THREE.CylinderGeometry(0.45, 0.5, 7, 14, 1), new THREE.MeshStandardMaterial({ color: '#d9b245', metalness: 1, roughness: 0.3, flatShading: true, envMapIntensity: 1.1 })); column.position.set(x, 1.9, -1.5); scene.add(column); return column; });
     columns.forEach(column => { const capital = new THREE.Mesh(new THREE.BoxGeometry(1.5, 0.3, 1.5), gold); capital.position.y = 3.6; column.add(capital); });
     return {
@@ -1506,6 +1604,7 @@ STYLES.push({
         steps.forEach((step, i) => { const k = easeOutCubic(clamp((t - 0.3 - i * 0.35) / 1.0, 0, 1)); step.scale.set(k, 1, 1); step.visible = k > 0.001; });
         gem.rotation.y = t * 0.7; gem.position.y = 2.85 + Math.sin(t * 1.1) * 0.12; gem.visible = t > 2.2;
         chevrons.forEach(({ mesh, base, phase }) => { mesh.position.y = base + Math.sin(t * 0.9 + phase) * 0.12; });
+        fans.forEach((fan, i) => { fan.children.forEach((pivot, j) => { if (j < 7) pivot.rotation.z = Math.sign(fan.position.x) * (j / 6) * Math.PI / 2 * (0.9 + 0.1 * Math.sin(t * 0.8 + i)); }); });
         arcs.forEach((arc, i) => { arc.scale.setScalar(1 + 0.012 * Math.sin(t * 1.4 + i * 0.7)); });
         key.position.x = Math.sin(t * 0.35) * 9; warm.position.x = -Math.sin(t * 0.35) * 5;
         camera.position.x = pointer.x * 1.6; camera.position.y = 1.6 + pointer.y * 0.9; camera.lookAt(0, 1.0, 0);
@@ -1556,6 +1655,14 @@ STYLES.push({
     marqueeTexture.repeat.set(1.8, 1);
     const marquee = new THREE.Mesh(new THREE.BoxGeometry(10.4, 0.66, 0.4), [black, black, black, black, new THREE.MeshBasicMaterial({ map: marqueeTexture }), black]);
     marquee.position.set(0.2, -3.95, 0.2); ui.add(marquee);
+    const cursor = new THREE.Sprite(new THREE.SpriteMaterial({
+      map: canvasTexture(128, 128, g => {
+        g.beginPath(); g.moveTo(22, 12); g.lineTo(22, 104); g.lineTo(44, 84); g.lineTo(60, 116); g.lineTo(76, 108); g.lineTo(60, 76); g.lineTo(90, 76); g.closePath();
+        g.lineWidth = 10; g.lineJoin = 'round'; g.strokeStyle = '#fff'; g.stroke(); g.fillStyle = '#111'; g.fill();
+      }), transparent: true, depthTest: false
+    }));
+    cursor.scale.set(0.9, 0.9, 1); cursor.renderOrder = 20; ui.add(cursor);
+    const fit = (w, h) => { setAspect(camera, w, h); camera.position.z = Math.max(15, 4.9 / (Math.tan(camera.fov * Math.PI / 360) * camera.aspect)); };
     const pressAt = (t, period, down = 0.08, hold = 0.22, up = 0.4) => {
       const local = t % period;
       if (local < down) return local / down;
@@ -1565,10 +1672,15 @@ STYLES.push({
     };
     return {
       scene, camera,
+      resize: fit,
       update(t) {
         marqueeTexture.offset.x = (t * 0.09) % 1;
         const press = pressAt(t + 0.6, 2.4);
         button.body.position.set(0.3 * press, -0.3 * press, -0.3 * press);
+        const cl = (t + 0.6) % 2.4;
+        const reach = cl < 0.3 ? 1 : cl < 1.0 ? 1 - easeInOutCubic((cl - 0.3) / 0.7) : cl < 1.9 ? 0 : easeInOutCubic((cl - 1.9) / 0.5);
+        const idle = cl >= 1.0 && cl < 1.9 ? Math.sin(t * 5) * 0.03 : 0;
+        cursor.position.set(lerp(0.9, -1.9, reach) + idle + 0.3 * press, lerp(-1.25, -0.42, reach) - 0.3 * press, 1.3);
         const lift = pressAt(t, 3.6, 0.1, 0.9, 0.5);
         stat.body.position.set(-0.18 * lift, 0.18 * lift, 0.15 * lift);
         const starStep = Math.floor(t / 0.7), starLocal = (t % 0.7) / 0.7;

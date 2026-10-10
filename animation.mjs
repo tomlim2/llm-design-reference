@@ -14,6 +14,10 @@ const copyButton = $('copy-prompt');
 const announcement = $('viewer-announcement');
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const THUMB_FPS = 30;
+// How many thumbnails may animate at once. The governor lowers it when a thumbnail pass takes
+// too long for the frame budget and raises it back slowly; running on battery caps it.
+const LIVE_MAX = 8, LIVE_MIN = 3;
+const governor = { budget: (navigator.hardwareConcurrency || 8) <= 4 ? 4 : LIVE_MAX, cap: LIVE_MAX, ema: 0, adjustedAt: 0 };
 
 // ---------------------------------------------------------------- cards and detail panel
 const cards = data.map((style, index) => {
@@ -36,7 +40,7 @@ const cards = data.map((style, index) => {
     index, style, button, canvas, ctx2d: canvas.getContext('2d'),
     fallback: article.querySelector('.scene-fallback'),
     pointer: { x: 0, y: 0, tx: 0, ty: 0 },
-    instance: null, visible: false, failed: false, needsFrame: true, t: 0
+    instance: null, visible: false, hovered: false, distance: 0, failed: false, needsFrame: true, t: 0
   };
 });
 
@@ -186,7 +190,26 @@ function updateVisibility(now) {
   cards.forEach(card => {
     const rect = card.button.getBoundingClientRect();
     card.visible = rect.bottom > -margin && rect.top < height + margin && rect.width > 0;
+    card.distance = Math.abs((rect.top + rect.bottom) / 2 - height / 2);
   });
+}
+
+function adjustGovernor(now, cost) {
+  governor.ema = governor.ema ? governor.ema * 0.9 + cost * 0.1 : cost;
+  if (now - governor.adjustedAt < 2000) return;
+  if (governor.ema > 12 && governor.budget > LIVE_MIN) { governor.budget--; governor.adjustedAt = now; }
+  else if (governor.ema < 5 && governor.budget < governor.cap && now - governor.adjustedAt > 5000) { governor.budget++; governor.adjustedAt = now; }
+}
+if (navigator.getBattery) {
+  navigator.getBattery().then(battery => {
+    const apply = () => {
+      governor.cap = battery.charging ? LIVE_MAX : battery.level <= 0.2 ? LIVE_MIN : 6;
+      governor.budget = Math.min(governor.budget, governor.cap);
+    };
+    apply();
+    battery.addEventListener('chargingchange', apply);
+    battery.addEventListener('levelchange', apply);
+  }).catch(() => {});
 }
 
 function renderThumbs(now) {
@@ -196,23 +219,28 @@ function renderThumbs(now) {
   lastThumb = now;
   updateVisibility(now);
   const dt = Math.min(elapsed, 0.1);
-  let builds = 0;
-  for (const card of cards) {
-    if (!card.visible || card.failed) continue;
+  // The hovered card and the cards nearest the viewport centre animate; the rest keep their last frame.
+  const candidates = cards.filter(card => card.visible && !card.failed).sort((a, b) => (b.hovered - a.hovered) || (a.distance - b.distance));
+  const start = performance.now();
+  let builds = 0, rendered = 0;
+  candidates.forEach((card, rank) => {
+    const live = motionOn && rank < governor.budget;
     if (!card.instance) {
-      if (builds > 0) continue; // One expensive build (geometry + shader compile) per pass keeps scrolling smooth.
+      if (builds > 0) return; // One expensive build (geometry + shader compile) per pass keeps scrolling smooth.
       builds++;
-      try { card.instance = buildInstance(card.style.slug, card.pointer, 'thumb', thumb.w, thumb.h); } catch (error) { failCard(card, error); continue; }
+      try { card.instance = buildInstance(card.style.slug, card.pointer, 'thumb', thumb.w, thumb.h); } catch (error) { failCard(card, error); return; }
     }
     const pointerMoving = smoothPointer(card.pointer, 0.14);
-    if (!motionOn && !card.needsFrame && !pointerMoving) continue;
-    if (motionOn) card.t += dt;
+    if (!live && !card.needsFrame && !pointerMoving) return;
+    if (live) card.t += dt;
     try {
-      renderInstance(card.instance, card.t, motionOn ? dt : 0);
+      renderInstance(card.instance, card.t, live ? dt : 0);
       card.ctx2d.drawImage(three.canvas, 0, 0, card.canvas.width, card.canvas.height);
       card.needsFrame = false;
+      rendered++;
     } catch (error) { failCard(card, error); }
-  }
+  });
+  if (builds === 0 && rendered > 0) adjustGovernor(now, performance.now() - start);
 }
 
 function renderView(dt) {
@@ -282,10 +310,11 @@ cards.forEach(card => {
   card.button.addEventListener('click', () => openDialog(card.index, card.button));
   card.button.addEventListener('pointermove', event => {
     const rect = card.button.getBoundingClientRect();
+    card.hovered = true;
     card.pointer.tx = ((event.clientX - rect.left) / rect.width) * 2 - 1;
     card.pointer.ty = -(((event.clientY - rect.top) / rect.height) * 2 - 1);
   });
-  card.button.addEventListener('pointerleave', () => { card.pointer.tx = 0; card.pointer.ty = 0; });
+  card.button.addEventListener('pointerleave', () => { card.hovered = false; card.pointer.tx = 0; card.pointer.ty = 0; });
 });
 stage.addEventListener('pointermove', event => {
   const rect = stage.getBoundingClientRect();
