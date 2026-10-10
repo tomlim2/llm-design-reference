@@ -952,15 +952,14 @@ STYLES.push({
     backdrop.position.z = -5;
     scene.add(backdrop);
     const toon = color => new THREE.MeshToonMaterial({ color, gradientMap: ramp });
-    const boltShape = new THREE.Shape();
-    [[-0.45, 1.4], [0.35, 0.25], [-0.1, 0.25], [0.5, -1.4], [-0.5, -0.1], [0.0, -0.1]].forEach(([x, y], i) => i ? boltShape.lineTo(x, y) : boltShape.moveTo(x, y));
-    boltShape.closePath();
+    const pyramid = new THREE.ConeGeometry(1.15, 1.9, 4).toNonIndexed();
+    pyramid.computeVertexNormals();
     const starShape = new THREE.Shape();
     for (let i = 0; i < 10; i++) { const a = i / 10 * TAU - Math.PI / 2, r = i % 2 ? 0.5 : 1.1; i ? starShape.lineTo(Math.cos(a) * r, Math.sin(a) * r) : starShape.moveTo(Math.cos(a) * r, Math.sin(a) * r); }
     const extrude = { depth: 0.5, bevelEnabled: true, bevelThickness: 0.06, bevelSize: 0.06, bevelSegments: 2 };
     const objects = [
       [new THREE.SphereGeometry(1.05, 48, 32), '#e63946', -2.6, 0.2, 0.06],
-      [new THREE.ExtrudeGeometry(boltShape, extrude), '#ffe14f', 0.1, 0.3, 0.07],
+      [pyramid, '#ffe14f', 0.1, 0.3, 0.07],
       [new THREE.ExtrudeGeometry(starShape, extrude), '#1d6fe5', 2.7, -0.4, 0.07]
     ].map(([geometry, color, x, y, width]) => {
       geometry.center();
