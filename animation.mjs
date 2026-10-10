@@ -401,7 +401,7 @@ export function initializeAnimationGallery({ styles, onSelect, onClose }) {
   (async () => {
     let THREE, module;
     try {
-      [THREE, module] = await Promise.all([import('three'), import('./animation-styles.mjs')]);
+      [THREE, module] = await Promise.all([import('three'), import('./animation-styles.mjs?v=20261010-2')]);
     } catch (error) {
       console.error(error);
       degrade('Three.js를 불러오지 못했습니다. 네트워크 연결을 확인한 뒤 새로고침해 주세요.');

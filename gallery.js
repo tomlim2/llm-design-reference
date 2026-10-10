@@ -24,7 +24,7 @@ import { COLLECTIONS, newestFirst, resolveCollectionHash } from './collections.m
 
   function loadAnimations() {
     if (!animationLoading) {
-      animationLoading = import('./animation.mjs?v=20261010').then(module => {
+      animationLoading = import('./animation.mjs?v=20261010-2').then(module => {
         animationGallery = module.initializeAnimationGallery({
           styles:collections.animation.items,
           onSelect:number => updateHash('animation/' + String(number).padStart(2, '0'), true),
