@@ -1,12 +1,43 @@
+import { COLLECTIONS, newestFirst, resolveCollectionHash } from './collections.mjs?v=20261010';
+
 (() => {
   'use strict';
   const data = JSON.parse(document.getElementById('poster-data').textContent);
-  // Numbers follow the order in which studies were added to each collection.
-  const newestFirst = items => [...items].sort((a, b) => b.number - a.number);
-  const collections = {
-    posters: { items:newestFirst(data.posters), root:'output/poster-styles/', label:'포스터 디자인' },
-    motion: { items:newestFirst(data.motion), root:'output/motion-styles/', zip:'output/motion-styles.zip', label:'모션 디자인', downloadLabel:`모션 ${data.motion.length}장 다운로드` }
-  };
+  data.animation = JSON.parse(document.getElementById('animation-data').textContent).styles;
+  const collections = Object.fromEntries(COLLECTIONS.map(definition => [definition.key, {
+    ...definition, items:newestFirst(data[definition.key])
+  }]));
+  const animationPrompts = URL.createObjectURL(new Blob([JSON.stringify({
+    generationMode:'Three.js realtime scenes written as code',
+    assetType:'Live 3D animation style studies',
+    source:'Twenty animation style names supplied by the user',
+    styles:data.animation
+  }, null, 2)], { type:'application/json' }));
+  let animationGallery = null;
+  let animationLoading = null;
+  let selectionRequest = 0;
+
+  function updateHash(hash, replace = false) {
+    if (location.hash === '#' + hash) return;
+    try { history[replace ? 'replaceState' : 'pushState'](null, '', '#' + hash); } catch { /* Local files may restrict history changes. */ }
+  }
+
+  function loadAnimations() {
+    if (!animationLoading) {
+      animationLoading = import('./animation.mjs?v=20261010').then(module => {
+        animationGallery = module.initializeAnimationGallery({
+          styles:collections.animation.items,
+          onSelect:number => updateHash('animation/' + String(number).padStart(2, '0'), true),
+          onClose:() => { if (activeCollection === 'animation') updateHash('animation', true); }
+        });
+        return animationGallery;
+      }).catch(error => {
+        animationLoading = null;
+        throw error;
+      });
+    }
+    return animationLoading;
+  }
   const dialog = document.getElementById('poster-dialog');
   const image = document.getElementById('detail-image');
   const promptDetails = document.getElementById('prompt-details');
@@ -20,29 +51,45 @@
   let trigger = null;
   const collection = () => collections[activeCollection];
 
-  function setCollection(key, updateHash = false) {
+  function setCollection(key, updateUrl = false, styleNumber = null) {
     if (!collections[key]) return;
+    const request = ++selectionRequest;
     if (dialog.open) dialog.close();
     activeCollection = key;
     current = 0;
+    if (key !== 'animation') animationGallery?.setActive(false);
     tabs.forEach(tab => {
       const selected = tab.dataset.collection === key;
       tab.setAttribute('aria-selected', String(selected));
       tab.tabIndex = selected ? 0 : -1;
       document.getElementById(tab.getAttribute('aria-controls')).hidden = !selected;
     });
+    const selected = collection();
     const archive = document.getElementById('archive-download');
-    archive.hidden = !collection().zip;
-    if (collection().zip) {
-      archive.href = collection().zip;
-      document.getElementById('archive-label').textContent = collection().downloadLabel;
+    archive.hidden = !selected.zip;
+    if (selected.zip) {
+      archive.href = selected.zip;
+      document.getElementById('archive-label').textContent = `모션 ${selected.items.length}장 다운로드`;
     } else {
       archive.removeAttribute('href');
     }
-    document.getElementById('prompts-download').href = collection().root + 'prompts.json';
-    document.getElementById('collection-announcement').textContent = collection().label + ', ' + collection().items.length + '개 레퍼런스';
-    if (updateHash) {
-      try { history.replaceState(null, '', '#' + key); } catch { /* Local files may restrict history changes. */ }
+    const prompts = document.getElementById('prompts-download');
+    prompts.href = key === 'animation' ? animationPrompts : selected.root + 'prompts.json';
+    prompts.download = key + '-prompts.json';
+    document.getElementById('collection-announcement').textContent = selected.label + ', ' + selected.items.length + '개 레퍼런스';
+    if (updateUrl) updateHash(key);
+    if (key === 'animation') {
+      loadAnimations().then(controller => {
+        // Ignore a slow load after the user has already selected another tab/route.
+        if (request !== selectionRequest || activeCollection !== 'animation') return;
+        controller.setActive(true);
+        controller.openStyle(styleNumber);
+      }).catch(error => {
+        console.error(error);
+        const notice = document.getElementById('animation-notice');
+        notice.hidden = false;
+        notice.textContent = '애니메이션을 불러오지 못했습니다. 다른 탭으로 이동했다가 다시 열어 주세요.';
+      });
     }
   }
 
@@ -116,7 +163,8 @@
   });
   document.getElementById('close-dialog').addEventListener('click', () => dialog.close());
   dialog.addEventListener('close', () => {
-    document.body.classList.remove('modal-open');
+    if (dialog.open) return; // A queued close event must not affect a reopened viewer.
+    if (!document.querySelector('dialog[open]')) document.body.classList.remove('modal-open');
     if (trigger && trigger.getClientRects().length) trigger.focus({preventScroll:true});
   });
   let backdropPointer = false;
@@ -156,9 +204,8 @@
     announcement.textContent = copied ? '생성 프롬프트를 복사했습니다.' : '자동 복사를 할 수 없습니다. 위 텍스트를 선택해 복사해주세요.';
   });
   function collectionFromHash() {
-    const key = location.hash.slice(1);
-    if (collections[key]) setCollection(key);
-    else if (key === 'new-styles') setCollection('posters');
+    const route = resolveCollectionHash(location.hash);
+    setCollection(route.key, false, route.number);
   }
   window.addEventListener('hashchange', collectionFromHash);
   collectionFromHash();

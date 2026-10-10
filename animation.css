@@ -1,0 +1,27 @@
+/* Only animation-specific surfaces belong here; the shared shell lives in site.css. */
+#animation-panel .animation-toolbar { display:flex; align-items:center; justify-content:space-between; gap:16px; margin:0 0 20px; }
+#animation-panel .instruction { margin:0; color:var(--muted); font-size:12px; line-height:1.7; word-break:keep-all; }
+#animation-panel .motion-toggle { flex:none; display:flex; align-items:center; gap:10px; min-height:44px; padding:0; border:0; background:transparent; font-size:12px; }
+#animation-panel .motion-toggle:hover { color:var(--accent); }
+#animation-panel .motion-toggle i { width:8px; height:8px; border-radius:50%; background:var(--accent); box-shadow:0 0 0 3px #b93e2922; }
+#animation-panel .motion-toggle[aria-pressed="false"] i { background:var(--muted); box-shadow:none; }
+#animation-panel .notice { margin:0 0 24px; padding:14px 16px; border:1px solid var(--line); font-size:12px; line-height:1.7; color:var(--muted); word-break:keep-all; }
+#animation-panel .scene-trigger { position:relative; display:block; width:100%; aspect-ratio:4/3; padding:0; border:0; background:#e4e0d8; text-align:left; isolation:isolate; overflow:hidden; }
+#animation-panel .scene-trigger::after { content:""; position:absolute; inset:0; border:1px solid #2928240f; pointer-events:none; }
+#animation-panel .scene-trigger canvas { display:block; width:100%; height:100%; }
+#animation-panel .scene-fallback { position:absolute; inset:0; display:grid; place-items:center; padding:20px; text-align:center; font-size:11px; line-height:1.7; color:var(--muted); pointer-events:none; }
+#animation-panel .scene-trigger:not(.is-failed) .scene-fallback { display:none; }
+#animation-panel .scene-trigger:hover .open-hint, #animation-panel .scene-trigger:focus-visible .open-hint { opacity:1; transform:translateY(0); }
+#animation-dialog .artwork-stage { min-width:0; padding:0; overflow:hidden; }
+#animation-dialog .artwork-stage canvas { display:block; width:100%; height:100%; }
+#animation-dialog .stage-controls { position:absolute; left:16px; bottom:16px; display:flex; gap:8px; }
+#animation-dialog .stage-button { min-height:40px; padding:0 14px; border:1px solid #00000022; background:#f5f3eeee; font-size:11px; backdrop-filter:blur(6px); }
+#animation-dialog .stage-button:hover { background:var(--paper); }
+#animation-dialog .stage-error { position:absolute; inset:0; display:grid; place-items:center; margin:0; padding:28px; text-align:center; font-size:13px; line-height:1.8; color:var(--muted); background:#e4e0d8; }
+#animation-dialog .technique { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 22px; padding:0; list-style:none; }
+#animation-dialog .technique li { padding:6px 9px; border:1px solid var(--line); color:var(--muted); font-size:10px; letter-spacing:.03em; }
+@media(max-width:760px) {
+  #animation-panel .animation-toolbar { flex-wrap:wrap; gap:4px 16px; }
+  #animation-dialog .artwork-stage { height:48dvh; min-height:260px; }
+  #animation-dialog .close { z-index:1; }
+}
