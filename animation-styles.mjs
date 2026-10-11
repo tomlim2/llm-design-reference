@@ -139,6 +139,25 @@ function getEnvironment(renderer) {
   }
   return texture;
 }
+let displayFontPromise = null;
+// Comic display face for Korean lettering (Black Han Sans via Google Fonts), with a heavy system fallback.
+function loadDisplayFont() {
+  if (!displayFontPromise) {
+    displayFontPromise = (async () => {
+      const href = 'https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap';
+      let link = document.querySelector('link[data-display-font]');
+      if (!link) {
+        link = document.createElement('link'); link.rel = 'stylesheet'; link.href = href; link.dataset.displayFont = '1';
+        await new Promise((resolve, reject) => { link.onload = resolve; link.onerror = reject; document.head.appendChild(link); });
+      }
+      const sample = '두슈웅화르륵덜컹한편세계에서는달까지간다';
+      await document.fonts.load('400 100px "Black Han Sans"', sample);
+      if (!document.fonts.check('400 100px "Black Han Sans"', sample)) throw new Error('display font unavailable');
+      return { family: '"Black Han Sans"', weight: '400' };
+    })().catch(() => ({ family: '"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif', weight: '900' }));
+  }
+  return displayFontPromise;
+}
 let fontPromise = null;
 function loadFont() {
   if (!fontPromise) {
@@ -1052,47 +1071,59 @@ STYLES.push({
       inkPass.material.uniforms.uRes.value.set(pw, ph);
     };
     sizeTargets(width, height);
+    // Lettering (caption, balloon, sound effects) is drawn with a system face first and redrawn once
+    // the comic display face has loaded.
+    let font = { family: '"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif', weight: '900' };
+    let disposed = false;
+    const swapMap = (material, texture) => { const old = material.map; material.map = texture; material.needsUpdate = true; if (old) old.dispose(); };
     // Speech balloon: rounded body, tail aimed at the porthole (the rocket's "face") and ending about
-    // halfway to it, bold italic caps, the same ink weight as the outlines.
-    const balloon = new THREE.Mesh(new THREE.PlaneGeometry(2.8, 1.75), new THREE.MeshBasicMaterial({
-      transparent: true,
-      map: canvasTexture(640, 400, (g, w, h) => {
-        g.clearRect(0, 0, w, h); g.lineWidth = 14; g.strokeStyle = '#141414'; g.fillStyle = '#ffffff'; g.lineJoin = 'round';
-        g.beginPath(); g.ellipse(300, 150, 282, 128, 0, 0, TAU); g.fill(); g.stroke();
-        g.beginPath(); g.moveTo(435, 245); g.lineTo(578, 384); g.lineTo(348, 268); g.closePath(); g.fill(); g.stroke();
-        g.beginPath(); g.ellipse(300, 150, 275, 121, 0, 0, TAU); g.fill();
-        g.fillStyle = '#141414'; g.font = 'italic 900 62px "Arial Black",Impact,"Helvetica Neue",sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle';
-        g.fillText('TO THE', 300, 118); g.fillText('MOON!', 300, 186);
-      })
+    // halfway to it, the same ink weight as the outlines.
+    const balloon = new THREE.Mesh(new THREE.PlaneGeometry(2.8, 1.75), new THREE.MeshBasicMaterial({ transparent: true }));
+    const drawBalloon = () => swapMap(balloon.material, canvasTexture(640, 400, (g, w, h) => {
+      g.clearRect(0, 0, w, h); g.lineWidth = 14; g.strokeStyle = '#141414'; g.fillStyle = '#ffffff'; g.lineJoin = 'round';
+      g.beginPath(); g.ellipse(300, 150, 282, 128, 0, 0, TAU); g.fill(); g.stroke();
+      g.beginPath(); g.moveTo(435, 245); g.lineTo(578, 384); g.lineTo(348, 268); g.closePath(); g.fill(); g.stroke();
+      g.beginPath(); g.ellipse(300, 150, 275, 121, 0, 0, TAU); g.fill();
+      g.fillStyle = '#141414'; g.font = `${font.weight} 80px ${font.family}`; g.textAlign = 'center'; g.textBaseline = 'middle';
+      g.fillText('달까지', 300, 110); g.fillText('간다!', 300, 196);
     }));
     scene.add(balloon);
-    // Sound-effect lettering: one plane per letter so the word can bend along the exhaust, each glyph
-    // slanted with the motion, a black holding line matching the art and a hard offset shadow.
-    const sfxWords = ['WHOOOSH', 'FWOOOSH', 'VROOOOM'];
-    const letterTexture = ch => canvasTexture(256, 256, (g, w, h) => {
-      g.clearRect(0, 0, w, h); g.translate(w / 2, h / 2); g.transform(1, 0, -0.24, 1, 0, 0);
-      g.font = '900 176px "Arial Black",Impact,"Helvetica Neue",sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.lineJoin = 'round';
-      g.lineWidth = 26; g.strokeStyle = '#141414'; g.strokeText(ch, 14, 16); g.fillStyle = '#e63946'; g.fillText(ch, 14, 16);
-      g.strokeText(ch, 0, 0); g.fillStyle = '#fffdf5'; g.fillText(ch, 0, 0);
-    });
-    const sfx = sfxWords.map(word => [...word].map(ch => {
-      const plane = new THREE.Mesh(new THREE.PlaneGeometry(1.25, 1.25), new THREE.MeshBasicMaterial({ map: letterTexture(ch), transparent: true, depthWrite: false }));
-      plane.visible = false; scene.add(plane); return plane;
+    const caption = new THREE.Mesh(new THREE.PlaneGeometry(2.2, 0.46), new THREE.MeshBasicMaterial({ transparent: true }));
+    const drawCaption = () => swapMap(caption.material, canvasTexture(832, 172, (g, w, h) => {
+      g.fillStyle = '#fff3b0'; g.fillRect(0, 0, w, h); g.lineWidth = 14; g.strokeStyle = '#141414'; g.strokeRect(7, 7, w - 14, h - 14);
+      g.fillStyle = '#141414'; g.font = `${font.weight} 66px ${font.family}`; g.textBaseline = 'middle'; g.fillText('한편, 3D 세계에서는…', 40, h / 2 + 4);
     }));
+    camera.add(caption);
+    // Sound effects in two layers: a big continuous engine rumble (두두두두) streaming back along the
+    // line of flight behind the rocket, and small accent words that pop at the nose, flame and fins.
+    const glyph = (text, w, h, size, fill, line, shadow) => canvasTexture(w, h, g => {
+      g.clearRect(0, 0, w, h); g.translate(w / 2, h / 2); g.transform(1, 0, -0.2, 1, 0, 0);
+      g.font = `${font.weight} ${size}px ${font.family}`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.lineJoin = 'round'; g.lineWidth = line; g.strokeStyle = '#141414';
+      if (shadow) { g.strokeText(text, size * 0.08, size * 0.09); g.fillStyle = shadow; g.fillText(text, size * 0.08, size * 0.09); }
+      g.strokeText(text, 0, 0); g.fillStyle = fill; g.fillText(text, 0, 0);
+    });
+    const RUMBLE = 9, RUMBLE_STEP = 1.85;
+    const rumble = Array.from({ length: RUMBLE }, () => { const plane = new THREE.Mesh(new THREE.PlaneGeometry(1.25, 1.25), new THREE.MeshBasicMaterial({ transparent: true, depthWrite: false })); scene.add(plane); return plane; });
+    const accents = [['슈웅', 'nose'], ['화르륵', 'flame'], ['덜컹', 'fin']].map(([text, anchor]) => {
+      const plane = new THREE.Mesh(new THREE.PlaneGeometry(2.2, 1.0), new THREE.MeshBasicMaterial({ transparent: true, depthWrite: false })); plane.visible = false; scene.add(plane);
+      return { plane, text, anchor };
+    });
+    let rumbleTexture = null;
+    const drawLettering = () => {
+      const next = glyph('두', 256, 256, 196, '#ffd84a', 20);
+      rumble.forEach(plane => { plane.material.map = next; plane.material.needsUpdate = true; });
+      if (rumbleTexture) rumbleTexture.dispose();
+      rumbleTexture = next;
+      accents.forEach(({ plane, text }) => swapMap(plane.material, glyph(text, 512, 232, text.length > 2 ? 118 : 136, '#fffdf5', 18, '#e63946')));
+    };
+    drawBalloon(); drawCaption(); drawLettering();
+    loadDisplayFont().then(loaded => { if (disposed) return; font = loaded; drawBalloon(); drawCaption(); drawLettering(); });
     // Panel border and caption box live in camera space so they frame any aspect ratio.
     const ink = new THREE.MeshBasicMaterial({ color: 0x141414 });
     const bars = [0, 1, 2, 3].map(() => { const bar = new THREE.Mesh(new THREE.BoxGeometry(1, 1, 0.01), ink); camera.add(bar); return bar; });
-    const caption = new THREE.Mesh(new THREE.PlaneGeometry(2.2, 0.46), new THREE.MeshBasicMaterial({
-      transparent: true,
-      map: canvasTexture(832, 172, (g, w, h) => {
-        g.fillStyle = '#fff3b0'; g.fillRect(0, 0, w, h); g.lineWidth = 14; g.strokeStyle = '#141414'; g.strokeRect(7, 7, w - 14, h - 14);
-        g.fillStyle = '#141414'; g.font = 'italic 900 56px "Arial Black",Impact,"Helvetica Neue",sans-serif'; g.textBaseline = 'middle'; g.fillText('MEANWHILE, IN 3D...', 34, h / 2 + 4);
-      })
-    }));
-    camera.add(caption);
     const noseWorld = new THREE.Vector3(), tailWorld = new THREE.Vector3(), trail = new THREE.Vector3(), portholeWorld = new THREE.Vector3();
     const heading = new THREE.Vector2(), wordCenter = new THREE.Vector2();
-    const CYCLE = 3.4;
+    const noise = (frame, salt) => Math.abs(Math.sin(frame * 12.9898 + salt * 78.233) * 43758.5453) % 1;
     return {
       scene, camera,
       resize(w, h) {
@@ -1129,26 +1160,40 @@ STYLES.push({
         porthole.getWorldPosition(portholeWorld);
         const balloonHalfWidth = Math.tan(camera.fov * Math.PI / 360) * (camera.position.z - 0.9) * camera.aspect - 1.7;
         balloon.position.set(Math.max(portholeWorld.x - 2.3, -balloonHalfWidth), portholeWorld.y + 0.85 + Math.sin(t * 1.4) * 0.06, 0.9);
-        const k = Math.floor(t / CYCLE) % sfxWords.length, local = t % CYCLE;
-        // The sound effect runs huge along the line of flight, under the rocket's belly and behind it,
-        // so the figure overlaps the lettering the way a printed panel would.
         heading.set(-trail.x, -trail.y).normalize();
-        wordCenter.set(rocket.position.x + heading.y * 1.35 - heading.x * 1.2, rocket.position.y - heading.x * 1.35 - heading.y * 1.2);
-        const wordAngle = Math.atan2(heading.y, heading.x);
-        sfx.forEach((letters, w) => letters.forEach((letter, i) => {
-          if (w !== k) { letter.visible = false; return; }
-          const n = letters.length;
-          const appear = clamp((local - 0.1 - i * 0.05) / 0.2, 0, 1);
-          const fade = clamp((CYCLE - 0.45 - local) / 0.3, 0, 1);
-          letter.visible = appear > 0 && fade > 0;
-          if (!letter.visible) return;
-          const offset = (i - (n - 1) / 2) * 1.95;
-          const bob = Math.sin(i * 1.3 + t * 2.6) * 0.08 + (Math.floor(t * 12) % 2 ? 0.03 : -0.03);
-          letter.position.set(wordCenter.x + heading.x * offset + heading.y * bob, wordCenter.y + heading.y * offset - heading.x * bob, -0.8);
-          letter.rotation.z = wordAngle + Math.sin(i * 1.7 + t * 2.0) * 0.04;
-          letter.scale.setScalar((2.7 + i * 0.14) * easeOutBack(appear));
-          letter.material.opacity = fade;
-        }));
+        const wordAngle = Math.atan2(heading.y, heading.x), frame = Math.floor(t * 12), span = RUMBLE * RUMBLE_STEP;
+        wordCenter.set(rocket.position.x + heading.y * 1.35 - heading.x * 1.0, rocket.position.y - heading.x * 1.35 - heading.y * 1.0);
+        rumble.forEach((letter, i) => {
+          const offset = ((i * RUMBLE_STEP - t * 1.6) % span + span) % span - span / 2;
+          const shake = (noise(frame, i) - 0.5) * 0.14;
+          letter.position.set(wordCenter.x + heading.x * offset + heading.y * shake, wordCenter.y + heading.y * offset - heading.x * shake, -0.8);
+          letter.rotation.z = wordAngle + shake * 0.8;
+          letter.scale.setScalar(2.55 + 0.18 * Math.sin(i * 2.1 + frame * 0.9));
+          letter.material.opacity = 0.92 * clamp(1 - Math.pow(Math.abs(offset) / (span / 2), 6), 0, 1);
+        });
+        const local = t % 2.2;
+        accents.forEach(({ plane, anchor }) => {
+          if (anchor === 'nose') {
+            const u = local / 2.2;
+            plane.visible = u < 0.42;
+            if (!plane.visible) return;
+            const e = easeOutCubic(u / 0.42);
+            plane.position.set(noseWorld.x + heading.x * (0.8 + e * 1.9) + heading.y * 0.95, noseWorld.y + heading.y * (0.8 + e * 1.9) - heading.x * 0.95, 0.8);
+            plane.rotation.z = wordAngle; plane.scale.setScalar(0.75 + e * 0.45); plane.material.opacity = 1 - e * e;
+          } else if (anchor === 'flame') {
+            const r = noise(frame, 7);
+            plane.visible = true;
+            plane.position.set(tailWorld.x + trail.x * 1.1 - heading.y * (1.0 + r * 0.2), tailWorld.y + trail.y * 1.1 + heading.x * (1.0 + r * 0.2), 0.8);
+            plane.rotation.z = wordAngle + (r - 0.5) * 0.35; plane.scale.setScalar(0.72 + r * 0.22 + (flicker - 0.85) * 0.5); plane.material.opacity = 0.95;
+          } else {
+            const u = (t % 3.1) / 3.1;
+            plane.visible = u > 0.55 && u < 0.82;
+            if (!plane.visible) return;
+            const wobble = Math.sin(t * 42) * 0.07;
+            plane.position.set(rocket.position.x + heading.y * 1.7 - heading.x * 0.9 + wobble, rocket.position.y - heading.x * 1.7 - heading.y * 0.9 + wobble * 0.6, 0.8);
+            plane.rotation.z = wordAngle - 0.35 + wobble * 1.5; plane.scale.setScalar(0.68); plane.material.opacity = 1;
+          }
+        });
         const shake = local < 0.14 ? (1 - local / 0.14) * 0.09 : 0;
         camera.position.x = pointer.x * 0.3 + Math.sin(t * 120) * shake; camera.position.y = pointer.y * 0.2 + Math.cos(t * 97) * shake;
         camera.lookAt(0, 0, 0);
@@ -1164,7 +1209,7 @@ STYLES.push({
         renderer.setRenderTarget(targets.color); renderer.render(scene, camera);
         renderer.setRenderTarget(null); renderer.render(inkPass.scene, inkPass.camera);
       },
-      dispose() { if (targets.color) { targets.color.dispose(); targets.normal.dispose(); } }
+      dispose() { disposed = true; if (targets.color) { targets.color.dispose(); targets.normal.dispose(); } }
     };
   }
 });
