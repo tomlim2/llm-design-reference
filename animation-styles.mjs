@@ -1169,7 +1169,6 @@ STYLES.push({
           letter.position.set(wordCenter.x + heading.x * offset + heading.y * shake, wordCenter.y + heading.y * offset - heading.x * shake, -0.8);
           letter.rotation.z = wordAngle + shake * 0.8;
           letter.scale.setScalar(2.55 + 0.18 * Math.sin(i * 2.1 + frame * 0.9));
-          letter.material.opacity = 0.92 * clamp(1 - Math.pow(Math.abs(offset) / (span / 2), 6), 0, 1);
         });
         const local = t % 2.2;
         accents.forEach(({ plane, anchor }) => {
@@ -1179,19 +1178,19 @@ STYLES.push({
             if (!plane.visible) return;
             const e = easeOutCubic(u / 0.42);
             plane.position.set(noseWorld.x + heading.x * (0.8 + e * 1.9) + heading.y * 0.95, noseWorld.y + heading.y * (0.8 + e * 1.9) - heading.x * 0.95, 0.8);
-            plane.rotation.z = wordAngle; plane.scale.setScalar(0.75 + e * 0.45); plane.material.opacity = 1 - e * e;
+            plane.rotation.z = wordAngle; plane.scale.setScalar(0.75 + e * 0.45);
           } else if (anchor === 'flame') {
             const r = noise(frame, 7);
             plane.visible = true;
             plane.position.set(tailWorld.x + trail.x * 1.1 - heading.y * (1.0 + r * 0.2), tailWorld.y + trail.y * 1.1 + heading.x * (1.0 + r * 0.2), 0.8);
-            plane.rotation.z = wordAngle + (r - 0.5) * 0.35; plane.scale.setScalar(0.72 + r * 0.22 + (flicker - 0.85) * 0.5); plane.material.opacity = 0.95;
+            plane.rotation.z = wordAngle + (r - 0.5) * 0.35; plane.scale.setScalar(0.72 + r * 0.22 + (flicker - 0.85) * 0.5);
           } else {
             const u = (t % 3.1) / 3.1;
             plane.visible = u > 0.55 && u < 0.82;
             if (!plane.visible) return;
             const wobble = Math.sin(t * 42) * 0.07;
             plane.position.set(rocket.position.x + heading.y * 1.7 - heading.x * 0.9 + wobble, rocket.position.y - heading.x * 1.7 - heading.y * 0.9 + wobble * 0.6, 0.8);
-            plane.rotation.z = wordAngle - 0.35 + wobble * 1.5; plane.scale.setScalar(0.68); plane.material.opacity = 1;
+            plane.rotation.z = wordAngle - 0.35 + wobble * 1.5; plane.scale.setScalar(0.68);
           }
         });
         const shake = local < 0.14 ? (1 - local / 0.14) * 0.09 : 0;
