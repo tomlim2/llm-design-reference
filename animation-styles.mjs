@@ -924,7 +924,7 @@ STYLES.push({
 STYLES.push({
   slug: 'comic-book',
   build({ renderer, pointer, dpr, width, height }) {
-    const scene = makeScene('#ffe878');
+    const scene = makeScene('#ffd84a');
     const camera = perspective(34, [0, 0, 12]);
     scene.add(camera);
     const ramp = new THREE.DataTexture(new Uint8Array([70, 160, 255]), 3, 1, THREE.RedFormat);
@@ -951,34 +951,49 @@ STYLES.push({
       };
       return material;
     };
-    // Focus lines (集中線) converge on the subject: each line is thick at the panel edge and tapers to a
-    // point toward the centre, stopping short of the figure so it stays readable. Drawn in bundles.
-    const focusLines = new THREE.Mesh(new THREE.PlaneGeometry(40, 40), new THREE.MeshBasicMaterial({
-      transparent: true, depthWrite: false,
-      map: canvasTexture(1024, 1024, (g, w, h) => {
-        const rng = mulberry32(12);
-        g.clearRect(0, 0, w, h); g.translate(w / 2, h / 2); g.fillStyle = '#141414';
-        for (let bundle = 0; bundle < 44; bundle++) {
-          const base = rng() * TAU, count = 1 + Math.floor(rng() * 5);
-          for (let k = 0; k < count; k++) {
-            const a = base + (rng() - 0.5) * 0.14, inner = 100 + rng() * 48, outer = 250 + rng() * 280, width = 2.5 + rng() * 11;
-            const nx = -Math.sin(a) * width / 2, ny = Math.cos(a) * width / 2;
-            g.beginPath();
-            g.moveTo(Math.cos(a) * inner, Math.sin(a) * inner);
-            g.lineTo(Math.cos(a) * outer + nx, Math.sin(a) * outer + ny);
-            g.lineTo(Math.cos(a) * outer - nx, Math.sin(a) * outer - ny);
-            g.closePath(); g.fill();
-          }
-        }
-      })
+    const backdrop = new THREE.Mesh(new THREE.PlaneGeometry(44, 28), new THREE.ShaderMaterial({
+      uniforms: { uA: { value: new THREE.Color('#ffd84a') }, uB: { value: new THREE.Color('#ff4b3a') }, uTime: { value: 0 } },
+      vertexShader: 'varying vec2 vUv;\nvoid main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }',
+      fragmentShader: `
+        uniform vec3 uA, uB; uniform float uTime; varying vec2 vUv;
+        void main() {
+          vec2 st = (vUv - 0.5) * vec2(1.57, 1.0);
+          float a = 0.6; mat2 R = mat2(cos(a), -sin(a), sin(a), cos(a));
+          vec2 f = fract(R * st * 76.0) - 0.5;
+          float dist = length(st + vec2(0.25, 0.15)) * 1.9;
+          float radius = 0.1 + 0.42 * smoothstep(0.1, 1.0, dist);
+          float dots = 1.0 - smoothstep(radius - 0.08, radius + 0.08, length(f));
+          gl_FragColor = vec4(mix(uA, uB, dots * 0.85), 1.0);
+          #include <colorspace_fragment>
+        }`
     }));
+    backdrop.position.z = -6;
+    scene.add(backdrop);
+    // Focus lines (集中線) converge on the subject: each line is a wedge, thick at the panel edge and
+    // tapering to a point toward the centre, stopping short of the figure so it stays readable. Drawn
+    // as geometry (not a texture) in bundles, so the points stay razor sharp at any zoom.
+    const focusGeometry = (() => {
+      const rng = mulberry32(12), positions = [];
+      for (let bundle = 0; bundle < 44; bundle++) {
+        const base = rng() * TAU, count = 1 + Math.floor(rng() * 5);
+        for (let k = 0; k < count; k++) {
+          const a = base + (rng() - 0.5) * 0.14, inner = 3.9 + rng() * 1.9, outer = 9.5 + rng() * 11, width = 0.1 + rng() * 0.42;
+          const nx = -Math.sin(a) * width / 2, ny = Math.cos(a) * width / 2;
+          positions.push(Math.cos(a) * inner, Math.sin(a) * inner, 0, Math.cos(a) * outer + nx, Math.sin(a) * outer + ny, 0, Math.cos(a) * outer - nx, Math.sin(a) * outer - ny, 0);
+        }
+      }
+      const geometry = new THREE.BufferGeometry();
+      geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+      return geometry;
+    })();
+    const focusLines = new THREE.Mesh(focusGeometry, new THREE.MeshBasicMaterial({ color: 0x141414, side: THREE.DoubleSide }));
     focusLines.position.z = -1.2;
     scene.add(focusLines);
     // Ink lines are drawn in screen space from depth and normal discontinuities, so silhouettes and
     // creases get the same pen width. Only objects on INK_LAYER take part in the line pass.
     const INK_LAYER = 1;
     const rocket = new THREE.Group();
-    rocket.position.set(0.8, 0.25, 0); rocket.rotation.z = -0.62;
+    rocket.position.set(0.9, 0.45, 0); rocket.rotation.z = -0.62;
     scene.add(rocket);
     const part = (geometry, color) => { const mesh = new THREE.Mesh(geometry, toon(color)); mesh.layers.enable(INK_LAYER); rocket.add(mesh); return mesh; };
     part(new THREE.CapsuleGeometry(0.75, 1.9, 8, 24), '#f4f1ea');
@@ -1002,33 +1017,37 @@ STYLES.push({
     const normalMaterial = new THREE.MeshNormalMaterial();
     const targets = { color: null, normal: null };
     const inkPass = fullscreenQuad(`
-      uniform sampler2D uColor, uDepth, uNormal; uniform vec2 uRes; uniform float uNear, uFar, uWidth, uTime; uniform vec3 uInk;
+      uniform sampler2D uColor, uDepth, uNormal; uniform vec2 uRes; uniform float uNear, uFar, uOuter, uInner, uTime; uniform vec3 uInk;
       varying vec2 vUv;
       float linearDepth(float d) { float z = d * 2.0 - 1.0; return (2.0 * uNear * uFar) / (uFar + uNear - z * (uFar - uNear)); }
       float depthAt(vec2 uv) { return linearDepth(texture2D(uDepth, uv).r); }
       vec3 normalAt(vec2 uv) { return texture2D(uNormal, uv).rgb * 2.0 - 1.0; }
       void main() {
-        vec2 px = uWidth / uRes;
-        vec2 uv = vUv + vec2(sin(vUv.y * 110.0 + uTime * 0.7), cos(vUv.x * 95.0 - uTime * 0.5)) * px * 0.35;
-        float d = depthAt(uv);
-        float dx = abs(depthAt(uv + vec2(px.x, 0.0)) - depthAt(uv - vec2(px.x, 0.0)));
-        float dy = abs(depthAt(uv + vec2(0.0, px.y)) - depthAt(uv - vec2(0.0, px.y)));
-        float depthEdge = smoothstep(0.025 * d, 0.06 * d, max(dx, dy));
-        float nx = length(normalAt(uv + vec2(px.x, 0.0)) - normalAt(uv - vec2(px.x, 0.0)));
-        float ny = length(normalAt(uv + vec2(0.0, px.y)) - normalAt(uv - vec2(0.0, px.y)));
-        float normalEdge = smoothstep(0.6, 1.2, max(nx, ny));
-        float edge = max(depthEdge, normalEdge);
+        vec2 px = 1.0 / uRes;
+        vec2 uv = vUv + vec2(sin(vUv.y * 110.0 + uTime * 0.7), cos(vUv.x * 95.0 - uTime * 0.5)) * px * 0.4;
+        float dc = depthAt(uv); vec3 nc = normalAt(uv);
+        float silhouette = 0.0, crease = 0.0;
+        for (int i = 0; i < 8; i++) {
+          float a = float(i) * 0.7854;
+          vec2 dir = vec2(cos(a), sin(a));
+          float dn = depthAt(uv + dir * px * uOuter);
+          silhouette = max(silhouette, abs(dn - dc) / min(dn, dc));
+          crease = max(crease, length(normalAt(uv + dir * px * uInner) - nc));
+        }
+        float edge = max(smoothstep(0.02, 0.034, silhouette), smoothstep(0.78, 0.98, crease));
         vec3 col = texture2D(uColor, vUv).rgb;
         gl_FragColor = vec4(mix(col, uInk, edge), 1.0);
         #include <colorspace_fragment>
-      }`, { uColor: { value: null }, uDepth: { value: null }, uNormal: { value: null }, uRes: { value: new THREE.Vector2(1, 1) }, uNear: { value: camera.near }, uFar: { value: camera.far }, uWidth: { value: 1.9 * dpr }, uTime: { value: 0 }, uInk: { value: new THREE.Color('#141414') } });
+      }`, { uColor: { value: null }, uDepth: { value: null }, uNormal: { value: null }, uRes: { value: new THREE.Vector2(1, 1) }, uNear: { value: camera.near }, uFar: { value: camera.far }, uOuter: { value: 1.6 * dpr }, uInner: { value: 1.0 * dpr }, uTime: { value: 0 }, uInk: { value: new THREE.Color('#141414') } });
     const sizeTargets = (w, h) => {
       const pw = Math.max(2, Math.round(w * dpr)), ph = Math.max(2, Math.round(h * dpr));
       if (targets.color) { targets.color.dispose(); targets.normal.dispose(); }
-      targets.color = new THREE.WebGLRenderTarget(pw, ph, { depthTexture: new THREE.DepthTexture(pw, ph), depthBuffer: true });
-      targets.normal = new THREE.WebGLRenderTarget(pw, ph);
+      // Depth for the line pass comes from the ink-layer-only normal pass, so balloons, captions and
+      // lettering planes never leave rectangular edges.
+      targets.color = new THREE.WebGLRenderTarget(pw, ph, { samples: 4 });
+      targets.normal = new THREE.WebGLRenderTarget(pw, ph, { depthTexture: new THREE.DepthTexture(pw, ph), depthBuffer: true });
       inkPass.material.uniforms.uColor.value = targets.color.texture;
-      inkPass.material.uniforms.uDepth.value = targets.color.depthTexture;
+      inkPass.material.uniforms.uDepth.value = targets.normal.depthTexture;
       inkPass.material.uniforms.uNormal.value = targets.normal.texture;
       inkPass.material.uniforms.uRes.value.set(pw, ph);
     };
@@ -1073,6 +1092,8 @@ STYLES.push({
     }));
     camera.add(caption);
     const noseWorld = new THREE.Vector3(), tailWorld = new THREE.Vector3(), trail = new THREE.Vector3(), portholeWorld = new THREE.Vector3();
+    const p0 = new THREE.Vector2(), p1 = new THREE.Vector2(), p2 = new THREE.Vector2(), point = new THREE.Vector2(), tangent = new THREE.Vector2(), sample = new THREE.Vector2();
+    const bezier = (u, out) => out.set((1 - u) * (1 - u) * p0.x + 2 * (1 - u) * u * p1.x + u * u * p2.x, (1 - u) * (1 - u) * p0.y + 2 * (1 - u) * u * p1.y + u * u * p2.y);
     const CYCLE = 3.4;
     return {
       scene, camera,
@@ -1089,7 +1110,8 @@ STYLES.push({
       },
       update(t) {
         const q = Math.floor(t * 12) / 12;
-        rocket.position.set(0.8 + Math.sin(t * 1.3) * 0.18 + pointer.x * 0.5, 0.25 + Math.sin(t * 1.9) * 0.22 + pointer.y * 0.4, 0);
+        backdrop.material.uniforms.uTime.value = t;
+        rocket.position.set(0.9 + Math.sin(t * 1.3) * 0.18 + pointer.x * 0.5, 0.45 + Math.sin(t * 1.9) * 0.22 + pointer.y * 0.4, 0);
         rocket.rotation.z = -0.62 + Math.sin(t * 1.1) * 0.05 - pointer.x * 0.12;
         rocket.rotation.y = Math.sin(t * 0.7) * 0.25;
         const flicker = 0.85 + ((Math.sin(q * 91.7) * 43758.5453) % 1 + 1) % 1 * 0.35;
@@ -1110,7 +1132,12 @@ STYLES.push({
         const balloonHalfWidth = Math.tan(camera.fov * Math.PI / 360) * (camera.position.z - 0.9) * camera.aspect - 1.7;
         balloon.position.set(Math.max(portholeWorld.x - 2.3, -balloonHalfWidth), portholeWorld.y + 0.85 + Math.sin(t * 1.4) * 0.06, 0.9);
         const k = Math.floor(t / CYCLE) % sfxWords.length, local = t % CYCLE;
-        const angle = Math.atan2(-trail.y, -trail.x);
+        const letterDepth = camera.position.z + 0.6, hh = Math.tan(camera.fov * Math.PI / 360) * letterDepth, hw = hh * camera.aspect;
+        p0.set(tailWorld.x + trail.x * 0.9, tailWorld.y + trail.y * 0.9);
+        p1.set(tailWorld.x + trail.x * 3.3, tailWorld.y + trail.y * 3.3);
+        p2.set(Math.min(-hw + 0.95, p0.x - 2.0), Math.max(-hh + 0.9, Math.min(p0.y - 1.2, -hh + 2.2)));
+        let length = 0; bezier(0, sample);
+        for (let j = 1; j <= 8; j++) { bezier(j / 8, point); length += point.distanceTo(sample); sample.copy(point); }
         sfx.forEach((letters, w) => letters.forEach((letter, i) => {
           if (w !== k) { letter.visible = false; return; }
           const n = letters.length, order = n - 1 - i;
@@ -1118,12 +1145,13 @@ STYLES.push({
           const fade = clamp((CYCLE - 0.5 - local) / 0.4, 0, 1);
           letter.visible = appear > 0 && fade > 0;
           if (!letter.visible) return;
-          const along = 0.85 + order * 0.55 + local * 0.3;
-          const wave = Math.sin(i * 0.9 + t * 3.2) * 0.14 + (Math.floor(t * 12) % 2 ? 0.02 : -0.02) - order * order * 0.04;
-          letter.position.copy(tailWorld).addScaledVector(trail, along);
-          letter.position.x += -trail.y * wave; letter.position.y += trail.x * wave; letter.position.z = -0.6;
-          letter.rotation.z = angle + Math.sin(i * 1.7 + t * 2.0) * 0.06;
-          letter.scale.setScalar((0.72 + i * 0.06) * easeOutBack(appear));
+          const u = clamp((order + 0.4 + local * 0.18) / n, 0, 1);
+          bezier(u, point); bezier(Math.min(u + 0.02, 1), tangent); tangent.sub(point);
+          const wave = Math.sin(i * 0.9 + t * 3.2) * 0.1 + (Math.floor(t * 12) % 2 ? 0.02 : -0.02);
+          letter.position.set(point.x - tangent.y * wave, point.y + tangent.x * wave, -0.6);
+          letter.rotation.z = Math.atan2(-tangent.y, -tangent.x) + Math.sin(i * 1.7 + t * 2.0) * 0.05;
+          const fit = clamp(length / (n * 0.52), 0.65, 1);
+          letter.scale.setScalar((0.82 + i * 0.06) * fit * easeOutBack(appear));
           letter.material.opacity = fade;
         }));
         const shake = local < 0.14 ? (1 - local / 0.14) * 0.09 : 0;
