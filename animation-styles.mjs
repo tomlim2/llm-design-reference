@@ -1072,9 +1072,8 @@ STYLES.push({
     const letterTexture = ch => canvasTexture(256, 256, (g, w, h) => {
       g.clearRect(0, 0, w, h); g.translate(w / 2, h / 2); g.transform(1, 0, -0.24, 1, 0, 0);
       g.font = '900 176px "Arial Black",Impact,"Helvetica Neue",sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.lineJoin = 'round';
-      g.fillStyle = '#141414'; g.fillText(ch, 13, 15);
-      g.lineWidth = 24; g.strokeStyle = '#141414'; g.strokeText(ch, 0, 0);
-      g.fillStyle = '#ffe14f'; g.fillText(ch, 0, 0);
+      g.lineWidth = 26; g.strokeStyle = '#141414'; g.strokeText(ch, 14, 16); g.fillStyle = '#e63946'; g.fillText(ch, 14, 16);
+      g.strokeText(ch, 0, 0); g.fillStyle = '#fffdf5'; g.fillText(ch, 0, 0);
     });
     const sfx = sfxWords.map(word => [...word].map(ch => {
       const plane = new THREE.Mesh(new THREE.PlaneGeometry(1.25, 1.25), new THREE.MeshBasicMaterial({ map: letterTexture(ch), transparent: true, depthWrite: false }));
@@ -1092,8 +1091,7 @@ STYLES.push({
     }));
     camera.add(caption);
     const noseWorld = new THREE.Vector3(), tailWorld = new THREE.Vector3(), trail = new THREE.Vector3(), portholeWorld = new THREE.Vector3();
-    const p0 = new THREE.Vector2(), p1 = new THREE.Vector2(), p2 = new THREE.Vector2(), point = new THREE.Vector2(), tangent = new THREE.Vector2(), sample = new THREE.Vector2();
-    const bezier = (u, out) => out.set((1 - u) * (1 - u) * p0.x + 2 * (1 - u) * u * p1.x + u * u * p2.x, (1 - u) * (1 - u) * p0.y + 2 * (1 - u) * u * p1.y + u * u * p2.y);
+    const heading = new THREE.Vector2(), wordCenter = new THREE.Vector2();
     const CYCLE = 3.4;
     return {
       scene, camera,
@@ -1132,26 +1130,23 @@ STYLES.push({
         const balloonHalfWidth = Math.tan(camera.fov * Math.PI / 360) * (camera.position.z - 0.9) * camera.aspect - 1.7;
         balloon.position.set(Math.max(portholeWorld.x - 2.3, -balloonHalfWidth), portholeWorld.y + 0.85 + Math.sin(t * 1.4) * 0.06, 0.9);
         const k = Math.floor(t / CYCLE) % sfxWords.length, local = t % CYCLE;
-        const letterDepth = camera.position.z + 0.6, hh = Math.tan(camera.fov * Math.PI / 360) * letterDepth, hw = hh * camera.aspect;
-        p0.set(tailWorld.x + trail.x * 0.9, tailWorld.y + trail.y * 0.9);
-        p1.set(tailWorld.x + trail.x * 3.3, tailWorld.y + trail.y * 3.3);
-        p2.set(Math.min(-hw + 0.95, p0.x - 2.0), Math.max(-hh + 0.9, Math.min(p0.y - 1.2, -hh + 2.2)));
-        let length = 0; bezier(0, sample);
-        for (let j = 1; j <= 8; j++) { bezier(j / 8, point); length += point.distanceTo(sample); sample.copy(point); }
+        // The sound effect runs huge along the line of flight, under the rocket's belly and behind it,
+        // so the figure overlaps the lettering the way a printed panel would.
+        heading.set(-trail.x, -trail.y).normalize();
+        wordCenter.set(rocket.position.x + heading.y * 1.35 - heading.x * 1.2, rocket.position.y - heading.x * 1.35 - heading.y * 1.2);
+        const wordAngle = Math.atan2(heading.y, heading.x);
         sfx.forEach((letters, w) => letters.forEach((letter, i) => {
           if (w !== k) { letter.visible = false; return; }
-          const n = letters.length, order = n - 1 - i;
-          const appear = clamp((local - 0.1 - order * 0.07) / 0.22, 0, 1);
-          const fade = clamp((CYCLE - 0.5 - local) / 0.4, 0, 1);
+          const n = letters.length;
+          const appear = clamp((local - 0.1 - i * 0.05) / 0.2, 0, 1);
+          const fade = clamp((CYCLE - 0.45 - local) / 0.3, 0, 1);
           letter.visible = appear > 0 && fade > 0;
           if (!letter.visible) return;
-          const u = clamp((order + 0.4 + local * 0.18) / n, 0, 1);
-          bezier(u, point); bezier(Math.min(u + 0.02, 1), tangent); tangent.sub(point);
-          const wave = Math.sin(i * 0.9 + t * 3.2) * 0.1 + (Math.floor(t * 12) % 2 ? 0.02 : -0.02);
-          letter.position.set(point.x - tangent.y * wave, point.y + tangent.x * wave, -0.6);
-          letter.rotation.z = Math.atan2(-tangent.y, -tangent.x) + Math.sin(i * 1.7 + t * 2.0) * 0.05;
-          const fit = clamp(length / (n * 0.52), 0.65, 1);
-          letter.scale.setScalar((0.82 + i * 0.06) * fit * easeOutBack(appear));
+          const offset = (i - (n - 1) / 2) * 1.95;
+          const bob = Math.sin(i * 1.3 + t * 2.6) * 0.08 + (Math.floor(t * 12) % 2 ? 0.03 : -0.03);
+          letter.position.set(wordCenter.x + heading.x * offset + heading.y * bob, wordCenter.y + heading.y * offset - heading.x * bob, -0.8);
+          letter.rotation.z = wordAngle + Math.sin(i * 1.7 + t * 2.0) * 0.04;
+          letter.scale.setScalar((2.7 + i * 0.14) * easeOutBack(appear));
           letter.material.opacity = fade;
         }));
         const shake = local < 0.14 ? (1 - local / 0.14) * 0.09 : 0;
