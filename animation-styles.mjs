@@ -777,66 +777,148 @@ STYLES.push({
 STYLES.push({
   slug: 'clay-3d',
   build({ pointer, quality }) {
-    const background = '#f4d9c6';
-    const scene = makeScene(background);
-    const camera = perspective(32, [0, 3.4, 11.5], [0, 0.9, 0]);
-    scene.add(new THREE.HemisphereLight(0xfff6ee, 0xe3b9a0, 1.15));
-    const sun = new THREE.DirectionalLight(0xffffff, 1.9);
-    sun.position.set(4, 8, 5); sun.castShadow = true;
-    sun.shadow.mapSize.setScalar(quality === 'full' ? 2048 : 1024);
-    Object.assign(sun.shadow.camera, { left: -7, right: 7, top: 7, bottom: -7, near: 1, far: 30 });
-    sun.shadow.bias = -0.0006; sun.shadow.normalBias = 0.03;
-    scene.add(sun);
+    // A thirteen-second silent short: a clay friend wants the star hanging out of reach, misses the
+    // jump, rolls the donut over as a step, grabs the star, celebrates — and the star floats back up.
+    const PEACH = '#f2d3bd';
+    const scene = makeScene(PEACH);
+    scene.fog = new THREE.Fog(PEACH, 11, 26);
+    const camera = perspective(32, [0, 2.6, 12.5], [0.2, 2.3, 0]);
+    scene.add(new THREE.HemisphereLight(0xfff1e6, 0xd9a98c, 0.9));
+    const key = new THREE.DirectionalLight(0xfff0dc, 1.9);
+    key.position.set(4, 8, 6); key.castShadow = true;
+    key.shadow.mapSize.setScalar(quality === 'full' ? 2048 : 1024);
+    Object.assign(key.shadow.camera, { left: -8, right: 8, top: 9, bottom: -4, near: 1, far: 30 });
+    key.shadow.bias = -0.0006; key.shadow.normalBias = 0.03;
+    scene.add(key);
+    const rim = new THREE.DirectionalLight(0x9fc4ff, 1.1); rim.position.set(-5, 5, -4); scene.add(rim);
+    // Clay: lumpy hand-pressed surfaces (low-frequency displacement), fingerprint bumps, a touch of sheen.
     const bump = canvasTexture(256, 256, (g, w, h) => {
       const rng = mulberry32(9);
       g.fillStyle = '#808080'; g.fillRect(0, 0, w, h);
-      for (let i = 0; i < 9000; i++) { const v = 90 + Math.floor(rng() * 80); g.fillStyle = `rgba(${v},${v},${v},0.5)`; g.beginPath(); g.arc(rng() * w, rng() * h, 1 + rng() * 2.5, 0, TAU); g.fill(); }
+      for (let i = 0; i < 7000; i++) { const v = 95 + Math.floor(rng() * 70); g.fillStyle = `rgba(${v},${v},${v},0.55)`; g.beginPath(); g.arc(rng() * w, rng() * h, 1 + rng() * 2.2, 0, TAU); g.fill(); }
+      g.strokeStyle = 'rgba(120,120,120,0.35)'; g.lineWidth = 1.2;
+      for (let i = 0; i < 60; i++) { const x = rng() * w, y = rng() * h, r = 6 + rng() * 14; g.beginPath(); g.arc(x, y, r, rng() * TAU, rng() * 2 + 1); g.stroke(); }
     }, { data: true, repeat: true });
-    bump.repeat.set(3, 3);
-    const clay = color => new THREE.MeshStandardMaterial({ color, roughness: 0.96, metalness: 0, bumpMap: bump, bumpScale: 0.02 });
-    const ground = new THREE.Mesh(new THREE.PlaneGeometry(40, 40), new THREE.MeshStandardMaterial({ color: background, roughness: 1 }));
-    ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; scene.add(ground);
+    bump.repeat.set(2.5, 2.5);
+    const clay = color => new THREE.MeshPhysicalMaterial({ color, roughness: 0.88, metalness: 0, bumpMap: bump, bumpScale: 0.018, sheen: 0.35, sheenRoughness: 0.9, sheenColor: new THREE.Color('#fff3e6') });
+    const lumpy = (geometry, amount, seed = 1) => {
+      const position = geometry.attributes.position, v = new THREE.Vector3();
+      for (let i = 0; i < position.count; i++) {
+        v.fromBufferAttribute(position, i);
+        const n = Math.sin(v.x * 2.9 + seed) * Math.sin(v.y * 3.4 + seed * 1.7) * Math.sin(v.z * 3.1 + seed * 0.6) + 0.5 * Math.sin(v.x * 6.1 - v.z * 5.3 + seed);
+        v.multiplyScalar(1 + n * amount);
+        position.setXYZ(i, v.x, v.y, v.z);
+      }
+      position.needsUpdate = true; geometry.computeVertexNormals(); return geometry;
+    };
     const shaded = mesh => { mesh.castShadow = true; mesh.receiveShadow = true; return mesh; };
-    const character = new THREE.Group();
-    const body = shaded(new THREE.Mesh(new THREE.SphereGeometry(1, 48, 32), clay('#ff9d9d'))); body.scale.set(1, 0.94, 1);
-    character.add(body);
-    const eyes = [];
-    [-0.33, 0.33].forEach(x => {
-      const eye = new THREE.Mesh(new THREE.SphereGeometry(0.11, 24, 16), clay('#3b2b2b')); eye.position.set(x, 0.26, 0.86); character.add(eye); eyes.push(eye);
-      const foot = shaded(new THREE.Mesh(new THREE.SphereGeometry(0.26, 24, 16), clay('#e9868d'))); foot.position.set(x * 1.3, -0.86, 0.2); foot.scale.set(1, 0.6, 1.2); character.add(foot);
-      const blush = new THREE.Mesh(new THREE.SphereGeometry(0.17, 24, 16), clay('#f26b7c')); blush.position.set(x * 1.75, -0.05, 0.74); blush.scale.set(1, 0.65, 0.35); character.add(blush);
-    });
-    const mouth = new THREE.Mesh(new THREE.TorusGeometry(0.17, 0.04, 10, 20, Math.PI), clay('#3b2b2b'));
-    mouth.position.set(0, -0.08, 0.95); mouth.rotation.z = Math.PI; character.add(mouth);
-    character.position.y = 1;
-    scene.add(character);
-    const donut = shaded(new THREE.Mesh(new THREE.TorusGeometry(0.58, 0.28, 28, 56), clay('#9fd3ff')));
-    donut.position.set(-2.7, 0.86, 0.2); scene.add(donut);
+    const ground = new THREE.Mesh(new THREE.PlaneGeometry(60, 60), new THREE.MeshStandardMaterial({ color: PEACH, roughness: 1 }));
+    ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; scene.add(ground);
+    // Set dressing: clay sun, clouds and a hill, softened by the fog.
+    const sun = new THREE.Group(); sun.position.set(-5.5, 6.2, -9); scene.add(sun);
+    sun.add(new THREE.Mesh(lumpy(new THREE.SphereGeometry(1.1, 32, 24), 0.05, 3), clay('#ffd66b')));
+    for (let i = 0; i < 8; i++) { const ray = new THREE.Mesh(new THREE.CapsuleGeometry(0.14, 0.5, 6, 12), clay('#ffd66b')); const a = i / 8 * TAU; ray.position.set(Math.cos(a) * 1.7, Math.sin(a) * 1.7, 0); ray.rotation.z = a - Math.PI / 2; sun.add(ray); }
+    const cloud = (x, y, z, scale) => { const g = new THREE.Group(); [[0, 0, 0.7], [0.7, 0.15, 0.55], [-0.7, 0.1, 0.5], [0.2, 0.45, 0.5]].forEach(([cx, cy, r]) => g.add(new THREE.Mesh(lumpy(new THREE.SphereGeometry(r, 24, 18), 0.06, 5), clay('#fff7f0')))); g.position.set(x, y, z); g.scale.setScalar(scale); scene.add(g); return g; };
+    const clouds = [cloud(3.5, 6.4, -10, 1.3), cloud(-1.5, 5.2, -12, 1.0)];
+    const hill = shaded(new THREE.Mesh(lumpy(new THREE.SphereGeometry(4.5, 40, 28), 0.04, 7), clay('#b9d6a3'))); hill.position.set(6.5, -1.2, -9); hill.scale.set(1.4, 0.75, 1); scene.add(hill);
+    // The star on its hook.
+    const post = new THREE.Group(); scene.add(post);
+    const postMaterial = clay('#8c6a4f');
+    const pole = shaded(new THREE.Mesh(lumpy(new THREE.CylinderGeometry(0.16, 0.2, 6.0, 16, 12), 0.03, 2), postMaterial)); pole.position.set(4.1, 3.0, 0); post.add(pole);
+    const arm = shaded(new THREE.Mesh(new THREE.CylinderGeometry(0.12, 0.12, 1.7, 14), postMaterial)); arm.rotation.z = Math.PI / 2; arm.position.set(3.3, 5.95, 0); post.add(arm);
+    const string = new THREE.Mesh(new THREE.CylinderGeometry(0.025, 0.025, 1, 6), new THREE.MeshStandardMaterial({ color: '#5a4636', roughness: 1 })); scene.add(string);
     const starShape = new THREE.Shape();
-    for (let i = 0; i < 10; i++) { const a = i / 10 * TAU - Math.PI / 2, r = i % 2 ? 0.42 : 0.95; i ? starShape.lineTo(Math.cos(a) * r, Math.sin(a) * r) : starShape.moveTo(Math.cos(a) * r, Math.sin(a) * r); }
-    const star = shaded(new THREE.Mesh(new THREE.ExtrudeGeometry(starShape, { depth: 0.4, bevelEnabled: true, bevelThickness: 0.1, bevelSize: 0.1, bevelSegments: 4 }), clay('#ffd36e')));
-    star.position.set(2.7, 1.1, 0); scene.add(star);
-    const stepped = t => Math.floor(t * 12) / 12;
-    const jitter = (frame, salt) => { const v = Math.sin(frame * 12.9898 + salt * 78.233) * 43758.5453; return (v - Math.floor(v) - 0.5) * 0.02; };
+    for (let i = 0; i < 10; i++) { const a = i / 10 * TAU - Math.PI / 2, r = i % 2 ? 0.33 : 0.75; i ? starShape.lineTo(Math.cos(a) * r, Math.sin(a) * r) : starShape.moveTo(Math.cos(a) * r, Math.sin(a) * r); }
+    const starGeometry = new THREE.ExtrudeGeometry(starShape, { depth: 0.3, bevelEnabled: true, bevelThickness: 0.08, bevelSize: 0.08, bevelSegments: 3 }); starGeometry.center();
+    const star = shaded(new THREE.Mesh(lumpy(starGeometry, 0.025, 4), clay('#ffd36e'))); scene.add(star);
+    const HANG = new THREE.Vector3(2.6, 4.9, 0);
+    // The character.
+    const character = new THREE.Group(); scene.add(character);
+    const body = shaded(new THREE.Mesh(lumpy(new THREE.SphereGeometry(1, 48, 32), 0.035, 1), clay('#ff9d9d'))); body.scale.set(1, 0.94, 1); character.add(body);
+    const eyes = [-0.33, 0.33].map(x => {
+      const eye = new THREE.Group(); eye.position.set(x, 0.26, 0.83); character.add(eye);
+      const white = new THREE.Mesh(new THREE.SphereGeometry(0.15, 20, 14), clay('#fffaf4')); eye.add(white);
+      const pupil = new THREE.Mesh(new THREE.SphereGeometry(0.075, 16, 12), clay('#3b2b2b')); pupil.position.z = 0.1; eye.add(pupil);
+      const blush = new THREE.Mesh(new THREE.SphereGeometry(0.17, 20, 14), clay('#f26b7c')); blush.position.set(x * 1.75, -0.05, 0.74); blush.scale.set(1, 0.65, 0.35); character.add(blush);
+      return { group: eye, pupil };
+    });
+    const mouth = new THREE.Mesh(new THREE.TorusGeometry(0.17, 0.045, 10, 20, Math.PI), clay('#3b2b2b')); mouth.position.set(0, -0.1, 0.95); mouth.rotation.z = Math.PI; character.add(mouth);
+    const feet = [-0.42, 0.42].map(x => { const foot = shaded(new THREE.Mesh(new THREE.SphereGeometry(0.26, 20, 14), clay('#e9868d'))); foot.position.set(x, -0.86, 0.2); foot.scale.set(1, 0.6, 1.2); character.add(foot); return foot; });
+    const arms = [-1, 1].map(side => { const shoulder = new THREE.Group(); shoulder.position.set(side * 0.92, 0.05, 0.15); character.add(shoulder); const limb = shaded(new THREE.Mesh(new THREE.CapsuleGeometry(0.13, 0.38, 6, 12), clay('#ff9d9d'))); limb.position.y = -0.28; shoulder.add(limb); return { shoulder, side }; });
+    const question = new THREE.Group(); question.visible = false; scene.add(question);
+    const hook = new THREE.Mesh(new THREE.TorusGeometry(0.24, 0.075, 10, 20, Math.PI * 1.5), clay('#ffffff')); hook.rotation.z = -Math.PI / 2; hook.position.y = 0.3; question.add(hook);
+    const stem = new THREE.Mesh(new THREE.CapsuleGeometry(0.075, 0.2, 6, 10), clay('#ffffff')); stem.position.set(0, -0.08, 0); question.add(stem);
+    const dot = new THREE.Mesh(new THREE.SphereGeometry(0.09, 12, 10), clay('#ffffff')); dot.position.y = -0.42; question.add(dot);
+    const donut = shaded(new THREE.Mesh(lumpy(new THREE.TorusGeometry(0.58, 0.28, 28, 56), 0.03, 6), clay('#9fd3ff'))); scene.add(donut);
+    const sparkles = Array.from({ length: 6 }, () => { const m = new THREE.Mesh(new THREE.OctahedronGeometry(0.13), clay('#ffd36e')); m.visible = false; scene.add(m); return m; });
+    // Timeline helpers: stepped 12 fps clock, keyframe tracks and hop arcs.
+    const T = 13;
+    const track = keys => time => {
+      if (time <= keys[0][0]) return keys[0][1];
+      for (let i = 1; i < keys.length; i++) if (time <= keys[i][0]) { const [t0, v0] = keys[i - 1], [t1, v1, ease] = keys[i]; const u = (time - t0) / (t1 - t0); return v0 + (v1 - v0) * (ease ? ease(u) : u); }
+      return keys[keys.length - 1][1];
+    };
+    const inOut = easeInOutCubic, lin = u => u;
+    const charX = track([[0, -1.2], [1.6, -1.2], [3.0, 2.6, inOut], [5.4, 2.6], [6.6, -2.7, inOut], [8.4, 1.5, lin], [9.0, 2.6, inOut], [11.8, 2.6], [13, -1.2, inOut]]);
+    const donutX = track([[0, -3.6], [6.6, -3.6], [8.4, 2.6, lin], [11.8, 2.6], [12.2, 2.6], [13, -3.6, inOut]]);
+    const donutFlat = track([[0, 0], [8.4, 0], [8.9, 1, easeOutBack], [11.8, 1], [12.2, 0, inOut]]);
+    const squash = track([[0, 1], [3.05, 1], [3.3, 0.78, inOut], [3.45, 1.18, inOut], [3.9, 1.0], [4.3, 1.0], [4.4, 0.72], [4.75, 1, easeOutBack], [8.75, 1], [8.95, 0.78, inOut], [9.1, 1.18, inOut], [9.6, 1], [10.1, 1], [10.2, 0.74], [10.55, 1, easeOutBack]]);
+    const armsUp = track([[0, 0], [3.3, 0], [3.5, 1, inOut], [4.3, 1], [4.6, 0, inOut], [8.95, 0], [9.15, 1, inOut], [11.6, 1], [11.9, 0, inOut]]);
+    const lookX = track([[0, 0.9], [1.6, 0.9], [3.0, 0.3, inOut], [4.6, 0.3], [5.0, -1.0, inOut], [8.4, -0.4], [9.0, 0.4, inOut], [12.4, 0.4], [13, 0.9, inOut]]);
+    const lookY = track([[0, 0.8], [4.6, 0.8], [5.0, -0.6, inOut], [8.4, -0.5], [9.0, 0.9, inOut], [12.4, 0.9], [13, 0.8, inOut]]);
+    const hop = (time, t0, t1, n, h) => { if (time < t0 || time >= t1) return 0; return Math.abs(Math.sin((time - t0) / (t1 - t0) * Math.PI * n)) * h; };
+    const jump = (time, t0, t1, h) => { if (time < t0 || time >= t1) return 0; const u = (time - t0) / (t1 - t0); return 4 * u * (1 - u) * h; };
+    const held = new THREE.Vector3(), starPosition = new THREE.Vector3();
     return {
       scene, camera,
-      resize(w, h) { setAspect(camera, w, h); camera.position.z = Math.max(11.5, 4.1 / (Math.tan(camera.fov * Math.PI / 360) * camera.aspect)); },
+      resize(w, h) {
+        setAspect(camera, w, h);
+        camera.position.z = Math.max(12.5, 4.7 / (Math.tan(camera.fov * Math.PI / 360) * camera.aspect));
+        scene.fog.near = camera.position.z + 5; scene.fog.far = camera.position.z + 24;
+      },
       update(t) {
-        const q = stepped(t), frame = Math.round(q * 12);
-        const hop = (q % 1.3) / 1.3, air = Math.sin(hop * Math.PI);
-        const squash = hop < 0.12 || hop > 0.88 ? 0.82 : 1 + air * 0.12;
-        character.position.set(jitter(frame, 1), 1 + air * 1.5 - (1 - squash) * 0.9, jitter(frame, 2));
-        character.scale.set(1 / Math.sqrt(squash), squash, 1 / Math.sqrt(squash));
+        const q = Math.floor(t * 12) / 12, frame = Math.round(q * 12), local = q % T;
+        key.intensity = 1.9 * (1 + (Math.abs(Math.sin(frame * 12.9898) * 43758.5453) % 1 - 0.5) * 0.06);
+        // Donut: rolls like a wheel, flops flat under the star, flips back and rolls home.
+        const dx = donutX(local), flat = donutFlat(local);
+        donut.position.set(dx, 0.86 - 0.58 * flat, 0);
+        donut.rotation.set(flat * Math.PI / 2, 0, -(dx + 3.6) / 0.86);
+        // Character: walks in hops, two big jumps (the first one misses), rides the donut.
+        const x = charX(local), s = squash(local);
+        const onDonut = local >= 8.95 && local < 12.2;
+        let y = 1 + (onDonut ? 0.56 : 0);
+        y += hop(local, 1.6, 3.0, 2, 0.5) + hop(local, 5.4, 6.6, 2, 0.5) + hop(local, 6.6, 8.4, 5, 0.16) + hop(local, 12.2, 13, 2, 0.5);
+        y += jump(local, 3.4, 4.35, 1.45) + jump(local, 9.1, 10.15, 1.55);
+        if (local >= 10.3 && local < 11.8) y += Math.abs(Math.sin((local - 10.3) * Math.PI * 2.5)) * 0.35;
+        character.position.set(x, y - (1 - s) * 0.9, 0);
+        character.scale.set(1 / Math.sqrt(s), s, 1 / Math.sqrt(s));
+        character.rotation.z = local >= 4.6 && local < 5.4 ? -0.12 : local >= 6.6 && local < 8.4 ? 0.18 : Math.sin(q * 2.1) * 0.03;
+        character.rotation.y = pointer.x * 0.25 + (local >= 5.0 && local < 8.4 ? -0.35 : 0.15);
+        const lx = lookX(local), ly = lookY(local);
+        eyes.forEach(({ pupil }) => pupil.position.set(lx * 0.05, ly * 0.045, 0.1));
         const blink = (q % 3.25) < 0.17 ? 0.12 : 1;
-        eyes.forEach(eye => eye.scale.set(1, blink, 1));
-        character.rotation.y = Math.sin(q * 1.1) * 0.45 + pointer.x * 0.4;
-        character.rotation.z = Math.sin(q * 2.4) * 0.08;
-        donut.rotation.set(Math.PI / 2 + Math.sin(q * 1.5) * 0.4, 0, q * 1.2 + jitter(frame, 3) * 5);
-        donut.position.y = 0.86 + Math.abs(Math.sin(q * 2.4)) * 0.5;
-        star.rotation.z = Math.floor(q * 1.6) * 0.3 + jitter(frame, 4) * 4;
-        star.rotation.y = Math.sin(q * 0.9) * 0.6;
-        star.position.y = 1.1 + Math.sin(q * 2.0 + 1) * 0.25;
-        camera.position.x = pointer.x * 1.2; camera.position.y = 3.4 + pointer.y * 0.8; camera.lookAt(0, 0.9, 0);
+        eyes.forEach(({ group }) => group.scale.set(1, blink, 1));
+        const up = armsUp(local);
+        arms.forEach(({ shoulder, side }) => { shoulder.rotation.z = side * (0.35 - up * 3.2); });
+        feet.forEach((foot, i) => { foot.position.y = -0.86 + (y > 1.65 ? 0.18 : 0) + (local >= 6.6 && local < 8.4 ? Math.max(0, Math.sin(local * 20 + i * Math.PI)) * 0.12 : 0); });
+        question.visible = local >= 4.6 && local < 5.6;
+        if (question.visible) { const pop = easeOutBack(clamp((local - 4.6) / 0.3, 0, 1)); question.position.set(x + 0.9, y + 1.25 + Math.sin(q * 6) * 0.05, 0.3); question.scale.setScalar(pop); }
+        // Star: hangs and sways, gets grabbed at the top of the second jump, floats back home at the end.
+        const grabbed = local >= 9.62 && local < 11.85;
+        const returning = local >= 11.85 && local < 12.7;
+        if (grabbed) { starPosition.set(x, y + 1.0 * s + 0.75, 0.15); star.rotation.set(0, q * 4, 0); }
+        else if (returning) { const u = inOut((local - 11.85) / 0.85); held.set(2.6, 1 + 0.56 + 1.75, 0.15); starPosition.lerpVectors(held, HANG, u); star.rotation.set(0, q * 2, 0); }
+        else { starPosition.set(HANG.x + Math.sin(q * 1.3) * 0.08, HANG.y, 0); star.rotation.set(0, q * 0.9, Math.sin(q * 1.3) * 0.08); if (local >= 3.95 && local < 4.6) star.rotation.z += Math.sin((local - 3.95) * 30) * 0.25; }
+        star.position.copy(starPosition);
+        string.visible = !grabbed && !returning;
+        string.position.set(HANG.x, (HANG.y + 0.8 + 5.95) / 2, 0); string.scale.y = 5.95 - (HANG.y + 0.8);
+        sparkles.forEach((m, i) => {
+          const show = local >= 10.25 && local < 11.8 && ((frame + i * 3) % 7) < 4;
+          m.visible = show;
+          if (show) { const a = i / 6 * TAU + frame * 0.3; m.position.set(x + Math.cos(a) * 1.5, y + 1.7 + Math.sin(a) * 1.1, 0.4); m.rotation.set(frame, frame * 0.7, 0); m.scale.setScalar(0.8 + ((frame + i) % 3) * 0.25); }
+        });
+        clouds.forEach((c, i) => { c.position.x += 0; c.position.y += 0; c.position.x = [3.5, -1.5][i] + Math.sin(t * 0.15 + i) * 0.4; });
+        camera.position.x = pointer.x * 1.0 + Math.sin(t * 0.08) * 0.4; camera.position.y = 2.6 + pointer.y * 0.6; camera.lookAt(0.2, 2.3, 0);
       }
     };
   }
