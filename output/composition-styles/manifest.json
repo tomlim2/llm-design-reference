@@ -1,0 +1,326 @@
+[
+  {
+    "number": 1,
+    "title": "Golden Ratio",
+    "ko": "황금비 구도",
+    "slug": "golden-ratio",
+    "guide": {
+      "type": "golden"
+    },
+    "reference": {
+      "files": [
+        "IMG_5074.PNG",
+        "IMG_5078.PNG"
+      ]
+    },
+    "file": "01-golden-ratio.png",
+    "width": 1586,
+    "height": 992,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-232922a7-cf3e-427f-8f90-78d4e39f216e.png",
+    "status": "complete"
+  },
+  {
+    "number": 2,
+    "title": "One Point",
+    "ko": "일점 투시",
+    "slug": "one-point",
+    "guide": {
+      "type": "vanishing",
+      "focus": [
+        500,
+        325
+      ]
+    },
+    "reference": {
+      "files": [
+        "IMG_5075.PNG"
+      ]
+    },
+    "file": "02-one-point.png",
+    "width": 1586,
+    "height": 992,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-37ff5085-d1d2-4a8f-9f14-b1a7a6e9826c.png",
+    "status": "complete"
+  },
+  {
+    "number": 3,
+    "title": "Radial",
+    "ko": "방사형 구도",
+    "slug": "radial",
+    "guide": {
+      "type": "radial",
+      "focus": [
+        500,
+        350
+      ]
+    },
+    "reference": {
+      "files": [
+        "IMG_5076.PNG"
+      ]
+    },
+    "file": "03-radial.png",
+    "width": 1586,
+    "height": 992,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ce0ddba2-b1f9-4161-8a1f-ceb681712c11.png",
+    "status": "complete"
+  },
+  {
+    "number": 4,
+    "title": "Rule of Thirds · Market",
+    "ko": "삼분할 · 실내 시장",
+    "slug": "thirds-market",
+    "guide": {
+      "type": "thirds"
+    },
+    "reference": {
+      "files": [
+        "IMG_5077.PNG"
+      ]
+    },
+    "file": "04-thirds-market.png",
+    "width": 1586,
+    "height": 992,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-874fb808-ce84-4ead-9f53-5b4ffbcde8c3.png",
+    "status": "complete"
+  },
+  {
+    "number": 5,
+    "title": "Leading Lines · Platform",
+    "ko": "유도선 · 플랫폼",
+    "slug": "leading-platform",
+    "guide": {
+      "type": "platform"
+    },
+    "reference": {
+      "files": [
+        "IMG_5079.PNG"
+      ]
+    },
+    "file": "05-leading-platform.png",
+    "width": 1586,
+    "height": 992,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-8250b896-0545-4051-97fc-bb21f1d20e04.png",
+    "status": "complete"
+  },
+  {
+    "number": 6,
+    "title": "Diagonal · Street",
+    "ko": "대각선 · 거리",
+    "slug": "diagonal-street",
+    "guide": {
+      "type": "diagonal",
+      "paths": [
+        {
+          "d": "M0 515L1000 350"
+        }
+      ]
+    },
+    "reference": {
+      "files": [
+        "IMG_5080.PNG"
+      ]
+    },
+    "file": "06-diagonal-street.png",
+    "width": 1586,
+    "height": 992,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-7322d9f9-f941-474c-a549-71734699eb1c.png",
+    "status": "complete"
+  },
+  {
+    "number": 7,
+    "title": "Symmetry",
+    "ko": "대칭 구도",
+    "slug": "symmetry",
+    "guide": {
+      "type": "center"
+    },
+    "reference": {
+      "files": [
+        "IMG_5081.PNG"
+      ]
+    },
+    "file": "07-symmetry.png",
+    "width": 1586,
+    "height": 992,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-b18b0115-438d-472f-b78a-82d42a07777d.png",
+    "status": "complete"
+  },
+  {
+    "number": 8,
+    "title": "Rule of Thirds · Street",
+    "ko": "삼분할 · 골목 시장",
+    "slug": "thirds-street",
+    "variantOf": 4,
+    "guide": {
+      "type": "thirds"
+    },
+    "reference": {
+      "files": [
+        "IMG_5082.PNG"
+      ]
+    },
+    "file": "08-thirds-street.png",
+    "width": 1586,
+    "height": 992,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-25c41f5b-0dcd-4278-a9ef-9f437b93c0a6.png",
+    "status": "complete"
+  },
+  {
+    "number": 9,
+    "title": "Frame in a Frame",
+    "ko": "프레임 속 프레임",
+    "slug": "frame-within-frame",
+    "guide": {
+      "type": "frame",
+      "paths": [
+        {
+          "d": "M135 94H865V525H135Z"
+        }
+      ]
+    },
+    "reference": {
+      "files": [
+        "IMG_5083.PNG"
+      ]
+    },
+    "file": "09-frame-within-frame.png",
+    "width": 1586,
+    "height": 992,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-194defab-0a5e-49ba-a8e7-fe44e543673e.png",
+    "status": "complete"
+  },
+  {
+    "number": 10,
+    "title": "Rule of Thirds · Waterfront",
+    "ko": "삼분할 · 수변 풍경",
+    "slug": "thirds-waterfront",
+    "variantOf": 4,
+    "guide": {
+      "type": "thirds"
+    },
+    "reference": {
+      "files": [
+        "IMG_5084.PNG"
+      ]
+    },
+    "file": "10-thirds-waterfront.png",
+    "width": 1586,
+    "height": 992,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-2b1fec97-169d-4b6e-af6b-d7166fbb1683.png",
+    "status": "complete"
+  },
+  {
+    "number": 11,
+    "title": "Juxtaposition",
+    "ko": "병치 구도",
+    "slug": "juxtaposition",
+    "guide": {
+      "type": "center"
+    },
+    "reference": {
+      "files": [
+        "IMG_5085.PNG"
+      ]
+    },
+    "file": "11-juxtaposition.png",
+    "width": 1586,
+    "height": 992,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-be3502bf-63f9-477a-a01c-10ca28f77283.png",
+    "status": "complete"
+  },
+  {
+    "number": 12,
+    "title": "Diagonals · Architecture",
+    "ko": "대각선 · 교차 구조",
+    "slug": "diagonal-architecture",
+    "variantOf": 6,
+    "guide": {
+      "type": "cross-diagonal",
+      "paths": [
+        {
+          "d": "M0 465L1000 76 M0 55L560 248"
+        }
+      ]
+    },
+    "reference": {
+      "files": [
+        "IMG_5086.PNG"
+      ]
+    },
+    "file": "12-diagonal-architecture.png",
+    "width": 1586,
+    "height": 992,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-370f1eb2-5276-4dea-87d0-073e718ae87c.png",
+    "status": "complete"
+  },
+  {
+    "number": 13,
+    "title": "Leading Lines · Curve",
+    "ko": "유도선 · 곡선 산책로",
+    "slug": "leading-curve",
+    "variantOf": 5,
+    "guide": {
+      "type": "curve",
+      "paths": [
+        {
+          "d": "M915 625C940 480 420 365 410 295C385 245 570 215 560 183S495 150 518 130"
+        }
+      ]
+    },
+    "reference": {
+      "files": [
+        "IMG_5087.PNG"
+      ]
+    },
+    "file": "13-leading-curve.png",
+    "width": 1586,
+    "height": 992,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-6ad611ea-119b-4eee-9e6e-8bca1a6416f2.png",
+    "status": "complete"
+  },
+  {
+    "number": 14,
+    "title": "Vanishing Point",
+    "ko": "소실점 · 도시의 깊이",
+    "slug": "vanishing-city",
+    "variantOf": 2,
+    "guide": {
+      "type": "vanishing",
+      "paths": [
+        {
+          "d": "M390 625L500 218L635 625 M0 440L500 218L1000 440"
+        }
+      ]
+    },
+    "reference": {
+      "files": [
+        "IMG_5088.PNG"
+      ]
+    },
+    "file": "14-vanishing-city.png",
+    "width": 1586,
+    "height": 992,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-9828574f-f34f-4cdc-9269-0d7eba2692c1.png",
+    "status": "complete"
+  },
+  {
+    "number": 15,
+    "title": "Centered",
+    "ko": "중앙 구도",
+    "slug": "centered",
+    "guide": {
+      "type": "center"
+    },
+    "reference": {
+      "files": [
+        "IMG_5089.PNG"
+      ]
+    },
+    "file": "15-centered.png",
+    "width": 1586,
+    "height": 992,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-efba64af-70e1-4055-8d62-52af676aabe3.png",
+    "status": "complete"
+  }
+]

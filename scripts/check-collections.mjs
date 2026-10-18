@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
-import { readFile, access } from 'node:fs/promises';
+import { readFile, access, open } from 'node:fs/promises';
 import { COLLECTIONS, ANIMATION_POSTER_MAP, POSTER_TAGS, filterByTags, newestFirst, resolveCollectionHash } from '../collections.mjs';
+import { GUIDE_TYPES, compositionPaths } from '../composition-guides.mjs';
 
 const root = new URL('../', import.meta.url);
 const read = path => readFile(new URL(path, root), 'utf8');
@@ -22,6 +23,11 @@ const tabs = [...markup.matchAll(/<button\b[^>]*class="collection-tab"[^>]*>[\s\
 assert.deepEqual(tabs.map(tab => tab.match(/data-collection="([^"]+)"/)[1]), COLLECTIONS.map(item => item.key));
 for (const [index, definition] of COLLECTIONS.entries()) {
   const { key, tabId, panelId, label } = definition;
+  assert(definition.mediaLabel && definition.format && typeof definition.numberPrefix === 'string', key + ' explicit presentation metadata');
+  assert.deepEqual(resolveCollectionHash('#' + key), {key, number:null}, key + ' list route');
+  for (const item of data[key]) {
+    assert.deepEqual(resolveCollectionHash(`#${key}/${item.number}`), {key, number:item.number}, key + ' detail route');
+  }
   const tab = tabs[index];
   assert(tab.includes(`id="${tabId}"`) && tab.includes(`aria-controls="${panelId}"`) && tab.includes('role="tab"'), key + ' tab contract');
   assert(tab.includes(label), key + ' tab label');
@@ -42,6 +48,17 @@ for (const [index, definition] of COLLECTIONS.entries()) {
     const end = markup.indexOf('</section>', start);
     const headings = [...markup.slice(start, end).matchAll(/<h2>([^<]+)<\/h2>/g)].map(match => match[1]);
     assert.deepEqual(headings, newestFirst(data[key]).map(item => item.ko), key + ' Korean titles in newest-first order');
+    const cards = [...markup.slice(start, end).matchAll(/<article\b[\s\S]*?<\/article>/g)].map(match => match[0]);
+    assert.equal(cards.length, data[key].length, key + ' card count');
+    for (const [cardIndex, card] of cards.entries()) {
+      const item = newestFirst(data[key])[cardIndex];
+      const number = definition.numberPrefix + String(item.number).padStart(2, '0');
+      assert(card.includes(`<span class="number mono">${number}</span>`), key + ' visible number ' + number);
+      const itemIndex = data[key].indexOf(item);
+      assert.equal(card.match(/data-collection="([^"]+)"/)?.[1] || 'posters', key, key + ' card collection');
+      assert(card.includes(`data-poster="${itemIndex}"`), key + ' card opens the correct item');
+      assert(card.includes(`src="${definition.root}${item.file}"`), key + ' card image identity');
+    }
   }
 }
 const total = Object.values(data).reduce((sum, items) => sum + items.length, 0);
@@ -66,6 +83,34 @@ for (const item of data.posters) {
   assert.deepEqual(manifest.find(entry => entry.number === item.number)?.tags, item.tags, `Poster ${item.number} manifest keywords`);
 }
 assert(POSTER_TAGS.every(tag => data.posters.some(item => item.tags.includes(tag))), 'Do not offer empty keyword categories');
+
+const composition = COLLECTIONS.find(item => item.key === 'composition');
+const compositionPrompts = JSON.parse(await read(composition.root + 'prompts.json')).styles;
+const compositionManifest = JSON.parse(await read(composition.root + 'manifest.json'));
+assert.deepEqual(compositionPrompts, data.composition, 'Composition prompt metadata must match the gallery');
+assert.equal(compositionManifest.length, data.composition.length, 'Composition manifest count');
+assert.equal(new Set(compositionManifest.map(item => item.number)).size, data.composition.length, 'Composition manifest identities');
+for (const item of data.composition) {
+  assert(item.principle && GUIDE_TYPES.includes(item.guide?.type), 'Composition needs a principle and known guide');
+  const paths = compositionPaths(item.guide);
+  assert(paths.length && paths.every(path => path.d && !/NaN|undefined|Infinity/.test(path.d)), 'Composition guide coordinates');
+  const entry = compositionManifest.find(entry => entry.number === item.number);
+  assert.equal(entry.status, 'complete', 'Composition image generation completed');
+  for (const field of ['file', 'width', 'height', 'guide', 'reference', 'variantOf']) {
+    assert.deepEqual(entry[field], item[field], `Composition ${item.number} manifest ${field}`);
+  }
+  const file = await open(new URL(composition.root + item.file, root), 'r');
+  try {
+    const header = Buffer.alloc(24);
+    await file.read(header, 0, header.length, 0);
+    assert.equal(header.subarray(1, 4).toString(), 'PNG');
+    assert.deepEqual([header.readUInt32BE(16), header.readUInt32BE(20)], [item.width, item.height], 'Composition PNG dimensions');
+  } finally { await file.close(); }
+}
+assert.deepEqual(compositionPaths({type:'unknown'}), [], 'Unknown guides are not rendered');
+assert.equal(compositionPaths({type:'golden'}).length, 16, 'Eight golden squares with quarter-circle arcs');
+assert.equal(compositionPaths({type:'radial'}).length, 12, 'Twelve radial spokes');
+assert.deepEqual(COLLECTIONS.filter(item => item.imageDownload).map(item => item.key), ['motion'], 'Image downloads belong only to motion');
 
 // Filtering must intersect selections, preserve newest-first order and never mutate source data.
 const samples = Object.freeze([
@@ -98,7 +143,7 @@ for (const [hash, expected] of [
 
 const workflow = await read('.github/workflows/deploy.yml');
 const archive = workflow.match(/git archive HEAD([\s\S]*?)\| tar/)[1];
-const assets = ['index.html', 'site.css', 'gallery.js', 'collections.mjs', 'animation.html'];
+const assets = ['index.html', 'site.css', 'gallery.js', 'collections.mjs', 'composition-guides.mjs', 'animation.html', ...COLLECTIONS.map(item => item.root.replace(/\/$/, ''))];
 for (const asset of assets) {
   await access(new URL(asset, root));
   assert(archive.split(/\s+/).includes(asset), asset + ' must ship in the deployment archive');

@@ -1,0 +1,350 @@
+{
+  "generationMode": "built-in image_gen",
+  "format": "landscape composition study",
+  "notes": [
+    "Original photographs interpreting user-supplied composition references. Guides are separate SVG overlays.",
+    "IMG_5074 and IMG_5078 show the same fireworks frame and are recorded together. Repeated concepts with different scenes have distinct examples and variantOf.",
+    "The Juxtaposition, Diagonals and Leading Lines reference frames show only titles or diagrams; the new scenes illustrate those concepts."
+  ],
+  "styles": [
+    {
+      "number": 1,
+      "title": "Golden Ratio",
+      "ko": "황금비 구도",
+      "slug": "golden-ratio",
+      "description": "황금비의 곡선 흐름을 따라 불꽃에서 전경 인물로 시선을 이동하는 구도",
+      "principle": "주요 피사체를 나선의 안쪽에 두고 주변의 곡선으로 시선을 이어보세요. 구도선은 배치를 이해하기 위한 가이드입니다.",
+      "guide": {
+        "type": "golden"
+      },
+      "reference": {
+        "files": [
+          "IMG_5074.PNG",
+          "IMG_5078.PNG"
+        ]
+      },
+      "file": "01-golden-ratio.png",
+      "prompt": "Use case: photorealistic-natural. Create an original composition study photograph, LANDSCAPE 1536 x 960 pixels, edge-to-edge 8:5 aspect ratio. Night fireworks: dense elegant gold firework blooms concentrated in the upper-left region around x28% y28%; an anonymous dark silhouette of an adult watching occupies lower right, huge gently curving golden firework trails and smoke arc around left side across bottom toward right. Wide cinematic night sky. The specified placement is important for an educational composition overlay that will be added separately in code. Beautiful natural materials and cinematic subtle film grain. No composition guide lines, no drawn grid, no text, no titles, no logos, no watermark, no social media UI, no screenshot borders. Unidentifiable background people only where specified.",
+      "width": 1586,
+      "height": 992
+    },
+    {
+      "number": 2,
+      "title": "One Point",
+      "ko": "일점 투시",
+      "slug": "one-point",
+      "description": "골목의 벽과 바닥이 한 소실점으로 모이는 깊은 공간",
+      "principle": "수평·수직은 안정적으로 두고 깊이 방향의 평행선이 한 점으로 모이게 배치합니다.",
+      "guide": {
+        "type": "vanishing",
+        "focus": [
+          500,
+          325
+        ]
+      },
+      "reference": {
+        "files": [
+          "IMG_5075.PNG"
+        ]
+      },
+      "file": "02-one-point.png",
+      "prompt": "Use case: photorealistic-natural. Create an original composition study photograph, LANDSCAPE 1536 x 960 pixels, edge-to-edge 8:5 aspect ratio. A long narrow old stone alley viewed perfectly level straight on, all ground and roof perspective lines converge at exactly x50% y45%, small anonymous adult at the distant vanishing point, warm lanterns repeat along the center overhead, weathered stone walls. The specified placement is important for an educational composition overlay that will be added separately in code. Beautiful natural materials and cinematic subtle film grain. No composition guide lines, no drawn grid, no text, no titles, no logos, no watermark, no social media UI, no screenshot borders. Unidentifiable background people only where specified.",
+      "width": 1586,
+      "height": 992
+    },
+    {
+      "number": 3,
+      "title": "Radial",
+      "ko": "방사형 구도",
+      "slug": "radial",
+      "description": "빛의 선들이 중심의 실루엣에서 사방으로 펼쳐지는 구도",
+      "principle": "중심을 명확하게 잡고 주변 요소의 방향과 반복 간격으로 확산되는 리듬을 만듭니다.",
+      "guide": {
+        "type": "radial",
+        "focus": [
+          500,
+          350
+        ]
+      },
+      "reference": {
+        "files": [
+          "IMG_5076.PNG"
+        ]
+      },
+      "file": "03-radial.png",
+      "prompt": "Use case: photorealistic-natural. Create an original composition study photograph, LANDSCAPE 1536 x 960 pixels, edge-to-edge 8:5 aspect ratio. Low-angle view under a circular illuminated fairground canopy. Dozens of golden light spokes radiate symmetrically from exact frame center x50% y50%. Small anonymous adult head silhouette centered in lower middle, deep blue twilight, realistic lightbulb texture. The specified placement is important for an educational composition overlay that will be added separately in code. Beautiful natural materials and cinematic subtle film grain. No composition guide lines, no drawn grid, no text, no titles, no logos, no watermark, no social media UI, no screenshot borders. Unidentifiable background people only where specified.",
+      "width": 1586,
+      "height": 992
+    },
+    {
+      "number": 4,
+      "title": "Rule of Thirds · Market",
+      "ko": "삼분할 · 실내 시장",
+      "slug": "thirds-market",
+      "description": "오른쪽 교차점의 인물과 상단 지붕선을 삼분할에 맞춘 구도",
+      "principle": "가로·세로를 각각 셋으로 나눈 교차점에 주제를 두면 주변 환경을 함께 보여주기 좋습니다.",
+      "guide": {
+        "type": "thirds"
+      },
+      "reference": {
+        "files": [
+          "IMG_5077.PNG"
+        ]
+      },
+      "file": "04-thirds-market.png",
+      "prompt": "Use case: photorealistic-natural. Create an original composition study photograph, LANDSCAPE 1536 x 960 pixels, edge-to-edge 8:5 aspect ratio. Warm covered market interior, broad roof beam follows upper horizontal third y33%, anonymous shopper in an ochre coat centered on right third x67% with their head at y33%, stalls recede on left, cinematic rich wood, wide documentary shot. The specified placement is important for an educational composition overlay that will be added separately in code. Beautiful natural materials and cinematic subtle film grain. No composition guide lines, no drawn grid, no text, no titles, no logos, no watermark, no social media UI, no screenshot borders. Unidentifiable background people only where specified.",
+      "width": 1586,
+      "height": 992
+    },
+    {
+      "number": 5,
+      "title": "Leading Lines · Platform",
+      "ko": "유도선 · 플랫폼",
+      "slug": "leading-platform",
+      "description": "열차와 승강장의 경계가 오른쪽 인물로 시선을 이끄는 구도",
+      "principle": "선이 향하는 곳에 주제를 두고 시작점은 화면 가장자리에서 가져옵니다.",
+      "guide": {
+        "type": "platform"
+      },
+      "reference": {
+        "files": [
+          "IMG_5079.PNG"
+        ]
+      },
+      "file": "05-leading-platform.png",
+      "prompt": "Use case: photorealistic-natural. Create an original composition study photograph, LANDSCAPE 1536 x 960 pixels, edge-to-edge 8:5 aspect ratio. Quiet train platform viewed down its length, a stationary ochre train fills left side, its roof edge from top left and platform edge from bottom left converge toward a single anonymous person centered around x80% y48%, atmospheric natural afternoon lighting, realistic train and architecture, no readable advertising. The specified placement is important for an educational composition overlay that will be added separately in code. Beautiful natural materials and cinematic subtle film grain. No composition guide lines, no drawn grid, no text, no titles, no logos, no watermark, no social media UI, no screenshot borders. Unidentifiable background people only where specified.",
+      "width": 1586,
+      "height": 992
+    },
+    {
+      "number": 6,
+      "title": "Diagonal · Street",
+      "ko": "대각선 · 거리",
+      "slug": "diagonal-street",
+      "description": "기울어진 거리의 경계를 따라 인물과 공간에 긴장감을 주는 구도",
+      "principle": "대각선은 방향감과 움직임을 만듭니다. 수평선이 기울어진 이유가 장면에서 읽히도록 사용하세요.",
+      "guide": {
+        "type": "diagonal",
+        "paths": [
+          {
+            "d": "M0 515L1000 350"
+          }
+        ]
+      },
+      "reference": {
+        "files": [
+          "IMG_5080.PNG"
+        ]
+      },
+      "file": "06-diagonal-street.png",
+      "prompt": "Use case: photorealistic-natural. Create an original composition study photograph, LANDSCAPE 1536 x 960 pixels, edge-to-edge 8:5 aspect ratio. Street scene in cinematic Dutch angle, a long broad curb line rises diagonally from left edge at y80% to right edge at y25%, anonymous adult walking in right foreground, simple stone storefronts and distant taxi, muted warm grey palette, deliberate dynamic tilted camera. The specified placement is important for an educational composition overlay that will be added separately in code. Beautiful natural materials and cinematic subtle film grain. No composition guide lines, no drawn grid, no text, no titles, no logos, no watermark, no social media UI, no screenshot borders. Unidentifiable background people only where specified.",
+      "width": 1586,
+      "height": 992
+    },
+    {
+      "number": 7,
+      "title": "Symmetry",
+      "ko": "대칭 구도",
+      "slug": "symmetry",
+      "description": "중앙 축 양쪽의 건축과 조명이 대응하는 안정적인 구도",
+      "principle": "좌우의 형태·크기·간격을 맞추면 질서가 생기고 작은 비대칭도 강조됩니다.",
+      "guide": {
+        "type": "center"
+      },
+      "reference": {
+        "files": [
+          "IMG_5081.PNG"
+        ]
+      },
+      "file": "07-symmetry.png",
+      "prompt": "Use case: photorealistic-natural. Create an original composition study photograph, LANDSCAPE 1536 x 960 pixels, edge-to-edge 8:5 aspect ratio. Perfectly symmetrical front view of two identical luminous vending machines, centered vertical dark structural column at exactly x50%, equal machine widths and repeated rows of softly lit drinks, blue night setting, no people, accurate bilateral architectural composition, no readable logos. The specified placement is important for an educational composition overlay that will be added separately in code. Beautiful natural materials and cinematic subtle film grain. No composition guide lines, no drawn grid, no text, no titles, no logos, no watermark, no social media UI, no screenshot borders. Unidentifiable background people only where specified.",
+      "width": 1586,
+      "height": 992
+    },
+    {
+      "number": 8,
+      "title": "Rule of Thirds · Street",
+      "ko": "삼분할 · 골목 시장",
+      "slug": "thirds-street",
+      "variantOf": 4,
+      "description": "왼쪽 삼분할 영역의 인물과 오른쪽 거리의 여백을 대비한 구도",
+      "principle": "인물을 왼쪽 삼분할 영역에 두고 오른쪽에 거리의 깊이를 보여줍니다. 격자는 영역 사이의 시각적 무게를 비교하는 기준입니다.",
+      "guide": {
+        "type": "thirds"
+      },
+      "reference": {
+        "files": [
+          "IMG_5082.PNG"
+        ]
+      },
+      "file": "08-thirds-street.png",
+      "prompt": "Use case: photorealistic-natural. Create an original composition study photograph, LANDSCAPE 1536 x 960 pixels, edge-to-edge 8:5 aspect ratio. Outdoor old city street market in morning, anonymous adult vendor in muted red located on left third x33% with face at upper third y33%, storefront awnings running near y33%, crowd and receding walkway on right, street horizon near y67%, candid film photography. The specified placement is important for an educational composition overlay that will be added separately in code. Beautiful natural materials and cinematic subtle film grain. No composition guide lines, no drawn grid, no text, no titles, no logos, no watermark, no social media UI, no screenshot borders. Unidentifiable background people only where specified.",
+      "width": 1586,
+      "height": 992
+    },
+    {
+      "number": 9,
+      "title": "Frame in a Frame",
+      "ko": "프레임 속 프레임",
+      "slug": "frame-within-frame",
+      "description": "전경의 구조물 안에 먼 도시 풍경을 담아낸 구도",
+      "principle": "문·창문·교각 같은 전경을 테두리로 사용하면 주제를 둘러싸고 깊이를 더할 수 있습니다.",
+      "guide": {
+        "type": "frame",
+        "paths": [
+          {
+            "d": "M135 94H865V525H135Z"
+          }
+        ]
+      },
+      "reference": {
+        "files": [
+          "IMG_5083.PNG"
+        ]
+      },
+      "file": "09-frame-within-frame.png",
+      "prompt": "Use case: photorealistic-natural. Create an original composition study photograph, LANDSCAPE 1536 x 960 pixels, edge-to-edge 8:5 aspect ratio. A view through a large dark rectangular railway bridge opening centered in frame, opening extends x16% to84% and y12% to88%, sunset skyline and distant train inside the opening, heavy charcoal steel beams form a complete four-sided foreground frame, amber sky, realistic architectural photography. The specified placement is important for an educational composition overlay that will be added separately in code. Beautiful natural materials and cinematic subtle film grain. No composition guide lines, no drawn grid, no text, no titles, no logos, no watermark, no social media UI, no screenshot borders. Unidentifiable background people only where specified.",
+      "width": 1586,
+      "height": 992
+    },
+    {
+      "number": 10,
+      "title": "Rule of Thirds · Waterfront",
+      "ko": "삼분할 · 수변 풍경",
+      "slug": "thirds-waterfront",
+      "variantOf": 4,
+      "description": "왼쪽의 인물과 오른쪽 교량을 두 교차점에 나눈 구도",
+      "principle": "무게가 다른 두 주제를 서로 다른 교차점에 놓아 균형을 조절합니다.",
+      "guide": {
+        "type": "thirds"
+      },
+      "reference": {
+        "files": [
+          "IMG_5084.PNG"
+        ]
+      },
+      "file": "10-thirds-waterfront.png",
+      "prompt": "Use case: photorealistic-natural. Create an original composition study photograph, LANDSCAPE 1536 x 960 pixels, edge-to-edge 8:5 aspect ratio. Cinematic waterfront scene, anonymous adult in pale shirt at x33% with face y33% holding camera, suspension bridge tower at x67% rising to upper third, river horizon at y67%, warm sunset and pale turquoise sky, relaxed spacious composition. The specified placement is important for an educational composition overlay that will be added separately in code. Beautiful natural materials and cinematic subtle film grain. No composition guide lines, no drawn grid, no text, no titles, no logos, no watermark, no social media UI, no screenshot borders. Unidentifiable background people only where specified.",
+      "width": 1586,
+      "height": 992
+    },
+    {
+      "number": 11,
+      "title": "Juxtaposition",
+      "ko": "병치 구도",
+      "slug": "juxtaposition",
+      "description": "비슷한 크기의 오래된 구조와 새 구조를 나란히 대비한 구도",
+      "principle": "관련되거나 대조되는 두 요소를 가까이 놓아 차이를 한눈에 읽게 합니다.",
+      "guide": {
+        "type": "center"
+      },
+      "reference": {
+        "files": [
+          "IMG_5085.PNG"
+        ]
+      },
+      "file": "11-juxtaposition.png",
+      "prompt": "Use case: photorealistic-natural. Create an original composition study photograph, LANDSCAPE 1536 x 960 pixels, edge-to-edge 8:5 aspect ratio. Straight-on urban photograph contrasting two adjacent equally wide building facades divided at exact x50%: left is weathered warm red brick with ornate old windows, right is smooth cool blue glass with minimal rectangular windows. Equal visual weight, continuous pavement, natural daylight, no text, strong old/new juxtaposition. The specified placement is important for an educational composition overlay that will be added separately in code. Beautiful natural materials and cinematic subtle film grain. No composition guide lines, no drawn grid, no text, no titles, no logos, no watermark, no social media UI, no screenshot borders. Unidentifiable background people only where specified.",
+      "width": 1586,
+      "height": 992
+    },
+    {
+      "number": 12,
+      "title": "Diagonals · Architecture",
+      "ko": "대각선 · 교차 구조",
+      "slug": "diagonal-architecture",
+      "variantOf": 6,
+      "description": "서로 다른 방향의 구조선을 겹쳐 속도감과 긴장을 만든 구도",
+      "principle": "큰 대각선으로 방향을 정하고 다른 기울기의 선으로 리듬과 깊이를 보탭니다.",
+      "guide": {
+        "type": "cross-diagonal",
+        "paths": [
+          {
+            "d": "M0 465L1000 76 M0 55L560 248"
+          }
+        ]
+      },
+      "reference": {
+        "files": [
+          "IMG_5086.PNG"
+        ]
+      },
+      "file": "12-diagonal-architecture.png",
+      "prompt": "Use case: photorealistic-natural. Create an original composition study photograph, LANDSCAPE 1536 x 960 pixels, edge-to-edge 8:5 aspect ratio. Architectural detail photograph: two clean light concrete ramps cross diagonally on dark charcoal background, main beam rises from x0% y82% to x100% y18%, secondary beam descends from x0% y15% to x65% y60%, minimalist brutalist structure, directional side light, crisp geometry, no people. The specified placement is important for an educational composition overlay that will be added separately in code. Beautiful natural materials and cinematic subtle film grain. No composition guide lines, no drawn grid, no text, no titles, no logos, no watermark, no social media UI, no screenshot borders. Unidentifiable background people only where specified.",
+      "width": 1586,
+      "height": 992
+    },
+    {
+      "number": 13,
+      "title": "Leading Lines · Curve",
+      "ko": "유도선 · 곡선 산책로",
+      "slug": "leading-curve",
+      "variantOf": 5,
+      "description": "휘어진 길의 가장자리를 따라 먼 주제로 시선이 흐르는 구도",
+      "principle": "직선보다 완만한 곡선은 천천히 이동하는 시선을 만들고 다음 공간을 궁금하게 합니다.",
+      "guide": {
+        "type": "curve",
+        "paths": [
+          {
+            "d": "M915 625C940 480 420 365 410 295C385 245 570 215 560 183S495 150 518 130"
+          }
+        ]
+      },
+      "reference": {
+        "files": [
+          "IMG_5087.PNG"
+        ]
+      },
+      "file": "13-leading-curve.png",
+      "prompt": "Use case: photorealistic-natural. Create an original composition study photograph, LANDSCAPE 1536 x 960 pixels, edge-to-edge 8:5 aspect ratio. Aerial cinematic photograph of an S-curved pale stone footpath through dark green coastal grass, starts broad at bottom right x70%, curves left across middle x35% y55%, then curves toward upper center x50% y25%, one tiny anonymous walker near upper center endpoint, soft overcast natural light, no road markings. The specified placement is important for an educational composition overlay that will be added separately in code. Beautiful natural materials and cinematic subtle film grain. No composition guide lines, no drawn grid, no text, no titles, no logos, no watermark, no social media UI, no screenshot borders. Unidentifiable background people only where specified.",
+      "width": 1586,
+      "height": 992
+    },
+    {
+      "number": 14,
+      "title": "Vanishing Point",
+      "ko": "소실점 · 도시의 깊이",
+      "slug": "vanishing-city",
+      "variantOf": 2,
+      "description": "도로와 건물의 반복이 중앙 소실점으로 수렴하는 도시 구도",
+      "principle": "같은 깊이 방향의 선이 모이는 지점입니다. 일점 투시 예시로 건물과 도로의 반복을 활용했습니다.",
+      "guide": {
+        "type": "vanishing",
+        "paths": [
+          {
+            "d": "M390 625L500 218L635 625 M0 440L500 218L1000 440"
+          }
+        ]
+      },
+      "reference": {
+        "files": [
+          "IMG_5088.PNG"
+        ]
+      },
+      "file": "14-vanishing-city.png",
+      "prompt": "Use case: photorealistic-natural. Create an original composition study photograph, LANDSCAPE 1536 x 960 pixels, edge-to-edge 8:5 aspect ratio. Elevated long-lens photograph looking straight down a broad tree-lined city avenue, roadway edges and building rows converge at exact x50% y45%, layered warm beige towers on both sides and small cars on road, bright green trees, blue daytime sky, deep urban perspective. The specified placement is important for an educational composition overlay that will be added separately in code. Beautiful natural materials and cinematic subtle film grain. No composition guide lines, no drawn grid, no text, no titles, no logos, no watermark, no social media UI, no screenshot borders. Unidentifiable background people only where specified.",
+      "width": 1586,
+      "height": 992
+    },
+    {
+      "number": 15,
+      "title": "Centered",
+      "ko": "중앙 구도",
+      "slug": "centered",
+      "description": "화면 정중앙의 높은 건축물에 시선을 집중시킨 구도",
+      "principle": "주제를 가운데에 두고 주변의 크기와 여백으로 존재감을 조절합니다. 좌우가 같아야 하는 대칭 구도와는 다릅니다.",
+      "guide": {
+        "type": "center"
+      },
+      "reference": {
+        "files": [
+          "IMG_5089.PNG"
+        ]
+      },
+      "file": "15-centered.png",
+      "prompt": "Use case: photorealistic-natural. Create an original composition study photograph, LANDSCAPE 1536 x 960 pixels, edge-to-edge 8:5 aspect ratio. Evening skyline with a tall slim illuminated landmark tower exactly centered x50%, tower tip near y12%, dark varied city buildings of unequal heights on both sides, broad river promenade foreground, lavender dusk sky, centered strong subject but surrounding architecture naturally asymmetrical, realistic long exposure photography. The specified placement is important for an educational composition overlay that will be added separately in code. Beautiful natural materials and cinematic subtle film grain. No composition guide lines, no drawn grid, no text, no titles, no logos, no watermark, no social media UI, no screenshot borders. Unidentifiable background people only where specified.",
+      "width": 1586,
+      "height": 992
+    }
+  ]
+}

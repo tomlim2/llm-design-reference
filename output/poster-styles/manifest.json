@@ -2777,5 +2777,439 @@
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ae8afab6-db6e-4e95-ae05-ac8f1be4eb52.png",
     "status": "complete"
+  },
+  {
+    "number": 162,
+    "title": "Expressive",
+    "ko": "표현적인 레터링",
+    "slug": "expressive-lettering",
+    "variantOf": 40,
+    "tags": [
+      "강렬한",
+      "손맛이 있는",
+      "파격적인",
+      "실험적인"
+    ],
+    "reference": {
+      "file": "IMG_5064.PNG"
+    },
+    "file": "162-expressive-lettering.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-b2de14b0-2353-4ca8-90de-c1f93dd3681c.png",
+    "status": "complete"
+  },
+  {
+    "number": 163,
+    "title": "Hand-Drawn",
+    "ko": "손그림 로고",
+    "slug": "hand-drawn-logo",
+    "variantOf": 35,
+    "tags": [
+      "손맛이 있는",
+      "따뜻한",
+      "빈티지",
+      "섬세한"
+    ],
+    "reference": {
+      "file": "IMG_5065.PNG"
+    },
+    "file": "163-hand-drawn-logo.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-beb042a1-0648-40b9-9f25-f75cb2368c78.png",
+    "status": "complete"
+  },
+  {
+    "number": 164,
+    "title": "Minimal Twist",
+    "ko": "미니멀 트위스트",
+    "slug": "minimal-twist",
+    "variantOf": 21,
+    "tags": [
+      "깔끔한 조형",
+      "모던한",
+      "차분한",
+      "기하학적인"
+    ],
+    "reference": {
+      "file": "IMG_5066.PNG"
+    },
+    "file": "164-minimal-twist.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-45f557aa-6d68-419d-afc7-59e537b179ac.png",
+    "status": "complete"
+  },
+  {
+    "number": 165,
+    "title": "Fun Chunky",
+    "ko": "통통한 타이포그래피",
+    "slug": "fun-chunky",
+    "variantOf": 43,
+    "tags": [
+      "귀여운",
+      "키치한",
+      "컬러풀한",
+      "강렬한"
+    ],
+    "reference": {
+      "file": "IMG_5067.PNG"
+    },
+    "file": "165-fun-chunky.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-a96a0fac-ba4e-4a4b-b35f-9bb2c23128bd.png",
+    "status": "complete"
+  },
+  {
+    "number": 166,
+    "title": "Retro Print",
+    "ko": "레트로 인쇄",
+    "slug": "retro-print",
+    "variantOf": 25,
+    "tags": [
+      "레트로",
+      "빈티지",
+      "손맛이 있는",
+      "깔끔한 구성"
+    ],
+    "reference": {
+      "file": "IMG_5068.PNG"
+    },
+    "file": "166-retro-print.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-e99335e0-4f6b-4f8d-bc9e-74024fe2d7c8.png",
+    "status": "complete"
+  },
+  {
+    "number": 167,
+    "title": "Organic Curves",
+    "ko": "유기적 곡선",
+    "slug": "organic-curves",
+    "variantOf": 65,
+    "tags": [
+      "유기적인",
+      "우아한",
+      "섬세한",
+      "차분한"
+    ],
+    "reference": {
+      "file": "IMG_5069.PNG"
+    },
+    "file": "167-organic-curves.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-9a9c8457-a3ab-48eb-b716-5e49625f94bf.png",
+    "status": "complete"
+  },
+  {
+    "number": 168,
+    "title": "Bubbly Maximalism",
+    "ko": "버블 맥시멀리즘",
+    "slug": "bubbly-maximalism",
+    "variantOf": 22,
+    "tags": [
+      "유기적인",
+      "키치한",
+      "화려한",
+      "강렬한"
+    ],
+    "reference": {
+      "file": "IMG_5070.PNG"
+    },
+    "file": "168-bubbly-maximalism.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-68fbd356-214d-4de6-bb1b-c4a6e5652a81.png",
+    "status": "complete"
+  },
+  {
+    "number": 169,
+    "title": "Statement Serif",
+    "ko": "존재감 있는 세리프",
+    "slug": "statement-serif",
+    "variantOf": 114,
+    "tags": [
+      "우아한",
+      "세련된",
+      "섬세한",
+      "빈티지"
+    ],
+    "reference": {
+      "file": "IMG_5071.PNG"
+    },
+    "file": "169-statement-serif.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-af65b4db-1a2b-41d8-9abb-425861dd0afc.png",
+    "status": "complete"
+  },
+  {
+    "number": 170,
+    "title": "Pixelated",
+    "ko": "픽셀 로고",
+    "slug": "pixelated-logo",
+    "variantOf": 28,
+    "tags": [
+      "기하학적인",
+      "미래적인",
+      "힙한",
+      "깔끔한 조형"
+    ],
+    "reference": {
+      "file": "IMG_5072.PNG"
+    },
+    "file": "170-pixelated-logo.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-89068ec8-9fca-4a9c-aa84-329b3f6ed14e.png",
+    "status": "complete"
+  },
+  {
+    "number": 171,
+    "title": "Freestyle Mascot",
+    "ko": "자유로운 마스코트",
+    "slug": "freestyle-mascot",
+    "variantOf": 20,
+    "tags": [
+      "귀여운",
+      "손맛이 있는",
+      "키치한",
+      "따뜻한"
+    ],
+    "reference": {
+      "file": "IMG_5073.PNG"
+    },
+    "file": "171-freestyle-mascot.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-072f3bcd-280b-427c-ba7d-279bf0eb11f6.png",
+    "status": "complete"
+  },
+  {
+    "number": 172,
+    "title": "Acid Y2K",
+    "ko": "애시드 Y2K",
+    "slug": "acid-y2k",
+    "variantOf": 130,
+    "tags": [
+      "미래적인",
+      "힙한",
+      "강렬한",
+      "실험적인"
+    ],
+    "reference": {
+      "file": "IMG_5091.PNG",
+      "position": 1
+    },
+    "file": "172-acid-y2k.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-b976facd-0c03-4503-9b64-e2375392e436.png",
+    "status": "complete"
+  },
+  {
+    "number": 173,
+    "title": "Neo Swiss",
+    "ko": "네오 스위스",
+    "slug": "neo-swiss-orbit",
+    "variantOf": 71,
+    "tags": [
+      "깔끔한 구성",
+      "모던한",
+      "기하학적인",
+      "강렬한"
+    ],
+    "reference": {
+      "file": "IMG_5091.PNG",
+      "position": 2
+    },
+    "file": "173-neo-swiss-orbit.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-069f9193-5f56-4fe9-b1eb-faffb5ab025f.png",
+    "status": "complete"
+  },
+  {
+    "number": 174,
+    "title": "3D Surrealism",
+    "ko": "3D 초현실주의",
+    "slug": "3d-surrealism-arch",
+    "variantOf": 66,
+    "tags": [
+      "몽환적인",
+      "실험적인",
+      "미래적인",
+      "차분한"
+    ],
+    "reference": {
+      "file": "IMG_5091.PNG",
+      "position": 3
+    },
+    "file": "174-3d-surrealism-arch.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-3ed94222-a84a-43df-a1f0-d2d6e4d7f8f0.png",
+    "status": "complete"
+  },
+  {
+    "number": 175,
+    "title": "Vector Surrealism",
+    "ko": "벡터 초현실주의",
+    "slug": "vector-surrealism-door",
+    "variantOf": 80,
+    "tags": [
+      "몽환적인",
+      "컬러풀한",
+      "기하학적인",
+      "실험적인"
+    ],
+    "reference": {
+      "file": "IMG_5091.PNG",
+      "position": 4
+    },
+    "file": "175-vector-surrealism-door.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-84afd885-6c56-48cf-9be7-7b01e5f456d3.png",
+    "status": "complete"
+  },
+  {
+    "number": 176,
+    "title": "Halftone",
+    "ko": "하프톤",
+    "slug": "halftone-flower",
+    "variantOf": 68,
+    "tags": [
+      "빈티지",
+      "강렬한",
+      "손맛이 있는",
+      "컬러풀한"
+    ],
+    "reference": {
+      "file": "IMG_5091.PNG",
+      "position": 5
+    },
+    "file": "176-halftone-flower.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-91ffb439-2023-4d8d-b2d9-057bcccdc94f.png",
+    "status": "complete"
+  },
+  {
+    "number": 177,
+    "title": "Baugasm",
+    "ko": "바우가즘",
+    "slug": "baugasm",
+    "variantOf": 100,
+    "tags": [
+      "컬러풀한",
+      "실험적인",
+      "유기적인",
+      "미래적인"
+    ],
+    "reference": {
+      "file": "IMG_5091.PNG",
+      "position": 6
+    },
+    "file": "177-baugasm.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-90a51623-a85f-4eea-89c4-ab9a2ad96014.png",
+    "status": "complete"
+  },
+  {
+    "number": 178,
+    "title": "ASCII",
+    "ko": "아스키 아트",
+    "slug": "ascii-wave",
+    "variantOf": 70,
+    "tags": [
+      "실험적인",
+      "미래적인",
+      "깔끔한 구성",
+      "어두운"
+    ],
+    "reference": {
+      "file": "IMG_5091.PNG",
+      "position": 7
+    },
+    "file": "178-ascii-wave.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-e7b9d101-fe87-447a-bd9d-c0632794da79.png",
+    "status": "complete",
+    "revision": {
+      "originalSource": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-dc3687ea-42d3-4155-952b-116faab3b949.png",
+      "prompt": "Preserve the character wave, black background, portrait dimensions and bottom caption. Replace the incorrect top-left label STYLIZED-CONCEPT with ASCII in white monospaced uppercase letters. Only change that label."
+    }
+  },
+  {
+    "number": 179,
+    "title": "Pop Illustration",
+    "ko": "팝 일러스트",
+    "slug": "pop-illustration-hand",
+    "variantOf": 75,
+    "tags": [
+      "키치한",
+      "컬러풀한",
+      "귀여운",
+      "강렬한"
+    ],
+    "reference": {
+      "file": "IMG_5091.PNG",
+      "position": 8
+    },
+    "file": "179-pop-illustration-hand.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-47d45f49-7b62-4352-bbc2-c99723ad3189.png",
+    "status": "complete"
+  },
+  {
+    "number": 180,
+    "title": "Thermal Heatmap",
+    "ko": "열화상 히트 맵",
+    "slug": "thermal-heatmap-leaf",
+    "variantOf": 64,
+    "tags": [
+      "컬러풀한",
+      "실험적인",
+      "강렬한",
+      "유기적인"
+    ],
+    "reference": {
+      "file": "IMG_5091.PNG",
+      "position": 9
+    },
+    "file": "180-thermal-heatmap-leaf.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-8f5f9406-b200-478c-8641-2a0213cd1b17.png",
+    "status": "complete"
+  },
+  {
+    "number": 181,
+    "title": "Vaporwave",
+    "ko": "베이퍼웨이브",
+    "slug": "vaporwave-stair",
+    "variantOf": 52,
+    "tags": [
+      "레트로",
+      "몽환적인",
+      "미래적인",
+      "차분한"
+    ],
+    "reference": {
+      "file": "IMG_5091.PNG",
+      "position": 10
+    },
+    "file": "181-vaporwave-stair.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-2467a40a-1322-4b29-9053-29ae12775f26.png",
+    "status": "complete"
   }
 ]

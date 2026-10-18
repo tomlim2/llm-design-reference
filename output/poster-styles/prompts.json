@@ -2996,6 +2996,436 @@
         "item": 23
       },
       "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the user screenshot supplies style names and mood keywords only; do not reproduce its people, photographs, social-media UI or branding.\nStyle title (verbatim): \"CYBERPUNK\"\nFooter text (verbatim, small): \"161 / VISUAL DESIGN\"\nArt direction: Cyberpunk cinematic poster: a towering rain-soaked megastructure viewed straight upward through a very narrow alley, a thin red warning light splitting the dark vertical facade, faint cyan circuit reflections in water below. Oppressive architectural scale, deep charcoal shadows, solitary small human silhouette near base. Exact title CYBERPUNK in compressed red type across the bottom. No readable shop signs, brands or copied film imagery.\nConstraints: original poster, professionally composed; title readable at thumbnail size; no mockup, watermark, contact sheet, signature or app interface."
+    },
+    {
+      "number": 162,
+      "title": "Expressive",
+      "ko": "표현적인 레터링",
+      "slug": "expressive-lettering",
+      "variantOf": 40,
+      "tags": [
+        "강렬한",
+        "손맛이 있는",
+        "파격적인",
+        "실험적인"
+      ],
+      "description": "휘어진 획과 압축된 글자를 엇갈려 쌓은 레터링",
+      "reference": {
+        "file": "IMG_5064.PNG"
+      },
+      "file": "162-expressive-lettering.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. Black ink expressive custom lettering reading EXPRESSIVE in two tightly fitted interlocking lines, warped letters flowing like a smile, bright vermilion sunburst on warm ivory, very large lettering at a bold slant occupying the upper two thirds, small black expressive marks beneath. Include only the named style title described above and a discreet footer \"162 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 163,
+      "title": "Hand-Drawn",
+      "ko": "손그림 로고",
+      "slug": "hand-drawn-logo",
+      "variantOf": 35,
+      "tags": [
+        "손맛이 있는",
+        "따뜻한",
+        "빈티지",
+        "섬세한"
+      ],
+      "description": "불규칙한 선과 작은 드로잉을 조합한 손그림 로고",
+      "reference": {
+        "file": "IMG_5065.PNG"
+      },
+      "file": "163-hand-drawn-logo.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. An imperfect hand drawn black ink eye-shaped seal enclosing the words HAND DRAWN, irregular pencil contours, little hand sketched stars in a loose diagonal trail, warm textured cream paper, open generous margins, sparse art-directed logo poster. Include only the named style title described above and a discreet footer \"163 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 164,
+      "title": "Minimal Twist",
+      "ko": "미니멀 트위스트",
+      "slug": "minimal-twist",
+      "variantOf": 21,
+      "tags": [
+        "깔끔한 조형",
+        "모던한",
+        "차분한",
+        "기하학적인"
+      ],
+      "description": "여백 속에 숨은 길을 결합한 단순한 산 모양 심벌",
+      "reference": {
+        "file": "IMG_5066.PNG"
+      },
+      "file": "164-minimal-twist.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. Minimal conceptual logo poster, a single dark forest green geometric mountain whose negative space forms a winding white river, tiny yellow circular sun offset upper right of the mark, pale sage field, mark centered near upper third and small widely spaced MINIMAL TWIST text near lower third. Include only the named style title described above and a discreet footer \"164 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 165,
+      "title": "Fun Chunky",
+      "ko": "통통한 타이포그래피",
+      "slug": "fun-chunky",
+      "variantOf": 43,
+      "tags": [
+        "귀여운",
+        "키치한",
+        "컬러풀한",
+        "강렬한"
+      ],
+      "description": "둥근 굵은 글자를 크기별로 쌓은 경쾌한 워드마크",
+      "reference": {
+        "file": "IMG_5067.PNG"
+      },
+      "file": "165-fun-chunky.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. A playful chunky rounded lettering poster FUN stacked above CHUNKY in enormous buttery yellow puffy FLAT ink letters, sky blue background, uneven bouncy baseline, small cobalt scalloped oval floating below, tightly stacked left aligned typographic silhouette, not 3D. Include only the named style title described above and a discreet footer \"165 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 166,
+      "title": "Retro Print",
+      "ko": "레트로 인쇄",
+      "slug": "retro-print",
+      "variantOf": 25,
+      "tags": [
+        "레트로",
+        "빈티지",
+        "손맛이 있는",
+        "깔끔한 구성"
+      ],
+      "description": "아치형 제목과 인쇄 배지를 겹친 빈티지 레이아웃",
+      "reference": {
+        "file": "IMG_5068.PNG"
+      },
+      "file": "166-retro-print.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. Vintage two-color letterpress logo poster, large central circular seal bisected by a broad horizontal black banner reading RETRO PRINT in ivory condensed slab letters, curved engraved ray ornaments above and checkerboard semicircle below, aged ochre stock with subtle ink wear, professional balanced typography. Include only the named style title described above and a discreet footer \"166 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 167,
+      "title": "Organic Curves",
+      "ko": "유기적 곡선",
+      "slug": "organic-curves",
+      "variantOf": 65,
+      "tags": [
+        "유기적인",
+        "우아한",
+        "섬세한",
+        "차분한"
+      ],
+      "description": "잎과 줄기의 흐름을 글자에 연결한 부드러운 로고",
+      "reference": {
+        "file": "IMG_5069.PNG"
+      },
+      "file": "167-organic-curves.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. Elegant original botanical lettering poster reading ORGANIC CURVES, cream organic gently irregular letters following a rising flowing baseline, dark olive background, delicate pale leaf and stem silhouettes grow from selected letters and curl around the right side, asymmetrical generous negative space lower left. Include only the named style title described above and a discreet footer \"167 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 168,
+      "title": "Bubbly Maximalism",
+      "ko": "버블 맥시멀리즘",
+      "slug": "bubbly-maximalism",
+      "variantOf": 22,
+      "tags": [
+        "유기적인",
+        "키치한",
+        "화려한",
+        "강렬한"
+      ],
+      "description": "작은 기포와 유동적인 글자로 화면을 채운 워드마크",
+      "reference": {
+        "file": "IMG_5070.PNG"
+      },
+      "file": "168-bubbly-maximalism.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. Bubbly maximalist graphic poster, huge black liquid bubble letters reading BUBBLY MAXIMALISM wrapping around a narrow central cream river of negative space, fluorescent warm yellow background, many round ink droplets woven into the letter shapes, highly dense but intentionally legible, flat screen printed finish. Include only the named style title described above and a discreet footer \"168 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 169,
+      "title": "Statement Serif",
+      "ko": "존재감 있는 세리프",
+      "slug": "statement-serif",
+      "variantOf": 114,
+      "tags": [
+        "우아한",
+        "세련된",
+        "섬세한",
+        "빈티지"
+      ],
+      "description": "큰 세리프 이니셜과 작은 활자의 대비를 살린 구성",
+      "reference": {
+        "file": "IMG_5071.PNG"
+      },
+      "file": "169-statement-serif.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. A refined typographic identity poster with monumental interlocked thin high contrast serif S and S monogram occupying left two thirds, dark wine brown background, muted metallic gold typography, small STATEMENT SERIF set in two lines at lower right, tiny restrained botanical finial, large elegant negative space top right. Include only the named style title described above and a discreet footer \"169 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 170,
+      "title": "Pixelated",
+      "ko": "픽셀 로고",
+      "slug": "pixelated-logo",
+      "variantOf": 28,
+      "tags": [
+        "기하학적인",
+        "미래적인",
+        "힙한",
+        "깔끔한 조형"
+      ],
+      "description": "정사각형 모듈로 만든 별과 픽셀 활자의 디지털 로고",
+      "reference": {
+        "file": "IMG_5072.PNG"
+      },
+      "file": "170-pixelated-logo.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. Contemporary pixel logo poster, giant off-center stepped four-point star constructed from crisp square black pixels on acid lime, the lower right quadrant dissolves into scattered square pixels, PIXELATED in carefully designed black pixel lettering along lower edge, clean graphic flat shapes without fake computer UI. Include only the named style title described above and a discreet footer \"170 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 171,
+      "title": "Freestyle Mascot",
+      "ko": "자유로운 마스코트",
+      "slug": "freestyle-mascot",
+      "variantOf": 20,
+      "tags": [
+        "귀여운",
+        "손맛이 있는",
+        "키치한",
+        "따뜻한"
+      ],
+      "description": "느슨한 선의 캐릭터와 손글씨를 묶은 마스코트 구성",
+      "reference": {
+        "file": "IMG_5073.PNG"
+      },
+      "file": "171-freestyle-mascot.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. Original playful mascot identity poster: a smiling round cloud character with skinny dancing legs and small waving hands in loose cream marker line on vermilion orange. Mascot leans from upper right toward large loose black FREESTYLE MASCOT lettering at lower left, friendly hand drawn imperfections, not any existing brand character. Include only the named style title described above and a discreet footer \"171 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 172,
+      "title": "Acid Y2K",
+      "ko": "애시드 Y2K",
+      "slug": "acid-y2k",
+      "variantOf": 130,
+      "tags": [
+        "미래적인",
+        "힙한",
+        "강렬한",
+        "실험적인"
+      ],
+      "description": "크롬 별과 비틀린 타원을 사선으로 겹친 산성색 그래픽",
+      "reference": {
+        "file": "IMG_5091.PNG",
+        "position": 1
+      },
+      "file": "172-acid-y2k.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. Acid Y2K poster, one huge sharp liquid chrome star cropped on lower left, warped fluorescent lime elliptical rings slant diagonally upward right across a deep violet background, tiny black-and-white checker fragments, bold condensed ACID Y2K type across top, art-directed asymmetrical negative space. Include only the named style title described above and a discreet footer \"172 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 173,
+      "title": "Neo Swiss",
+      "ko": "네오 스위스",
+      "slug": "neo-swiss-orbit",
+      "variantOf": 71,
+      "tags": [
+        "깔끔한 구성",
+        "모던한",
+        "기하학적인",
+        "강렬한"
+      ],
+      "description": "큰 파란 원과 촘촘한 활자 블록을 대비한 비대칭 그리드",
+      "reference": {
+        "file": "IMG_5091.PNG",
+        "position": 2
+      },
+      "file": "173-neo-swiss-orbit.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. Neo Swiss editorial poster, ivory field, a huge cobalt blue circle cropped at the upper right, black tightly tracked NEO SWISS grotesk typography along bottom third in three offset columns, fine red rules align to an asymmetric modular grid, small technical numerals as secondary hierarchy. Include only the named style title described above and a discreet footer \"173 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 174,
+      "title": "3D Surrealism",
+      "ko": "3D 초현실주의",
+      "slug": "3d-surrealism-arch",
+      "variantOf": 66,
+      "tags": [
+        "몽환적인",
+        "실험적인",
+        "미래적인",
+        "차분한"
+      ],
+      "description": "물 위에서 어긋난 유리 아치와 작은 구체의 비현실적 공간",
+      "reference": {
+        "file": "IMG_5091.PNG",
+        "position": 3
+      },
+      "file": "174-3d-surrealism-arch.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. Surreal 3D poster, impossible translucent lavender arch split into two offset halves hovering above a still pale pink reflecting plane, one matte orange sphere caught between disconnected halves, high viewpoint, architectural calm, small black 3D SURREALISM typography near top left, refined ray traced materials, lots of airy space. Include only the named style title described above and a discreet footer \"174 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 175,
+      "title": "Vector Surrealism",
+      "ko": "벡터 초현실주의",
+      "slug": "vector-surrealism-door",
+      "variantOf": 80,
+      "tags": [
+        "몽환적인",
+        "컬러풀한",
+        "기하학적인",
+        "실험적인"
+      ],
+      "description": "문 안의 바다와 계단 바깥의 태양을 엮은 평면 공간",
+      "reference": {
+        "file": "IMG_5091.PNG",
+        "position": 4
+      },
+      "file": "175-vector-surrealism-door.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. Flat vector surrealism poster with a cobalt open doorway floating horizontally, turquoise sea visible through the door, coral staircase spiraling around a yellow sun, crisp solid color silhouettes on warm peach background, side-view layered geometry concentrated lower half, elegant black VECTOR SURREALISM title upper left. Include only the named style title described above and a discreet footer \"175 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 176,
+      "title": "Halftone",
+      "ko": "하프톤",
+      "slug": "halftone-flower",
+      "variantOf": 68,
+      "tags": [
+        "빈티지",
+        "강렬한",
+        "손맛이 있는",
+        "컬러풀한"
+      ],
+      "description": "확대된 망점 꽃과 두 가지 색면을 나눈 인쇄 구성",
+      "reference": {
+        "file": "IMG_5091.PNG",
+        "position": 5
+      },
+      "file": "176-halftone-flower.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. Halftone editorial poster, huge tightly cropped sunflower seen from above rendered in visibly enlarged dark indigo halftone dots, offset lime and hot coral ink circles, flower occupies upper three quarters, cream lower band with strong black HALFTONE type, tactile misregistered print, not photographic smooth gradients. Include only the named style title described above and a discreet footer \"176 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 177,
+      "title": "Baugasm",
+      "ko": "바우가즘",
+      "slug": "baugasm",
+      "variantOf": 100,
+      "tags": [
+        "컬러풀한",
+        "실험적인",
+        "유기적인",
+        "미래적인"
+      ],
+      "description": "선명한 그라디언트 리본과 잘린 도형을 중첩한 추상 그래픽",
+      "reference": {
+        "file": "IMG_5091.PNG",
+        "position": 6
+      },
+      "file": "177-baugasm.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. Original experimental gradient poster inspired by colorful abstract daily-poster studies: enormous folded soft ribbon shifts cyan to violet to vermilion weaving through a rigid white rectangular cutout, deep ultramarine background, gritty airbrush shading, small crisp white BAUGASM typography lower left, asymmetrical sculptural arrangement, no copied artwork. Include only the named style title described above and a discreet footer \"177 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 178,
+      "title": "ASCII",
+      "ko": "아스키 아트",
+      "slug": "ascii-wave",
+      "variantOf": 70,
+      "tags": [
+        "실험적인",
+        "미래적인",
+        "깔끔한 구성",
+        "어두운"
+      ],
+      "description": "문자 밀도의 차이로 파도의 높낮이를 표현한 흑백 화면",
+      "reference": {
+        "file": "IMG_5091.PNG",
+        "position": 7
+      },
+      "file": "178-ascii-wave.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. ASCII art poster composed entirely of very small monospaced white punctuation glyphs on black: a single enormous curling ocean wave rises from bottom left toward upper right, density of @ # * + : . gives shading, strong negative black sky, small precise ASCII label at top left, authentic terminal text texture. Include only the named style title described above and a discreet footer \"178 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 179,
+      "title": "Pop Illustration",
+      "ko": "팝 일러스트",
+      "slug": "pop-illustration-hand",
+      "variantOf": 75,
+      "tags": [
+        "키치한",
+        "컬러풀한",
+        "귀여운",
+        "강렬한"
+      ],
+      "description": "손과 꽃을 대각선으로 연결한 굵은 선의 팝 그래픽",
+      "reference": {
+        "file": "IMG_5091.PNG",
+        "position": 8
+      },
+      "file": "179-pop-illustration-hand.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. Bold flat pop illustration poster, a giant lavender cartoon hand extends diagonally from lower right holding an orange daisy at upper left, heavy black contours, teal background, little yellow spark shapes, oversized cream POP ILLUSTRATION lettering fitted along left bottom, playful flat spot colors, no existing characters. Include only the named style title described above and a discreet footer \"179 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 180,
+      "title": "Thermal Heatmap",
+      "ko": "열화상 히트 맵",
+      "slug": "thermal-heatmap-leaf",
+      "variantOf": 64,
+      "tags": [
+        "컬러풀한",
+        "실험적인",
+        "강렬한",
+        "유기적인"
+      ],
+      "description": "잎의 구조를 열 분포 색상으로 바꾼 세로형 그래픽",
+      "reference": {
+        "file": "IMG_5091.PNG",
+        "position": 9
+      },
+      "file": "180-thermal-heatmap-leaf.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. Thermal heatmap graphic poster, a single large leaf skeleton at diagonal from lower left to upper right, infrared false colors bright white yellow red center veins transitioning through magenta cobalt deep blue edges, black background, a thin vertical temperature spectrum at left, small white THERMAL HEATMAP text top left, a graphic visualization not actual measured data. Include only the named style title described above and a discreet footer \"180 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 181,
+      "title": "Vaporwave",
+      "ko": "베이퍼웨이브",
+      "slug": "vaporwave-stair",
+      "variantOf": 52,
+      "tags": [
+        "레트로",
+        "몽환적인",
+        "미래적인",
+        "차분한"
+      ],
+      "description": "파스텔 계단과 수평선의 빛을 배치한 디지털 풍경",
+      "reference": {
+        "file": "IMG_5091.PNG",
+        "position": 10
+      },
+      "file": "181-vaporwave-stair.png",
+      "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. Vaporwave poster, monumental white stepped ziggurat at lower left against pastel mauve sky and turquoise horizon sea, glowing pink rectangular sun half-hidden beyond the steps, VHS-soft haze and subtle grid reflections, narrow black VAPORWAVE title vertical on far right, no statues or swimming pool, calm digital nostalgia. Include only the named style title described above and a discreet footer \"181 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
+      "width": 1024,
+      "height": 1536
     }
   ],
   "additions": [
@@ -3515,6 +3945,36 @@
         "Previously collected styles receive new layouts and variantOf links.",
         "Every poster, including the existing 138 entries, has 3–5 mood/visual tags from POSTER_TAGS.",
         "Frasurbane visual vocabulary: https://www.cari.institute/aesthetics/frasurbane; Mishko typography examples: https://www.behance.net/mishko-co"
+      ]
+    },
+    {
+      "addedOn": "2026-10-18",
+      "generationMode": "built-in image_gen",
+      "sourceImages": [
+        "IMG_5064.PNG",
+        "IMG_5065.PNG",
+        "IMG_5066.PNG",
+        "IMG_5067.PNG",
+        "IMG_5068.PNG",
+        "IMG_5069.PNG",
+        "IMG_5070.PNG",
+        "IMG_5071.PNG",
+        "IMG_5072.PNG",
+        "IMG_5073.PNG",
+        "IMG_5091.PNG"
+      ],
+      "numbers": [
+        162,
+        181
+      ],
+      "notes": [
+        "Ten logo directions and ten graphic directions. Existing families retain their earlier examples; new layouts are linked by variantOf. Baugasm refers to the poster project by Vasjen Katro, not a historical movement."
+      ],
+      "references": [
+        {
+          "style": "Baugasm",
+          "url": "https://www.behance.net/katro16"
+        }
       ]
     }
   ]

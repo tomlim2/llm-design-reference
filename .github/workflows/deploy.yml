@@ -33,6 +33,7 @@ jobs:
         run: |
           node --check gallery.js
           node --check collections.mjs
+          node --check composition-guides.mjs
           node --check scripts/check-collections.mjs
           node scripts/check-collections.mjs
 
@@ -40,8 +41,8 @@ jobs:
         run: |
           mkdir -p _site
           git archive HEAD \
-            index.html site.css gallery.js collections.mjs animation.html \
-            output/poster-styles output/motion-styles \
+            index.html site.css gallery.js collections.mjs composition-guides.mjs animation.html \
+            output/poster-styles output/motion-styles output/composition-styles \
             output/motion-styles.zip \
             | tar -x -C _site
           touch _site/.nojekyll

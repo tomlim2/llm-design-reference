@@ -1,4 +1,5 @@
-import { COLLECTIONS, POSTER_TAGS, filterByTags, newestFirst, resolveCollectionHash } from './collections.mjs?v=20261018-tags';
+import { COLLECTIONS, POSTER_TAGS, filterByTags, newestFirst, resolveCollectionHash } from './collections.mjs?v=20261018-composition';
+import { compositionPaths } from './composition-guides.mjs?v=20261018-composition';
 
 (() => {
   'use strict';
@@ -20,6 +21,9 @@ import { COLLECTIONS, POSTER_TAGS, filterByTags, newestFirst, resolveCollectionH
   const next = document.getElementById('next-poster');
   const announcement = document.getElementById('viewer-announcement');
   const tabs = [...document.querySelectorAll('.collection-tab')];
+  const detailGuide = document.getElementById('detail-guide');
+  const guideToggle = document.getElementById('guide-toggle');
+  let showGuides = true;
   const selectedTags = new Set();
   const filterPanel = document.getElementById('tag-filters');
   const filterOptions = document.getElementById('tag-options');
@@ -32,6 +36,36 @@ import { COLLECTIONS, POSTER_TAGS, filterByTags, newestFirst, resolveCollectionH
   const collection = () => collections[activeCollection];
   const visibleItems = () => activeCollection === 'posters'
     ? filterByTags(collection().items, selectedTags) : collection().items;
+
+  function createGuide(study) {
+    const ns = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(ns, 'svg');
+    svg.setAttribute('viewBox', `0 0 ${study.width} ${study.height}`);
+    svg.setAttribute('aria-hidden', 'true');
+    svg.setAttribute('focusable', 'false');
+    const group = document.createElementNS(ns, 'g');
+    group.setAttribute('transform', `scale(${study.width / 1000} ${study.height / 625})`);
+    for (const item of compositionPaths(study.guide)) {
+      const path = document.createElementNS(ns, 'path');
+      path.setAttribute('d', item.d);
+      path.setAttribute('class', item.subtle ? 'guide-stroke guide-grid' : 'guide-stroke');
+      if (item.transform) path.setAttribute('transform', item.transform);
+      group.appendChild(path);
+    }
+    svg.appendChild(group);
+    return svg;
+  }
+
+  document.querySelectorAll('[data-guide-preview]').forEach(layer => {
+    const study = collections.composition.items.find(item => item.number === Number(layer.dataset.guidePreview));
+    if (study) layer.appendChild(createGuide(study));
+  });
+  guideToggle.addEventListener('click', () => {
+    showGuides = !showGuides;
+    detailGuide.hidden = !showGuides;
+    guideToggle.setAttribute('aria-pressed', String(showGuides));
+    announcement.textContent = showGuides ? '구도선을 표시했습니다.' : '구도선을 숨겼습니다.';
+  });
 
   function tagElement(tag, interactive = false) {
     const element = document.createElement(interactive ? 'button' : 'span');
@@ -114,7 +148,7 @@ import { COLLECTIONS, POSTER_TAGS, filterByTags, newestFirst, resolveCollectionH
     archive.hidden = !selected.zip;
     if (selected.zip) {
       archive.href = selected.zip;
-      document.getElementById('archive-label').textContent = `모션 ${selected.items.length}장 다운로드`;
+      document.getElementById('archive-label').textContent = `${selected.label} ${selected.items.length}장 다운로드`;
     } else {
       archive.removeAttribute('href');
     }
@@ -140,11 +174,12 @@ import { COLLECTIONS, POSTER_TAGS, filterByTags, newestFirst, resolveCollectionH
     const items = visibleItems();
     current = Math.max(0, Math.min(items.length - 1, index));
     const study = items[current];
-    const isMotion = activeCollection === 'motion';
-    const path = collection().root + study.file;
-    dialog.classList.toggle('motion-view', isMotion);
+    const selected = collection();
+    const isMotion = !!selected.motionNotes;
+    const path = selected.root + study.file;
+    dialog.classList.toggle('landscape-view', !!selected.landscape);
     image.src = path;
-    image.alt = study.ko + (isMotion ? ' 스타일 프레임: ' : ' 포스터: ') + study.description;
+    image.alt = study.ko + ' ' + selected.mediaLabel + ': ' + study.description;
     image.width = study.width;
     image.height = study.height;
     document.getElementById('detail-title').textContent = study.ko;
@@ -152,19 +187,24 @@ import { COLLECTIONS, POSTER_TAGS, filterByTags, newestFirst, resolveCollectionH
     document.getElementById('detail-description').textContent = study.description + '.';
     const detailTags = document.getElementById('detail-tags');
     detailTags.replaceChildren(...(study.tags || []).map(tag => tagElement(tag)));
-    detailTags.hidden = isMotion;
-    document.getElementById('study-kind').textContent = isMotion ? '모션 디자인 · 정지 프레임' : '포스터 디자인';
-    document.getElementById('viewer-counter').textContent = (selectedTags.size && !isMotion ? '필터 결과 · ' : '')
+    detailTags.hidden = !selected.tags;
+    document.getElementById('study-kind').textContent = selected.label + (selected.landscape ? ' · ' + selected.mediaLabel : '');
+    document.getElementById('viewer-counter').textContent = (selectedTags.size && selected.tags ? '필터 결과 · ' : '')
       + String(current + 1).padStart(2, '0') + ' / ' + items.length;
     document.getElementById('motion-notes').hidden = !isMotion;
     document.getElementById('motion-direction').textContent = study.motion || '';
     document.getElementById('motion-rhythm').textContent = study.rhythm || '';
     document.getElementById('motion-usage').textContent = study.usage || '';
+    document.getElementById('composition-notes').hidden = !selected.guides;
+    document.getElementById('composition-principle').textContent = study.principle || '';
+    guideToggle.setAttribute('aria-pressed', String(showGuides));
+    detailGuide.replaceChildren(...(selected.guides ? [createGuide(study)] : []));
+    detailGuide.hidden = !selected.guides || !showGuides;
     document.getElementById('image-size').textContent = study.width + ' × ' + study.height;
-    document.getElementById('image-format').textContent = isMotion ? '정지 스타일 프레임' : '2:3 세로형';
+    document.getElementById('image-format').textContent = selected.format;
     const download = document.getElementById('download-image');
-    download.hidden = !isMotion;
-    if (isMotion) {
+    download.hidden = !selected.imageDownload;
+    if (selected.imageDownload) {
       download.href = path;
       download.download = study.file;
     } else {
