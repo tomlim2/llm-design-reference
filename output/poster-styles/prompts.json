@@ -1,7 +1,7 @@
 {
   "generationMode": "built-in image_gen",
   "format": "portrait poster",
-  "source": "User-supplied screenshots of design-style lists; duplicate and overlapping examples consolidated",
+  "source": "User-supplied screenshots of design-style lists and graphic style names",
   "notes": [
     "Camera Interface normalizes the screenshot spelling 'carmera interface'.",
     "These are original poster interpretations of style names; ambiguous labels are not asserted to be formally defined movements."
@@ -856,6 +856,107 @@
       "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Design Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nReference role: the supplied social-media screenshots provide style names only. Invent original art; do not reproduce the person, social interface, sample artworks, handles or branding.\nTypography: integrate the exact style title clearly into the composition and include the specified small footer only. Strong art direction and readable hierarchy at thumbnail size. No extra slogans, paragraphs, watermark, device frame or photographed poster mockup.\n\nStyle title (verbatim): \"VECTOR SURREALISM\"\nFooter text (verbatim): \"80 / VISUAL DESIGN\"\nArt direction: An original impossible flat-vector landscape: a giant pear acts as a house with a tiny staircase entering its side, a blue river folds vertically into a door, and a red sun casts a geometric checkerboard shadow. Crisp cutout-like vector silhouettes, limited emerald, cobalt, coral and warm cream colors, no gradients, no photographic or 3D texture. Precise playful spatial paradoxes and clean bold exact title integrated in an open cream band.",
       "width": 1024,
       "height": 1536
+    },
+    {
+      "number": 81,
+      "slug": "81-lowbrow",
+      "title": "LOWBROW",
+      "ko": "로우브로 아트",
+      "description": "만화적인 과장과 기묘한 상상력이 만나는 팝 초현실 회화",
+      "file": "81-lowbrow.png",
+      "width": 1024,
+      "height": 1536,
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nPrimary request: make the named graphic style immediately recognizable through an original composition.\nTypography: integrate only the exact style title and small footer below. Readable hierarchy at thumbnail size. No additional words, watermark, device frame, photographed poster mockup or contact sheet.\nStyle title (verbatim): \"LOWBROW\"\nFooter text (verbatim): \"81 / VISUAL DESIGN\"\nArt direction: A mischievous original rubber-hose cartoon creature with enormous curious eyes, a flower-shaped head and tiny white gloves, standing in a surreal candy-colored landscape of melting mushrooms. Underground comix and hand-painted pop surrealism, rich enamel-like painted shading, confident ink contours, turquoise, cherry red and butter yellow against deep midnight blue. Witty, strange and beautifully painted rather than a cute corporate mascot. Large custom hand-lettered title with bouncy irregular baseline, no existing characters."
+    },
+    {
+      "number": 82,
+      "slug": "82-renaissance-revival",
+      "title": "RENAISSANCE REVIVAL",
+      "ko": "르네상스 리바이벌",
+      "description": "고전 회화의 명암과 건축적 균형을 현대적으로 재구성",
+      "file": "82-renaissance-revival.png",
+      "width": 1024,
+      "height": 1536,
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nPrimary request: make the named graphic style immediately recognizable through an original composition.\nTypography: integrate only the exact style title and small footer below. Readable hierarchy at thumbnail size. No additional words, watermark, device frame, photographed poster mockup or contact sheet.\nStyle title (verbatim): \"RENAISSANCE REVIVAL\"\nFooter text (verbatim): \"82 / VISUAL DESIGN\"\nArt direction: An original Renaissance-inspired painted still life: an ornate stone arch frames flowing crimson drapery, a classical marble bust, a pear and a slender branch of laurel. Balanced architectural composition and convincing central perspective, soft sfumato, deep chiaroscuro, warm umber, oxblood, muted olive and luminous ivory. Visible fine oil-paint texture, restrained antique gold ornamental rules, elegant roman serif title split over two clear lines. Contemporary editorial reinterpretation of Renaissance visual language, not a reproduction of a specific painting."
+    },
+    {
+      "number": 83,
+      "slug": "83-sumi-e",
+      "title": "SUMI-E",
+      "ko": "수묵화 · 스미에",
+      "description": "먹의 농담과 여백, 붓의 움직임으로 완성하는 절제된 그림",
+      "file": "83-sumi-e.png",
+      "width": 1024,
+      "height": 1536,
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nPrimary request: make the named graphic style immediately recognizable through an original composition.\nTypography: integrate only the exact style title and small footer below. Readable hierarchy at thumbnail size. No additional words, watermark, device frame, photographed poster mockup or contact sheet.\nStyle title (verbatim): \"SUMI-E\"\nFooter text (verbatim): \"83 / VISUAL DESIGN\"\nArt direction: An original Japanese sumi-e ink painting poster. A single bamboo branch bends diagonally across warm white fibrous washi paper, a small ink bird perched on a twig; a suggestion of a distant mountain fades into untouched paper. Expressive tapered brushstrokes, dry-brush drag, bleeding edges and many dilutions of black ink. Vast intentional negative space. Almost entirely black and soft gray on ivory, one tiny unlettered vermilion seal square. The exact Latin title in spare expressive brush lettering; no invented Japanese characters, no pseudo-calligraphic body text."
+    },
+    {
+      "number": 84,
+      "slug": "84-collage",
+      "title": "COLLAGE",
+      "ko": "콜라주",
+      "description": "서로 다른 사진과 종이 조각을 겹쳐 만드는 낯선 조합",
+      "file": "84-collage.png",
+      "width": 1024,
+      "height": 1536,
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nPrimary request: make the named graphic style immediately recognizable through an original composition.\nTypography: integrate only the exact style title and small footer below. Readable hierarchy at thumbnail size. No additional words, watermark, device frame, photographed poster mockup or contact sheet.\nStyle title (verbatim): \"COLLAGE\"\nFooter text (verbatim): \"84 / VISUAL DESIGN\"\nArt direction: An original analog editorial collage of torn black-and-white architectural photographs, a cut-out orange slice used as the sun, a vintage engraved hand, cobalt painted paper and a red circular label shape. Visibly uneven hand-torn edges, layered magazine stock, transparent tracing-paper fragments, subtle glue and paper shadows. A carefully balanced asymmetric composition with generous ivory paper areas. The title assembled from bold contrasting cut-paper letterforms, highly legible. No readable newspaper paragraphs or brands; all visual source fragments newly invented."
+    },
+    {
+      "number": 85,
+      "slug": "85-thermal",
+      "title": "THERMAL",
+      "ko": "열화상 그래픽",
+      "description": "인물과 손의 윤곽을 네온빛 열 감지 색상으로 표현",
+      "file": "85-thermal.png",
+      "width": 1024,
+      "height": 1536,
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nPrimary request: make the named graphic style immediately recognizable through an original composition.\nTypography: integrate only the exact style title and small footer below. Readable hierarchy at thumbnail size. No additional words, watermark, device frame, photographed poster mockup or contact sheet.\nStyle title (verbatim): \"THERMAL\"\nFooter text (verbatim): \"85 / VISUAL DESIGN\"\nArt direction: An original stylized infrared portrait poster: a large front-facing anonymous human bust with one open hand raised beside the face, clear recognizable contours mapped to false-color thermal gradients. Black-violet cool background, electric cobalt and cyan edges, magenta and red middle zones, orange-yellow and near-white hot facial planes and fingertips. Soft sensor bloom, subtle scan grain and smooth organic temperature islands, not a topographic map or UI dashboard. Strong condensed white exact title in the upper margin, small abstract color calibration strip at the bottom. No medical claims, no face labels, no numbers beyond specified footer.",
+      "variantOf": 64
+    },
+    {
+      "number": 86,
+      "slug": "86-slavic-folk",
+      "title": "SLAVIC FOLK",
+      "ko": "슬라브 민속 그래픽",
+      "description": "꽃과 새, 대칭 문양으로 풀어낸 민속 장식의 리듬",
+      "file": "86-slavic-folk.png",
+      "width": 1024,
+      "height": 1536,
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nPrimary request: make the named graphic style immediately recognizable through an original composition.\nTypography: integrate only the exact style title and small footer below. Readable hierarchy at thumbnail size. No additional words, watermark, device frame, photographed poster mockup or contact sheet.\nStyle title (verbatim): \"SLAVIC FOLK\"\nFooter text (verbatim): \"86 / VISUAL DESIGN\"\nArt direction: An original graphic poster inspired broadly by Slavic floral folk ornament, without claiming to reproduce a specific regional tradition. Mirror-symmetric pairs of stylized red birds and flowering stems arranged around one central rosette; small leaf and berry motifs form a precise border. Warm cream paper, vermilion red, forest green, a little cobalt and mustard. Flat hand-painted gouache with delicate visible brush texture, festive ornamental rhythm, sophisticated spacing. Exact title integrated into an open central band in bold decorative folk-inspired Latin lettering. No national flags, no invented Cyrillic text, no religious icons."
+    },
+    {
+      "number": 87,
+      "slug": "87-80s-memphis",
+      "title": "80s MEMPHIS",
+      "ko": "80년대 멤피스",
+      "description": "기울어진 제목 패널과 기하학 패턴의 경쾌한 충돌",
+      "file": "87-80s-memphis.png",
+      "width": 1024,
+      "height": 1536,
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nPrimary request: make the named graphic style immediately recognizable through an original composition.\nTypography: integrate only the exact style title and small footer below. Readable hierarchy at thumbnail size. No additional words, watermark, device frame, photographed poster mockup or contact sheet.\nStyle title (verbatim): \"80s MEMPHIS\"\nFooter text (verbatim): \"87 / VISUAL DESIGN\"\nArt direction: An original 1980s Memphis print-graphics poster, with a distinct all-over flat pattern treatment. Oversized cropped circles and tilted triangles, black-and-white diagonal stripes, black squiggles, checkerboard rectangles and irregular dot clusters in a tightly art-directed asymmetric arrangement. Hot pink, aqua, cobalt, bright yellow, white and black. Layered screen-print inks, subtle off-register grain, entirely flat two-dimensional graphic shapes, no furniture or 3D objects. The exact title '80s MEMPHIS' extremely readable in an open irregular white panel, playful geometric sans-serif. Bold graphic hierarchy and controlled pattern density.",
+      "variantOf": 50
+    },
+    {
+      "number": 88,
+      "slug": "88-pastel-southwestern",
+      "title": "PASTEL SOUTHWESTERN",
+      "ko": "파스텔 사우스웨스턴",
+      "description": "파스텔빛 사막 풍경과 어도비 건축이 만드는 부드러운 복고",
+      "file": "88-pastel-southwestern.png",
+      "width": 1024,
+      "height": 1536,
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nPrimary request: make the named graphic style immediately recognizable through an original composition.\nTypography: integrate only the exact style title and small footer below. Readable hierarchy at thumbnail size. No additional words, watermark, device frame, photographed poster mockup or contact sheet.\nStyle title (verbatim): \"PASTEL SOUTHWESTERN\"\nFooter text (verbatim): \"88 / VISUAL DESIGN\"\nArt direction: An original late-1980s pastel Southwestern graphic art poster: a quiet adobe arch and rounded terracotta vase in front of distant mesas, one saguaro cactus and a pale sun. Peach, dusty rose, pale turquoise, lavender and warm sand. Flattened Southwestern desert geometry with softly airbrushed shaded surfaces, matte stucco grain and faint paper texture. A small border of simple original stepped geometric shapes, not copied tribal or sacred symbols. Soft sun-faded atmosphere, calm large shapes, generous breathing room. Exact title set in elegant widely spaced serif typography over two lines."
+    },
+    {
+      "number": 89,
+      "slug": "89-pulp-cover",
+      "title": "PULP COVER",
+      "ko": "펄프 잡지 표지",
+      "description": "극적인 일러스트와 굵은 제목, 낡은 인쇄 질감의 대중잡지",
+      "file": "89-pulp-cover.png",
+      "width": 1024,
+      "height": 1536,
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nPrimary request: make the named graphic style immediately recognizable through an original composition.\nTypography: integrate only the exact style title and small footer below. Readable hierarchy at thumbnail size. No additional words, watermark, device frame, photographed poster mockup or contact sheet.\nStyle title (verbatim): \"PULP COVER\"\nFooter text (verbatim): \"89 / VISUAL DESIGN\"\nArt direction: An original vintage science-fiction pulp magazine cover illustration: a brave fully clothed explorer in a cream spacesuit looks up at a gigantic ringed planet above a jagged alien landscape and a tiny retro rocket. Dramatic diagonal composition, hand-painted gouache realism, emerald shadows, scarlet sky and glowing golden highlights. Big chunky yellow title with black offset shadow across the top. Aged inexpensive paper, gently worn edges, imperfect old color separations and halftone flecks. Exciting and cinematic, no gore, no weapons, no imitation of a real magazine brand. Only the exact title and small specified footer; no extra cover lines."
     }
   ],
   "additions": [
@@ -974,6 +1075,52 @@
           "existing": "2000 WEB",
           "collection": "posters",
           "number": 15
+        }
+      ]
+    },
+    {
+      "generationMode": "built-in image_gen",
+      "format": "portrait poster",
+      "source": "User-supplied graphic style names",
+      "requestedStyles": [
+        "lowbrow",
+        "renaissance revival",
+        "sumi-e",
+        "collage",
+        "thermal",
+        "slavic folk",
+        "80s memphis",
+        "fastel southwestern",
+        "pulp cover"
+      ],
+      "addedOn": "2026-10-18",
+      "numbers": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ],
+      "notes": [
+        "The supplied spelling 'fastel southwestern' is interpreted as 'Pastel Southwestern'.",
+        "Renaissance Revival is interpreted here as contemporary graphic design drawing on Renaissance painting and classical composition, not as an architectural taxonomy.",
+        "Thermal and 80s Memphis are additional visual treatments of the existing Heat Map and Memphis families, not separate historical movements.",
+        "Slavic Folk is an original floral-and-bird ornament interpretation of a broad regional label, not a reproduction of a single regional tradition.",
+        "All nine posters are newly generated original artwork.",
+        "Repeated styles remain in the collection as new layout variants, retaining the original examples; variantOf links the new entry to its existing style family."
+      ],
+      "references": [
+        {
+          "title": "CARI: Pastel Southwestern",
+          "url": "https://cari.institute/aesthetics/pastel-southwestern"
+        },
+        {
+          "title": "V&A: Postmodern Design",
+          "url": "https://www.vam.ac.uk/info/collection-selection-boxes-postmodern-design"
         }
       ]
     }

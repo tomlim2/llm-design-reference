@@ -29,6 +29,10 @@ for (const [index, definition] of COLLECTIONS.entries()) {
   assert.equal(new Set(data[key].map(item => item.slug)).size, data[key].length, key + ' unique slugs');
   for (const item of data[key]) {
     assert(item.ko && item.title && item.description && item.prompt, key + ' complete metadata');
+    if (item.variantOf !== undefined) {
+      assert(Number.isInteger(item.variantOf) && item.variantOf < item.number, key + ' variants must reference an earlier entry');
+      assert(data[key].some(original => original.number === item.variantOf), key + ' variant source must exist in the same collection');
+    }
     if (definition.root) await access(new URL(definition.root + item.file, root));
   }
   if (definition.kind === 'image') {

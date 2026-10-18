@@ -758,5 +758,97 @@
     "status": "complete",
     "width": 1024,
     "height": 1536
+  },
+  {
+    "number": 81,
+    "slug": "81-lowbrow",
+    "title": "LOWBROW",
+    "file": "81-lowbrow.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-a13d6a3f-cd45-4f5f-9376-cca775aae3eb.png",
+    "status": "complete"
+  },
+  {
+    "number": 82,
+    "slug": "82-renaissance-revival",
+    "title": "RENAISSANCE REVIVAL",
+    "file": "82-renaissance-revival.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-b48a38a4-1f10-4cbd-8008-69b47d3005d2.png",
+    "status": "complete"
+  },
+  {
+    "number": 83,
+    "slug": "83-sumi-e",
+    "title": "SUMI-E",
+    "file": "83-sumi-e.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-dd38c792-03be-42ef-9ea1-00c82b8961e9.png",
+    "status": "complete"
+  },
+  {
+    "number": 84,
+    "slug": "84-collage",
+    "title": "COLLAGE",
+    "file": "84-collage.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-f64812a2-b4e8-46d0-86f7-8260a6664d4c.png",
+    "status": "complete"
+  },
+  {
+    "number": 85,
+    "slug": "85-thermal",
+    "title": "THERMAL",
+    "file": "85-thermal.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-9925c535-c579-4182-9ed1-bd91704e2d95.png",
+    "status": "complete",
+    "variantOf": 64
+  },
+  {
+    "number": 86,
+    "slug": "86-slavic-folk",
+    "title": "SLAVIC FOLK",
+    "file": "86-slavic-folk.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-81b22ee1-c306-4a88-b753-5eeccf297dc3.png",
+    "status": "complete"
+  },
+  {
+    "number": 87,
+    "slug": "87-80s-memphis",
+    "title": "80s MEMPHIS",
+    "file": "87-80s-memphis.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-b3cea611-0827-46f2-9f47-b7590f294a7d.png",
+    "status": "complete",
+    "variantOf": 50
+  },
+  {
+    "number": 88,
+    "slug": "88-pastel-southwestern",
+    "title": "PASTEL SOUTHWESTERN",
+    "file": "88-pastel-southwestern.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ecba068d-8a95-4230-a509-ec4686aac48c.png",
+    "status": "complete"
+  },
+  {
+    "number": 89,
+    "slug": "89-pulp-cover",
+    "title": "PULP COVER",
+    "file": "89-pulp-cover.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-7dcefd74-7684-4ea2-b5b8-07f1eb2b40e3.png",
+    "status": "complete"
   }
 ]
