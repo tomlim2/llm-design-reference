@@ -1159,5 +1159,438 @@
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-c1efc4f1-5ab3-4bb8-81e6-015e79554542.png",
     "status": "complete"
+  },
+  {
+    "number": 110,
+    "slug": "110-retro-design",
+    "title": "RETRO DESIGN",
+    "file": "110-retro-design.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 1
+    },
+    "variantOf": 25,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-c3a00d4a-9f64-4a95-8057-1f87df1331f9.png",
+    "status": "complete"
+  },
+  {
+    "number": 111,
+    "slug": "111-minimalism",
+    "title": "MINIMALISM",
+    "file": "111-minimalism.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 2
+    },
+    "variantOf": 21,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ba5192ec-9e5e-45e8-9ab3-87370daa8b1e.png",
+    "status": "complete"
+  },
+  {
+    "number": 112,
+    "slug": "112-experimental-typography",
+    "title": "EXPERIMENTAL TYPOGRAPHY",
+    "file": "112-experimental-typography.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 3
+    },
+    "variantOf": 40,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-8b9f2cc0-d6cf-42da-bf3c-3108275834af.png",
+    "status": "complete"
+  },
+  {
+    "number": 113,
+    "slug": "113-collage-art",
+    "title": "COLLAGE ART",
+    "file": "113-collage-art.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 4
+    },
+    "variantOf": 84,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-07136b33-6b2b-4633-9ec7-2b4b18d67dde.png",
+    "status": "complete"
+  },
+  {
+    "number": 114,
+    "slug": "114-typography-focused-design",
+    "title": "TYPOGRAPHY-FOCUSED DESIGN",
+    "file": "114-typography-focused-design.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 5
+    },
+    "variantOf": 40,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-411c617f-3c5e-4f88-a149-3ba19fe5379d.png",
+    "status": "complete"
+  },
+  {
+    "number": 115,
+    "slug": "115-doodle-illustrative",
+    "title": "DOODLE & ILLUSTRATION",
+    "file": "115-doodle-illustrative.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 6
+    },
+    "variantOf": 35,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-8cb24176-9aef-49d4-8a72-7c5843c06214.png",
+    "status": "complete"
+  },
+  {
+    "number": 116,
+    "slug": "116-duotone",
+    "title": "DUOTONE",
+    "file": "116-duotone.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 7
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-cb79b726-40d4-411c-a11f-245828d3de11.png",
+    "status": "complete"
+  },
+  {
+    "number": 117,
+    "slug": "117-risograph",
+    "title": "RISOGRAPH",
+    "file": "117-risograph.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 8
+    },
+    "variantOf": 44,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-96ba68d0-30bb-4c4f-b3e1-5dfcbff9007d.png",
+    "status": "complete"
+  },
+  {
+    "number": 118,
+    "slug": "118-y2k-aesthetic",
+    "title": "Y2K AESTHETIC",
+    "file": "118-y2k-aesthetic.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 9
+    },
+    "variantOf": 15,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-e7539a06-9098-4513-8d24-d242b73bcad1.png",
+    "status": "complete"
+  },
+  {
+    "number": 119,
+    "slug": "119-grunge-design",
+    "title": "GRUNGE DESIGN",
+    "file": "119-grunge-design.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 10
+    },
+    "variantOf": 54,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-80d72f21-b006-4ee2-aeb7-0ed2015afa74.png",
+    "status": "complete"
+  },
+  {
+    "number": 120,
+    "slug": "120-3d-inflated-design",
+    "title": "3D INFLATED",
+    "file": "120-3d-inflated-design.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 11
+    },
+    "variantOf": 58,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-81321fc4-1ae8-4ca4-8139-e2da520297cb.png",
+    "status": "complete"
+  },
+  {
+    "number": 121,
+    "slug": "121-vaporwave",
+    "title": "VAPORWAVE",
+    "file": "121-vaporwave.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 12
+    },
+    "variantOf": 52,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-5539d00a-5498-4ae7-a27f-1dcbe266e0b4.png",
+    "status": "complete"
+  },
+  {
+    "number": 122,
+    "slug": "122-bauhaus",
+    "title": "BAUHAUS",
+    "file": "122-bauhaus.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 13
+    },
+    "variantOf": 62,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-8b33ed5f-0a3f-444e-a2e0-a9662a5db404.png",
+    "status": "complete"
+  },
+  {
+    "number": 123,
+    "slug": "123-art-nouveau",
+    "title": "ART NOUVEAU",
+    "file": "123-art-nouveau.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 14
+    },
+    "variantOf": 48,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-420c0985-a5c0-42bc-98dc-e700b3c23a1d.png",
+    "status": "complete"
+  },
+  {
+    "number": 124,
+    "slug": "124-brutalism",
+    "title": "BRUTALISM",
+    "file": "124-brutalism.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 15
+    },
+    "variantOf": 61,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-e3583f4f-0b9e-4743-994e-c8d2a5fa3b8a.png",
+    "status": "complete"
+  },
+  {
+    "number": 125,
+    "slug": "125-deconstructivism",
+    "title": "DECONSTRUCTIVISM",
+    "file": "125-deconstructivism.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 16
+    },
+    "variantOf": 57,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-a24eddda-09ba-4a7b-9766-b2505ea77426.png",
+    "status": "complete"
+  },
+  {
+    "number": 126,
+    "slug": "126-frutiger-aero",
+    "title": "FRUTIGER AERO",
+    "file": "126-frutiger-aero.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 17
+    },
+    "variantOf": 67,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-5a88bf7d-96f7-4597-8749-6b9d485a9e67.png",
+    "status": "complete"
+  },
+  {
+    "number": 127,
+    "slug": "127-liquid-chrome",
+    "title": "LIQUID CHROME",
+    "file": "127-liquid-chrome.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 18
+    },
+    "variantOf": 10,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ed0964a2-e696-4444-9479-506201851da1.png",
+    "status": "complete"
+  },
+  {
+    "number": 128,
+    "slug": "128-memphis-design",
+    "title": "MEMPHIS DESIGN",
+    "file": "128-memphis-design.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5059.PNG",
+      "item": 19
+    },
+    "variantOf": 50,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-d52b4135-bbea-44e2-b7d6-675818f95938.png",
+    "status": "complete"
+  },
+  {
+    "number": 129,
+    "slug": "129-acidwave",
+    "title": "ACIDWAVE",
+    "file": "129-acidwave.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5029.PNG",
+      "item": 1
+    },
+    "variantOf": 73,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-2aa9276c-56a8-417a-8757-2aab1cf2abc5.png",
+    "status": "complete"
+  },
+  {
+    "number": 130,
+    "slug": "130-y2k-futurism",
+    "title": "Y2K FUTURISM",
+    "file": "130-y2k-futurism.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5029.PNG",
+      "item": 2
+    },
+    "variantOf": 118,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ffd5fcdb-36a9-473e-a1f2-e82bad6ea379.png",
+    "status": "complete"
+  },
+  {
+    "number": 131,
+    "slug": "131-k-design",
+    "title": "K-DESIGN",
+    "file": "131-k-design.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5029.PNG",
+      "item": 3
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ae016ee9-8bcc-42b6-aeb4-4d201ef5ebf6.png",
+    "status": "complete"
+  },
+  {
+    "number": 132,
+    "slug": "132-dreamscape",
+    "title": "DREAMSCAPE",
+    "file": "132-dreamscape.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5029.PNG",
+      "item": 4
+    },
+    "variantOf": 77,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-774ca193-2c99-4135-a306-2994168334d5.png",
+    "status": "complete"
+  },
+  {
+    "number": 133,
+    "slug": "133-halftone",
+    "title": "HALFTONE",
+    "file": "133-halftone.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5029.PNG",
+      "item": 5
+    },
+    "variantOf": 68,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-a001829d-8f35-4b98-b144-63e5724fa097.png",
+    "status": "complete"
+  },
+  {
+    "number": 134,
+    "slug": "134-hyperbloom",
+    "title": "HYPERBLOOM",
+    "file": "134-hyperbloom.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5029.PNG",
+      "item": 6
+    },
+    "variantOf": 69,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-6f416f07-1461-437e-8806-c5b7cb89e7e8.png",
+    "status": "complete"
+  },
+  {
+    "number": 135,
+    "slug": "135-neo-brutalism",
+    "title": "NEO-BRUTALISM",
+    "file": "135-neo-brutalism.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5029.PNG",
+      "item": 7
+    },
+    "variantOf": 109,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-b3736e4c-8296-4d28-9467-a20d13ab352e.png",
+    "status": "complete"
+  },
+  {
+    "number": 136,
+    "slug": "136-neo-swiss",
+    "title": "NEO-SWISS",
+    "file": "136-neo-swiss.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5029.PNG",
+      "item": 8
+    },
+    "variantOf": 71,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-7009fe8d-d1fd-4fc8-8135-732b3be4b6fe.png",
+    "status": "complete"
+  },
+  {
+    "number": 137,
+    "slug": "137-synthwave",
+    "title": "SYNTHWAVE",
+    "file": "137-synthwave.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5029.PNG",
+      "item": 9
+    },
+    "variantOf": 74,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-999c97b9-819c-42b6-bcef-c3b55bf2508e.png",
+    "status": "complete"
+  },
+  {
+    "number": 138,
+    "slug": "138-vector-surrealism",
+    "title": "VECTOR-SURREALISM",
+    "file": "138-vector-surrealism.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5029.PNG",
+      "item": 10
+    },
+    "variantOf": 80,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-077e55a3-9899-4741-ad43-42723064235d.png",
+    "status": "complete"
   }
 ]
