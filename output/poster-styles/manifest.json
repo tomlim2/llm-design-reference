@@ -3211,5 +3211,148 @@
     "height": 1536,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-2467a40a-1322-4b29-9053-29ae12775f26.png",
     "status": "complete"
+  },
+  {
+    "number": 182,
+    "title": "Slit Scan",
+    "ko": "슬릿 스캔",
+    "slug": "slit-scan",
+    "tags": [
+      "실험적인",
+      "유기적인",
+      "세련된",
+      "파격적인"
+    ],
+    "reference": {
+      "file": "Screenshot 2026-10-18 at 11.06.31 PM.png"
+    },
+    "file": "182-slit-scan.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-45bfc2fa-a1b8-4fdf-a33f-ef55c22abd1d.png",
+    "status": "complete"
+  },
+  {
+    "number": 183,
+    "title": "Moiré",
+    "ko": "모아레",
+    "slug": "moire",
+    "tags": [
+      "기하학적인",
+      "실험적인",
+      "깔끔한 구성",
+      "강렬한"
+    ],
+    "reference": {
+      "file": "Screenshot 2026-10-18 at 11.06.39 PM.png"
+    },
+    "file": "183-moire.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-5f3ab88f-5df0-4a73-b8c5-03a84c4ce38d.png",
+    "status": "complete"
+  },
+  {
+    "number": 184,
+    "title": "Pixel Sorting",
+    "ko": "픽셀 소팅",
+    "slug": "pixel-sorting",
+    "variantOf": 56,
+    "tags": [
+      "실험적인",
+      "미래적인",
+      "어두운",
+      "강렬한"
+    ],
+    "reference": {
+      "file": "Screenshot 2026-10-18 at 11.06.46 PM.png"
+    },
+    "file": "184-pixel-sorting.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-28b1472d-9f16-40f4-91cc-9a982c3a02ae.png",
+    "status": "complete"
+  },
+  {
+    "number": 185,
+    "title": "Frosted Glass",
+    "ko": "반투명 유리",
+    "slug": "frosted-glass-silhouettes",
+    "variantOf": 13,
+    "tags": [
+      "몽환적인",
+      "차분한",
+      "세련된",
+      "모던한"
+    ],
+    "reference": {
+      "file": "Screenshot 2026-10-18 at 11.06.55 PM.png"
+    },
+    "file": "185-frosted-glass-silhouettes.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-8e185a5f-c84b-4aca-a449-17d327b5ba57.png",
+    "status": "complete"
+  },
+  {
+    "number": 186,
+    "title": "Stippling",
+    "ko": "점묘",
+    "slug": "stippling",
+    "tags": [
+      "섬세한",
+      "손맛이 있는",
+      "차분한",
+      "깔끔한 조형"
+    ],
+    "reference": {
+      "file": "Screenshot 2026-10-18 at 11.07.02 PM.png"
+    },
+    "file": "186-stippling.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-c86a991a-2e6b-4b98-8f40-45c5e84c936d.png",
+    "status": "complete"
+  },
+  {
+    "number": 187,
+    "title": "Vellum",
+    "ko": "반투명 종이",
+    "slug": "vellum-layers",
+    "tags": [
+      "섬세한",
+      "차분한",
+      "우아한",
+      "깔끔한 구성"
+    ],
+    "reference": {
+      "file": "Screenshot 2026-10-18 at 11.07.10 PM.png"
+    },
+    "file": "187-vellum-layers.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-e1e75f73-833f-4910-8fd3-f32f187ab7cc.png",
+    "status": "complete"
+  },
+  {
+    "number": 188,
+    "title": "Pointcloud",
+    "ko": "포인트 클라우드",
+    "slug": "pointcloud-architecture",
+    "variantOf": 90,
+    "tags": [
+      "미래적인",
+      "실험적인",
+      "어두운",
+      "기하학적인"
+    ],
+    "reference": {
+      "file": "Screenshot 2026-10-18 at 11.07.17 PM.png"
+    },
+    "file": "188-pointcloud-architecture.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-e8ba4764-6c65-4ac8-afe3-a684e87bb4d7.png",
+    "status": "complete"
   }
 ]

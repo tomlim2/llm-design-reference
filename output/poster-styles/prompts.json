@@ -3426,6 +3426,149 @@
       "prompt": "Use case: stylized-concept. Create a finished original graphic design reference poster, portrait 1024 x 1536 pixels, full bleed. Vaporwave poster, monumental white stepped ziggurat at lower left against pastel mauve sky and turquoise horizon sea, glowing pink rectangular sun half-hidden beyond the steps, VHS-soft haze and subtle grid reflections, narrow black VAPORWAVE title vertical on far right, no statues or swimming pool, calm digital nostalgia. Include only the named style title described above and a discreet footer \"181 / VISUAL DESIGN\". Precise legible typography, strong distinct composition. Do not show a phone, screenshot, social media interface, watermark, mockup frame, or real brand logo.",
       "width": 1024,
       "height": 1536
+    },
+    {
+      "number": 182,
+      "title": "Slit Scan",
+      "ko": "슬릿 스캔",
+      "slug": "slit-scan",
+      "tags": [
+        "실험적인",
+        "유기적인",
+        "세련된",
+        "파격적인"
+      ],
+      "description": "금속 꽃병을 가로로 길게 늘인 띠와 수평 절단면이 만드는 시간 왜곡",
+      "reference": {
+        "file": "Screenshot 2026-10-18 at 11.06.31 PM.png"
+      },
+      "file": "182-slit-scan.png",
+      "prompt": "Create ONE finished original graphic design reference poster, portrait 1024 by 1536 pixels, full bleed 2:3 artwork. It must demonstrate Slit Scan through the visual treatment.\nArt direction: On a warm ivory field, one polished silver sculptural vase stands off-center right. The vase is dramatically stretched and twisted in thin horizontal time-slices into sinuous ribbon-like streaks, flowing from top right to lower left; partial recognizable vase silhouette remains at its center. True slit-scan temporal-smear aesthetic, continuous glossy bands and displaced narrow strips, not random glitches. A small cobalt-blue disc at lower right anchors the composition. Large clean black title SLIT SCAN on two lines at upper left, lots of breathing room, precise museum exhibition art direction.\nOnly visible text: the exact title specified in the art direction and a small footer \"182 / VISUAL DESIGN\". No other text, no prompt labels. Legible, beautifully spaced typography.\nConstraints: original image, not a copy of a reference artwork. No presenter, screenshot, software interface, device, surrounding mockup, social-media controls, watermark, brand logos, or contact sheet.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 183,
+      "title": "Moiré",
+      "ko": "모아레",
+      "slug": "moire",
+      "tags": [
+        "기하학적인",
+        "실험적인",
+        "깔끔한 구성",
+        "강렬한"
+      ],
+      "description": "촘촘한 곡선 두 겹이 겹치며 큰 간섭무늬를 만드는 흑백 구성",
+      "reference": {
+        "file": "Screenshot 2026-10-18 at 11.06.39 PM.png"
+      },
+      "file": "183-moire.png",
+      "prompt": "Create ONE finished original graphic design reference poster, portrait 1024 by 1536 pixels, full bleed 2:3 artwork. It must demonstrate Moiré through the visual treatment.\nArt direction: Graphic optical interference poster: warm-white background, two large superimposed fields of extremely fine black curved parallel lines at slightly different angles and spacing create clearly visible broad moire interference bands. Their overlapping circular fields occupy the lower two-thirds, one cropped at left and the other at right, with one restrained vermilion registration circle. Monochrome linework, mathematically rhythmic, exquisite high-frequency print detail, no photograph, no faces. Bold large black title MOIRE in the open upper quarter, tiny editorial number footer.\nOnly visible text: the exact title specified in the art direction and a small footer \"183 / VISUAL DESIGN\". No other text, no prompt labels. Legible, beautifully spaced typography.\nConstraints: original image, not a copy of a reference artwork. No presenter, screenshot, software interface, device, surrounding mockup, social-media controls, watermark, brand logos, or contact sheet.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 184,
+      "title": "Pixel Sorting",
+      "ko": "픽셀 소팅",
+      "slug": "pixel-sorting",
+      "variantOf": 56,
+      "tags": [
+        "실험적인",
+        "미래적인",
+        "어두운",
+        "강렬한"
+      ],
+      "description": "야간 도시의 빛을 길게 정렬한 픽셀 띠와 선명한 건물의 대비",
+      "reference": {
+        "file": "Screenshot 2026-10-18 at 11.06.46 PM.png"
+      },
+      "file": "184-pixel-sorting.png",
+      "prompt": "Create ONE finished original graphic design reference poster, portrait 1024 by 1536 pixels, full bleed 2:3 artwork. It must demonstrate Pixel Sorting through the visual treatment.\nArt direction: A photographic cybernetic city at night refracted into pixel-sorting art: near-black navy ground, a narrow sharp vertical band of anonymous buildings in the upper right, while their cyan, amber and white luminance values are sorted into LONG straight thin vertical pixel streaks falling down the page. Distinct sorted rectangular columns and controlled thresholds; some original architectural detail survives, not random noise and not a painted motion blur. Most of the left lower quarter is dark negative space. Clear white title PIXEL SORTING in two lines at lower left. Moody photographic texture, striking asymmetric composition.\nOnly visible text: the exact title specified in the art direction and a small footer \"184 / VISUAL DESIGN\". No other text, no prompt labels. Legible, beautifully spaced typography.\nConstraints: original image, not a copy of a reference artwork. No presenter, screenshot, software interface, device, surrounding mockup, social-media controls, watermark, brand logos, or contact sheet.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 185,
+      "title": "Frosted Glass",
+      "ko": "반투명 유리",
+      "slug": "frosted-glass-silhouettes",
+      "variantOf": 13,
+      "tags": [
+        "몽환적인",
+        "차분한",
+        "세련된",
+        "모던한"
+      ],
+      "description": "세 장의 불투명도가 다른 유리 뒤로 번지는 사람의 실루엣",
+      "reference": {
+        "file": "Screenshot 2026-10-18 at 11.06.55 PM.png"
+      },
+      "file": "185-frosted-glass-silhouettes.png",
+      "prompt": "Create ONE finished original graphic design reference poster, portrait 1024 by 1536 pixels, full bleed 2:3 artwork. It must demonstrate Frosted Glass through the visual treatment.\nArt direction: High-end photographic material-study poster in pale cool gray and desaturated seafoam. Three tall vertical frosted-glass planes span the central page, with different degrees of milky opacity. Behind them two distant anonymous adult human silhouettes stand apart: one near left low, one near right high, softly diffused through the granular etched surface; no identifiable faces. A slender warm amber edge-light slices between the panels. Real glass thickness and subtle texture, generous pale margin at top and bottom. Small impeccably spaced charcoal title FROSTED GLASS across upper left. No blue/orange typography objects or spheres, no app cards; focus on silhouettes and diffusion.\nOnly visible text: the exact title specified in the art direction and a small footer \"185 / VISUAL DESIGN\". No other text, no prompt labels. Legible, beautifully spaced typography.\nConstraints: original image, not a copy of a reference artwork. No presenter, screenshot, software interface, device, surrounding mockup, social-media controls, watermark, brand logos, or contact sheet.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 186,
+      "title": "Stippling",
+      "ko": "점묘",
+      "slug": "stippling",
+      "tags": [
+        "섬세한",
+        "손맛이 있는",
+        "차분한",
+        "깔끔한 조형"
+      ],
+      "description": "불규칙한 점의 밀도로 배의 입체감과 그림자를 그린 흑백 일러스트",
+      "reference": {
+        "file": "Screenshot 2026-10-18 at 11.07.02 PM.png"
+      },
+      "file": "186-stippling.png",
+      "prompt": "Create ONE finished original graphic design reference poster, portrait 1024 by 1536 pixels, full bleed 2:3 artwork. It must demonstrate Stippling through the visual treatment.\nArt direction: Elegant black-ink stippling illustration on uncoated ivory paper. A large asymmetrical pear with a curved stem occupies upper-left center, and one small sliced pear section floats separately at lower right. Every contour, shaded surface and soft ground shadow is formed from individually visible tiny irregular ink dots with changing density, airy sparse highlights and dense dark cores. No halftone grid, no lines or smooth gradient fills in the illustration. Refined botanical-study feeling, tactile paper, extensive negative space. Precisely typeset black serif title STIPPLING at lower left.\nOnly visible text: the exact title specified in the art direction and a small footer \"186 / VISUAL DESIGN\". No other text, no prompt labels. Legible, beautifully spaced typography.\nConstraints: original image, not a copy of a reference artwork. No presenter, screenshot, software interface, device, surrounding mockup, social-media controls, watermark, brand logos, or contact sheet.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 187,
+      "title": "Vellum",
+      "ko": "반투명 종이",
+      "slug": "vellum-layers",
+      "tags": [
+        "섬세한",
+        "차분한",
+        "우아한",
+        "깔끔한 구성"
+      ],
+      "description": "반투명 종이 사이로 겹쳐 보이는 식물 실루엣과 활자",
+      "reference": {
+        "file": "Screenshot 2026-10-18 at 11.07.10 PM.png"
+      },
+      "file": "187-vellum-layers.png",
+      "prompt": "Create ONE finished original graphic design reference poster, portrait 1024 by 1536 pixels, full bleed 2:3 artwork. It must demonstrate Vellum through the visual treatment.\nArt direction: A finished flat editorial poster evoking translucent vellum paper, not a photo of a book: full-bleed warm off-white paper field with three overlapping milky semi-transparent sheets laid diagonally across the center. Under the sheets, a deep burgundy botanical silhouette and oversized thin charcoal letterforms become softer and lighter with each additional layer; a crisp little burgundy leaf emerges outside one sheet edge at lower right. Subtle paper fibers and contact shadows establish thin dry paper, NOT shiny glass, no glass reflections, no plastic. Minimal black serif title VELLUM sharp at top left above the layers, restrained editorial layout, generous whitespace.\nOnly visible text: the exact title specified in the art direction and a small footer \"187 / VISUAL DESIGN\". No other text, no prompt labels. Legible, beautifully spaced typography.\nConstraints: original image, not a copy of a reference artwork. No presenter, screenshot, software interface, device, surrounding mockup, social-media controls, watermark, brand logos, or contact sheet.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 188,
+      "title": "Pointcloud",
+      "ko": "포인트 클라우드",
+      "slug": "pointcloud-architecture",
+      "variantOf": 90,
+      "tags": [
+        "미래적인",
+        "실험적인",
+        "어두운",
+        "기하학적인"
+      ],
+      "description": "색 점의 밀도와 원근으로 재구성한 건축 공간의 깊이",
+      "reference": {
+        "file": "Screenshot 2026-10-18 at 11.07.17 PM.png"
+      },
+      "file": "188-pointcloud-architecture.png",
+      "prompt": "Create ONE finished original graphic design reference poster, portrait 1024 by 1536 pixels, full bleed 2:3 artwork. It must demonstrate Pointcloud through the visual treatment.\nArt direction: A striking 3D point-cloud scan poster on absolute near-black: an architectural colonnade of three tall arches receding diagonally from lower left foreground toward upper right background, every surface built ONLY from thousands of separate tiny cyan, teal and warm-white points. Convincing spatial depth, discrete points visibly separated by black voids, density increasing on near edges. Some points disperse into the upper margin; no solid polygon surfaces, no wireframe mesh, no cloudy smoke, no particle spiral. Large thin white title POINTCLOUD along bottom left, documentary spatial-scanning aesthetic rendered as a sophisticated graphic artwork.\nOnly visible text: the exact title specified in the art direction and a small footer \"188 / VISUAL DESIGN\". No other text, no prompt labels. Legible, beautifully spaced typography.\nConstraints: original image, not a copy of a reference artwork. No presenter, screenshot, software interface, device, surrounding mockup, social-media controls, watermark, brand logos, or contact sheet.",
+      "width": 1024,
+      "height": 1536
     }
   ],
   "additions": [
