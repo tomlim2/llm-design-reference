@@ -957,6 +957,335 @@
       "width": 1024,
       "height": 1536,
       "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on finished artwork. One image only.\nPrimary request: make the named graphic style immediately recognizable through an original composition.\nTypography: integrate only the exact style title and small footer below. Readable hierarchy at thumbnail size. No additional words, watermark, device frame, photographed poster mockup or contact sheet.\nStyle title (verbatim): \"PULP COVER\"\nFooter text (verbatim): \"89 / VISUAL DESIGN\"\nArt direction: An original vintage science-fiction pulp magazine cover illustration: a brave fully clothed explorer in a cream spacesuit looks up at a gigantic ringed planet above a jagged alien landscape and a tiny retro rocket. Dramatic diagonal composition, hand-painted gouache realism, emerald shadows, scarlet sky and glowing golden highlights. Big chunky yellow title with black offset shadow across the top. Aged inexpensive paper, gently worn edges, imperfect old color separations and halftone flecks. Exciting and cinematic, no gore, no weapons, no imitation of a real magazine brand. Only the exact title and small specified footer; no extra cover lines."
+    },
+    {
+      "number": 90,
+      "slug": "90-particles",
+      "title": "PARTICLES",
+      "ko": "파티클",
+      "description": "빛의 입자가 나선과 흐름을 이루는 추상적인 공간",
+      "file": "90-particles.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 1,
+        "slug": "particles"
+      },
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"PARTICLES\"\nFooter text (verbatim): \"90 / VISUAL DESIGN\"\nArt direction: A tall luminous spiral plume made entirely from thousands of tiny individual points, rising from a dense cluster at the lower edge and opening into airy space above. Deep midnight field, warm amber core and icy blue outer dust, varied particle density, sharp pinpoints and restrained light bloom. Oversized elegant thin title set vertically along the left margin, tiny footer at bottom. Abstract particle field with convincing depth; no solid ribbon or star constellation labels.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 91,
+      "slug": "91-liquid-morph",
+      "title": "LIQUID MORPH",
+      "ko": "리퀴드 모프",
+      "description": "서로 합쳐지는 액체 덩어리와 곡선으로 만든 유기적 형태",
+      "file": "91-liquid-morph.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 2,
+        "slug": "liquid-morph"
+      },
+      "variantOf": 6,
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"LIQUID MORPH\"\nFooter text (verbatim): \"91 / VISUAL DESIGN\"\nArt direction: A bold top-down arrangement of four glossy coral liquid pools in progressive stages of merging, stepping diagonally from upper left to lower right across a rich blue ground. Viscous bridges stretch between rounded droplets, pearly specular highlights, playful negative space. Exact title in small precise white typography in the upper right. Editorial specimen composition emphasizing coalescence; no giant twisting ribbon or warped title letters.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 92,
+      "slug": "92-holographic",
+      "title": "HOLOGRAPHIC",
+      "ko": "홀로그래픽",
+      "description": "접힌 포일 표면에 겹쳐지는 무지갯빛 반사와 광택",
+      "file": "92-holographic.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 3,
+        "slug": "holographic"
+      },
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"HOLOGRAPHIC\"\nFooter text (verbatim): \"92 / VISUAL DESIGN\"\nArt direction: A single broad folded holographic foil sheet forms an angular zigzag down the vertical page. Iridescent bands shift from silver to lilac, mint, pink and electric blue along its creases, a deep charcoal background and sharp material edges. Precise foil grain and prismatic glints. Exact title cleanly typeset over two lines in white in an open dark area near the bottom. Sophisticated print-material study, no product mockup or rainbow gradient filling the whole page.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 93,
+      "slug": "93-neon-glow",
+      "title": "NEON GLOW",
+      "ko": "네온 글로우",
+      "description": "어둠 위로 겹친 네온 튜브의 발광과 빛 번짐",
+      "file": "93-neon-glow.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 4,
+        "slug": "neon-glow"
+      },
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"NEON GLOW\"\nFooter text (verbatim): \"93 / VISUAL DESIGN\"\nArt direction: An original graphic poster built from cropped concentric neon glass-tube arches, dramatically off-center and extending beyond the upper and right edges. Electric pink, acid green and cyan glowing tubes against almost black with carefully controlled colored light spill. The exact title itself is fabricated from readable neon tubing across the lower left. Strong negative space and real tube thickness. No urban street or city skyline; a pure luminous typographic composition.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 94,
+      "slug": "94-wireframe-3d",
+      "title": "WIREFRAME 3D",
+      "ko": "와이어프레임 3D",
+      "description": "선으로 드러낸 입체 구조와 정밀한 격자의 겹침",
+      "file": "94-wireframe-3d.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 5,
+        "slug": "wireframe-3d"
+      },
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"WIREFRAME 3D\"\nFooter text (verbatim): \"94 / VISUAL DESIGN\"\nArt direction: A large torus knot shown only as precise luminous wireframe lines, cropped boldly at two page edges, with a smaller orthographic wireframe cube hovering below. Fine cyan and white lines on deep navy, density-based depth, a faint perspective floor grid. Exact title in wide technical sans-serif along the top, small footer, substantial dark breathing space. No shaded surfaces, no UI controls, no extraneous code or labels.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 95,
+      "slug": "95-glassmorphism",
+      "title": "GLASSMORPHISM",
+      "ko": "글래스모피즘",
+      "description": "둥근 유리 판의 겹침과 흐릿한 색으로 표현한 투명감",
+      "file": "95-glassmorphism.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 6,
+        "slug": "glassmorphism"
+      },
+      "variantOf": 13,
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"GLASSMORPHISM\"\nFooter text (verbatim): \"95 / VISUAL DESIGN\"\nArt direction: Three rounded translucent glass discs overlap diagonally across a warm pale background. Behind them, one enormous cobalt typographic G and a coral square become softly blurred and refracted; front-facing exact title remains perfectly crisp in near-black at the bottom. Milky frosted material, subtle rim highlights and believable glass thickness. Asymmetric close-cropped circular composition, unlike a vertical glass-sheet layout. No app UI, cards, dashboard or controls.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 96,
+      "slug": "96-kinetic-type",
+      "title": "KINETIC TYPE",
+      "ko": "키네틱 타입",
+      "description": "반복과 기울기, 간격으로 움직임을 암시하는 타이포그래피",
+      "file": "96-kinetic-type.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 7,
+        "slug": "kinetic-type"
+      },
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"KINETIC TYPE\"\nFooter text (verbatim): \"96 / VISUAL DESIGN\"\nArt direction: Pure typographic motion captured in print: the exact words KINETIC TYPE repeat in five staggered diagonals, with the central pair large, solid and sharply readable and the others stretched into finely striped echoes. Black ink and signal orange on warm white. Strong cadence, compression, expansion and intentional optical rhythm, substantial negative space. A crisp editorial typography poster; no 3D scene, no generic extra slogan, no actual animation.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 97,
+      "slug": "97-isometric",
+      "title": "ISOMETRIC",
+      "ko": "아이소메트릭",
+      "description": "같은 축을 따라 분해한 기계 부품의 입체적인 조합",
+      "file": "97-isometric.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 8,
+        "slug": "isometric"
+      },
+      "variantOf": 59,
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"ISOMETRIC\"\nFooter text (verbatim): \"97 / VISUAL DESIGN\"\nArt direction: A vertical exploded-view isometric assembly of a small imaginary geometric machine: a circular dial, two rings, a rectangular casing and a base plate float in exact alignment. Strict parallel isometric axes, no perspective convergence. Cobalt blue, pale lemon, ivory and coral with clean flat shaded surfaces and fine connector lines. Spacious ivory background; exact title in a slim column along the right. Product-diagram composition, not buildings or a neighborhood, no tiny explanatory labels.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 98,
+      "slug": "98-clay-3d",
+      "title": "CLAY 3D",
+      "ko": "클레이 3D",
+      "description": "손으로 빚은 점토 오브제와 부드러운 표면의 촉감",
+      "file": "98-clay-3d.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 9,
+        "slug": "clay-3d"
+      },
+      "variantOf": 7,
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"CLAY 3D\"\nFooter text (verbatim): \"98 / VISUAL DESIGN\"\nArt direction: An original clay still-life poster with three hand-sculpted miniature citrus fruits and a looping leaf arranged in a loose triangular composition on a matte lavender ground. Visible finger impressions, soft rounded forms, delicate natural clay grain, muted tangerine and sage, broad soft studio shadows. A small crisp exact title at the upper left contrasts with the tangible objects. No clay letters or stacked abstract blocks; the sculptural fruit arrangement is the focus.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 99,
+      "slug": "99-ascii-art",
+      "title": "ASCII ART",
+      "ko": "아스키 아트",
+      "description": "문자와 기호의 밀도로 만든 달과 수평선의 풍경",
+      "file": "99-ascii-art.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 10,
+        "slug": "ascii-art"
+      },
+      "variantOf": 70,
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"ASCII ART\"\nFooter text (verbatim): \"99 / VISUAL DESIGN\"\nArt direction: A wide crescent moon above a stepped mountain horizon, built exclusively from a rigorously aligned grid of monospaced ASCII characters: @ # + : . / and parentheses. Warm white glyphs on dark green-black, different glyph densities define shadow and sky. A bold empty central band contains the exact title in crisp terminal typography. Actual visible characters form every pictorial element, no smooth image under a text overlay. A landscape composition, no butterfly.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 100,
+      "slug": "100-gradient-mesh",
+      "title": "GRADIENT MESH",
+      "ko": "그라디언트 메시",
+      "description": "색점이 부드럽게 번지며 형성하는 유기적인 그라디언트",
+      "file": "100-gradient-mesh.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 11,
+        "slug": "gradient-mesh"
+      },
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"GRADIENT MESH\"\nFooter text (verbatim): \"100 / VISUAL DESIGN\"\nArt direction: An abstract smooth mesh-gradient poster with four large flowing color fields bending like soft fabric around an off-center luminous opening. Saturated cobalt, soft apricot, lavender and hot coral merge continuously with subtle depth and silky transitions, very slight print grain. The exact title in massive thin white type spans the lower third without hiding the central opening. No isolated 3D objects, no aurora sky, no website mockup.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 101,
+      "slug": "101-comic-book",
+      "title": "COMIC BOOK",
+      "ko": "코믹북",
+      "description": "만화 칸과 과장된 원근, 굵은 잉크선의 극적인 구성",
+      "file": "101-comic-book.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 12,
+        "slug": "comic-book"
+      },
+      "variantOf": 27,
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"COMIC BOOK\"\nFooter text (verbatim): \"101 / VISUAL DESIGN\"\nArt direction: An original three-panel comic-book poster showing a gloved hand turning a dial, a close-up of surprised eyes, and a dramatic diagonal rocket launch as the largest panel. Thick ink contour lines, bold black gutters, visible Ben-Day dot shading, red, yellow and icy cyan on cream stock. Strong sequential panel layout and exaggerated foreshortening. Exact title integrated as the masthead at top; no speech text or other words, no existing characters or copyrighted comic brands.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 102,
+      "slug": "102-split-flap",
+      "title": "SPLIT-FLAP",
+      "ko": "스플릿 플랩",
+      "description": "반쯤 넘어간 기계식 글자판과 반복 격자의 리듬",
+      "file": "102-split-flap.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 13,
+        "slug": "split-flap"
+      },
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"SPLIT-FLAP\"\nFooter text (verbatim): \"102 / VISUAL DESIGN\"\nArt direction: A tightly cropped vertical mechanical split-flap board whose staggered rows spell only the exact title SPLIT-FLAP over two clear lines, each letter on a separate matte black tile with a central hinge. Some surrounding blank tiles are caught halfway turned, exposing their curved undersides and brass hinge pins. Warm white block letters, rich amber edge lighting, strong repeating grid and tactile mechanical shadows. Small footer on a lower plain strip. No travel destinations, no clocks, no extra words.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 103,
+      "slug": "103-retro-vhs",
+      "title": "RETRO VHS",
+      "ko": "레트로 VHS",
+      "description": "트래킹 흔적과 색 번짐으로 재구성한 비디오테이프 감성",
+      "file": "103-retro-vhs.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 14,
+        "slug": "retro-vhs"
+      },
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"RETRO VHS\"\nFooter text (verbatim): \"103 / VISUAL DESIGN\"\nArt direction: An original analog video poster with a large grainy close-up of a rotating chrome sphere above a hazy magenta sunset horizon. Horizontal tracking ripples, chroma bleed, faded cyan, hot magenta and deep violet, soft scan lines and tape dropout. Exact title in white blocky VHS-era lettering inside a broad calm black band across the middle. Evocative worn tape capture translated into a finished printed poster; no television frame, no timestamps, no brand labels.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 104,
+      "slug": "104-halftone",
+      "title": "HALFTONE",
+      "ko": "하프톤",
+      "description": "큰 망점과 겹쳐 찍힌 색으로 분할한 인물 이미지",
+      "file": "104-halftone.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 15,
+        "slug": "halftone"
+      },
+      "variantOf": 68,
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"HALFTONE\"\nFooter text (verbatim): \"104 / VISUAL DESIGN\"\nArt direction: An original anonymous face cropped tightly into three offset vertical strips, each rendered entirely from clearly visible circular halftone dots of different sizes. Black, cobalt and vermilion overprints on ivory stock, intentional registration shifts, graphic strip rhythm. Exact title in small solid black condensed type down the left edge and footer below. Dramatic editorial portrait, not a flower, no speech balloons, all shading constructed from ink dots.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 105,
+      "slug": "105-bauhaus",
+      "title": "BAUHAUS",
+      "ko": "바우하우스",
+      "description": "격자 속 원과 막대, 삼원색 타이포그래피의 균형",
+      "file": "105-bauhaus.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 16,
+        "slug": "bauhaus"
+      },
+      "variantOf": 62,
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"BAUHAUS\"\nFooter text (verbatim): \"105 / VISUAL DESIGN\"\nArt direction: An original Bauhaus poster organized as a strict tall modular grid of six unequal rectangles. Each compartment holds a cropped red circle, yellow bar, blue quarter-disc or black typographic element; the exact word BAUHAUS appears stacked in a narrow left column. Warm ivory paper, primary spot colors, flat planes, precise spacing and optical balance. Architectural grid rhythm, not one central diagonal arrangement. No recreation of an existing famous poster, no extra words.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 106,
+      "slug": "106-pixel-art",
+      "title": "PIXEL ART",
+      "ko": "픽셀 아트",
+      "description": "선명한 픽셀과 제한된 색으로 그린 복고풍 실내 풍경",
+      "file": "106-pixel-art.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 17,
+        "slug": "pixel-art"
+      },
+      "variantOf": 28,
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"PIXEL ART\"\nFooter text (verbatim): \"106 / VISUAL DESIGN\"\nArt direction: An original pixel-art poster of a cozy late-night record shop interior seen straight-on: shelves of colored square sleeves, a tiny orange cat curled near the counter, one glowing window and a hanging lamp. Strict visible square pixel grid throughout, limited navy, rust, cream and teal palette, stepped edges and ordered dithering with no smooth gradients or anti-aliasing. Exact title in pixel lettering on the sign band above the shelves. No floating island or garden, no logos or other readable labels.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 107,
+      "slug": "107-blueprint",
+      "title": "BLUEPRINT",
+      "ko": "블루프린트",
+      "description": "청색 바탕의 흰 선과 분해도로 드러낸 설계 구조",
+      "file": "107-blueprint.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 18,
+        "slug": "blueprint"
+      },
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"BLUEPRINT\"\nFooter text (verbatim): \"107 / VISUAL DESIGN\"\nArt direction: An original engineering-blueprint poster of a compact imaginary desk lamp shown as a large exploded axonometric assembly, plus one small circular detail inset. Deep cobalt paper, fine precise ivory linework, ghosted construction circles, measured extension lines and a subtle square grid. Exact title in white monospaced lettering at the lower right, small footer. Open airy technical composition, no filled surfaces, no fake numeric measurements or illegible tiny annotations.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 108,
+      "slug": "108-art-deco",
+      "title": "ART DECO",
+      "ko": "아르 데코",
+      "description": "대칭적인 부채꼴과 금빛 계단형 선의 장식적 질서",
+      "file": "108-art-deco.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 19,
+        "slug": "art-deco"
+      },
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"ART DECO\"\nFooter text (verbatim): \"108 / VISUAL DESIGN\"\nArt direction: An original Art Deco poster: monumental symmetric fan rays rise from a small central black diamond at the bottom; thin stepped gold lines climb vertically on a matte midnight green field. Metallic antique gold, emerald and ivory, sharply restrained geometry and generous negative space. Exact title in exquisitely spaced geometric display letters integrated into the upper third. Luxurious printed foil finish, no building photograph, no copied historical poster or brand.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
+    },
+    {
+      "number": 109,
+      "slug": "109-neo-brutalism",
+      "title": "NEO-BRUTALISM",
+      "ko": "네오 브루탈리즘",
+      "description": "두꺼운 테두리와 어긋난 그림자로 쌓은 대담한 그래픽",
+      "file": "109-neo-brutalism.png",
+      "width": 1024,
+      "height": 1536,
+      "migratedFrom": {
+        "collection": "animation",
+        "number": 20,
+        "slug": "neo-brutalism"
+      },
+      "prompt": "Use case: stylized-concept\nAsset type: original graphic-design reference poster for Graphic Style Collection.\nPrimary request: translate the named style from the former animation collection into one beautifully art-directed still graphic poster.\nFormat: portrait 2:3, 1024 by 1536 pixels, full-bleed straight-on artwork. One image only.\nTypography: integrate only the exact style title and the specified small footer. Strong readable hierarchy at thumbnail size.\nStyle title (verbatim): \"NEO-BRUTALISM\"\nFooter text (verbatim): \"109 / VISUAL DESIGN\"\nArt direction: An original neo-brutalist graphic poster with a huge white rectangle tipped slightly across a yellow field, bearing the exact title in oversized heavy black letters split across three readable lines. Two smaller cyan and hot-pink blocks collide with its edges; thick uneven black outlines and hard offset shadows create blunt depth. Coarse dotted paper texture, cropped orange starburst, deliberate asymmetry and vigorous spacing. A static graphic poster, no browser chrome, no clickable button labels, no UI mockup, no extra slogan.\nConstraints: original finished poster, no photographed mockup, watermark, contact sheet, external brand, menu, play button or software interface."
     }
   ],
   "additions": [
@@ -1121,6 +1450,281 @@
         {
           "title": "V&A: Postmodern Design",
           "url": "https://www.vam.ac.uk/info/collection-selection-boxes-postmodern-design"
+        }
+      ]
+    },
+    {
+      "generationMode": "built-in image_gen",
+      "format": "portrait poster",
+      "addedOn": "2026-10-18",
+      "source": "All 20 styles from the retired animation collection",
+      "numbers": [
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109
+      ],
+      "notes": [
+        "All former animation styles are retained as newly generated still posters, with descriptions and prompts written for static graphic design.",
+        "Overlapping poster styles remain as distinct layout variants linked through variantOf.",
+        "migratedFrom records the original animation identity. The shared route map preserves old links."
+      ],
+      "migration": [
+        {
+          "from": {
+            "collection": "animation",
+            "number": 1,
+            "slug": "particles"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 90,
+            "slug": "90-particles"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 2,
+            "slug": "liquid-morph"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 91,
+            "slug": "91-liquid-morph"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 3,
+            "slug": "holographic"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 92,
+            "slug": "92-holographic"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 4,
+            "slug": "neon-glow"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 93,
+            "slug": "93-neon-glow"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 5,
+            "slug": "wireframe-3d"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 94,
+            "slug": "94-wireframe-3d"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 6,
+            "slug": "glassmorphism"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 95,
+            "slug": "95-glassmorphism"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 7,
+            "slug": "kinetic-type"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 96,
+            "slug": "96-kinetic-type"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 8,
+            "slug": "isometric"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 97,
+            "slug": "97-isometric"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 9,
+            "slug": "clay-3d"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 98,
+            "slug": "98-clay-3d"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 10,
+            "slug": "ascii-art"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 99,
+            "slug": "99-ascii-art"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 11,
+            "slug": "gradient-mesh"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 100,
+            "slug": "100-gradient-mesh"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 12,
+            "slug": "comic-book"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 101,
+            "slug": "101-comic-book"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 13,
+            "slug": "split-flap"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 102,
+            "slug": "102-split-flap"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 14,
+            "slug": "retro-vhs"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 103,
+            "slug": "103-retro-vhs"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 15,
+            "slug": "halftone"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 104,
+            "slug": "104-halftone"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 16,
+            "slug": "bauhaus"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 105,
+            "slug": "105-bauhaus"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 17,
+            "slug": "pixel-art"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 106,
+            "slug": "106-pixel-art"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 18,
+            "slug": "blueprint"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 107,
+            "slug": "107-blueprint"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 19,
+            "slug": "art-deco"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 108,
+            "slug": "108-art-deco"
+          }
+        },
+        {
+          "from": {
+            "collection": "animation",
+            "number": 20,
+            "slug": "neo-brutalism"
+          },
+          "to": {
+            "collection": "posters",
+            "number": 109,
+            "slug": "109-neo-brutalism"
+          }
         }
       ]
     }

@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>3D 애니메이션 — 그래픽 스타일 컬렉션</title>
-  <link rel="canonical" href="./index.html#animation">
-  <script>
-    // Preserve previously shared animation.html#01 links in the unified collection.
-    const number = location.hash.slice(1);
-    const detail = /^\d{1,2}$/.test(number) && Number(number) >= 1 && Number(number) <= 20;
-    location.replace('./index.html#animation' + (detail ? '/' + number.padStart(2, '0') : ''));
+  <title>포스터로 이동 — 그래픽 스타일 컬렉션</title>
+  <link rel="canonical" href="./index.html#posters">
+  <script type="module">
+    import { resolveCollectionHash } from './collections.mjs?v=20261018';
+    const route = resolveCollectionHash('#animation/' + location.hash.slice(1));
+    location.replace('./index.html#posters' + (route.number === null ? '' : '/' + route.number));
   </script>
 </head>
-<body><p><a href="./index.html#animation">3D 애니메이션 컬렉션으로 이동</a></p></body>
+<body><p><a href="./index.html#posters">그래픽 포스터 컬렉션으로 이동</a></p></body>
 </html>

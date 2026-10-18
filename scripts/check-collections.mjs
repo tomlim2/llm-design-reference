@@ -1,20 +1,22 @@
 import assert from 'node:assert/strict';
 import { readFile, access } from 'node:fs/promises';
-import { COLLECTIONS, newestFirst, resolveCollectionHash } from '../collections.mjs';
+import { COLLECTIONS, ANIMATION_POSTER_MAP, newestFirst, resolveCollectionHash } from '../collections.mjs';
 
 const root = new URL('../', import.meta.url);
 const read = path => readFile(new URL(path, root), 'utf8');
 const html = await read('index.html');
 const markup = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, '');
 const json = id => JSON.parse(html.match(new RegExp(`<script[^>]*id="${id}"[^>]*>([\\s\\S]*?)</script>`))[1]);
-const data = { ...json('poster-data'), animation:json('animation-data').styles };
+const data = json('poster-data');
+assert.deepEqual(Object.keys(data).sort(), COLLECTIONS.map(item => item.key).sort(), 'Every data collection must have a tab');
 const ids = [...markup.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
 assert.equal(new Set(ids).size, ids.length, 'DOM IDs must be unique across collection viewers');
 assert.equal((markup.match(/<header\b/g) || []).length, 1, 'Use one shared header');
 assert.equal((markup.match(/<main\b/g) || []).length, 1, 'Use one shared main');
 assert.equal((markup.match(/<footer\b/g) || []).length, 1, 'Use one shared footer');
 assert(!/<style\b/.test(markup), 'Shared styles belong in site.css');
-assert(!/href="animation\.html/.test(markup), 'Animation navigation belongs in the tab list');
+assert(!/animation-tab|animation-panel|animation-dialog|animation-data|type="importmap"/.test(html), 'The retired animation UI and runtime must not return');
+assert(!/animation\.mjs|\bthree\b/.test(await read('gallery.js')), 'The gallery must not load a 3D runtime');
 
 const tabs = [...markup.matchAll(/<button\b[^>]*class="collection-tab"[^>]*>[\s\S]*?<\/button>/g)].map(match => match[0]);
 assert.deepEqual(tabs.map(tab => tab.match(/data-collection="([^"]+)"/)[1]), COLLECTIONS.map(item => item.key));
@@ -45,22 +47,42 @@ for (const [index, definition] of COLLECTIONS.entries()) {
 const total = Object.values(data).reduce((sum, items) => sum + items.length, 0);
 assert(markup.includes(`컬렉션<sup>(${total})</sup>`), 'Collection total');
 
-const builders = [...(await read('animation-styles.mjs')).matchAll(/STYLES\.push\(\{\s*slug:\s*'([^']+)'/g)].map(match => match[1]);
-assert.deepEqual([...builders].sort(), data.animation.map(item => item.slug).sort(), 'Every 3D entry needs exactly one scene');
+const migrated = data.posters.filter(item => item.migratedFrom?.collection === 'animation');
+assert.equal(migrated.length, 20, 'All twenty animation styles must remain as posters');
+assert.deepEqual(migrated.map(item => item.migratedFrom.number).sort((a, b) => a - b), Array.from({length:20}, (_, i) => i + 1));
+assert.equal(new Set(migrated.map(item => item.migratedFrom.slug)).size, 20, 'Migration identities must be unique');
+assert.deepEqual(Object.fromEntries(migrated.map(item => [item.migratedFrom.number, item.number])), ANIMATION_POSTER_MAP, 'Legacy route map must match migrated poster identities');
+const prompts = (await read('output/poster-styles/prompts.json'));
+const recorded = JSON.parse(prompts).styles;
+const manifest = JSON.parse(await read('output/poster-styles/manifest.json'));
+assert.equal(recorded.length, data.posters.length, 'Poster prompt count');
+assert.equal(manifest.length, data.posters.length, 'Poster manifest count');
+for (const item of migrated) {
+  assert.deepEqual(recorded.find(entry => entry.number === item.number), item, 'Migrated poster prompt metadata');
+  const file = manifest.find(entry => entry.number === item.number);
+  assert(file && file.status === 'complete' && file.file === item.file, 'Migrated poster must have a completed image');
+  assert.deepEqual(file.migratedFrom, item.migratedFrom, 'Manifest migration identity');
+  assert.equal(file.variantOf, item.variantOf, 'Manifest variant identity');
+  assert.deepEqual(resolveCollectionHash('#animation/' + String(item.migratedFrom.number).padStart(2, '0')), {key:'posters', number:item.number});
+}
 for (const [hash, expected] of [
   ['', { key:'posters', number:null }], ['#top', { key:'posters', number:null }],
-  ['#motion', { key:'motion', number:null }], ['#animation', { key:'animation', number:null }],
-  ['#animation/01', { key:'animation', number:1 }], ['#new-styles', { key:'posters', number:null }]
+  ['#motion', { key:'motion', number:null }], ['#animation', { key:'posters', number:null }],
+  ['#animation/01', { key:'posters', number:90 }], ['#animation/20', { key:'posters', number:109 }],
+  ['#posters/109', { key:'posters', number:109 }], ['#motion/5', { key:'motion', number:5 }],
+  ['#animation/99', { key:'posters', number:null }], ['#posters/0', { key:'posters', number:null }],
+  ['#unknown', { key:'posters', number:null }], ['#new-styles', { key:'posters', number:null }]
 ]) assert.deepEqual(resolveCollectionHash(hash), expected, 'Route ' + hash);
 
 const workflow = await read('.github/workflows/deploy.yml');
 const archive = workflow.match(/git archive HEAD([\s\S]*?)\| tar/)[1];
-const assets = ['index.html', 'site.css', 'animation.css', 'gallery.js', 'collections.mjs', 'animation.mjs', 'animation-styles.mjs', 'animation.html'];
+const assets = ['index.html', 'site.css', 'gallery.js', 'collections.mjs', 'animation.html'];
 for (const asset of assets) {
   await access(new URL(asset, root));
   assert(archive.split(/\s+/).includes(asset), asset + ' must ship in the deployment archive');
 }
 const legacy = await read('animation.html');
-assert(legacy.includes("location.replace('./index.html#animation'"), 'Keep legacy animation links working');
+assert(legacy.includes("location.replace('./index.html#posters'") && legacy.includes('resolveCollectionHash'), 'Legacy animation links must use the shared poster migration map');
 assert(!/<header\b|<style\b/.test(legacy), 'Do not recreate a separate animation shell');
+assert(!/animation\.css|animation\.mjs|animation-styles\.mjs/.test(workflow), 'Retired runtime files must not ship');
 console.log(`Collection contracts passed: ${COLLECTIONS.length} tabs, ${total} entries, unique IDs and complete deployment assets.`);

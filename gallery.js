@@ -1,43 +1,17 @@
-import { COLLECTIONS, newestFirst, resolveCollectionHash } from './collections.mjs?v=20261010';
+import { COLLECTIONS, newestFirst, resolveCollectionHash } from './collections.mjs?v=20261018';
 
 (() => {
   'use strict';
   const data = JSON.parse(document.getElementById('poster-data').textContent);
-  data.animation = JSON.parse(document.getElementById('animation-data').textContent).styles;
   const collections = Object.fromEntries(COLLECTIONS.map(definition => [definition.key, {
     ...definition, items:newestFirst(data[definition.key])
   }]));
-  const animationPrompts = URL.createObjectURL(new Blob([JSON.stringify({
-    generationMode:'Three.js realtime scenes written as code',
-    assetType:'Live 3D animation style studies',
-    source:'Twenty animation style names supplied by the user',
-    styles:data.animation
-  }, null, 2)], { type:'application/json' }));
-  let animationGallery = null;
-  let animationLoading = null;
-  let selectionRequest = 0;
 
   function updateHash(hash, replace = false) {
     if (location.hash === '#' + hash) return;
     try { history[replace ? 'replaceState' : 'pushState'](null, '', '#' + hash); } catch { /* Local files may restrict history changes. */ }
   }
 
-  function loadAnimations() {
-    if (!animationLoading) {
-      animationLoading = import('./animation.mjs?v=20261011-6').then(module => {
-        animationGallery = module.initializeAnimationGallery({
-          styles:collections.animation.items,
-          onSelect:number => updateHash('animation/' + String(number).padStart(2, '0'), true),
-          onClose:() => { if (activeCollection === 'animation') updateHash('animation', true); }
-        });
-        return animationGallery;
-      }).catch(error => {
-        animationLoading = null;
-        throw error;
-      });
-    }
-    return animationLoading;
-  }
   const dialog = document.getElementById('poster-dialog');
   const image = document.getElementById('detail-image');
   const promptDetails = document.getElementById('prompt-details');
@@ -53,11 +27,9 @@ import { COLLECTIONS, newestFirst, resolveCollectionHash } from './collections.m
 
   function setCollection(key, updateUrl = false, styleNumber = null) {
     if (!collections[key]) return;
-    const request = ++selectionRequest;
     if (dialog.open) dialog.close();
     activeCollection = key;
     current = 0;
-    if (key !== 'animation') animationGallery?.setActive(false);
     tabs.forEach(tab => {
       const selected = tab.dataset.collection === key;
       tab.setAttribute('aria-selected', String(selected));
@@ -74,22 +46,14 @@ import { COLLECTIONS, newestFirst, resolveCollectionHash } from './collections.m
       archive.removeAttribute('href');
     }
     const prompts = document.getElementById('prompts-download');
-    prompts.href = key === 'animation' ? animationPrompts : selected.root + 'prompts.json';
+    prompts.href = selected.root + 'prompts.json';
     prompts.download = key + '-prompts.json';
     document.getElementById('collection-announcement').textContent = selected.label + ', ' + selected.items.length + '개 레퍼런스';
     if (updateUrl) updateHash(key);
-    if (key === 'animation') {
-      loadAnimations().then(controller => {
-        // Ignore a slow load after the user has already selected another tab/route.
-        if (request !== selectionRequest || activeCollection !== 'animation') return;
-        controller.setActive(true);
-        controller.openStyle(styleNumber);
-      }).catch(error => {
-        console.error(error);
-        const notice = document.getElementById('animation-notice');
-        notice.hidden = false;
-        notice.textContent = '애니메이션을 불러오지 못했습니다. 다른 탭으로 이동했다가 다시 열어 주세요.';
-      });
+    if (styleNumber !== null) {
+      const index = selected.items.findIndex(item => item.number === styleNumber);
+      if (index >= 0) openPoster(index, document.getElementById(selected.tabId));
+      else updateHash(key, true);
     }
   }
 
@@ -132,6 +96,15 @@ import { COLLECTIONS, newestFirst, resolveCollectionHash } from './collections.m
     announcement.textContent = (current + 1) + '번째 레퍼런스, ' + study.ko;
     dialog.querySelector('.detail').scrollTop = 0;
     dialog.querySelector('.viewer').scrollTop = 0;
+    updateHash(activeCollection + '/' + study.number, true);
+  }
+
+  function openPoster(index, source) {
+    trigger = source;
+    selectPoster(index);
+    if (!dialog.open) dialog.showModal();
+    document.body.classList.add('modal-open');
+    dialog.querySelector('.viewer').scrollTop = 0;
   }
 
   tabs.forEach((tab, index) => {
@@ -153,18 +126,16 @@ import { COLLECTIONS, newestFirst, resolveCollectionHash } from './collections.m
     button.addEventListener('click', () => {
       const key = button.dataset.collection || 'posters';
       if (key !== activeCollection) setCollection(key);
-      trigger = button;
       const study = data[key][Number(button.dataset.poster)];
-      selectPoster(collection().items.indexOf(study));
-      dialog.showModal();
-      document.body.classList.add('modal-open');
-      dialog.querySelector('.viewer').scrollTop = 0;
+      openPoster(collection().items.indexOf(study), button);
     });
   });
   document.getElementById('close-dialog').addEventListener('click', () => dialog.close());
   dialog.addEventListener('close', () => {
     if (dialog.open) return; // A queued close event must not affect a reopened viewer.
     if (!document.querySelector('dialog[open]')) document.body.classList.remove('modal-open');
+    const route = resolveCollectionHash(location.hash);
+    if (route.key === activeCollection && route.number === collection().items[current]?.number) updateHash(activeCollection, true);
     if (trigger && trigger.getClientRects().length) trigger.focus({preventScroll:true});
   });
   let backdropPointer = false;
@@ -205,6 +176,7 @@ import { COLLECTIONS, newestFirst, resolveCollectionHash } from './collections.m
   });
   function collectionFromHash() {
     const route = resolveCollectionHash(location.hash);
+    if (location.hash.startsWith('#animation')) updateHash('posters' + (route.number === null ? '' : '/' + route.number), true);
     setCollection(route.key, false, route.number);
   }
   window.addEventListener('hashchange', collectionFromHash);

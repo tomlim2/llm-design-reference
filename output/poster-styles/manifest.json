@@ -850,5 +850,314 @@
     "height": 1536,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-7dcefd74-7684-4ea2-b5b8-07f1eb2b40e3.png",
     "status": "complete"
+  },
+  {
+    "number": 90,
+    "slug": "90-particles",
+    "title": "PARTICLES",
+    "file": "90-particles.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 1,
+      "slug": "particles"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-f6ea5a56-87bc-4d06-81cc-aa2e566b621d.png",
+    "status": "complete"
+  },
+  {
+    "number": 91,
+    "slug": "91-liquid-morph",
+    "title": "LIQUID MORPH",
+    "file": "91-liquid-morph.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 2,
+      "slug": "liquid-morph"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-d2d33a2f-1d98-46de-9f93-03a5fc22c59a.png",
+    "status": "complete",
+    "variantOf": 6
+  },
+  {
+    "number": 92,
+    "slug": "92-holographic",
+    "title": "HOLOGRAPHIC",
+    "file": "92-holographic.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 3,
+      "slug": "holographic"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-63af762b-483c-47eb-966a-e1120d7099c8.png",
+    "status": "complete"
+  },
+  {
+    "number": 93,
+    "slug": "93-neon-glow",
+    "title": "NEON GLOW",
+    "file": "93-neon-glow.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 4,
+      "slug": "neon-glow"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-0fbb632a-6b88-4ce6-8590-a3bdbf0b66d2.png",
+    "status": "complete"
+  },
+  {
+    "number": 94,
+    "slug": "94-wireframe-3d",
+    "title": "WIREFRAME 3D",
+    "file": "94-wireframe-3d.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 5,
+      "slug": "wireframe-3d"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ccf1e490-2189-42fd-98e6-d34b4b32cab5.png",
+    "status": "complete"
+  },
+  {
+    "number": 95,
+    "slug": "95-glassmorphism",
+    "title": "GLASSMORPHISM",
+    "file": "95-glassmorphism.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 6,
+      "slug": "glassmorphism"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-9024390a-122a-4c8d-bbd1-798f83bda46b.png",
+    "status": "complete",
+    "variantOf": 13
+  },
+  {
+    "number": 96,
+    "slug": "96-kinetic-type",
+    "title": "KINETIC TYPE",
+    "file": "96-kinetic-type.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 7,
+      "slug": "kinetic-type"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-3c549138-afd1-4ab1-9863-dd6078fc1012.png",
+    "status": "complete"
+  },
+  {
+    "number": 97,
+    "slug": "97-isometric",
+    "title": "ISOMETRIC",
+    "file": "97-isometric.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 8,
+      "slug": "isometric"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-25f22ba4-bcfd-4150-92dd-c7a92a236439.png",
+    "status": "complete",
+    "variantOf": 59
+  },
+  {
+    "number": 98,
+    "slug": "98-clay-3d",
+    "title": "CLAY 3D",
+    "file": "98-clay-3d.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 9,
+      "slug": "clay-3d"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-7ef22321-e591-4791-b956-7cc6c64724b5.png",
+    "status": "complete",
+    "variantOf": 7
+  },
+  {
+    "number": 99,
+    "slug": "99-ascii-art",
+    "title": "ASCII ART",
+    "file": "99-ascii-art.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 10,
+      "slug": "ascii-art"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-7b35058d-7a11-42cc-a6e0-c2392552d9a6.png",
+    "status": "complete",
+    "variantOf": 70
+  },
+  {
+    "number": 100,
+    "slug": "100-gradient-mesh",
+    "title": "GRADIENT MESH",
+    "file": "100-gradient-mesh.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 11,
+      "slug": "gradient-mesh"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-1f2d9142-64e1-4211-957d-94feb6eae4f5.png",
+    "status": "complete"
+  },
+  {
+    "number": 101,
+    "slug": "101-comic-book",
+    "title": "COMIC BOOK",
+    "file": "101-comic-book.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 12,
+      "slug": "comic-book"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-6e071297-0e96-46c4-ab50-864a6aac901a.png",
+    "status": "complete",
+    "variantOf": 27
+  },
+  {
+    "number": 102,
+    "slug": "102-split-flap",
+    "title": "SPLIT-FLAP",
+    "file": "102-split-flap.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 13,
+      "slug": "split-flap"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ffefc8aa-59e1-4cb6-8ac4-794ce1645b23.png",
+    "status": "complete"
+  },
+  {
+    "number": 103,
+    "slug": "103-retro-vhs",
+    "title": "RETRO VHS",
+    "file": "103-retro-vhs.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 14,
+      "slug": "retro-vhs"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-a0cf9416-f8bb-43cc-a5c5-1318b1799f3f.png",
+    "status": "complete"
+  },
+  {
+    "number": 104,
+    "slug": "104-halftone",
+    "title": "HALFTONE",
+    "file": "104-halftone.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 15,
+      "slug": "halftone"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-3aa7503e-8309-4cff-aca2-738eb1dbba18.png",
+    "status": "complete",
+    "variantOf": 68
+  },
+  {
+    "number": 105,
+    "slug": "105-bauhaus",
+    "title": "BAUHAUS",
+    "file": "105-bauhaus.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 16,
+      "slug": "bauhaus"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-7d6af540-3b98-4ecf-81db-308c0d4da48b.png",
+    "status": "complete",
+    "variantOf": 62
+  },
+  {
+    "number": 106,
+    "slug": "106-pixel-art",
+    "title": "PIXEL ART",
+    "file": "106-pixel-art.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 17,
+      "slug": "pixel-art"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ccf540b7-9652-458a-8953-a0fff59bad86.png",
+    "status": "complete",
+    "variantOf": 28
+  },
+  {
+    "number": 107,
+    "slug": "107-blueprint",
+    "title": "BLUEPRINT",
+    "file": "107-blueprint.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 18,
+      "slug": "blueprint"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-f189d372-beb3-49a5-947d-73027b1098e9.png",
+    "status": "complete"
+  },
+  {
+    "number": 108,
+    "slug": "108-art-deco",
+    "title": "ART DECO",
+    "file": "108-art-deco.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 19,
+      "slug": "art-deco"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ebf60686-075f-4c0b-bf52-997a46084db6.png",
+    "status": "complete"
+  },
+  {
+    "number": 109,
+    "slug": "109-neo-brutalism",
+    "title": "NEO-BRUTALISM",
+    "file": "109-neo-brutalism.png",
+    "width": 1024,
+    "height": 1536,
+    "migratedFrom": {
+      "collection": "animation",
+      "number": 20,
+      "slug": "neo-brutalism"
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-c1efc4f1-5ab3-4bb8-81e6-015e79554542.png",
+    "status": "complete"
   }
 ]
