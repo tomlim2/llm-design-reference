@@ -5,7 +5,12 @@
     "title": "WABISABI",
     "file": "01-wabisabi.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-79e5791d-d835-47f5-ab46-da4ac76afef7.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "손맛이 있는",
+      "차분한",
+      "깔끔한 조형"
+    ]
   },
   {
     "number": 2,
@@ -13,7 +18,12 @@
     "title": "CLOUD CUT",
     "file": "02-cloud-cut.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-e60889e8-4a91-46d6-bbda-a7369b8ed309.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "깔끔한 조형",
+      "몽환적인",
+      "차분한"
+    ]
   },
   {
     "number": 3,
@@ -21,7 +31,13 @@
     "title": "XPIRITUALISM",
     "file": "03-xpiritualism.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-97a10f10-2bd5-4ce9-b990-94f2b7b1cdbc.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "몽환적인",
+      "실험적인",
+      "레트로",
+      "키치한"
+    ]
   },
   {
     "number": 4,
@@ -29,7 +45,13 @@
     "title": "ASIAN STORE",
     "file": "04-asian-store.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-280a4396-8cb6-43b5-a4ce-fde7bdb34093.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "강렬한",
+      "키치한",
+      "컬러풀한",
+      "레트로"
+    ]
   },
   {
     "number": 5,
@@ -37,7 +59,12 @@
     "title": "CUTAWAY WORLD",
     "file": "05-cutaway-world.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-3fcfe2f4-15cb-4be0-aa9c-32b7ea0b9061.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "기하학적인",
+      "섬세한",
+      "모던한"
+    ]
   },
   {
     "number": 6,
@@ -45,7 +72,12 @@
     "title": "NEW LIQUID",
     "file": "06-new-liquid.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-11f4903f-d3f5-413b-b239-7faad44ef86f.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "유기적인",
+      "컬러풀한",
+      "실험적인"
+    ]
   },
   {
     "number": 7,
@@ -53,7 +85,12 @@
     "title": "CLAY RENDER",
     "file": "07-clay-render.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-a888ae07-c2c8-4a93-aa3d-0cdf063e8bbb.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "귀여운",
+      "손맛이 있는",
+      "따뜻한"
+    ]
   },
   {
     "number": 8,
@@ -61,7 +98,12 @@
     "title": "ENVELOPE REVEAL",
     "file": "08-envelope-reveal.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-53a15612-ba33-440d-bba0-f261eb9b9cbd.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "섬세한",
+      "깔끔한 구성",
+      "손맛이 있는"
+    ]
   },
   {
     "number": 9,
@@ -69,7 +111,12 @@
     "title": "STITCH & WIRE",
     "file": "09-stitch-wire.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-5b3ef5ba-f3c3-40c7-9f5b-3cf7ac77f4e1.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "손맛이 있는",
+      "섬세한",
+      "실험적인"
+    ]
   },
   {
     "number": 10,
@@ -77,7 +124,12 @@
     "title": "LIQUID CHROME",
     "file": "10-liquid-chrome.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-c59c6def-48d3-4b51-b1fb-1aeb49e15456.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "미래적인",
+      "세련된",
+      "유기적인"
+    ]
   },
   {
     "number": 11,
@@ -85,7 +137,12 @@
     "title": "GZHEL",
     "file": "11-gzhel.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-61fd7320-88fb-463c-920c-6bd1b044edcc.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "우아한",
+      "섬세한",
+      "빈티지"
+    ]
   },
   {
     "number": 12,
@@ -93,7 +150,12 @@
     "title": "CAMERA INTERFACE",
     "file": "12-camera-interface.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-db066ea8-64cd-4d42-bc02-d8c5198c77e2.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "모던한",
+      "깔끔한 구성",
+      "미래적인"
+    ]
   },
   {
     "number": 13,
@@ -101,7 +163,12 @@
     "title": "FROSTED GLASS",
     "file": "13-frosted-glass.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-ca88303c-54df-4858-911d-09b43ba42cc4.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "세련된",
+      "모던한",
+      "몽환적인"
+    ]
   },
   {
     "number": 14,
@@ -109,7 +176,12 @@
     "title": "SHAPE DESIGN",
     "file": "14-shape-design.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-cdbafdeb-3fa2-4782-b785-4376c8eea6cd.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "기하학적인",
+      "컬러풀한",
+      "깔끔한 조형"
+    ]
   },
   {
     "number": 15,
@@ -117,7 +189,12 @@
     "title": "2000 WEB",
     "file": "15-2000-web.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-351190a5-c52b-461a-8b49-4290140a92e9.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "레트로",
+      "키치한",
+      "화려한"
+    ]
   },
   {
     "number": 16,
@@ -125,7 +202,12 @@
     "title": "FAIRY TALE",
     "file": "16-fairy-tale.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-34dbf229-c9a0-4cf2-bdd0-21e46cd1f363.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "몽환적인",
+      "섬세한",
+      "유기적인"
+    ]
   },
   {
     "number": 17,
@@ -133,7 +215,12 @@
     "title": "COZY BLANKET",
     "file": "17-cozy-blanket.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-241e3229-f677-4fd5-8bb3-4eccf679478d.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "따뜻한",
+      "손맛이 있는",
+      "차분한"
+    ]
   },
   {
     "number": 18,
@@ -141,7 +228,12 @@
     "title": "ELECTRO BIOMORPH",
     "file": "18-electro-biomorph.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-a45c9b3a-f82e-4422-94a4-314afa8c013f.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "미래적인",
+      "유기적인",
+      "실험적인"
+    ]
   },
   {
     "number": 19,
@@ -149,7 +241,12 @@
     "title": "SCIENTISM",
     "file": "19-scientism.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-7cb72faa-fa4e-460e-a932-9de578a34b76.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "섬세한",
+      "깔끔한 구성",
+      "모던한"
+    ]
   },
   {
     "number": 20,
@@ -157,7 +254,12 @@
     "title": "KAWAII",
     "file": "20-kawaii.png",
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-d6f30c84-a93e-4405-996b-d02491d97213.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "귀여운",
+      "키치한",
+      "컬러풀한"
+    ]
   },
   {
     "number": 21,
@@ -167,7 +269,13 @@
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-73610a73-74ea-43ef-b567-4a713757ad48.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "깔끔한 구성",
+      "깔끔한 조형",
+      "차분한",
+      "모던한"
+    ]
   },
   {
     "number": 22,
@@ -177,7 +285,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-e038ed08-aa3c-4346-935e-aa50b1f29664.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "화려한",
+      "컬러풀한",
+      "강렬한"
+    ]
   },
   {
     "number": 23,
@@ -187,7 +300,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-2ffd9015-074f-4acc-92ff-58b0e2790913.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "미래적인",
+      "세련된",
+      "모던한"
+    ]
   },
   {
     "number": 24,
@@ -197,7 +315,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-03ac52de-60a3-4e58-a140-8d74a54a80ac.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "깔끔한 조형",
+      "컬러풀한",
+      "모던한"
+    ]
   },
   {
     "number": 25,
@@ -207,7 +330,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-12e5df28-2ed8-4ed0-8646-ff34efa35bdd.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "레트로",
+      "빈티지",
+      "따뜻한"
+    ]
   },
   {
     "number": 26,
@@ -217,7 +345,13 @@
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-37369e79-fe7d-46a1-adc5-d971d2df9e36.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "어두운",
+      "암울한",
+      "미래적인",
+      "강렬한"
+    ]
   },
   {
     "number": 27,
@@ -227,7 +361,13 @@
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-90c49d52-a842-4266-9f70-6b02f3ea7e74.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "키치한",
+      "강렬한",
+      "컬러풀한",
+      "레트로"
+    ]
   },
   {
     "number": 28,
@@ -237,7 +377,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-478f5a64-edda-4578-ba54-c77b77cedd2b.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "레트로",
+      "귀여운",
+      "기하학적인"
+    ]
   },
   {
     "number": 29,
@@ -247,7 +392,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-e5407c23-32b9-4ab8-937f-3b7202c6fa58.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "세련된",
+      "섬세한",
+      "깔끔한 구성"
+    ]
   },
   {
     "number": 30,
@@ -257,7 +407,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-291e79e0-7fe6-4b78-b586-ade275d34ee7.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "모던한",
+      "깔끔한 구성",
+      "기하학적인"
+    ]
   },
   {
     "number": 31,
@@ -267,7 +422,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-d0467816-a7d0-4e5b-a9a3-7ae81e36e4cd.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "따뜻한",
+      "유기적인",
+      "손맛이 있는"
+    ]
   },
   {
     "number": 32,
@@ -277,7 +437,13 @@
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-8d10b79c-8fac-4396-b625-83e1dba322fc.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "빈티지",
+      "우아한",
+      "섬세한",
+      "화려한"
+    ]
   },
   {
     "number": 33,
@@ -287,7 +453,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-fba5bf89-a530-4a49-a187-453ab622d5ce.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "힙한",
+      "강렬한",
+      "손맛이 있는"
+    ]
   },
   {
     "number": 34,
@@ -297,7 +468,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-80018333-a6d6-48b9-b702-5d2a98dc093a.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "몽환적인",
+      "컬러풀한",
+      "차분한"
+    ]
   },
   {
     "number": 35,
@@ -307,7 +483,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-e6df9c58-f93c-4860-99b1-7968e0b3d219.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "손맛이 있는",
+      "따뜻한",
+      "실험적인"
+    ]
   },
   {
     "number": 36,
@@ -317,7 +498,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a10b31-2b34-7052-975d-0bdfbb8eb365/exec-5f557e8c-26e8-4667-8935-26cd725ee635.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "몽환적인",
+      "실험적인",
+      "유기적인"
+    ]
   },
   {
     "number": 37,
@@ -327,7 +513,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-d733ec0a-1c51-4bb0-a95d-e26f97d36df4.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "미래적인",
+      "힙한",
+      "레트로"
+    ]
   },
   {
     "number": 38,
@@ -337,7 +528,13 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-5b392381-98cd-47bd-b902-e51c29637cef.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "파격적인",
+      "강렬한",
+      "힙한",
+      "컬러풀한"
+    ]
   },
   {
     "number": 39,
@@ -347,7 +544,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-425878a5-a8ad-4e8b-a370-28abca8a1e3c.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "몽환적인",
+      "미래적인",
+      "화려한"
+    ]
   },
   {
     "number": 40,
@@ -357,7 +559,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-07a03ec6-05c9-444f-a6de-43da5c0b32c6.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "강렬한",
+      "실험적인",
+      "파격적인"
+    ]
   },
   {
     "number": 41,
@@ -367,7 +574,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-2dd93240-e390-4161-a3f9-513968b75fd4.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "깔끔한 구성",
+      "귀여운",
+      "컬러풀한"
+    ]
   },
   {
     "number": 42,
@@ -377,7 +589,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-f27dfd43-8ca8-47a2-a2b1-1437f6d6e448.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "기하학적인",
+      "깔끔한 조형",
+      "컬러풀한"
+    ]
   },
   {
     "number": 43,
@@ -387,7 +604,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ba5f294a-70d6-4eee-b8ea-55a9e2b49f87.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "귀여운",
+      "키치한",
+      "컬러풀한"
+    ]
   },
   {
     "number": 44,
@@ -397,7 +619,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-c9ba6bc0-36a8-40f6-8038-cf0aec385f2d.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "손맛이 있는",
+      "빈티지",
+      "컬러풀한"
+    ]
   },
   {
     "number": 45,
@@ -407,7 +634,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-c5440ccc-f8b4-431a-913e-78a3330eec8a.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "손맛이 있는",
+      "따뜻한",
+      "섬세한"
+    ]
   },
   {
     "number": 46,
@@ -417,7 +649,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-8a5c0f39-1866-41ec-92e6-bb353be1ed55.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "섬세한",
+      "레트로",
+      "모던한"
+    ]
   },
   {
     "number": 47,
@@ -427,7 +664,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-72af4882-2bf0-4f8f-ad76-92bad000e847.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "깔끔한 조형",
+      "차분한",
+      "모던한"
+    ]
   },
   {
     "number": 48,
@@ -437,7 +679,13 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-11ed3d1e-27f1-4dc6-b257-9b9de17b242a.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "우아한",
+      "섬세한",
+      "유기적인",
+      "빈티지"
+    ]
   },
   {
     "number": 49,
@@ -447,7 +695,13 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-88434278-9b34-48b7-babb-35c1707752cc.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "깔끔한 구성",
+      "기하학적인",
+      "모던한",
+      "컬러풀한"
+    ]
   },
   {
     "number": 50,
@@ -457,7 +711,13 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-bb198df2-46f1-41d0-bc02-4b3e284a43cf.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "키치한",
+      "컬러풀한",
+      "화려한",
+      "기하학적인"
+    ]
   },
   {
     "number": 51,
@@ -467,7 +727,13 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-03c3d183-9dc6-463e-8f1a-2d43f05608cd.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "몽환적인",
+      "강렬한",
+      "컬러풀한",
+      "화려한"
+    ]
   },
   {
     "number": 52,
@@ -477,7 +743,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-899d9e93-6fbe-41a9-b9c4-e25438f65480.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "레트로",
+      "몽환적인",
+      "키치한"
+    ]
   },
   {
     "number": 53,
@@ -487,7 +758,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-97f6ee97-d539-405c-9d3c-f4b9d267a4c0.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "빈티지",
+      "섬세한",
+      "미래적인"
+    ]
   },
   {
     "number": 54,
@@ -497,7 +773,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-a94bf2e7-cf47-4315-9adf-ae1efe31a755.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "어두운",
+      "손맛이 있는",
+      "파격적인"
+    ]
   },
   {
     "number": 55,
@@ -507,7 +788,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-528bbb9a-6549-4c1f-a93f-28be17fee66e.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "손맛이 있는",
+      "깔끔한 조형",
+      "따뜻한"
+    ]
   },
   {
     "number": 56,
@@ -517,7 +803,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-51251b34-c4b0-4d7f-af36-1b2633bcf782.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "실험적인",
+      "파격적인",
+      "미래적인"
+    ]
   },
   {
     "number": 57,
@@ -527,7 +818,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ed40ae6f-e093-44ed-904c-a4edbdeb872e.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "파격적인",
+      "실험적인",
+      "강렬한"
+    ]
   },
   {
     "number": 58,
@@ -537,7 +833,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-6a956010-ac4c-4b4f-9838-3ec499dbf5d5.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "귀여운",
+      "유기적인",
+      "키치한"
+    ]
   },
   {
     "number": 59,
@@ -547,7 +848,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-6d326094-0c4e-4205-aa2a-7ab619a7636c.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "깔끔한 구성",
+      "기하학적인",
+      "모던한"
+    ]
   },
   {
     "number": 60,
@@ -557,7 +863,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-0ec7508c-11e2-4a15-bee8-d1454ddeaf8c.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "빈티지",
+      "섬세한",
+      "손맛이 있는"
+    ]
   },
   {
     "number": 61,
@@ -567,7 +878,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-e723b91d-bb55-435f-8435-3e6fef628e21.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "파격적인",
+      "강렬한",
+      "모던한"
+    ]
   },
   {
     "number": 62,
@@ -577,7 +893,13 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-51069f08-7326-4b00-a92d-53ab33fa1f8b.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "모던한",
+      "기하학적인",
+      "컬러풀한",
+      "깔끔한 조형"
+    ]
   },
   {
     "number": 63,
@@ -587,7 +909,13 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-168020ea-30eb-4fa6-b0fb-d2ff77e4b638.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "레트로",
+      "따뜻한",
+      "유기적인",
+      "모던한"
+    ]
   },
   {
     "number": 64,
@@ -597,7 +925,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-a5d29feb-0087-41c1-b100-4f2e40586476.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "강렬한",
+      "컬러풀한",
+      "실험적인"
+    ]
   },
   {
     "number": 65,
@@ -607,7 +940,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-f0574487-06ce-4753-b07f-fc329cde68a8.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "유기적인",
+      "깔끔한 조형",
+      "실험적인"
+    ]
   },
   {
     "number": 66,
@@ -617,7 +955,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-8c3d18f4-383e-47af-b0c5-b41667ea94fb.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "몽환적인",
+      "실험적인",
+      "미래적인"
+    ]
   },
   {
     "number": 67,
@@ -627,7 +970,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-92fa76ca-74b1-449e-b155-2a0773c5013b.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "레트로",
+      "미래적인",
+      "유기적인"
+    ]
   },
   {
     "number": 68,
@@ -637,7 +985,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-be78786a-77c5-42bd-9114-ee5be54205bb.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "레트로",
+      "손맛이 있는",
+      "강렬한"
+    ]
   },
   {
     "number": 69,
@@ -647,7 +1000,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-d2794266-3f43-4998-a06c-aae5b7d54959.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "몽환적인",
+      "우아한",
+      "유기적인"
+    ]
   },
   {
     "number": 70,
@@ -657,7 +1015,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-34e64492-519c-4a51-a5f4-c0e658ebf8f1.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "레트로",
+      "실험적인",
+      "기하학적인"
+    ]
   },
   {
     "number": 71,
@@ -667,7 +1030,13 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-64004b7f-e7e0-4a28-a465-98e65f8ea75f.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "세련된",
+      "모던한",
+      "깔끔한 구성",
+      "강렬한"
+    ]
   },
   {
     "number": 72,
@@ -677,7 +1046,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-6c32b876-d9c0-44bc-9b45-f9253a72331b.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "깔끔한 구성",
+      "미래적인",
+      "섬세한"
+    ]
   },
   {
     "number": 73,
@@ -687,7 +1061,13 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-6986e700-1fc8-46c7-9797-236e3996f4d0.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "힙한",
+      "강렬한",
+      "컬러풀한",
+      "파격적인"
+    ]
   },
   {
     "number": 74,
@@ -697,7 +1077,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-e2cf492e-e652-4284-bded-baca0e75fe65.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "레트로",
+      "미래적인",
+      "몽환적인"
+    ]
   },
   {
     "number": 75,
@@ -707,7 +1092,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-8db01d14-e0fd-4dbe-a08d-69676f9033a3.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "컬러풀한",
+      "귀여운",
+      "깔끔한 조형"
+    ]
   },
   {
     "number": 76,
@@ -717,7 +1107,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ab0a9816-7395-4290-ba7b-0cecdb59091f.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "미래적인",
+      "깔끔한 구성",
+      "실험적인"
+    ]
   },
   {
     "number": 77,
@@ -727,7 +1122,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-53522deb-5a83-4a73-8575-dfd52e60b7fd.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "몽환적인",
+      "차분한",
+      "유기적인"
+    ]
   },
   {
     "number": 78,
@@ -737,7 +1137,13 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-c5215e99-583c-44d6-8880-cfdb9d69adc7.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "어두운",
+      "미래적인",
+      "빈티지",
+      "섬세한"
+    ]
   },
   {
     "number": 79,
@@ -747,7 +1153,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-4d414bb1-f9a4-4a51-8761-9036c3289c48.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "키치한",
+      "귀여운",
+      "섬세한"
+    ]
   },
   {
     "number": 80,
@@ -757,7 +1168,12 @@
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-203c9c66-25ac-42db-bb38-c69816459b85.png",
     "status": "complete",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "tags": [
+      "몽환적인",
+      "깔끔한 조형",
+      "컬러풀한"
+    ]
   },
   {
     "number": 81,
@@ -767,7 +1183,12 @@
     "width": 1024,
     "height": 1536,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-a13d6a3f-cd45-4f5f-9376-cca775aae3eb.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "키치한",
+      "몽환적인",
+      "파격적인"
+    ]
   },
   {
     "number": 82,
@@ -777,7 +1198,12 @@
     "width": 1024,
     "height": 1536,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-b48a38a4-1f10-4cbd-8008-69b47d3005d2.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "우아한",
+      "빈티지",
+      "섬세한"
+    ]
   },
   {
     "number": 83,
@@ -787,7 +1213,12 @@
     "width": 1024,
     "height": 1536,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-dd38c792-03be-42ef-9ea1-00c82b8961e9.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "손맛이 있는",
+      "차분한",
+      "깔끔한 조형"
+    ]
   },
   {
     "number": 84,
@@ -797,7 +1228,12 @@
     "width": 1024,
     "height": 1536,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-f64812a2-b4e8-46d0-86f7-8260a6664d4c.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "실험적인",
+      "손맛이 있는",
+      "빈티지"
+    ]
   },
   {
     "number": 85,
@@ -808,7 +1244,12 @@
     "height": 1536,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-9925c535-c579-4182-9ed1-bd91704e2d95.png",
     "status": "complete",
-    "variantOf": 64
+    "variantOf": 64,
+    "tags": [
+      "강렬한",
+      "컬러풀한",
+      "미래적인"
+    ]
   },
   {
     "number": 86,
@@ -818,7 +1259,12 @@
     "width": 1024,
     "height": 1536,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-81b22ee1-c306-4a88-b753-5eeccf297dc3.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "손맛이 있는",
+      "컬러풀한",
+      "섬세한"
+    ]
   },
   {
     "number": 87,
@@ -829,7 +1275,13 @@
     "height": 1536,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-b3cea611-0827-46f2-9f47-b7590f294a7d.png",
     "status": "complete",
-    "variantOf": 50
+    "variantOf": 50,
+    "tags": [
+      "레트로",
+      "키치한",
+      "화려한",
+      "기하학적인"
+    ]
   },
   {
     "number": 88,
@@ -839,7 +1291,12 @@
     "width": 1024,
     "height": 1536,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ecba068d-8a95-4230-a509-ec4686aac48c.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "레트로",
+      "따뜻한",
+      "차분한"
+    ]
   },
   {
     "number": 89,
@@ -849,7 +1306,12 @@
     "width": 1024,
     "height": 1536,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-7dcefd74-7684-4ea2-b5b8-07f1eb2b40e3.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "빈티지",
+      "강렬한",
+      "레트로"
+    ]
   },
   {
     "number": 90,
@@ -864,7 +1326,12 @@
       "slug": "particles"
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-f6ea5a56-87bc-4d06-81cc-aa2e566b621d.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "몽환적인",
+      "미래적인",
+      "섬세한"
+    ]
   },
   {
     "number": 91,
@@ -880,7 +1347,12 @@
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-d2d33a2f-1d98-46de-9f93-03a5fc22c59a.png",
     "status": "complete",
-    "variantOf": 6
+    "variantOf": 6,
+    "tags": [
+      "유기적인",
+      "실험적인",
+      "깔끔한 조형"
+    ]
   },
   {
     "number": 92,
@@ -895,7 +1367,12 @@
       "slug": "holographic"
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-63af762b-483c-47eb-966a-e1120d7099c8.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "화려한",
+      "미래적인",
+      "컬러풀한"
+    ]
   },
   {
     "number": 93,
@@ -910,7 +1387,12 @@
       "slug": "neon-glow"
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-0fbb632a-6b88-4ce6-8590-a3bdbf0b66d2.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "어두운",
+      "강렬한",
+      "미래적인"
+    ]
   },
   {
     "number": 94,
@@ -925,7 +1407,12 @@
       "slug": "wireframe-3d"
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ccf1e490-2189-42fd-98e6-d34b4b32cab5.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "미래적인",
+      "기하학적인",
+      "섬세한"
+    ]
   },
   {
     "number": 95,
@@ -941,7 +1428,12 @@
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-9024390a-122a-4c8d-bbd1-798f83bda46b.png",
     "status": "complete",
-    "variantOf": 13
+    "variantOf": 13,
+    "tags": [
+      "세련된",
+      "모던한",
+      "몽환적인"
+    ]
   },
   {
     "number": 96,
@@ -956,7 +1448,12 @@
       "slug": "kinetic-type"
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-3c549138-afd1-4ab1-9863-dd6078fc1012.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "강렬한",
+      "모던한",
+      "실험적인"
+    ]
   },
   {
     "number": 97,
@@ -972,7 +1469,12 @@
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-25f22ba4-bcfd-4150-92dd-c7a92a236439.png",
     "status": "complete",
-    "variantOf": 59
+    "variantOf": 59,
+    "tags": [
+      "모던한",
+      "기하학적인",
+      "깔끔한 구성"
+    ]
   },
   {
     "number": 98,
@@ -988,7 +1490,12 @@
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-7ef22321-e591-4791-b956-7cc6c64724b5.png",
     "status": "complete",
-    "variantOf": 7
+    "variantOf": 7,
+    "tags": [
+      "손맛이 있는",
+      "귀여운",
+      "따뜻한"
+    ]
   },
   {
     "number": 99,
@@ -1004,7 +1511,12 @@
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-7b35058d-7a11-42cc-a6e0-c2392552d9a6.png",
     "status": "complete",
-    "variantOf": 70
+    "variantOf": 70,
+    "tags": [
+      "레트로",
+      "어두운",
+      "차분한"
+    ]
   },
   {
     "number": 100,
@@ -1019,7 +1531,12 @@
       "slug": "gradient-mesh"
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-1f2d9142-64e1-4211-957d-94feb6eae4f5.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "몽환적인",
+      "컬러풀한",
+      "유기적인"
+    ]
   },
   {
     "number": 101,
@@ -1035,7 +1552,12 @@
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-6e071297-0e96-46c4-ab50-864a6aac901a.png",
     "status": "complete",
-    "variantOf": 27
+    "variantOf": 27,
+    "tags": [
+      "키치한",
+      "강렬한",
+      "컬러풀한"
+    ]
   },
   {
     "number": 102,
@@ -1050,7 +1572,12 @@
       "slug": "split-flap"
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ffefc8aa-59e1-4cb6-8ac4-794ce1645b23.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "레트로",
+      "깔끔한 구성",
+      "기하학적인"
+    ]
   },
   {
     "number": 103,
@@ -1065,7 +1592,12 @@
       "slug": "retro-vhs"
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-a0cf9416-f8bb-43cc-a5c5-1318b1799f3f.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "레트로",
+      "실험적인",
+      "어두운"
+    ]
   },
   {
     "number": 104,
@@ -1081,7 +1613,12 @@
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-3aa7503e-8309-4cff-aca2-738eb1dbba18.png",
     "status": "complete",
-    "variantOf": 68
+    "variantOf": 68,
+    "tags": [
+      "레트로",
+      "강렬한",
+      "손맛이 있는"
+    ]
   },
   {
     "number": 105,
@@ -1097,7 +1634,13 @@
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-7d6af540-3b98-4ecf-81db-308c0d4da48b.png",
     "status": "complete",
-    "variantOf": 62
+    "variantOf": 62,
+    "tags": [
+      "모던한",
+      "기하학적인",
+      "깔끔한 구성",
+      "컬러풀한"
+    ]
   },
   {
     "number": 106,
@@ -1113,7 +1656,12 @@
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ccf540b7-9652-458a-8953-a0fff59bad86.png",
     "status": "complete",
-    "variantOf": 28
+    "variantOf": 28,
+    "tags": [
+      "레트로",
+      "따뜻한",
+      "기하학적인"
+    ]
   },
   {
     "number": 107,
@@ -1128,7 +1676,12 @@
       "slug": "blueprint"
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-f189d372-beb3-49a5-947d-73027b1098e9.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "깔끔한 구성",
+      "섬세한",
+      "기하학적인"
+    ]
   },
   {
     "number": 108,
@@ -1143,7 +1696,13 @@
       "slug": "art-deco"
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ebf60686-075f-4c0b-bf52-997a46084db6.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "세련된",
+      "우아한",
+      "화려한",
+      "기하학적인"
+    ]
   },
   {
     "number": 109,
@@ -1158,7 +1717,13 @@
       "slug": "neo-brutalism"
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-c1efc4f1-5ab3-4bb8-81e6-015e79554542.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "파격적인",
+      "강렬한",
+      "키치한",
+      "컬러풀한"
+    ]
   },
   {
     "number": 110,
@@ -1173,7 +1738,12 @@
     },
     "variantOf": 25,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-c3a00d4a-9f64-4a95-8057-1f87df1331f9.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "레트로",
+      "빈티지",
+      "따뜻한"
+    ]
   },
   {
     "number": 111,
@@ -1188,7 +1758,12 @@
     },
     "variantOf": 21,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ba5192ec-9e5e-45e8-9ab3-87370daa8b1e.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "차분한",
+      "깔끔한 조형",
+      "깔끔한 구성"
+    ]
   },
   {
     "number": 112,
@@ -1203,7 +1778,12 @@
     },
     "variantOf": 40,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-8b9f2cc0-d6cf-42da-bf3c-3108275834af.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "파격적인",
+      "실험적인",
+      "강렬한"
+    ]
   },
   {
     "number": 113,
@@ -1218,7 +1798,12 @@
     },
     "variantOf": 84,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-07136b33-6b2b-4633-9ec7-2b4b18d67dde.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "손맛이 있는",
+      "빈티지",
+      "몽환적인"
+    ]
   },
   {
     "number": 114,
@@ -1233,7 +1818,12 @@
     },
     "variantOf": 40,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-411c617f-3c5e-4f88-a149-3ba19fe5379d.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "세련된",
+      "모던한",
+      "깔끔한 구성"
+    ]
   },
   {
     "number": 115,
@@ -1248,7 +1838,12 @@
     },
     "variantOf": 35,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-8cb24176-9aef-49d4-8a72-7c5843c06214.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "손맛이 있는",
+      "귀여운",
+      "따뜻한"
+    ]
   },
   {
     "number": 116,
@@ -1262,7 +1857,12 @@
       "item": 7
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-cb79b726-40d4-411c-a11f-245828d3de11.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "강렬한",
+      "깔끔한 구성",
+      "모던한"
+    ]
   },
   {
     "number": 117,
@@ -1277,7 +1877,12 @@
     },
     "variantOf": 44,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-96ba68d0-30bb-4c4f-b3e1-5dfcbff9007d.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "손맛이 있는",
+      "차분한",
+      "빈티지"
+    ]
   },
   {
     "number": 118,
@@ -1292,7 +1897,12 @@
     },
     "variantOf": 15,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-e7539a06-9098-4513-8d24-d242b73bcad1.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "레트로",
+      "키치한",
+      "화려한"
+    ]
   },
   {
     "number": 119,
@@ -1307,7 +1917,13 @@
     },
     "variantOf": 54,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-80d72f21-b006-4ee2-aeb7-0ed2015afa74.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "어두운",
+      "강렬한",
+      "손맛이 있는",
+      "파격적인"
+    ]
   },
   {
     "number": 120,
@@ -1322,7 +1938,12 @@
     },
     "variantOf": 58,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-81321fc4-1ae8-4ca4-8139-e2da520297cb.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "미래적인",
+      "키치한",
+      "유기적인"
+    ]
   },
   {
     "number": 121,
@@ -1337,7 +1958,12 @@
     },
     "variantOf": 52,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-5539d00a-5498-4ae7-a27f-1dcbe266e0b4.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "레트로",
+      "몽환적인",
+      "차분한"
+    ]
   },
   {
     "number": 122,
@@ -1352,7 +1978,13 @@
     },
     "variantOf": 62,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-8b33ed5f-0a3f-444e-a2e0-a9662a5db404.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "모던한",
+      "깔끔한 조형",
+      "기하학적인",
+      "컬러풀한"
+    ]
   },
   {
     "number": 123,
@@ -1367,7 +1999,13 @@
     },
     "variantOf": 48,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-420c0985-a5c0-42bc-98dc-e700b3c23a1d.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "우아한",
+      "섬세한",
+      "유기적인",
+      "빈티지"
+    ]
   },
   {
     "number": 124,
@@ -1382,7 +2020,12 @@
     },
     "variantOf": 61,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-e3583f4f-0b9e-4743-994e-c8d2a5fa3b8a.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "강렬한",
+      "파격적인",
+      "깔끔한 구성"
+    ]
   },
   {
     "number": 125,
@@ -1397,7 +2040,12 @@
     },
     "variantOf": 57,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-a24eddda-09ba-4a7b-9766-b2505ea77426.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "파격적인",
+      "실험적인",
+      "강렬한"
+    ]
   },
   {
     "number": 126,
@@ -1412,7 +2060,12 @@
     },
     "variantOf": 67,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-5a88bf7d-96f7-4597-8749-6b9d485a9e67.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "레트로",
+      "유기적인",
+      "미래적인"
+    ]
   },
   {
     "number": 127,
@@ -1427,7 +2080,12 @@
     },
     "variantOf": 10,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ed0964a2-e696-4444-9479-506201851da1.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "미래적인",
+      "세련된",
+      "깔끔한 구성"
+    ]
   },
   {
     "number": 128,
@@ -1442,7 +2100,13 @@
     },
     "variantOf": 50,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-d52b4135-bbea-44e2-b7d6-675818f95938.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "컬러풀한",
+      "키치한",
+      "화려한",
+      "기하학적인"
+    ]
   },
   {
     "number": 129,
@@ -1457,7 +2121,13 @@
     },
     "variantOf": 73,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-2aa9276c-56a8-417a-8757-2aab1cf2abc5.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "힙한",
+      "강렬한",
+      "컬러풀한",
+      "몽환적인"
+    ]
   },
   {
     "number": 130,
@@ -1472,7 +2142,12 @@
     },
     "variantOf": 118,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ffd5fcdb-36a9-473e-a1f2-e82bad6ea379.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "미래적인",
+      "레트로",
+      "세련된"
+    ]
   },
   {
     "number": 131,
@@ -1486,7 +2161,12 @@
       "item": 3
     },
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ae016ee9-8bcc-42b6-aeb4-4d201ef5ebf6.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "모던한",
+      "컬러풀한",
+      "깔끔한 조형"
+    ]
   },
   {
     "number": 132,
@@ -1501,7 +2181,12 @@
     },
     "variantOf": 77,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-774ca193-2c99-4135-a306-2994168334d5.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "몽환적인",
+      "차분한",
+      "유기적인"
+    ]
   },
   {
     "number": 133,
@@ -1516,7 +2201,12 @@
     },
     "variantOf": 68,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-a001829d-8f35-4b98-b144-63e5724fa097.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "강렬한",
+      "레트로",
+      "손맛이 있는"
+    ]
   },
   {
     "number": 134,
@@ -1531,7 +2221,12 @@
     },
     "variantOf": 69,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-6f416f07-1461-437e-8806-c5b7cb89e7e8.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "몽환적인",
+      "어두운",
+      "유기적인"
+    ]
   },
   {
     "number": 135,
@@ -1546,7 +2241,12 @@
     },
     "variantOf": 109,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-b3736e4c-8296-4d28-9467-a20d13ab352e.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "강렬한",
+      "파격적인",
+      "컬러풀한"
+    ]
   },
   {
     "number": 136,
@@ -1561,7 +2261,13 @@
     },
     "variantOf": 71,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-7009fe8d-d1fd-4fc8-8135-732b3be4b6fe.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "세련된",
+      "모던한",
+      "깔끔한 구성",
+      "기하학적인"
+    ]
   },
   {
     "number": 137,
@@ -1576,7 +2282,12 @@
     },
     "variantOf": 74,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-999c97b9-819c-42b6-bcef-c3b55bf2508e.png",
-    "status": "complete"
+    "status": "complete",
+    "tags": [
+      "레트로",
+      "미래적인",
+      "어두운"
+    ]
   },
   {
     "number": 138,
@@ -1591,6 +2302,480 @@
     },
     "variantOf": 80,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-077e55a3-9899-4741-ad43-42723064235d.png",
+    "status": "complete",
+    "tags": [
+      "몽환적인",
+      "컬러풀한",
+      "깔끔한 조형"
+    ]
+  },
+  {
+    "number": 139,
+    "slug": "139-art-deco",
+    "title": "ART DECO",
+    "variantOf": 108,
+    "tags": [
+      "세련된",
+      "우아한",
+      "화려한",
+      "기하학적인"
+    ],
+    "file": "139-art-deco.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 1
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-4b7d0ac9-2a99-4fb0-8d11-9bc2b0cfd6d9.png",
+    "status": "complete"
+  },
+  {
+    "number": 140,
+    "slug": "140-bauhaus",
+    "title": "BAUHAUS",
+    "variantOf": 62,
+    "tags": [
+      "모던한",
+      "깔끔한 조형",
+      "기하학적인",
+      "컬러풀한"
+    ],
+    "file": "140-bauhaus.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 2
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-afc70591-74d9-400c-bce7-04c68c786137.png",
+    "status": "complete"
+  },
+  {
+    "number": 141,
+    "slug": "141-swiss-style",
+    "title": "SWISS STYLE",
+    "variantOf": 30,
+    "tags": [
+      "모던한",
+      "깔끔한 구성",
+      "세련된",
+      "기하학적인"
+    ],
+    "file": "141-swiss-style.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 3
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ba053ad8-0730-4488-bd7f-5be3ef3a444a.png",
+    "status": "complete"
+  },
+  {
+    "number": 142,
+    "slug": "142-art-nouveau",
+    "title": "ART NOUVEAU",
+    "variantOf": 48,
+    "tags": [
+      "우아한",
+      "섬세한",
+      "유기적인",
+      "빈티지"
+    ],
+    "file": "142-art-nouveau.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 4
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-03ce0f3e-149a-478e-a171-896ff38e997b.png",
+    "status": "complete"
+  },
+  {
+    "number": 143,
+    "slug": "143-frasurbane",
+    "title": "FRASURBANE",
+    "tags": [
+      "세련된",
+      "우아한",
+      "섬세한",
+      "빈티지",
+      "따뜻한"
+    ],
+    "file": "143-frasurbane.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 5
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-0c212863-187e-4d88-8330-4eaa2cd1a916.png",
+    "status": "complete"
+  },
+  {
+    "number": 144,
+    "slug": "144-psychedelic",
+    "title": "PSYCHEDELIC",
+    "variantOf": 51,
+    "tags": [
+      "몽환적인",
+      "컬러풀한",
+      "화려한",
+      "강렬한"
+    ],
+    "file": "144-psychedelic.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 6
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-edb292c3-412d-4ff5-84aa-f61b1870cd53.png",
+    "status": "complete"
+  },
+  {
+    "number": 145,
+    "slug": "145-dreamscape",
+    "title": "DREAMSCAPE",
+    "variantOf": 77,
+    "tags": [
+      "몽환적인",
+      "차분한",
+      "우아한"
+    ],
+    "file": "145-dreamscape.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 7
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-8a09af6e-3468-474f-b8c2-94a529ca5a72.png",
+    "status": "complete"
+  },
+  {
+    "number": 146,
+    "slug": "146-propaganda",
+    "title": "PROPAGANDA",
+    "tags": [
+      "강렬한",
+      "레트로",
+      "빈티지",
+      "기하학적인"
+    ],
+    "file": "146-propaganda.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 8
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-145c6b08-54e1-4efd-927a-d7c7b8540c40.png",
+    "status": "complete"
+  },
+  {
+    "number": 147,
+    "slug": "147-dada",
+    "title": "DADA",
+    "tags": [
+      "파격적인",
+      "실험적인",
+      "빈티지",
+      "키치한"
+    ],
+    "file": "147-dada.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 9
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-a72fc9c2-d67a-4750-91bf-311d850df667.png",
+    "status": "complete"
+  },
+  {
+    "number": 148,
+    "slug": "148-pop-art",
+    "title": "POP ART",
+    "variantOf": 27,
+    "tags": [
+      "키치한",
+      "컬러풀한",
+      "강렬한",
+      "레트로"
+    ],
+    "file": "148-pop-art.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 10
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-f705ee99-73bf-439e-99c6-d144c8db2580.png",
+    "status": "complete"
+  },
+  {
+    "number": 149,
+    "slug": "149-naive-art",
+    "title": "NAIVE ART",
+    "tags": [
+      "키치한",
+      "따뜻한",
+      "손맛이 있는",
+      "컬러풀한"
+    ],
+    "file": "149-naive-art.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 11
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-c514529a-7656-4f72-a3c1-c5e65ff27e53.png",
+    "status": "complete"
+  },
+  {
+    "number": 150,
+    "slug": "150-zen",
+    "title": "ZEN",
+    "tags": [
+      "깔끔한 조형",
+      "차분한",
+      "손맛이 있는"
+    ],
+    "file": "150-zen.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 12
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-e495e678-edb1-448f-8973-43af6fe1ac10.png",
+    "status": "complete"
+  },
+  {
+    "number": 151,
+    "slug": "151-90s-rave",
+    "title": "90s RAVE",
+    "tags": [
+      "힙한",
+      "레트로",
+      "강렬한",
+      "컬러풀한"
+    ],
+    "file": "151-90s-rave.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 13
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-33fd05d7-8c8a-4692-b6fb-fd309283524e.png",
+    "status": "complete"
+  },
+  {
+    "number": 152,
+    "slug": "152-mishko-effect",
+    "title": "MISHKO EFFECT",
+    "tags": [
+      "힙한",
+      "실험적인",
+      "몽환적인",
+      "강렬한"
+    ],
+    "file": "152-mishko-effect.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 14
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-645e2e72-112a-4c89-b70c-6a05756e0985.png",
+    "status": "complete"
+  },
+  {
+    "number": 153,
+    "slug": "153-80s-digital-age",
+    "title": "80s DIGITAL AGE",
+    "tags": [
+      "레트로",
+      "미래적인",
+      "기하학적인",
+      "힙한"
+    ],
+    "file": "153-80s-digital-age.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 15
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-3efdbe92-62ce-4c3b-b7ca-9b59d305072d.png",
+    "status": "complete"
+  },
+  {
+    "number": 154,
+    "slug": "154-y2k",
+    "title": "Y2K",
+    "variantOf": 118,
+    "tags": [
+      "레트로",
+      "미래적인",
+      "화려한",
+      "힙한"
+    ],
+    "file": "154-y2k.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 16
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-a922b325-045c-41d8-a290-b9f00e887f36.png",
+    "status": "complete"
+  },
+  {
+    "number": 155,
+    "slug": "155-cassette-futurism",
+    "title": "CASSETTE FUTURISM",
+    "tags": [
+      "레트로",
+      "미래적인",
+      "모던한",
+      "기하학적인"
+    ],
+    "file": "155-cassette-futurism.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 17
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-85907255-caab-4784-88b1-ce978e14a03e.png",
+    "status": "complete"
+  },
+  {
+    "number": 156,
+    "slug": "156-memphis",
+    "title": "MEMPHIS",
+    "variantOf": 50,
+    "tags": [
+      "컬러풀한",
+      "화려한",
+      "키치한",
+      "기하학적인"
+    ],
+    "file": "156-memphis.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 18
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-13ba684c-7d62-4e96-ab44-ebcd2ea04802.png",
+    "status": "complete"
+  },
+  {
+    "number": 157,
+    "slug": "157-american-kitsch",
+    "title": "AMERICAN KITSCH",
+    "tags": [
+      "빈티지",
+      "키치한",
+      "레트로",
+      "컬러풀한"
+    ],
+    "file": "157-american-kitsch.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 19
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-f5f0264e-c722-4f3a-a9fe-4f7d1b99b8e6.png",
+    "status": "complete"
+  },
+  {
+    "number": 158,
+    "slug": "158-pin-up-girl",
+    "title": "PIN-UP GIRL",
+    "tags": [
+      "빈티지",
+      "레트로",
+      "우아한"
+    ],
+    "file": "158-pin-up-girl.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 20
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-89c65ed1-4d1d-4b18-8db1-1a9e200a9f57.png",
+    "status": "complete"
+  },
+  {
+    "number": 159,
+    "slug": "159-punk",
+    "title": "PUNK",
+    "tags": [
+      "파격적인",
+      "강렬한",
+      "어두운",
+      "손맛이 있는"
+    ],
+    "file": "159-punk.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 21
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-4aea2736-8c15-4159-8af9-4096fa638cb1.png",
+    "status": "complete"
+  },
+  {
+    "number": 160,
+    "slug": "160-brutalism",
+    "title": "BRUTALISM",
+    "variantOf": 61,
+    "tags": [
+      "파격적인",
+      "강렬한",
+      "모던한",
+      "깔끔한 구성"
+    ],
+    "file": "160-brutalism.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 22
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-63836dee-5b9a-4077-b64d-9295604342c1.png",
+    "status": "complete"
+  },
+  {
+    "number": 161,
+    "slug": "161-cyberpunk",
+    "title": "CYBERPUNK",
+    "variantOf": 26,
+    "tags": [
+      "어두운",
+      "암울한",
+      "미래적인",
+      "강렬한"
+    ],
+    "file": "161-cyberpunk.png",
+    "width": 1024,
+    "height": 1536,
+    "reference": {
+      "file": "IMG_5062.PNG",
+      "item": 23
+    },
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ae8afab6-db6e-4e95-ae05-ac8f1be4eb52.png",
     "status": "complete"
   }
 ]

@@ -6,6 +6,20 @@ export const COLLECTIONS = [
 
 export const newestFirst = items => [...items].sort((a, b) => b.number - a.number);
 
+// Shared vocabulary for poster mood tags. Each poster carries 3–5 of these labels.
+export const POSTER_TAGS = Object.freeze([
+  '세련된', '모던한', '우아한', '섬세한', '몽환적인', '강렬한', '키치한',
+  '깔끔한 조형', '힙한', '레트로', '컬러풀한', '깔끔한 구성', '빈티지',
+  '파격적인', '화려한', '어두운', '암울한', '따뜻한', '귀여운', '유기적인',
+  '기하학적인', '미래적인', '손맛이 있는', '차분한', '실험적인'
+]);
+
+// Multiple selections narrow the results: every selected keyword must match.
+export function filterByTags(items, selectedTags) {
+  const required = [...selectedTags];
+  return items.filter(item => required.every(tag => item.tags?.includes(tag)));
+}
+
 // Permanent mapping from the retired animation collection to its new poster entries.
 export const ANIMATION_POSTER_MAP = Object.freeze({
   1:90, 2:91, 3:92, 4:93, 5:94, 6:95, 7:96, 8:97, 9:98, 10:99,

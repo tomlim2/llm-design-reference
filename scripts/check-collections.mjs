@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { readFile, access } from 'node:fs/promises';
-import { COLLECTIONS, ANIMATION_POSTER_MAP, newestFirst, resolveCollectionHash } from '../collections.mjs';
+import { COLLECTIONS, ANIMATION_POSTER_MAP, POSTER_TAGS, filterByTags, newestFirst, resolveCollectionHash } from '../collections.mjs';
 
 const root = new URL('../', import.meta.url);
 const read = path => readFile(new URL(path, root), 'utf8');
@@ -57,6 +57,28 @@ const recorded = JSON.parse(prompts).styles;
 const manifest = JSON.parse(await read('output/poster-styles/manifest.json'));
 assert.equal(recorded.length, data.posters.length, 'Poster prompt count');
 assert.equal(manifest.length, data.posters.length, 'Poster manifest count');
+assert.equal(new Set(POSTER_TAGS).size, POSTER_TAGS.length, 'Keyword vocabulary must be unique');
+for (const item of data.posters) {
+  assert(Array.isArray(item.tags) && item.tags.length >= 3 && item.tags.length <= 5, `Poster ${item.number} needs 3–5 keywords`);
+  assert.equal(new Set(item.tags).size, item.tags.length, `Poster ${item.number} has duplicate keywords`);
+  assert(item.tags.every(tag => POSTER_TAGS.includes(tag)), `Poster ${item.number} has an unregistered keyword`);
+  assert.deepEqual(recorded.find(entry => entry.number === item.number), item, `Poster ${item.number} prompt metadata must match the gallery`);
+  assert.deepEqual(manifest.find(entry => entry.number === item.number)?.tags, item.tags, `Poster ${item.number} manifest keywords`);
+}
+assert(POSTER_TAGS.every(tag => data.posters.some(item => item.tags.includes(tag))), 'Do not offer empty keyword categories');
+
+// Filtering must intersect selections, preserve newest-first order and never mutate source data.
+const samples = Object.freeze([
+  Object.freeze({number:3, tags:Object.freeze(['레트로', '미래적인'])}),
+  Object.freeze({number:2, tags:Object.freeze(['레트로', '따뜻한'])}),
+  Object.freeze({number:1, tags:Object.freeze(['미래적인', '어두운'])})
+]);
+assert.deepEqual(filterByTags(samples, []), samples, 'No filter returns every item');
+assert.deepEqual(filterByTags(samples, ['레트로']).map(item => item.number), [3, 2], 'One tag keeps source order');
+assert.deepEqual(filterByTags(samples, new Set(['레트로', '미래적인'])).map(item => item.number), [3], 'Multiple tags use AND');
+assert.deepEqual(filterByTags(samples, ['따뜻한', '어두운']), [], 'Nonmatching combination returns no items');
+assert.deepEqual(filterByTags(samples, ['없는 태그']), [], 'Unknown keyword cannot broaden results');
+assert.deepEqual(filterByTags(samples, []), samples, 'Clearing a filter restores all entries');
 for (const item of migrated) {
   assert.deepEqual(recorded.find(entry => entry.number === item.number), item, 'Migrated poster prompt metadata');
   const file = manifest.find(entry => entry.number === item.number);

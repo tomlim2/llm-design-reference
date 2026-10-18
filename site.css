@@ -40,6 +40,27 @@ h1 sup { display:inline-block; vertical-align:top; margin:10px 0 0 14px; font:40
 .number { color:var(--accent); font-size:10px; line-height:calc(var(--caption-font-size) * 1.5); flex:none; }
 .caption h2 { margin:0; font-size:var(--caption-font-size); font-weight:550; letter-spacing:-.01em; line-height:1.5; word-break:keep-all; overflow-wrap:anywhere; }
 .study-description { margin:6px 0 0 27px; font-size:12px; line-height:1.65; color:var(--muted); word-break:keep-all; }
+.study-tags,.detail-tags,.tag-options { display:flex; flex-wrap:wrap; gap:6px; }
+.study-tags { margin:12px 0 0 27px; }
+.tag { display:inline-flex; align-items:center; justify-content:center; min-height:28px; padding:5px 9px; border:1px solid var(--line); border-radius:20px; background:transparent; color:#625e57; font-size:10px; line-height:1.4; white-space:nowrap; }
+button.tag:hover { border-color:var(--accent); color:var(--accent); }
+.tag[aria-pressed="true"] { background:var(--ink); border-color:var(--ink); color:var(--paper); }
+.tag[aria-pressed="true"]:hover { background:var(--accent); border-color:var(--accent); color:var(--paper); }
+.tag-check { display:none; margin-left:5px; }
+.tag[aria-pressed="true"] .tag-check { display:inline; }
+.detail-tags { margin:-10px 0 26px; }
+.tag-filters { margin:0; border-top:1px solid var(--line); border-bottom:0; scroll-margin-top:20px; }
+.tag-filters summary { min-height:56px; gap:18px; font-size:12px; }
+.tag-selection { margin-left:14px; color:var(--muted); font-size:11px; line-height:1.8; }
+.filter-help { margin:0 0 14px; color:var(--muted); font-size:12px; line-height:1.6; }
+.tag-options { gap:8px; padding-bottom:24px; }
+.tag-options .tag { min-height:36px; padding:7px 13px; font-size:12px; }
+.filter-status { display:flex; align-items:center; flex-wrap:wrap; gap:16px; }
+.clear-tags { min-height:32px; padding:4px 0; border:0; background:transparent; color:var(--accent); font-size:12px; text-decoration:underline; text-underline-offset:4px; }
+.clear-tags:disabled { color:var(--muted); opacity:.55; text-decoration:none; }
+.filter-empty { padding:64px 16px 88px; text-align:center; }
+.filter-empty p { margin:0 0 12px; font-size:14px; line-height:1.7; word-break:keep-all; }
+.filter-empty p + p { color:var(--muted); font-size:12px; }
 .footer { display:flex; align-items:flex-start; justify-content:space-between; gap:28px; padding:26px 0 34px; border-top:1px solid var(--line); }
 .footer p { margin:0; color:var(--muted); font-size:11px; line-height:1.8; }
 .footer a { min-height:44px; display:inline-flex; align-items:flex-start; gap:14px; padding-top:2px; font-size:12px; }
@@ -101,6 +122,9 @@ details[open] summary::after { content:"−"; }
   .intro-copy { margin:20px 0 0; max-width:100%; font-size:13px; } .intro-copy br { display:none; } .intro-copy .ai-disclosure { display:block; margin-bottom:4px; }
   .gallery { grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:18px; row-gap:30px; padding-bottom:48px; }
   .caption { --caption-font-size:12px; gap:8px; margin-top:12px; } .study-description { margin-left:23px; font-size:11px; }
+  .study-tags { margin-left:23px; gap:6px; } .study-tags .tag { min-height:32px; }
+  .tag-selection { display:block; margin:4px 0 0; }
+  .tag-filters summary { padding:14px 0; } .tag-options .tag { min-height:40px; }
   dialog { width:calc(100vw - 24px); height:calc(100dvh - 24px); }
   .viewer { display:flex; flex-direction:column; overflow:auto; overscroll-behavior:contain; }
   .artwork-stage { flex:none; height:63dvh; min-height:300px; padding:24px; }
@@ -113,6 +137,7 @@ details[open] summary::after { content:"−"; }
   .shell { padding:0 20px; } .wordmark { font-size:12px; gap:10px; } .archive-link { font-size:11px; gap:10px; }
   .gallery { grid-template-columns:1fr; row-gap:32px; } h1 { font-size:44px; } .collection-line .instruction { font-size:10px; }
   .caption { --caption-font-size:15px; } .study-description { font-size:12px; margin-left:25px; } .caption { gap:10px; }
+  .study-tags { margin-left:25px; } .filter-status { gap:12px; }
   .footer { flex-direction:column; gap:16px; } .footer a { min-height:30px; }
 }
 @media(max-width:760px) {
