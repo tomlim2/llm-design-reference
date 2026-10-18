@@ -39,6 +39,8 @@ h1 sup { display:inline-block; vertical-align:top; margin:10px 0 0 14px; font:40
 .caption { --caption-font-size:14px; display:flex; align-items:flex-start; gap:12px; margin-top:16px; }
 .number { color:var(--accent); font-size:10px; line-height:calc(var(--caption-font-size) * 1.5); flex:none; }
 .caption h2 { margin:0; font-size:var(--caption-font-size); font-weight:550; letter-spacing:-.01em; line-height:1.5; word-break:keep-all; overflow-wrap:anywhere; }
+.caption-title { min-width:0; }
+.caption-english { margin:3px 0 0; color:var(--muted); font-size:11px; line-height:1.5; overflow-wrap:anywhere; }
 .study-description { margin:6px 0 0 27px; font-size:12px; line-height:1.65; color:var(--muted); word-break:keep-all; }
 .study-tags,.detail-tags,.tag-options { display:flex; flex-wrap:wrap; gap:6px; }
 .study-tags { margin:12px 0 0 27px; }
