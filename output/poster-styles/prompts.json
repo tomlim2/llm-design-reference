@@ -3569,6 +3569,416 @@
       "prompt": "Create ONE finished original graphic design reference poster, portrait 1024 by 1536 pixels, full bleed 2:3 artwork. It must demonstrate Pointcloud through the visual treatment.\nArt direction: A striking 3D point-cloud scan poster on absolute near-black: an architectural colonnade of three tall arches receding diagonally from lower left foreground toward upper right background, every surface built ONLY from thousands of separate tiny cyan, teal and warm-white points. Convincing spatial depth, discrete points visibly separated by black voids, density increasing on near edges. Some points disperse into the upper margin; no solid polygon surfaces, no wireframe mesh, no cloudy smoke, no particle spiral. Large thin white title POINTCLOUD along bottom left, documentary spatial-scanning aesthetic rendered as a sophisticated graphic artwork.\nOnly visible text: the exact title specified in the art direction and a small footer \"188 / VISUAL DESIGN\". No other text, no prompt labels. Legible, beautifully spaced typography.\nConstraints: original image, not a copy of a reference artwork. No presenter, screenshot, software interface, device, surrounding mockup, social-media controls, watermark, brand logos, or contact sheet.",
       "width": 1024,
       "height": 1536
+    },
+    {
+      "number": 189,
+      "slug": "felt-art",
+      "title": "Felt Art",
+      "ko": "펠트 아트",
+      "description": "양모 섬유의 보송한 결과 둥근 형태를 살려 손으로 만든 인형과 장면의 따뜻함을 전하는 표현",
+      "tags": [
+        "손맛이 있는",
+        "따뜻한",
+        "귀여운"
+      ],
+      "variantOf": 45,
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.29.44 PM.png",
+        "position": 1
+      },
+      "file": "189-felt-art.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Felt Art. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: A handmade needle-felt scene: two small fox friends in wool coats sharing a picnic beneath a miniature felt apple tree. Dense visible wool fibers, imperfect hand-shaped seams, tiny felt cups on a plaid blanket. Low eye-level close view with the tree filling the upper image, rich russet and moss green, softly lit tactile miniature world. Everything including the grass and apples is felt, never plastic or smooth CGI.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 190,
+      "slug": "claymation",
+      "title": "Claymation",
+      "ko": "클레이 애니메이션",
+      "description": "점토 인형의 불균일한 표면과 수작업 세트의 질감을 살리는 스톱모션 애니메이션 특유의 표현",
+      "tags": [
+        "손맛이 있는",
+        "귀여운",
+        "따뜻한"
+      ],
+      "variantOf": 98,
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.29.44 PM.png",
+        "position": 2
+      },
+      "file": "190-claymation.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Claymation. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: ONE still frame from a handcrafted clay stop-motion film: an adult bicycle courier in an ochre raincoat pauses beside a miniature bicycle at a small street-side workshop. Three-quarter full figure, expressive sculpted clay face, lightly visible fingerprints, clothlike clay folds, miniature shop textures, soft overcast illumination and warm window light. Believable practical miniature, gently exaggerated anatomy, not a realistic human photograph. A static image, no frame sequence.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 191,
+      "slug": "model-kit",
+      "title": "Model Kit",
+      "ko": "모형 키트",
+      "description": "부품을 러너 프레임에 연결하고 일정한 간격으로 배열해 조립 전 모형의 구조와 정밀함을 드러내는 표현",
+      "tags": [
+        "기하학적인",
+        "깔끔한 구성",
+        "섬세한"
+      ],
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.29.44 PM.png",
+        "position": 3
+      },
+      "file": "191-model-kit.png",
+      "prompt": "Use case: product-mockup\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Model Kit. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: Straight-on product photograph of a single ivory injection-molded plastic model-kit sprue on a matte deep cobalt backdrop. One miniature astronaut figure split into body, arms and helmet, alongside small backpack, boots and antenna components, all connected by thin gates to one rectangular sprue frame. Precise molded seams, satin plastic surface, compact elegant asymmetric component arrangement, soft directional shadow. Sprue occupies most of the portrait frame; no assembled figure outside the sprue.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 192,
+      "slug": "pixel-art-harbor",
+      "title": "Pixel Art",
+      "ko": "픽셀 아트",
+      "description": "정사각형 픽셀과 제한된 색상, 계단형 윤곽으로 형태와 명암을 구성하는 디지털 그래픽",
+      "tags": [
+        "레트로",
+        "컬러풀한",
+        "차분한"
+      ],
+      "variantOf": 28,
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.29.44 PM.png",
+        "position": 4
+      },
+      "file": "192-pixel-art-harbor.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Pixel Art. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: Original crisp pixel art of a tiny harbor at blue hour. A small fishing boat below a timber pier, glowing harbor hut, stacked colorful crates, orange lamps reflected as deliberate pixel clusters in indigo water. High oblique viewpoint with clear foreground and receding boats. Authentic hand-placed low-resolution pixel-grid aesthetic, hard square pixels, limited coherent palette, deliberate dithering, no smooth gradients, no vector outlines, no typography.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 193,
+      "slug": "seventies-portrait",
+      "title": "’70s Portrait",
+      "ko": "70년대 인물 사진",
+      "description": "따뜻하게 바랜 필름 색감과 입자, 자연스러운 포즈로 1970년대 인물 사진의 분위기를 재현하는 표현",
+      "tags": [
+        "빈티지",
+        "레트로",
+        "따뜻한"
+      ],
+      "variantOf": 25,
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.30.19 PM.png",
+        "position": 1
+      },
+      "file": "193-seventies-portrait.png",
+      "prompt": "Use case: photorealistic-natural\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: ’70s Portrait. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: Photorealistic 1970s-inspired editorial portrait of a fictional adult woman with softly waved shoulder-length hair, subtle aviator glasses and a rust turtleneck, seated by the open window of an old commuter train. Medium close-up, relaxed candid expression, late-afternoon sun grazing her face, faded olive upholstery. Warm analog color-negative film, realistic skin and fabric, modest grain, gently faded highlights, understated period styling. Not a celebrity, no fashion logos or date stamp.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 194,
+      "slug": "impressionism",
+      "title": "Impressionism",
+      "ko": "인상주의",
+      "description": "짧고 분리된 붓질과 나란히 놓인 색으로 순간의 빛과 공기, 변화하는 풍경의 인상을 담는 회화",
+      "tags": [
+        "손맛이 있는",
+        "컬러풀한",
+        "유기적인"
+      ],
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.30.19 PM.png",
+        "position": 2
+      },
+      "file": "194-impressionism.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Impressionism. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: An original Impressionist oil painting of a sunlit garden path beside a pond, a small adult figure in a pale blue coat under blossoming trees. Broken visible brushstrokes and dabs of complementary color, violet shadows, sparkling gold-green light on water, forms suggested by color relationships instead of tight outlines. Luminous plein-air atmosphere, rich physical paint on canvas, portrait composition leading from foreground flowers toward the distant figure. Do not imitate a specific painting.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 195,
+      "slug": "enamel-pins",
+      "title": "Enamel Pins",
+      "ko": "에나멜 핀",
+      "description": "금속 테두리 안을 선명한 에나멜 색면으로 채워 작고 또렷한 상징과 수집품의 질감을 만드는 표현",
+      "tags": [
+        "귀여운",
+        "컬러풀한",
+        "깔끔한 구성"
+      ],
+      "variantOf": 79,
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.30.19 PM.png",
+        "position": 3
+      },
+      "file": "195-enamel-pins.png",
+      "prompt": "Use case: product-mockup\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Enamel Pins. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: A refined overhead photograph of eight original hard-enamel pins arranged loosely on dusty lavender linen: a swallow, watering can, pear, crescent moon, little greenhouse, tulip, sun and folded leaf. Polished warm gold metal outlines, glossy colored enamel flush inside precise rims, small convincing cast shadows, tactile linen visible. Balanced varied pin sizes, breathable spacing, no backing cards, no words or initials, no packaging and no hands.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 196,
+      "slug": "acrylic-painting",
+      "title": "Acrylic",
+      "ko": "아크릴화",
+      "description": "불투명하고 선명한 색면과 겹쳐 바른 붓질로 형태를 힘 있게 드러내는 아크릴 물감의 회화 표현",
+      "tags": [
+        "손맛이 있는",
+        "컬러풀한",
+        "강렬한"
+      ],
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.30.19 PM.png",
+        "position": 4
+      },
+      "file": "196-acrylic-painting.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Acrylic. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: Original acrylic painting of a cobalt ceramic pitcher and three oranges on a rumpled coral tablecloth against a butter-yellow wall. Bold opaque blocks of saturated pigment, thick dry-brush edges, visible directional brushwork and subtle canvas weave, simplified confident shapes. Close asymmetrical still-life composition, strong warm/cool contrast and a broad violet shadow. Must look like physical acrylic pigment rather than vector art, watercolor or a photograph.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 197,
+      "slug": "aerial-view",
+      "title": "Aerial View",
+      "ko": "항공뷰",
+      "description": "높은 곳에서 아래를 내려다보며 대상의 위치와 주변의 패턴, 크기 관계를 한눈에 드러내는 촬영 방식",
+      "tags": [
+        "유기적인",
+        "차분한",
+        "깔끔한 구성"
+      ],
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.30.43 PM.png",
+        "position": 1
+      },
+      "file": "197-aerial-view.png",
+      "prompt": "Use case: photorealistic-natural\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Aerial View. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: Photorealistic drone photograph looking perfectly straight down at a winding pale stone footpath through lush green park grass. One small cyclist in a red jacket near a bend, long soft tree shadows entering the frame, canopy fragments along one edge. The human scale is tiny compared with the landscape; elegant S-shaped path and richly varied grass textures are dominant. No horizon, no tilted perspective, no labels or overlaid guide lines.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 198,
+      "slug": "collectors-tin",
+      "title": "Collector’s Tin",
+      "ko": "컬렉터 틴 케이스",
+      "description": "작은 틴 케이스 안에 수집품과 기억의 조각을 겹쳐 담아 개인적인 취향을 응축하는 오브제 연출",
+      "tags": [
+        "섬세한",
+        "빈티지",
+        "따뜻한"
+      ],
+      "variantOf": 79,
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.30.43 PM.png",
+        "position": 2
+      },
+      "file": "198-collectors-tin.png",
+      "prompt": "Use case: product-mockup\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Collector’s Tin. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: Photorealistic overhead still-life of an open, softly worn rectangular tin containing a fictional field-naturalist's tiny collection. Pressed fern, miniature watercolor landscape, small brass compass, smooth pebble, a tiny ceramic bird, two monochrome landscape photographs tucked inside the lid. Rich realistic material scale and carefully nested objects, old silver tin hinges and shallow rim, warm cream work surface, soft window light. Airy portrait framing, no lettering or brand labels on any object.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 199,
+      "slug": "photo-booth",
+      "title": "Photo Booth",
+      "ko": "포토 부스",
+      "description": "좁은 프레임에 연속된 표정과 포즈를 담고 즉흥적인 플래시와 필름 질감으로 친밀함을 전하는 사진 형식",
+      "tags": [
+        "빈티지",
+        "레트로",
+        "따뜻한"
+      ],
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.30.43 PM.png",
+        "position": 3
+      },
+      "file": "199-photo-booth.png",
+      "prompt": "Use case: photorealistic-natural\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Photo Booth. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: One original vertical vintage black-and-white photo-booth strip with three stacked frames of two fictional adult friends. Same people and plain curtain across frames: first a shy smile, second trying not to laugh, third laughing together. Close spontaneous shoulder-up portraits, direct flash, silver-gelatin grain and slight exposure variations, narrow off-white gutters with subtly worn paper edges. Strip fills the entire portrait artwork, not lying on a desk, no text or timestamps.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 200,
+      "slug": "y2k-digicam",
+      "title": "Y2K Digicam",
+      "ko": "Y2K 디지털카메라",
+      "description": "직접 플래시와 거친 저해상도 질감, 강한 명암으로 2000년대 초 디지털카메라의 즉흥적인 사진 감성을 살리는 표현",
+      "tags": [
+        "레트로",
+        "힙한",
+        "키치한"
+      ],
+      "variantOf": 154,
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.30.43 PM.png",
+        "position": 4
+      },
+      "file": "200-y2k-digicam.png",
+      "prompt": "Use case: photorealistic-natural\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Y2K Digicam. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: An early-2000s compact-digital-camera candid portrait of a fictional adult friend wearing a shiny teal zip jacket and small silver earrings, standing in a dim tiled station passage and glancing toward the camera. Frontal on-camera flash creates a hard shadow and bright skin highlights; casual slightly off-center framing, CCD-like coarse luminance noise, mild compression, cool shadows with warm skin. Genuine unpolished digicam snapshot, no visible camera, no timestamp, no UI, no logos.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 201,
+      "slug": "sketch",
+      "title": "Sketch",
+      "ko": "스케치",
+      "description": "빠르고 불규칙한 선과 생략된 세부, 넓은 여백으로 대상의 특징과 손의 움직임을 간결하게 드러내는 드로잉",
+      "tags": [
+        "손맛이 있는",
+        "깔끔한 조형",
+        "귀여운"
+      ],
+      "variantOf": 115,
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.30.58 PM.png",
+        "position": 1
+      },
+      "file": "201-sketch.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Sketch. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: A loose charming sketch of a leafy plant in a slightly crooked striped pot, one small butterfly nearby. Confident imperfect black pencil contours and sparse green and muted blue colored-pencil accents on warm off-white paper. Visible exploratory overlapping marks, much of the page left empty, just enough shading to suggest volume, playful economy of line. Tall plant anchors the portrait composition. Not clean vector art, not a polished fully filled illustration, no letters.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 202,
+      "slug": "three-d-avatar",
+      "title": "3D Avatar",
+      "ko": "3D 아바타",
+      "description": "얼굴의 특징을 단순화하거나 과장하고 매끈한 입체 재질과 조명으로 개성을 드러내는 디지털 캐릭터 표현",
+      "tags": [
+        "귀여운",
+        "세련된",
+        "모던한"
+      ],
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.30.58 PM.png",
+        "position": 2
+      },
+      "file": "202-three-d-avatar.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: 3D Avatar. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: Original polished 3D stylized bust avatar of a fictional adult with short curly dark hair, rounded translucent amber glasses and a soft teal crewneck. Expressive brown eyes, appealing gently exaggerated proportions, subtle subsurface skin scattering and sculpted hair locks. Head and shoulders floating against a simple soft apricot studio background, three-quarter angle, soft rim light, lots of clean breathing room. Distinct character, not a celebrity, no photorealistic skin pores, no text.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 203,
+      "slug": "tarot-card",
+      "title": "Tarot Card",
+      "ko": "타로 카드",
+      "description": "상징적인 인물과 사물, 장식 테두리를 하나의 세로 화면에 묶어 이야기를 암시하는 카드 일러스트 형식",
+      "tags": [
+        "빈티지",
+        "섬세한",
+        "몽환적인"
+      ],
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.30.58 PM.png",
+        "position": 3
+      },
+      "file": "203-tarot-card.png",
+      "prompt": "Use case: illustration-story\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Tarot Card. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: An original symbolic tarot-style illustrated card, portrait 2:3. A fully clothed androgynous adult gardener in a deep green robe gently holds a flowering branch beneath an oversized pale sun, a winding path and two tiny birds in the background. Engraved ink contours, restrained moss, ochre and faded coral flat colors, aged cream paper, ornamental botanical border. Balanced iconic full-body composition. Only typography: small Roman numeral 'I' at top and 'THE GARDENER' in a neat small serif cartouche at bottom. No other words, no external logos.\nText: only the exact short text specified above; it is part of the card or newspaper design.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 204,
+      "slug": "marble-statue",
+      "title": "Marble Statue",
+      "ko": "대리석 조각",
+      "description": "석재의 은은한 결, 빛을 받는 곡면과 섬세한 조각 흔적으로 형태의 무게와 고전적인 입체감을 드러내는 표현",
+      "tags": [
+        "우아한",
+        "섬세한",
+        "차분한"
+      ],
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.30.58 PM.png",
+        "position": 4
+      },
+      "file": "204-marble-statue.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Marble Statue. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: A museum-quality photograph of an original carved white marble sculpture: a seated, fully draped adult figure calmly turning toward a small bird resting on one hand. The full sculpture and simple plinth dominate a portrait composition in a dim stone gallery. Delicate translucent marble edges, faint gray mineral veins, believable chisel marks in deep fabric folds, side light grazing the face and hand. Restrained monumental calm, no readable plaque, no text, not a copy of an existing statue.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 205,
+      "slug": "mini-me",
+      "title": "Mini Me",
+      "ko": "미니미",
+      "description": "같은 인물의 작은 분신을 실제 크기의 인물과 함께 배치해 크기 차이와 반복에서 유쾌한 장면을 만드는 합성 표현",
+      "tags": [
+        "귀여운",
+        "키치한",
+        "실험적인"
+      ],
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.31.21 PM.png",
+        "position": 1
+      },
+      "file": "205-mini-me.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Mini Me. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: A playful photo-real miniature composite of one fictional adult man with round glasses and a navy cardigan at a sunny wooden worktable. The full-sized man sits smiling softly with his hand resting near a ceramic mug. Exactly three miniature versions of the same adult in the same cardigan: one leaning against the mug, one sitting on a closed notebook, one standing beside a pencil. Convincing contact shadows and consistent scale and identity, warm natural window light, uncluttered scene, portrait framing. Miniatures are tiny adult doubles, not children. No text or decorative stickers.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 206,
+      "slug": "manga-portrait",
+      "title": "Manga Portrait",
+      "ko": "만화풍 인물화",
+      "description": "섬세한 잉크선과 흑백 스크린톤, 강조된 표정으로 인물의 감정과 일상의 흐름을 전달하는 만화 표현",
+      "tags": [
+        "손맛이 있는",
+        "섬세한",
+        "레트로"
+      ],
+      "variantOf": 101,
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.31.21 PM.png",
+        "position": 2
+      },
+      "file": "206-manga-portrait.png",
+      "prompt": "Use case: illustration-story\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Manga Portrait. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: An original black-and-white manga page with two horizontal panels stacked inside a portrait canvas. The same fictional adult woman with short wavy hair and a simple sweater at a kitchen counter with a black cat: upper panel a calm medium portrait as she holds a mug, lower panel a closer amused face while the cat gently nudges her arm. Fine expressive ink lines, cross-hatching, visible screentone dots, clean white gutters and natural coherent anatomy. Detailed but quiet everyday atmosphere. No speech balloons, no captions, no letters; emotion entirely through drawing. No resemblance to any existing character or manga.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 207,
+      "slug": "playful-newspaper",
+      "title": "Playful Newspaper",
+      "ko": "장난스러운 신문",
+      "description": "신문의 단 나눔과 제목 위계에 익살스러운 삽화와 가벼운 이야기를 결합한 편집 그래픽",
+      "tags": [
+        "빈티지",
+        "키치한",
+        "깔끔한 구성"
+      ],
+      "variantOf": 29,
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.31.21 PM.png",
+        "position": 3
+      },
+      "file": "207-playful-newspaper.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Playful Newspaper. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: One original whimsical newspaper front page, full-bleed portrait 2:3, aged warm newsprint and black letterpress ink. A charming large woodcut-like illustration of a cat luxuriating on a sunny chair anchors the center. Bold traditional masthead, clear column grid and a few small weather and teacup engravings, strong editorial hierarchy and tactile uneven ink. Use ONLY these exact readable texts distributed with generous spacing: masthead 'THE LITTLE DAILY'; main headline 'A VERY SLOW NEWS DAY'; subhead 'CAT TAKES THE SUNNY SEAT'; small sidebar 'Clouds expected, tea recommended.'; short footer 'Nothing urgent. Enjoy the afternoon.' No dense fake body copy, no extra random letters, no date or issue number. Not a photographed newspaper, no hands.\nText: only the exact short text specified above; it is part of the card or newspaper design.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 208,
+      "slug": "desk-setup",
+      "title": "Desk Setup",
+      "ko": "데스크 셋업",
+      "description": "작업 기기와 가구, 조명과 소품의 배치를 정돈해 사용자의 취향과 공간의 분위기를 보여주는 실내 연출",
+      "tags": [
+        "따뜻한",
+        "모던한",
+        "깔끔한 구성"
+      ],
+      "reference": {
+        "file": "Screenshot 2026-10-31 at 7.31.21 PM.png",
+        "position": 4
+      },
+      "file": "208-desk-setup.png",
+      "prompt": "Use case: photorealistic-natural\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Desk Setup. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: Photorealistic interior photograph of a thoughtfully arranged creative home workspace near a tall window. Warm walnut desk, one monitor showing a quiet abstract landscape, compact keyboard, simple adjustable black task lamp, a sketchbook, a small leafy plant and an ergonomic chair partly tucked under the desk. A narrow shelf with a few books and ceramics, warm plaster walls. Portrait view from the doorway with coherent proportions, morning side light and soft ambient lamp glow, natural wood grain, calm lived-in realism. No brand marks, no readable text, no app interface or product-card presentation.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
+      "width": 1024,
+      "height": 1536
     }
   ],
   "additions": [
@@ -4118,6 +4528,27 @@
           "style": "Baugasm",
           "url": "https://www.behance.net/katro16"
         }
+      ]
+    },
+    {
+      "addedOn": "2026-10-31",
+      "generationMode": "built-in image_gen",
+      "sourceImages": [
+        "Screenshot 2026-10-31 at 7.29.44 PM.png",
+        "Screenshot 2026-10-31 at 7.30.19 PM.png",
+        "Screenshot 2026-10-31 at 7.30.43 PM.png",
+        "Screenshot 2026-10-31 at 7.30.58 PM.png",
+        "Screenshot 2026-10-31 at 7.31.21 PM.png"
+      ],
+      "numbers": [
+        189,
+        208
+      ],
+      "notes": [
+        "Twenty original interpretations of the supplied 2-by-2 style-reference grids. Reference positions run left to right, top to bottom within each screenshot.",
+        "The poster collection includes visual treatments, materials, photographic approaches and scene-staging ideas; these labels are not all historical art movements. Aerial View and Desk Setup are photographic and staging references. Claymation is represented by a single still frame.",
+        "Related existing style families are linked with variantOf; earlier examples and prompts remain intact. Each new scene has a different composition.",
+        "Typography is optional: only Tarot Card and Playful Newspaper use lettering as part of the format. No repeated style title, study number or collection footer is added to the other images."
       ]
     }
   ]

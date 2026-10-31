@@ -3354,5 +3354,415 @@
     "height": 1536,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-e8ba4764-6c65-4ac8-afe3-a684e87bb4d7.png",
     "status": "complete"
+  },
+  {
+    "number": 189,
+    "slug": "felt-art",
+    "title": "Felt Art",
+    "ko": "펠트 아트",
+    "tags": [
+      "손맛이 있는",
+      "따뜻한",
+      "귀여운"
+    ],
+    "variantOf": 45,
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.29.44 PM.png",
+      "position": 1
+    },
+    "file": "189-felt-art.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-b826bdb2-9dd6-4bdc-9182-ada5941d4dff.png",
+    "status": "complete"
+  },
+  {
+    "number": 190,
+    "slug": "claymation",
+    "title": "Claymation",
+    "ko": "클레이 애니메이션",
+    "tags": [
+      "손맛이 있는",
+      "귀여운",
+      "따뜻한"
+    ],
+    "variantOf": 98,
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.29.44 PM.png",
+      "position": 2
+    },
+    "file": "190-claymation.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-266b2601-889c-4ca0-8223-34e0c3ed8aaa.png",
+    "status": "complete"
+  },
+  {
+    "number": 191,
+    "slug": "model-kit",
+    "title": "Model Kit",
+    "ko": "모형 키트",
+    "tags": [
+      "기하학적인",
+      "깔끔한 구성",
+      "섬세한"
+    ],
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.29.44 PM.png",
+      "position": 3
+    },
+    "file": "191-model-kit.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ee8995df-0dc1-475c-8f5a-763c918122b5.png",
+    "status": "complete"
+  },
+  {
+    "number": 192,
+    "slug": "pixel-art-harbor",
+    "title": "Pixel Art",
+    "ko": "픽셀 아트",
+    "tags": [
+      "레트로",
+      "컬러풀한",
+      "차분한"
+    ],
+    "variantOf": 28,
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.29.44 PM.png",
+      "position": 4
+    },
+    "file": "192-pixel-art-harbor.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ea5e9ff9-8192-44dc-8d28-17d0a48f9e9e.png",
+    "status": "complete"
+  },
+  {
+    "number": 193,
+    "slug": "seventies-portrait",
+    "title": "’70s Portrait",
+    "ko": "70년대 인물 사진",
+    "tags": [
+      "빈티지",
+      "레트로",
+      "따뜻한"
+    ],
+    "variantOf": 25,
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.30.19 PM.png",
+      "position": 1
+    },
+    "file": "193-seventies-portrait.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-8ec5e456-0694-4364-bdd0-c6d12b4f995e.png",
+    "status": "complete"
+  },
+  {
+    "number": 194,
+    "slug": "impressionism",
+    "title": "Impressionism",
+    "ko": "인상주의",
+    "tags": [
+      "손맛이 있는",
+      "컬러풀한",
+      "유기적인"
+    ],
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.30.19 PM.png",
+      "position": 2
+    },
+    "file": "194-impressionism.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-296d4ea0-f03c-44b2-8248-e99e310eea35.png",
+    "status": "complete"
+  },
+  {
+    "number": 195,
+    "slug": "enamel-pins",
+    "title": "Enamel Pins",
+    "ko": "에나멜 핀",
+    "tags": [
+      "귀여운",
+      "컬러풀한",
+      "깔끔한 구성"
+    ],
+    "variantOf": 79,
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.30.19 PM.png",
+      "position": 3
+    },
+    "file": "195-enamel-pins.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-9f493c72-ccee-4b2e-ad4c-64460ff542d2.png",
+    "status": "complete"
+  },
+  {
+    "number": 196,
+    "slug": "acrylic-painting",
+    "title": "Acrylic",
+    "ko": "아크릴화",
+    "tags": [
+      "손맛이 있는",
+      "컬러풀한",
+      "강렬한"
+    ],
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.30.19 PM.png",
+      "position": 4
+    },
+    "file": "196-acrylic-painting.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-05ae43fe-2030-455f-9df1-947cdbcf2844.png",
+    "status": "complete"
+  },
+  {
+    "number": 197,
+    "slug": "aerial-view",
+    "title": "Aerial View",
+    "ko": "항공뷰",
+    "tags": [
+      "유기적인",
+      "차분한",
+      "깔끔한 구성"
+    ],
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.30.43 PM.png",
+      "position": 1
+    },
+    "file": "197-aerial-view.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-5dc6af73-7278-4a92-8bf2-ecfa1507b0e9.png",
+    "status": "complete"
+  },
+  {
+    "number": 198,
+    "slug": "collectors-tin",
+    "title": "Collector’s Tin",
+    "ko": "컬렉터 틴 케이스",
+    "tags": [
+      "섬세한",
+      "빈티지",
+      "따뜻한"
+    ],
+    "variantOf": 79,
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.30.43 PM.png",
+      "position": 2
+    },
+    "file": "198-collectors-tin.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-9049c6c2-5f53-4723-98af-bad7303b8b74.png",
+    "status": "complete"
+  },
+  {
+    "number": 199,
+    "slug": "photo-booth",
+    "title": "Photo Booth",
+    "ko": "포토 부스",
+    "tags": [
+      "빈티지",
+      "레트로",
+      "따뜻한"
+    ],
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.30.43 PM.png",
+      "position": 3
+    },
+    "file": "199-photo-booth.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-ad684be9-23bb-4ac1-90b8-20810cfda5d8.png",
+    "status": "complete"
+  },
+  {
+    "number": 200,
+    "slug": "y2k-digicam",
+    "title": "Y2K Digicam",
+    "ko": "Y2K 디지털카메라",
+    "tags": [
+      "레트로",
+      "힙한",
+      "키치한"
+    ],
+    "variantOf": 154,
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.30.43 PM.png",
+      "position": 4
+    },
+    "file": "200-y2k-digicam.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-07a47eef-ca24-47e4-8010-868bc50efe38.png",
+    "status": "complete"
+  },
+  {
+    "number": 201,
+    "slug": "sketch",
+    "title": "Sketch",
+    "ko": "스케치",
+    "tags": [
+      "손맛이 있는",
+      "깔끔한 조형",
+      "귀여운"
+    ],
+    "variantOf": 115,
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.30.58 PM.png",
+      "position": 1
+    },
+    "file": "201-sketch.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-2ff523af-5121-43b4-ba6a-88fce04677dc.png",
+    "status": "complete"
+  },
+  {
+    "number": 202,
+    "slug": "three-d-avatar",
+    "title": "3D Avatar",
+    "ko": "3D 아바타",
+    "tags": [
+      "귀여운",
+      "세련된",
+      "모던한"
+    ],
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.30.58 PM.png",
+      "position": 2
+    },
+    "file": "202-three-d-avatar.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-58123f95-48c1-4fb0-b895-4aab27ce360d.png",
+    "status": "complete"
+  },
+  {
+    "number": 203,
+    "slug": "tarot-card",
+    "title": "Tarot Card",
+    "ko": "타로 카드",
+    "tags": [
+      "빈티지",
+      "섬세한",
+      "몽환적인"
+    ],
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.30.58 PM.png",
+      "position": 3
+    },
+    "file": "203-tarot-card.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-b3c718cd-ff9c-4f26-9c13-268b02afd0b2.png",
+    "status": "complete"
+  },
+  {
+    "number": 204,
+    "slug": "marble-statue",
+    "title": "Marble Statue",
+    "ko": "대리석 조각",
+    "tags": [
+      "우아한",
+      "섬세한",
+      "차분한"
+    ],
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.30.58 PM.png",
+      "position": 4
+    },
+    "file": "204-marble-statue.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-70a2a602-3499-4c4a-943d-bcf0edb2b1c1.png",
+    "status": "complete"
+  },
+  {
+    "number": 205,
+    "slug": "mini-me",
+    "title": "Mini Me",
+    "ko": "미니미",
+    "tags": [
+      "귀여운",
+      "키치한",
+      "실험적인"
+    ],
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.31.21 PM.png",
+      "position": 1
+    },
+    "file": "205-mini-me.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-6ed4284d-e5dc-4483-90c3-c289bea1ee89.png",
+    "status": "complete"
+  },
+  {
+    "number": 206,
+    "slug": "manga-portrait",
+    "title": "Manga Portrait",
+    "ko": "만화풍 인물화",
+    "tags": [
+      "손맛이 있는",
+      "섬세한",
+      "레트로"
+    ],
+    "variantOf": 101,
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.31.21 PM.png",
+      "position": 2
+    },
+    "file": "206-manga-portrait.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-40db0026-8e6d-4ffd-a2bf-798882a41ae1.png",
+    "status": "complete"
+  },
+  {
+    "number": 207,
+    "slug": "playful-newspaper",
+    "title": "Playful Newspaper",
+    "ko": "장난스러운 신문",
+    "tags": [
+      "빈티지",
+      "키치한",
+      "깔끔한 구성"
+    ],
+    "variantOf": 29,
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.31.21 PM.png",
+      "position": 3
+    },
+    "file": "207-playful-newspaper.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-bddffe7d-4041-4fd9-a556-e5c67d3ffef6.png",
+    "status": "complete"
+  },
+  {
+    "number": 208,
+    "slug": "desk-setup",
+    "title": "Desk Setup",
+    "ko": "데스크 셋업",
+    "tags": [
+      "따뜻한",
+      "모던한",
+      "깔끔한 구성"
+    ],
+    "reference": {
+      "file": "Screenshot 2026-10-31 at 7.31.21 PM.png",
+      "position": 4
+    },
+    "file": "208-desk-setup.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-d8fb2363-7ec9-4735-85a9-4a9197c5ef3b.png",
+    "status": "complete"
   }
 ]
