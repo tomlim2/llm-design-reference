@@ -3979,6 +3979,443 @@
       "prompt": "Use case: photorealistic-natural\nAsset type: one original standalone visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed. One finished image, not a contact sheet.\nStyle reference: Desk Setup. The supplied reference names a visual treatment; create a new scene, do not reproduce a screenshot or a specific reference artwork.\nArt direction: Photorealistic interior photograph of a thoughtfully arranged creative home workspace near a tall window. Warm walnut desk, one monitor showing a quiet abstract landscape, compact keyboard, simple adjustable black task lamp, a sketchbook, a small leafy plant and an ergonomic chair partly tucked under the desk. A narrow shelf with a few books and ceramics, warm plaster walls. Portrait view from the doorway with coherent proportions, morning side light and soft ambient lamp glow, natural wood grain, calm lived-in realism. No brand marks, no readable text, no app interface or product-card presentation.\nText: no typography, letters, style label, study number, footer, watermark or signature. Let the image itself demonstrate the style.\nConstraints: no website interface, surrounding UI cards, buttons or social-media chrome; no watermarks, logos or brand names. Professional composition, clear visual treatment and convincing material detail.",
       "width": 1024,
       "height": 1536
+    },
+    {
+      "number": 209,
+      "slug": "art-deco-liner",
+      "title": "Art Deco",
+      "ko": "아르 데코",
+      "variantOf": 108,
+      "description": "대칭과 계단형 기하, 유선형 실루엣과 정제된 장식으로 화려하면서도 질서 있는 인상을 만드는 디자인",
+      "tags": [
+        "우아한",
+        "레트로",
+        "기하학적인"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 1,
+        "label": "Art Deco"
+      },
+      "file": "209-art-deco-liner.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Art Deco. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: An original Art Deco travel-print illustration with a streamlined ocean liner cutting diagonally across dark navy water, cream wake stripes sweeping toward the foreground, small terraced harbour buildings and a low ivory sun with restrained fan rays. Bold flattened silhouettes, elegant stepped geometry, antique-gold and coral accents, lithographic ink on paper. Strong diagonal movement and cropped ship bow, not a central symmetric ornamental fan or a tower poster.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 210,
+      "slug": "bauhaus-modular",
+      "title": "Bauhaus",
+      "ko": "바우하우스",
+      "variantOf": 62,
+      "description": "원·사각형·직선과 절제된 색을 기능적인 비례와 리듬으로 조직하는 기하학적 디자인",
+      "tags": [
+        "기하학적인",
+        "깔끔한 구성",
+        "모던한"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 2,
+        "label": "Bauhaus"
+      },
+      "file": "210-bauhaus-modular.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Bauhaus. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: An original Bauhaus-influenced modular print on warm ivory paper. An off-centre orthogonal construction of red squares, yellow quarter-circle arcs, cobalt half-circles and thin black vertical rails; the forms interlock like a compact rhythmic machine, with large breathing space above and to one side. Primary-colour flat ink, careful ratios, asymmetrical balance. Use a stepped grid construction, not a dominant diagonal bar, central totem or oversized triangle.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 211,
+      "slug": "brutalism-form",
+      "title": "Brutalism",
+      "ko": "브루탈리즘",
+      "variantOf": 61,
+      "description": "꾸밈없는 굵은 글자와 거친 표면, 압도적인 크기 대비와 노출된 구조로 직접적인 힘을 전하는 그래픽",
+      "tags": [
+        "강렬한",
+        "파격적인",
+        "깔끔한 구성"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 3,
+        "label": "Brutalism"
+      },
+      "file": "211-brutalism-form.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Brutalism. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: A raw brutalist graphic print built from the exact word \"FORM\". Enormous heavy black sans-serif F and O occupy the upper half; smaller R and M sit on a sharply offset lower row, still clearly reading FORM. A single deep cobalt rectangular block interrupts a thick black rule. Rough ivory paper, black photocopy grain, rigid edges, deliberately abrupt scale changes, blunt functional typography. One cohesive severe composition, no architecture photo, no vertical title strip, no neon colours.\nText: The only lettering is exactly \"FORM\", four legible letters. No other text, style title, number or footer.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 212,
+      "slug": "minimal-line-art-vase",
+      "title": "Minimal Line Art",
+      "ko": "미니멀 라인 아트",
+      "variantOf": 21,
+      "description": "가느다란 윤곽선과 생략된 세부, 넓은 여백으로 대상의 형태와 선의 흐름을 간결하게 드러내는 표현",
+      "tags": [
+        "깔끔한 조형",
+        "섬세한",
+        "차분한"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 4,
+        "label": "Mminimal line art"
+      },
+      "file": "212-minimal-line-art-vase.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Minimal Line Art. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: A minimal continuous-line drawing of an asymmetric rounded vase with two long arcing stems and a few hanging leaves. One fine charcoal line flows smoothly through the composition, with a single small muted terracotta shape behind the vase. Place the delicate drawing in the lower half of generous warm-white paper, quiet open space above. Elegant intentional contour, no shading, no hatching, no busy sketch marks or lettering.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 213,
+      "slug": "paper-cutout-birds",
+      "title": "Paper Cutout",
+      "ko": "페이퍼 컷아웃",
+      "variantOf": 55,
+      "description": "종이를 자른 윤곽과 겹친 층의 그림자로 평면 색면에 촉각적인 깊이를 더하는 표현",
+      "tags": [
+        "손맛이 있는",
+        "컬러풀한",
+        "유기적인"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 5,
+        "label": "Paper cutout"
+      },
+      "file": "213-paper-cutout-birds.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Paper Cutout. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: A tactile layered paper-cut artwork: two small birds in flight travel upward through large overlapping tropical leaves and curling stems. Dramatic cropped leaves surround a diagonal open corridor through the page. Deep teal, mint, cream, warm orange and pale peach cardstock, clearly cut edges, thin paper thickness, subtle fibre and real soft cast shadows between layers. Straight-on finished artwork, not a framed mockup; no landscape hills or sun.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 214,
+      "slug": "risograph-pears",
+      "title": "Risograph",
+      "ko": "리소그래프",
+      "variantOf": 44,
+      "description": "별색 잉크의 겹침과 미세한 어긋남, 고르지 않은 인쇄 입자로 소박한 질감과 색의 리듬을 만드는 인쇄 표현",
+      "tags": [
+        "손맛이 있는",
+        "레트로",
+        "따뜻한"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 6,
+        "label": "Risograph"
+      },
+      "file": "214-risograph-pears.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Risograph. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: A convincing two-ink risograph print of three pears on an oval platter over a loosely drawn checker cloth. Viewed obliquely from above, the platter is cropped at one edge and the pears cluster off-centre. Only warm fluorescent orange and deep indigo inks on cream paper; overprint creates a darker third tone. Stochastic grain, slight registration shifts at edges, uneven porous ink coverage, simple confident shapes. An actual flat scanned print, no vase, bouquet, glossy gradients or photographic framing.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 215,
+      "slug": "watercolor-rainy-canal",
+      "title": "Watercolor",
+      "ko": "수채화",
+      "description": "물에 번지는 투명한 색층과 종이의 여백, 부드러운 경계로 빛과 공기의 흐름을 담는 회화",
+      "tags": [
+        "손맛이 있는",
+        "차분한",
+        "섬세한"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 7,
+        "label": "Watercolor"
+      },
+      "file": "215-watercolor-rainy-canal.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Watercolor. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: A luminous traditional watercolour painting of a quiet canal after rain, a low stone footbridge in the middle distance, a small moored boat and wet ochre buildings reflected in water. Vertical view with much of the lower half devoted to loose reflections. Transparent ultramarine and warm sienna washes, wet-in-wet blooms, granulating pigment, soft lost edges and reserved paper whites. Visible cold-pressed cotton paper, no oil impasto or digital airbrush look.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 216,
+      "slug": "oil-painting-still-life",
+      "title": "Oil Painting",
+      "ko": "유화",
+      "description": "유성 물감의 깊은 색층과 두꺼운 붓자국, 풍부한 명암으로 물체의 부피와 표면을 표현하는 회화",
+      "tags": [
+        "손맛이 있는",
+        "따뜻한",
+        "우아한"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 8,
+        "label": "Oil painting"
+      },
+      "file": "216-oil-painting-still-life.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Oil Painting. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: An intimate oil painting of split figs, a small dark glass bottle, a folded linen napkin and a rustic piece of bread on an old wooden table. Tight asymmetric composition, warm side light emerging from a deep umber background. Luminous layered glazes in shadows, thick impasto on fruit highlights and linen folds, visible bristle marks and canvas weave, rich natural colour and tactile paint. A convincing painted surface, not a photograph or watercolour.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 217,
+      "slug": "japanese-ink-crane",
+      "title": "Japanese Ink",
+      "ko": "일본 수묵화",
+      "variantOf": 83,
+      "description": "먹의 농담과 번짐, 힘을 조절한 붓질과 여백으로 대상의 기운과 공간의 깊이를 드러내는 수묵 표현",
+      "tags": [
+        "손맛이 있는",
+        "차분한",
+        "섬세한"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 9,
+        "label": "Japanese ink"
+      },
+      "file": "217-japanese-ink-crane.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Japanese Ink. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: An original Japanese sumi-e ink painting on warm fibrous washi. A single crane stands on a low weathered coastal rock near the bottom; one curved pine bough enters high from the opposite edge, while distant sea and mist dissolve into untouched paper. Varied black-to-pale-grey ink, dry-brush rock texture, expressive tapered strokes, delicate feather suggestion, large asymmetrical empty space. No bamboo, no perched sparrow, no calligraphy, seals or signature.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 218,
+      "slug": "low-poly-canyon",
+      "title": "Low-poly 3D",
+      "ko": "로우 폴리 3D",
+      "variantOf": 42,
+      "description": "적은 수의 다각형 면과 선명한 모서리, 면마다 다른 명암으로 입체 형태를 단순하고 또렷하게 표현하는 방식",
+      "tags": [
+        "기하학적인",
+        "컬러풀한",
+        "모던한"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 10,
+        "label": "Low-poly 3D"
+      },
+      "file": "218-low-poly-canyon.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Low-poly 3D. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: A striking low-poly 3D landscape seen from high above: a winding turquoise river cuts through tall terracotta canyon walls, with a few angular pale-green shrubs on stepped ledges. The river forms a broad S curve through the vertical frame. Large deliberately visible triangular facets on every surface, no smooth shading, crisp directional light and angular cast shadows. Warm sky only as a narrow strip. No animals, text or photographic texture.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 219,
+      "slug": "vaporwave-pool",
+      "title": "Vaporwave",
+      "ko": "베이퍼웨이브",
+      "variantOf": 52,
+      "description": "분홍·보라빛 색감과 초기 디지털 이미지, 비현실적인 공간을 결합해 몽롱한 복고 감성을 만드는 스타일",
+      "tags": [
+        "몽환적인",
+        "레트로",
+        "키치한"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 11,
+        "label": "Vaporwave"
+      },
+      "file": "219-vaporwave-pool.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Vaporwave. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: An original vaporwave image of an empty indoor swimming pool in pale aqua and lilac, viewed down a long diagonal. Peach-pink arched doors along one wall open directly onto soft cloud-filled blue sky; a small potted palm is reflected in still turquoise water. Dreamlike impossible architecture, old computer-render softness, subtle VHS bloom and fine scanline texture. Dusty magenta shadows, pastel gradients. No busts, chrome sphere, giant sunset disc, typography or interface.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 220,
+      "slug": "memphis-teapot",
+      "title": "Memphis Design",
+      "ko": "멤피스 디자인",
+      "variantOf": 50,
+      "description": "선명한 색 대비와 점·줄무늬·지그재그, 장난스러운 기하 형태를 자유롭게 섞는 장식적 디자인",
+      "tags": [
+        "키치한",
+        "컬러풀한",
+        "레트로"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 12,
+        "label": "Memphis design"
+      },
+      "file": "220-memphis-teapot.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Memphis Design. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: A playful Memphis graphic still life: one oversized geometric turquoise teapot with a striped semicircular handle, two yellow lemon shapes, and a black-and-white spotted pedestal table. Bold flat screenprint on lavender paper, coral zigzag ground, small cobalt rectangular accents. Confident off-centre balance, contrasting patterns within objects, unexpected but orderly proportions. A strong illustrative composition rather than a pattern swatch, stacked totem or oval-frame design. No text.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 221,
+      "slug": "ornamental-medallion",
+      "title": "Ornamental",
+      "ko": "장식 문양",
+      "variantOf": 32,
+      "description": "반복되는 곡선과 꽃무늬, 정교한 테두리와 대칭을 겹쳐 풍성한 장식 밀도와 리듬을 만드는 표현",
+      "tags": [
+        "화려한",
+        "섬세한",
+        "우아한"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 13,
+        "label": "Oornamental"
+      },
+      "file": "221-ornamental-medallion.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Ornamental. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: An intricate original ornamental surface artwork: a large eight-lobed floral medallion slightly below centre, surrounded by interlaced curling acanthus leaves, fine rosettes and arabesque stems that extend to the edges. Antique gold and muted ivory ink against deep midnight blue, restrained burgundy details. Meticulous symmetrical internal drawing and rich repeating rhythm, fine engraved line detail, flat decorative print on textured stock. No letters, heraldic text, logo or border mockup.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 222,
+      "slug": "botanical-rosehip",
+      "title": "Botanical",
+      "ko": "보태니컬",
+      "description": "식물의 잎맥과 줄기, 꽃과 열매의 형태를 세밀하게 관찰해 자연의 구조와 생장 리듬을 보여주는 일러스트",
+      "tags": [
+        "유기적인",
+        "섬세한",
+        "차분한"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 14,
+        "label": "Botanical"
+      },
+      "file": "222-botanical-rosehip.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Botanical. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: An elegant botanical study of a wild rose branch with pale pink blossoms, reddish rosehips and carefully observed serrated green leaves. The main branch rises in a gentle diagonal; two small detached studies of a leaf and an opened rosehip sit in the remaining space without boxes or labels. Delicate ink contours with transparent natural watercolour, accurate leaf veins and plant structure, warm ivory paper. Clear graceful composition, no decorative border, no lettering or pseudo-scientific labels.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 223,
+      "slug": "vintage-engraving-shell",
+      "title": "Vintage Engraving",
+      "ko": "빈티지 인그레이빙",
+      "variantOf": 207,
+      "description": "촘촘한 해칭과 교차선, 미세한 점으로 명암과 부피를 쌓아 고전적인 인쇄 질감을 만드는 판화 표현",
+      "tags": [
+        "빈티지",
+        "섬세한",
+        "손맛이 있는"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 15,
+        "label": "Vintage Engraving"
+      },
+      "file": "223-vintage-engraving-shell.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Vintage Engraving. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: A richly detailed vintage copperplate-style engraving of a large spiral nautilus shell resting beside a curled piece of seaweed on a rocky shelf. The shell dominates an asymmetric lower-left composition, with generous clean paper above. Pure charcoal-black ink on aged ivory paper, thousands of precise tapered hatch lines and fine stipples describing volume, dramatic light-dark modelling, subtle plate impression. No photographic greys, no colour wash, no newspaper columns, captions or typography.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 224,
+      "slug": "dreamy-pastel-arches",
+      "title": "Dreamy Pastel",
+      "ko": "몽환적인 파스텔",
+      "variantOf": 77,
+      "description": "옅은 색의 부드러운 전이와 흐린 빛, 가벼운 형태로 현실감이 느슨한 꿈같은 분위기를 만드는 표현",
+      "tags": [
+        "몽환적인",
+        "차분한",
+        "우아한"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 16,
+        "label": "Dreamy Pastel"
+      },
+      "file": "224-dreamy-pastel-arches.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Dreamy Pastel. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: A serene dreamy pastel landscape: a delicate curved staircase in pale mint rises between soft apricot arches suspended above a sea of blush and lilac clouds. Off-centre spatial rhythm with a large quiet pale-blue sky, feathered atmospheric depth, soft matte surfaces and diffused morning glow. Low contrast and gentle colour transitions, refined dreamlike architectural abstraction. No neon, hard black edges, retro computer texture, text or title.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 225,
+      "slug": "metallic-chrome-rings",
+      "title": "Metallic Chrome",
+      "ko": "메탈릭 크롬",
+      "variantOf": 10,
+      "description": "거울처럼 반사되는 금속 표면과 날카로운 하이라이트로 차갑고 정밀한 입체감을 강조하는 표현",
+      "tags": [
+        "세련된",
+        "미래적인",
+        "모던한"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 17,
+        "label": "Metallic Chrome"
+      },
+      "file": "225-metallic-chrome-rings.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Metallic Chrome. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: A premium abstract still life of two large rigid mirror-chrome rings interlocked at an angle with one small polished metal sphere in their lower opening. Tight sculptural composition on a cool charcoal studio floor, bold white strip-light reflections alternating with deep black reflections across the curved silver metal, subtle real surface microtexture, crisp contact shadows. Solid machined geometry and optical polish, not flowing mercury, melted lettering or a ribbon. No text, numbers or logo.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 226,
+      "slug": "holographic-discs",
+      "title": "Holographic",
+      "ko": "홀로그래픽",
+      "variantOf": 92,
+      "description": "보는 각도에 따라 달라지는 무지갯빛 반사와 겹친 투명층으로 빛의 변화와 가벼운 깊이를 표현하는 스타일",
+      "tags": [
+        "미래적인",
+        "몽환적인",
+        "화려한"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 18,
+        "label": "Holographic"
+      },
+      "file": "226-holographic-discs.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Holographic. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: Three very thin overlapping translucent holographic film discs floating at different angles on a pale lilac field. One broad disc is cropped at the lower-right edge, two smaller discs arc upward toward the opposite corner. Fine diffractive micro-lines create convincing spectral cyan, pink, violet and pale gold bands that change with curvature. Transmitted light, soft contact-like shadows and sharp film edges. Elegant light material study, no central zigzag foil, CD holes, letters or logo.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 227,
+      "slug": "geometric-abstract-rhythm",
+      "title": "Geometric Abstract",
+      "ko": "기하학적 추상",
+      "variantOf": 14,
+      "description": "원·호·직사각형 같은 기본 도형의 크기와 겹침, 색면의 관계로 균형과 움직임을 만드는 추상 표현",
+      "tags": [
+        "기하학적인",
+        "깔끔한 조형",
+        "차분한"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 19,
+        "label": "Geometric Abstract"
+      },
+      "file": "227-geometric-abstract-rhythm.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Geometric Abstract. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: A sophisticated geometric abstract print: a broad cropped olive-green circle, a warm ochre horseshoe arch, a long terracotta rectangle and an ivory semicircle interlock in a spacious staggered composition. Large quiet shapes, carefully tuned overlaps and negative space, warm charcoal accents, subtle matte pigment grain on uncoated paper. Restrained earthy palette, crisp flat edges, no primary-colour Bauhaus grid, no 3D shadows, no type.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "number": 228,
+      "slug": "photorealistic-collage-island",
+      "title": "Photorealistic Collage",
+      "ko": "포토리얼리스틱 콜라주",
+      "variantOf": 84,
+      "description": "사진 조각의 사실적인 질감과 서로 다른 크기·공간을 병치해 낯선 장면과 새로운 의미를 만드는 콜라주",
+      "tags": [
+        "실험적인",
+        "몽환적인",
+        "섬세한"
+      ],
+      "reference": {
+        "file": "IMG_5137.PNG",
+        "position": 20,
+        "label": "Photorealistic Collage"
+      },
+      "file": "228-photorealistic-collage-island.png",
+      "prompt": "Use case: stylized-concept\nAsset type: one original visual-style reference artwork for a design collection.\nFormat: portrait 1024 × 1536 pixels, 2:3 aspect ratio, full-bleed, one finished image rather than a contact sheet.\nReference role: The supplied screenshot names the visual style Photorealistic Collage. Create an original interpretation; do not reproduce its sample collage, social-media screen, account names or branding.\nArt direction: An original photorealistic editorial cut-paper collage. A large cut-out photograph of an open human hand enters from below and cups a miniature rocky island with one simple white house. Separate torn photographic fragments of turquoise breaking surf and a soft cloud bank cross diagonally behind it, with pale sand-coloured paper gaps visibly separating the layers. Convincing photographic skin, stone and water textures; unmistakable cut and torn edges with tiny cast shadows; intentionally impossible scale yet a coherent spare composition. No central female portrait, classical sculpture, orange slice, lettering or branding.\nText: No typography, letters, style label, study number, footer, watermark or signature; demonstrate the style through the image itself.\nConstraints: no website, app interface, surrounding card or buttons, no stock watermark. Professional composition with recognisable style characteristics.",
+      "width": 1024,
+      "height": 1536
     }
   ],
   "additions": [
@@ -4549,6 +4986,24 @@
         "The poster collection includes visual treatments, materials, photographic approaches and scene-staging ideas; these labels are not all historical art movements. Aerial View and Desk Setup are photographic and staging references. Claymation is represented by a single still frame.",
         "Related existing style families are linked with variantOf; earlier examples and prompts remain intact. Each new scene has a different composition.",
         "Typography is optional: only Tarot Card and Playful Newspaper use lettering as part of the format. No repeated style title, study number or collection footer is added to the other images."
+      ]
+    },
+    {
+      "addedOn": "2026-10-31",
+      "generationMode": "built-in image_gen",
+      "sourceImages": [
+        "IMG_5137.PNG"
+      ],
+      "numbers": [
+        209,
+        228
+      ],
+      "notes": [
+        "Twenty original interpretations of the numbered Graphic Design Styles list. Reference positions retain the source order.",
+        "The source spellings Mminimal line art and Oornamental are normalized to Minimal Line Art and Ornamental; original labels are preserved in reference.label.",
+        "Existing styles and related visual families receive new compositions linked by variantOf. Historical images, prompts and numbering remain unchanged.",
+        "Only the Brutalism example uses intentional lettering, FORM, as a structural element. No repeated style title, number or footer is applied to the images.",
+        "Ornamental, Botanical, Dreamy Pastel and material or technique labels describe visual treatments rather than being presented as distinct historical art movements."
       ]
     }
   ]

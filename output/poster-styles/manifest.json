@@ -3764,5 +3764,442 @@
     "height": 1536,
     "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-d8fb2363-7ec9-4735-85a9-4a9197c5ef3b.png",
     "status": "complete"
+  },
+  {
+    "number": 209,
+    "slug": "art-deco-liner",
+    "title": "Art Deco",
+    "ko": "아르 데코",
+    "variantOf": 108,
+    "tags": [
+      "우아한",
+      "레트로",
+      "기하학적인"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 1,
+      "label": "Art Deco"
+    },
+    "file": "209-art-deco-liner.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-2af31099-86b7-4128-83e5-4941b271cef0.png",
+    "status": "complete"
+  },
+  {
+    "number": 210,
+    "slug": "bauhaus-modular",
+    "title": "Bauhaus",
+    "ko": "바우하우스",
+    "variantOf": 62,
+    "tags": [
+      "기하학적인",
+      "깔끔한 구성",
+      "모던한"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 2,
+      "label": "Bauhaus"
+    },
+    "file": "210-bauhaus-modular.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-64628316-219e-4a57-983c-dffdd211fbc5.png",
+    "status": "complete"
+  },
+  {
+    "number": 211,
+    "slug": "brutalism-form",
+    "title": "Brutalism",
+    "ko": "브루탈리즘",
+    "variantOf": 61,
+    "tags": [
+      "강렬한",
+      "파격적인",
+      "깔끔한 구성"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 3,
+      "label": "Brutalism"
+    },
+    "file": "211-brutalism-form.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-1c4848cf-5647-4355-8708-f57919ad56a5.png",
+    "status": "complete"
+  },
+  {
+    "number": 212,
+    "slug": "minimal-line-art-vase",
+    "title": "Minimal Line Art",
+    "ko": "미니멀 라인 아트",
+    "variantOf": 21,
+    "tags": [
+      "깔끔한 조형",
+      "섬세한",
+      "차분한"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 4,
+      "label": "Mminimal line art"
+    },
+    "file": "212-minimal-line-art-vase.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-5ddbb50b-5069-4133-a43c-f3c00ed492d2.png",
+    "status": "complete"
+  },
+  {
+    "number": 213,
+    "slug": "paper-cutout-birds",
+    "title": "Paper Cutout",
+    "ko": "페이퍼 컷아웃",
+    "variantOf": 55,
+    "tags": [
+      "손맛이 있는",
+      "컬러풀한",
+      "유기적인"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 5,
+      "label": "Paper cutout"
+    },
+    "file": "213-paper-cutout-birds.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-270b6679-bc5d-418d-915a-9ca811037f0c.png",
+    "status": "complete"
+  },
+  {
+    "number": 214,
+    "slug": "risograph-pears",
+    "title": "Risograph",
+    "ko": "리소그래프",
+    "variantOf": 44,
+    "tags": [
+      "손맛이 있는",
+      "레트로",
+      "따뜻한"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 6,
+      "label": "Risograph"
+    },
+    "file": "214-risograph-pears.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-64ec1c3f-c46a-4306-9db3-04f9c22e62cb.png",
+    "status": "complete"
+  },
+  {
+    "number": 215,
+    "slug": "watercolor-rainy-canal",
+    "title": "Watercolor",
+    "ko": "수채화",
+    "tags": [
+      "손맛이 있는",
+      "차분한",
+      "섬세한"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 7,
+      "label": "Watercolor"
+    },
+    "file": "215-watercolor-rainy-canal.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-fa708e29-74b0-4f14-8578-0c2237013efd.png",
+    "status": "complete"
+  },
+  {
+    "number": 216,
+    "slug": "oil-painting-still-life",
+    "title": "Oil Painting",
+    "ko": "유화",
+    "tags": [
+      "손맛이 있는",
+      "따뜻한",
+      "우아한"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 8,
+      "label": "Oil painting"
+    },
+    "file": "216-oil-painting-still-life.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-bf26897d-ba19-490f-a110-46c4cd5e096a.png",
+    "status": "complete"
+  },
+  {
+    "number": 217,
+    "slug": "japanese-ink-crane",
+    "title": "Japanese Ink",
+    "ko": "일본 수묵화",
+    "variantOf": 83,
+    "tags": [
+      "손맛이 있는",
+      "차분한",
+      "섬세한"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 9,
+      "label": "Japanese ink"
+    },
+    "file": "217-japanese-ink-crane.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-9becfd60-6768-4230-b68f-12f60700cf83.png",
+    "status": "complete"
+  },
+  {
+    "number": 218,
+    "slug": "low-poly-canyon",
+    "title": "Low-poly 3D",
+    "ko": "로우 폴리 3D",
+    "variantOf": 42,
+    "tags": [
+      "기하학적인",
+      "컬러풀한",
+      "모던한"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 10,
+      "label": "Low-poly 3D"
+    },
+    "file": "218-low-poly-canyon.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-1f779b0c-3999-45d2-8526-28eca4f21b1c.png",
+    "status": "complete"
+  },
+  {
+    "number": 219,
+    "slug": "vaporwave-pool",
+    "title": "Vaporwave",
+    "ko": "베이퍼웨이브",
+    "variantOf": 52,
+    "tags": [
+      "몽환적인",
+      "레트로",
+      "키치한"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 11,
+      "label": "Vaporwave"
+    },
+    "file": "219-vaporwave-pool.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-1001881d-d4db-4bcb-9768-bfb8925a688b.png",
+    "status": "complete"
+  },
+  {
+    "number": 220,
+    "slug": "memphis-teapot",
+    "title": "Memphis Design",
+    "ko": "멤피스 디자인",
+    "variantOf": 50,
+    "tags": [
+      "키치한",
+      "컬러풀한",
+      "레트로"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 12,
+      "label": "Memphis design"
+    },
+    "file": "220-memphis-teapot.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-7f172c3b-f3ea-4a42-ae27-26cab814d244.png",
+    "status": "complete"
+  },
+  {
+    "number": 221,
+    "slug": "ornamental-medallion",
+    "title": "Ornamental",
+    "ko": "장식 문양",
+    "variantOf": 32,
+    "tags": [
+      "화려한",
+      "섬세한",
+      "우아한"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 13,
+      "label": "Oornamental"
+    },
+    "file": "221-ornamental-medallion.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-0777e71b-2741-46ed-ba03-0df1075248bd.png",
+    "status": "complete"
+  },
+  {
+    "number": 222,
+    "slug": "botanical-rosehip",
+    "title": "Botanical",
+    "ko": "보태니컬",
+    "tags": [
+      "유기적인",
+      "섬세한",
+      "차분한"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 14,
+      "label": "Botanical"
+    },
+    "file": "222-botanical-rosehip.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-1c553520-7254-4066-af00-2d0c3f0d5df3.png",
+    "status": "complete"
+  },
+  {
+    "number": 223,
+    "slug": "vintage-engraving-shell",
+    "title": "Vintage Engraving",
+    "ko": "빈티지 인그레이빙",
+    "variantOf": 207,
+    "tags": [
+      "빈티지",
+      "섬세한",
+      "손맛이 있는"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 15,
+      "label": "Vintage Engraving"
+    },
+    "file": "223-vintage-engraving-shell.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-fac99d6c-0096-4ef9-b75c-c44214b04661.png",
+    "status": "complete"
+  },
+  {
+    "number": 224,
+    "slug": "dreamy-pastel-arches",
+    "title": "Dreamy Pastel",
+    "ko": "몽환적인 파스텔",
+    "variantOf": 77,
+    "tags": [
+      "몽환적인",
+      "차분한",
+      "우아한"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 16,
+      "label": "Dreamy Pastel"
+    },
+    "file": "224-dreamy-pastel-arches.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-d3951cd7-e187-4b9a-9757-700da0d88db9.png",
+    "status": "complete"
+  },
+  {
+    "number": 225,
+    "slug": "metallic-chrome-rings",
+    "title": "Metallic Chrome",
+    "ko": "메탈릭 크롬",
+    "variantOf": 10,
+    "tags": [
+      "세련된",
+      "미래적인",
+      "모던한"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 17,
+      "label": "Metallic Chrome"
+    },
+    "file": "225-metallic-chrome-rings.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-af3b5510-b38d-4951-acfd-fdcf8802f65c.png",
+    "status": "complete"
+  },
+  {
+    "number": 226,
+    "slug": "holographic-discs",
+    "title": "Holographic",
+    "ko": "홀로그래픽",
+    "variantOf": 92,
+    "tags": [
+      "미래적인",
+      "몽환적인",
+      "화려한"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 18,
+      "label": "Holographic"
+    },
+    "file": "226-holographic-discs.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-417e8c15-8c0d-4036-84e7-b3896fd6cb8c.png",
+    "status": "complete"
+  },
+  {
+    "number": 227,
+    "slug": "geometric-abstract-rhythm",
+    "title": "Geometric Abstract",
+    "ko": "기하학적 추상",
+    "variantOf": 14,
+    "tags": [
+      "기하학적인",
+      "깔끔한 조형",
+      "차분한"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 19,
+      "label": "Geometric Abstract"
+    },
+    "file": "227-geometric-abstract-rhythm.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-f499a931-b4b3-4480-aa88-ee15b58422f3.png",
+    "status": "complete"
+  },
+  {
+    "number": 228,
+    "slug": "photorealistic-collage-island",
+    "title": "Photorealistic Collage",
+    "ko": "포토리얼리스틱 콜라주",
+    "variantOf": 84,
+    "tags": [
+      "실험적인",
+      "몽환적인",
+      "섬세한"
+    ],
+    "reference": {
+      "file": "IMG_5137.PNG",
+      "position": 20,
+      "label": "Photorealistic Collage"
+    },
+    "file": "228-photorealistic-collage-island.png",
+    "width": 1024,
+    "height": 1536,
+    "source": "/Users/yslim/.codex/generated_images/01a11686-fb22-7bc0-888d-690f950a2c3c/exec-e9f6dc99-64c4-4474-9f69-853f8693d336.png",
+    "status": "complete"
   }
 ]
